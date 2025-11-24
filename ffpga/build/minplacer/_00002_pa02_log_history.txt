@@ -1,0 +1,7 @@
+LOG=minplacer/00002_pa02_00001_character/minplacer_00002_pa02_00001.log
+LOG=minplacer/00002_pa02_00002_setup/minplacer_00002_pa02_00002.log
+LOG=minplacer/00002_pa02_00003_wl/minplacer_00002_pa02_00003.log
+LOG=minplacer/00002_pa02_00003_wl/minplacer_00002_pa02_00003.log
+LOG=minplacer/00002_pa02_00004_repopt/minplacer_00002_pa02_00004.log
+LOG=minplacer/00002_pa02_00005_post/minplacer_00002_pa02_00005.log
+LOG=minplacer/00002_pa02_00006_rplan/minplacer_00002_pa02_00006.log

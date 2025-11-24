@@ -1,0 +1,243 @@
+The current time is Mon Nov 24 19:01:04 2025
+CPUs=16
+EXE=/usr/local/go-configure-sw-hub/bin/external/eda-placer/v23/eda-placer
+BuildDir=/usr/local/go-configure-sw-hub/bin/external/eda-placer/v23
+BuildPath=/usr/local/go-configure-sw-hub/bin/external/eda-placer/v23
+CWD=/tmp/NSrvlQiD/out/minplacer/00000_pa00_00005_post
+LogFile=minplacer_00000_pa00_00005.log
+PrintScreen=../_00000_pa00_stdout.txt
+Command line: /usr/local/go-configure-sw-hub/bin/external/eda-placer/v23/eda-placer -print_screen ../_00000_pa00_stdout.txt -eflx_call_minplacer 00000_pa00_00005_post__out__blink
+	Arg[0] /usr/local/go-configure-sw-hub/bin/external/eda-placer/v23/eda-placer
+	Arg[1] -print_screen
+	Arg[2] ../_00000_pa00_stdout.txt
+	Arg[3] -eflx_call_minplacer
+	Arg[4] 00000_pa00_00005_post__out__blink
+Report CFG start:
+            minplacer_output_clkloc = ../../minplacer/00000_pa00_00005_post/minplacer_clkloc.txt
+           minplacer_ignore_regions = 0
+    minplacer_output_vacant_lrbbloc = ../../minplacer/00000_pa00_00005_post/minplacer_vacant_lrbbloc.txt
+             minplacer_input_rbbloc = ../../minplacer/00000_pa00_00003_wl/minplacer_rbbloc.txt
+          minplacer_input_timingdef = ../../minplacer/00000_pa00_00002_setup/minplacer.timing_def
+                 minplacer_rmany_mt = 4
+               minplacer_input_edif = ../../minplacer/00000_pa00_00002_setup/minplacer.edf
+              minplacer_post_target = 0
+minplacer_output_rstarting_priority = ../../minplacer/00000_pa00_00005_post/minplacer_finderpriority.txt
+minplacer_post_path_based_slack_range = 0
+          post_find_timing_no_table = 0
+                               loga = minplacer_00000_pa00_00005.log
+              ta_report_limit_paths = 3
+                 _just_a_place_hold = everything_default
+              minplacer_input_rd2sm = ../../minplacer/00000_pa00_00002_setup/minplacer.rnode2sm_def
+         minplacer_post_target_mode = 2
+                            verbose = 1
+       minplacer_accept_stop_signal = ../../minplacer/stop_all.txt
+         minplacer_input_rd2sitepin = ../../minplacer/00000_pa00_00002_setup/minplacer.rnode2sitepin_def
+minplacer_report_timing_side_effect = 0
+                minplacer_post_mode = 2
+            minplacer_output_rbbloc = ../../minplacer/00000_pa00_00005_post/minplacer_rbbloc.txt
+            minplacer_input_chipdef = ../../minplacer/00000_pa00_00002_setup/minplacer.chip_def
+      minplacer_accept_stop_signal2 = ../../minplacer/stop_00000_pa00_.txt
+minplacer_post_limit_near_critical_pass = 0
+                eflx_call_minplacer = 00000_pa00_00005_post__out__blink
+                  minplacer_max_cpu = 4
+          minplacer_post_limit_iter = 300
+         minplacer_output_timingdef = ../../minplacer/00000_pa00_00005_post/minplacer.timing_def
+     minplacer_print_timing_summary = 1
+minplacer_ppath_skip_pipeff_as_target = 0
+minplacer_ppipe_tile_boundary_detour = 1
+  minplacer_post_longpathpen_weight = 0
+                          qor_stats = 1
+                  rfinder_use_table = 0
+       minplacer_input_branchdlydef = ../../minplacer/00000_pa00_00002_setup/minplacer.branchdly_def
+                       print_screen = ../_00000_pa00_stdout.txt
+minplacer_post_tarpos_by_sideeffect = 0
+             minplacer_input_rgraph = ../../minplacer/00000_pa00_00002_setup/minplacer.rgraph_def
+                minplacer_flow_post = 2
+                     ta_report_hold = 1
+          minplacer_input_clklatdef = ../../minplacer/00000_pa00_00002_setup/minplacer.clklat_def
+Report CFG end:
+PLACER_STANDALONE STARTS.
+	INPUTS:
+	minplacer_input_edif=../../minplacer/00000_pa00_00002_setup/minplacer.edf
+	minplacer_input_chipdef=../../minplacer/00000_pa00_00002_setup/minplacer.chip_def
+	minplacer_input_ramdef=<none>
+	minplacer_input_timingdef=../../minplacer/00000_pa00_00002_setup/minplacer.timing_def
+	minplacer_input_clklatdef=../../minplacer/00000_pa00_00002_setup/minplacer.clklat_def
+	minplacer_input_rbbloc=../../minplacer/00000_pa00_00003_wl/minplacer_rbbloc.txt
+	minplacer_input_tilerange=<none>
+	minplacer_input_nledit=<none>
+	minplacer_input_rgraph=../../minplacer/00000_pa00_00002_setup/minplacer.rgraph_def
+	minplacer_input_rd2sm=../../minplacer/00000_pa00_00002_setup/minplacer.rnode2sm_def
+	minplacer_input_rd2sitepin=../../minplacer/00000_pa00_00002_setup/minplacer.rnode2sitepin_def
+	minplacer_input_branchdlydef=../../minplacer/00000_pa00_00002_setup/minplacer.branchdly_def
+	minplacer_input_ravecs=<none>
+	minplacer_input_rstarting_priority=<none>
+	OUTPUTS:
+	minplacer_output_edif=<none>
+	minplacer_output_timingdef=../../minplacer/00000_pa00_00005_post/minplacer.timing_def
+	minplacer_output_clklatdef=<none>
+	minplacer_output_rbbloc=../../minplacer/00000_pa00_00005_post/minplacer_rbbloc.txt
+	minplacer_output_vacant_lrbbloc=../../minplacer/00000_pa00_00005_post/minplacer_vacant_lrbbloc.txt
+	minplacer_output_clkloc=../../minplacer/00000_pa00_00005_post/minplacer_clkloc.txt
+	minplacer_output_rteloc=<none>
+	minplacer_output_tilerange=<none>
+	minplacer_output_nledit=<none>
+	minplacer_output_branchdlydef=<none>
+	minplacer_output_ravecs=<none>
+	minplacer_output_rstarting_priority=../../minplacer/00000_pa00_00005_post/minplacer_finderpriority.txt
+pProblemIni. isNmax=0 inflat=0 mem_dump_mode=0
+Set ARRAYINFO: 32x32
+ARRAYINFO: locs_per_tile=[32,32] pos_interval=[10,10] boundary_penalty=[20,10] l_shift_x0,xmult,yvalue=<1,3,0> max_iob_width=4 is_x2=0 clock=<max-num=2,max-inv=1,inv-noninv-as-one=false,ram-independent=false>
+SITETYPE L LAYER=L SIDE=WEST NPIN=26/14
+SITETYPE l LAYER=L SIDE=WEST NPIN=26/14
+SITETYPE M LAYER=M SIDE=WEST NPIN=26/14
+SITETYPE m LAYER=M SIDE=WEST NPIN=26/14
+SITETYPE D LAYER=DSP SIDE=WEST NPIN=238/190
+SITETYPE b LAYER=IOB SIDE=WEST NPIN=4/2
+SITETYPE N LAYER=NCLT SIDE=WEST NPIN=96/48
+SITETYPE R LAYER=RCLT SIDE=WEST NPIN=96/48
+Getting tinfo M 0 0 64/64
+Skip tile size [64,64] for TILE M X64Y64. Expecting [32,32]
+Getting tinfo D 0 0 64/64
+Skip tile size [64,64] for TILE D X64Y64. Expecting [32,32]
+Getting tinfo I 0 0 64/64
+Skip tile size [64,64] for TILE I X64Y64. Expecting [32,32]
+Getting tinfo N 0 0 64/64
+Skip tile size [64,64] for TILE N X64Y64. Expecting [32,32]
+Getting tinfo Z 0 0 64/64
+Skip tile size [64,64] for TILE Z X64Y64. Expecting [32,32]
+Getting tinfo M 0 0 32/32
+Getting tinfo M 10 0 64/64
+Skip tile size [64,64] for TILEWHITE M 10 0 X64Y64. Expecting [32,32]
+Getting tinfo M 20 0 64/64
+Skip tile size [64,64] for TILEWHITE M 20 0 X64Y64. Expecting [32,32]
+Getting tinfo M 30 0 64/64
+Skip tile size [64,64] for TILEWHITE M 30 0 X64Y64. Expecting [32,32]
+Getting tinfo D 10 0 64/64
+Skip tile size [64,64] for TILEWHITE D 10 0 X64Y64. Expecting [32,32]
+Getting tinfo D 20 0 64/64
+Skip tile size [64,64] for TILEWHITE D 20 0 X64Y64. Expecting [32,32]
+Getting tinfo D 30 0 64/64
+Skip tile size [64,64] for TILEWHITE D 30 0 X64Y64. Expecting [32,32]
+Getting tinfo I 10 0 64/64
+Skip tile size [64,64] for TILEWHITE I 10 0 X64Y64. Expecting [32,32]
+Getting tinfo I 20 0 64/64
+Skip tile size [64,64] for TILEWHITE I 20 0 X64Y64. Expecting [32,32]
+Getting tinfo I 30 0 64/64
+Skip tile size [64,64] for TILEWHITE I 30 0 X64Y64. Expecting [32,32]
+Getting tinfo N 99 0 64/64
+Skip tile size [64,64] for TILEWHITE N 99 0 X64Y64. Expecting [32,32]
+Getting tinfo Z 99 0 64/64
+Skip tile size [64,64] for TILEWHITE Z 99 0 X64Y64. Expecting [32,32]
+GeometryDumpMap starts.
+GeometryDumpMap ends.
+GeometryDumpMap starts.
+GeometryDumpMap ends.
+Layer[L] has 14/10 sites, total_cap=140
+Layer[M] has 4/10 sites, total_cap=40
+Layer[DSP] has 0/0 sites, total_cap=0
+Layer[NCLT] has 0/0 sites, total_cap=0
+Layer[RCLT] has 0/0 sites, total_cap=0
+Setup 40 LM mapping.
+Layer[ZIOB] has 0/0 sites, total_cap=0
+GeometryDumpLayers starts.
+GeometryDumpLayers ends.
+pProblemIni. eramclkAsClock=1
+pProblemIniNetlist. skip_hifi=0, skip_pppff=2147483647
+Netlist=NETLIST_blink NumInst=13 NumNet=52
+NumPinst=4
+	DontPlace=0, NonRootRbbChainMember=7, NonRootDspChainMember=0, Const=1, ClkBuf=1
+There are 13 instances. After combining instances in chains, there are 4 instances to place.
+	Clock[0] OrigClock[0] net (net_index=35) clk
+NumPnet=43
+NumTrivial=0 NumDriverless=0
+AverageFO=1.77 #HifiNet=0 AverageFO_HifiNet=0.00
+NumClk=1 (with 0 inverted)
+There are 43 nets in the design. Average fanout is 1.77.
+There is 1 clock in the design.
+NumInsts=4
+Resource usages:
+ Type=L: Capacity=140 Utilized=9 NumInst=2. [ChainLen=1]=1 [ChainLen=8]=1
+ Type=M: Capacity=40 Utilized=0 NumInst=0.
+ Type=IOB: Capacity=184 Utilized=2 NumInst=2.
+Min-placement step: Detaild placement (mode=2).
+POST STARTS (FINDER_DELAY)
+TileRange read: File is not given. Use whole chip.
+Read 11 RBB-locations from EFLX file.
+Reading timing_def file ../../minplacer/00000_pa00_00002_setup/minplacer.timing_def
+pPipeAlloc: OptMode=1 PppFfInsertDone=0 MinPipeRtDly=98 #Chain=0 AveChainLen=0.0 MaxChainLen=0 #Net=0 AveChainFan=0.0 MaxChainFan=0 #MixedZeroFan=0 Opt_UseLatency=0 OptLine_RightSlack_WorseThreshold=100
+(0) INI TWL = 1230(440, 790) ELAPSE=0
+CROSS-TILE STAT: [0]=76
+PANN_TILERANGE LayerMask=40 TileRange={0,1; 0,1} RangeDivider=4 WL=1230 (440, 790) StartingIter=0 NumIters=1
+PANN_TILERANGE  (iter=0) WL=1230 (440, 790) TIMESPENT=0
+PANN_TILERANGE ENDS TIMESPENT=0
+Long connection estimation: ...........
+Short connection estimation: ...........
+(1) IOS-ANN TWL = 1230(440, 790) ELAPSE=0
+[ITER=0] WNS=-8359,M=5.179 TNS=-462031 PathNumObj=2 ***&&&&&!@
+[ITER=1] WNS=-8038,M=5.019 TNS=-439057 PathNumObj=2 ***&&&&&!@
+[ITER=2] WNS=-7865,M=4.932 TNS=-423305 PathNumObj=2 ***&&&&&!@
+[ITER=3] WNS=-7623,M=4.811 TNS=-424623 PathNumObj=2 ***&&&&&!@
+[ITER=4] WNS=-7623,M=4.811 TNS=-424623 x PathNumObj=3 ***&&&&&!@
+[ITER=5] WNS=-7623,M=4.811 TNS=-424623 PathNumObj=2 ***&&&&&!@
+[ITER=6] WNS=-7623,M=4.811 TNS=-424623 x PathNumObj=3 ***&&&&&!@
+[ITER=7] WNS=-7623,M=4.811 TNS=-424623 PathNumObj=2 ***&&&&&!@
+[ITER=8] WNS=-7623,M=4.811 TNS=-424623 x PathNumObj=3 
+(2) IMPROVED TWL = 1740(460, 1280) ELAPSE=2
+(3) FIN TWL = 1740(460, 1280) ELAPSE=2
+CROSS-TILE STAT: [0]=76
+Wrote 2 RBB-locations out of 2 core insts and 7 chained insts to EFLX file ../../minplacer/00000_pa00_00005_post/minplacer_rbbloc.txt.
+Wrote 2 RBB-locations out of 2 IOB insts to EFLX file ../../minplacer/00000_pa00_00005_post/minplacer_rbbloc.txt.
+Wrote 0 RBB-locations out of 2 INTIOB insts to EFLX file ../../minplacer/00000_pa00_00005_post/minplacer_rbbloc.txt.
+CLOCKPLAN_INI_NETLIST: NUM_CLOCKS=1 NUM_PINSTS=4
+	 #Inst/Usage        L           M         DSP       SPRAM       UPRAM       2PRAM         IOB        ZIOB        NCLT        RCLT      
+	   CLOCK[ 0]*     2(    9)                                                                                                            
+	   NON_CLOCK                                                                                                                          
+CLOCKPLAN_INI_GEO: NUM_TILE_SLICES=1/1
+{Rsc/Util/MinThre={L=140/9/50 ,M=40/0/8 ,DSP=0/0/4 ,SPRAM=0/0/0 ,UPRAM=0/0/0 ,2PRAM=0/0/0 ,IOB=184/2/16 ,ZIOB=0/0/0 ,NCLT=0/0/0 ,RCLT=0/0/0}
+CLOCKPLAN_INI_PORTLOCKS
+	CLOCK[0]* port locks:
+		{IX0Y0S1I0}
+BuildGaps
+	GAPS[0]: - -
+	GAPS[1]: - -
+CreateReachables:
+	CLOCK[0] reachables: [0,0]
+	CLOCK[0] distance: 0
+AssignPorts skipped as all clocks have locked ports.
+ClockPortFile ../../minplacer/00000_pa00_00005_post/minplacer_clkloc.txt written.
+
+*********************************** TILE REPORT ***************************************
+|------------------------|
+|TILE_X0Y0               |
+|#INST=4                 |
+|#CLK=1 #INVCLK=0        |
+|#ERAM_CP    0           |
+|#         0   0         |
+|#           0           |
+|*                       |
+|sa0*                    |
+|L=9,L8 C9               |
+|IOB=2 C1                |
+|------------------------|
+CLUSTER[0] LAYER0=L TILE=[0,0] CLK=<0,-1> ERAMCLK=<9,0> REGION=<none>
+ {L=9 C9 IOB=2 C1 LCHAIN=8 DCHAIN=0} #NEI=0 REACHABLES:
+CLOCK[0] #LockedPort=1 #AssignedPort=0 #OutputPort=0 TX0Y0={#Cluster=1 L=9 IOB=2}
+*********************************** TILE REPORT ***************************************
+
+
+Placement timing:
+         Clock        Group  Achievable Frequency(MHz)
+--------------  -----------  -------------------------
+           clk   <UDEF_clk>                   103.928 
+
+
+POST ENDS
+pProblemFin.
+Min-placement step ends: Detaild placement (mode=2). Runtime: 0:0:7 (CPU time), 0:0:10 (real time); peak memory: 1415MB.
+
+
+The current time is Mon Nov 24 19:01:14 2025
+
+
+

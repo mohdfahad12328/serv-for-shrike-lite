@@ -1,0 +1,1772 @@
+// EFLX generated Verilog wrapper file to instantiate the EFLX array as a verilog model
+
+module blink_eflx_array_wrapper (
+  input TILE_00_CLK_IN_W0,
+  input TILE_00_EFLX_IN_0_0_0,
+  input TILE_00_EFLX_IN_0_0_1,
+  input TILE_00_EFLX_IN_0_1_0,
+  input TILE_00_EFLX_IN_0_1_1,
+  input TILE_00_EFLX_IN_0_2_0,
+  input TILE_00_EFLX_IN_0_2_1,
+  input TILE_00_EFLX_IN_0_3_0,
+  input TILE_00_EFLX_IN_0_3_1,
+  input TILE_00_EFLX_IN_0_4_0,
+  input TILE_00_EFLX_IN_0_4_1,
+  input TILE_00_EFLX_IN_0_5_0,
+  input TILE_00_EFLX_IN_0_5_1,
+  input TILE_00_EFLX_IN_0_6_0,
+  input TILE_00_EFLX_IN_0_6_1,
+  input TILE_00_EFLX_IN_0_7_0,
+  input TILE_00_EFLX_IN_0_7_1,
+  input TILE_00_EFLX_IN_0_8_0,
+  input TILE_00_EFLX_IN_0_8_1,
+  input TILE_00_EFLX_IN_0_9_0,
+  input TILE_00_EFLX_IN_0_9_1,
+  input TILE_00_EFLX_IN_0_10_0,
+  input TILE_00_EFLX_IN_0_10_1,
+  input TILE_00_EFLX_IN_0_11_0,
+  input TILE_00_EFLX_IN_0_11_1,
+  input TILE_00_EFLX_IN_0_12_0,
+  input TILE_00_EFLX_IN_0_12_1,
+  input TILE_00_EFLX_IN_0_13_0,
+  input TILE_00_EFLX_IN_0_13_1,
+  input TILE_00_EFLX_IN_0_14_0,
+  input TILE_00_EFLX_IN_0_14_1,
+  input TILE_00_EFLX_IN_0_15_0,
+  input TILE_00_EFLX_IN_0_15_1,
+  input TILE_00_EFLX_IN_0_16_0,
+  input TILE_00_EFLX_IN_0_16_1,
+  input TILE_00_EFLX_IN_0_17_0,
+  input TILE_00_EFLX_IN_0_17_1,
+  input TILE_00_EFLX_IN_0_18_0,
+  input TILE_00_EFLX_IN_0_18_1,
+  input TILE_00_EFLX_IN_0_19_0,
+  input TILE_00_EFLX_IN_0_19_1,
+  input TILE_00_EFLX_IN_0_20_0,
+  input TILE_00_EFLX_IN_0_20_1,
+  input TILE_00_EFLX_IN_0_21_0,
+  input TILE_00_EFLX_IN_0_21_1,
+  input TILE_00_EFLX_IN_0_22_0,
+  input TILE_00_EFLX_IN_0_22_1,
+  input TILE_00_EFLX_IN_0_23_0,
+  input TILE_00_EFLX_IN_0_23_1,
+  input TILE_00_EFLX_IN_0_24_0,
+  input TILE_00_EFLX_IN_0_24_1,
+  input TILE_00_EFLX_IN_0_25_0,
+  input TILE_00_EFLX_IN_0_25_1,
+  input TILE_00_EFLX_IN_0_26_0,
+  input TILE_00_EFLX_IN_0_26_1,
+  input TILE_00_EFLX_IN_0_27_0,
+  input TILE_00_EFLX_IN_0_27_1,
+  input TILE_00_EFLX_IN_0_28_0,
+  input TILE_00_EFLX_IN_0_28_1,
+  input TILE_00_EFLX_IN_0_29_0,
+  input TILE_00_EFLX_IN_0_29_1,
+  input TILE_00_EFLX_IN_0_30_0,
+  input TILE_00_EFLX_IN_0_30_1,
+  input TILE_00_EFLX_IN_0_31_0,
+  input TILE_00_EFLX_IN_0_31_1,
+  input TILE_00_EFLX_IN_1_0_0,
+  input TILE_00_EFLX_IN_1_0_1,
+  input TILE_00_EFLX_IN_1_1_0,
+  input TILE_00_EFLX_IN_1_1_1,
+  input TILE_00_EFLX_IN_1_30_0,
+  input TILE_00_EFLX_IN_1_30_1,
+  input TILE_00_EFLX_IN_1_31_0,
+  input TILE_00_EFLX_IN_1_31_1,
+  input TILE_00_EFLX_IN_2_0_0,
+  input TILE_00_EFLX_IN_2_0_1,
+  input TILE_00_EFLX_IN_2_1_0,
+  input TILE_00_EFLX_IN_2_1_1,
+  input TILE_00_EFLX_IN_2_30_0,
+  input TILE_00_EFLX_IN_2_30_1,
+  input TILE_00_EFLX_IN_2_31_0,
+  input TILE_00_EFLX_IN_2_31_1,
+  input TILE_00_EFLX_IN_3_0_0,
+  input TILE_00_EFLX_IN_3_0_1,
+  input TILE_00_EFLX_IN_3_1_0,
+  input TILE_00_EFLX_IN_3_1_1,
+  input TILE_00_EFLX_IN_3_30_0,
+  input TILE_00_EFLX_IN_3_30_1,
+  input TILE_00_EFLX_IN_3_31_0,
+  input TILE_00_EFLX_IN_3_31_1,
+  input TILE_00_EFLX_IN_4_0_0,
+  input TILE_00_EFLX_IN_4_0_1,
+  input TILE_00_EFLX_IN_4_1_0,
+  input TILE_00_EFLX_IN_4_1_1,
+  input TILE_00_EFLX_IN_4_30_0,
+  input TILE_00_EFLX_IN_4_30_1,
+  input TILE_00_EFLX_IN_4_31_0,
+  input TILE_00_EFLX_IN_4_31_1,
+  input TILE_00_EFLX_IN_5_0_0,
+  input TILE_00_EFLX_IN_5_0_1,
+  input TILE_00_EFLX_IN_5_1_0,
+  input TILE_00_EFLX_IN_5_1_1,
+  input TILE_00_EFLX_IN_5_30_0,
+  input TILE_00_EFLX_IN_5_30_1,
+  input TILE_00_EFLX_IN_5_31_0,
+  input TILE_00_EFLX_IN_5_31_1,
+  input TILE_00_EFLX_IN_6_0_0,
+  input TILE_00_EFLX_IN_6_0_1,
+  input TILE_00_EFLX_IN_6_1_0,
+  input TILE_00_EFLX_IN_6_1_1,
+  input TILE_00_EFLX_IN_6_30_0,
+  input TILE_00_EFLX_IN_6_30_1,
+  input TILE_00_EFLX_IN_6_31_0,
+  input TILE_00_EFLX_IN_6_31_1,
+  input TILE_00_EFLX_IN_7_0_0,
+  input TILE_00_EFLX_IN_7_0_1,
+  input TILE_00_EFLX_IN_7_1_0,
+  input TILE_00_EFLX_IN_7_1_1,
+  input TILE_00_EFLX_IN_7_30_0,
+  input TILE_00_EFLX_IN_7_30_1,
+  input TILE_00_EFLX_IN_7_31_0,
+  input TILE_00_EFLX_IN_7_31_1,
+  input TILE_00_EFLX_IN_8_0_0,
+  input TILE_00_EFLX_IN_8_0_1,
+  input TILE_00_EFLX_IN_8_1_0,
+  input TILE_00_EFLX_IN_8_1_1,
+  input TILE_00_EFLX_IN_8_30_0,
+  input TILE_00_EFLX_IN_8_30_1,
+  input TILE_00_EFLX_IN_8_31_0,
+  input TILE_00_EFLX_IN_8_31_1,
+  input TILE_00_EFLX_IN_9_0_0,
+  input TILE_00_EFLX_IN_9_0_1,
+  input TILE_00_EFLX_IN_9_1_0,
+  input TILE_00_EFLX_IN_9_1_1,
+  input TILE_00_EFLX_IN_9_30_0,
+  input TILE_00_EFLX_IN_9_30_1,
+  input TILE_00_EFLX_IN_9_31_0,
+  input TILE_00_EFLX_IN_9_31_1,
+  input TILE_00_EFLX_IN_10_0_0,
+  input TILE_00_EFLX_IN_10_0_1,
+  input TILE_00_EFLX_IN_10_1_0,
+  input TILE_00_EFLX_IN_10_1_1,
+  input TILE_00_EFLX_IN_10_30_0,
+  input TILE_00_EFLX_IN_10_30_1,
+  input TILE_00_EFLX_IN_10_31_0,
+  input TILE_00_EFLX_IN_10_31_1,
+  input TILE_00_EFLX_IN_11_0_0,
+  input TILE_00_EFLX_IN_11_0_1,
+  input TILE_00_EFLX_IN_11_1_0,
+  input TILE_00_EFLX_IN_11_1_1,
+  input TILE_00_EFLX_IN_11_30_0,
+  input TILE_00_EFLX_IN_11_30_1,
+  input TILE_00_EFLX_IN_11_31_0,
+  input TILE_00_EFLX_IN_11_31_1,
+  input TILE_00_EFLX_IN_12_0_0,
+  input TILE_00_EFLX_IN_12_0_1,
+  input TILE_00_EFLX_IN_12_1_0,
+  input TILE_00_EFLX_IN_12_1_1,
+  input TILE_00_EFLX_IN_12_30_0,
+  input TILE_00_EFLX_IN_12_30_1,
+  input TILE_00_EFLX_IN_12_31_0,
+  input TILE_00_EFLX_IN_12_31_1,
+  input TILE_00_EFLX_IN_13_0_0,
+  input TILE_00_EFLX_IN_13_0_1,
+  input TILE_00_EFLX_IN_13_1_0,
+  input TILE_00_EFLX_IN_13_1_1,
+  input TILE_00_EFLX_IN_13_30_0,
+  input TILE_00_EFLX_IN_13_30_1,
+  input TILE_00_EFLX_IN_13_31_0,
+  input TILE_00_EFLX_IN_13_31_1,
+  input TILE_00_EFLX_IN_14_0_0,
+  input TILE_00_EFLX_IN_14_0_1,
+  input TILE_00_EFLX_IN_14_1_0,
+  input TILE_00_EFLX_IN_14_1_1,
+  input TILE_00_EFLX_IN_14_30_0,
+  input TILE_00_EFLX_IN_14_30_1,
+  input TILE_00_EFLX_IN_14_31_0,
+  input TILE_00_EFLX_IN_14_31_1,
+  input TILE_00_EFLX_IN_15_0_0,
+  input TILE_00_EFLX_IN_15_0_1,
+  input TILE_00_EFLX_IN_15_1_0,
+  input TILE_00_EFLX_IN_15_1_1,
+  input TILE_00_EFLX_IN_15_30_0,
+  input TILE_00_EFLX_IN_15_30_1,
+  input TILE_00_EFLX_IN_15_31_0,
+  input TILE_00_EFLX_IN_15_31_1,
+  input TILE_00_EFLX_IN_16_0_0,
+  input TILE_00_EFLX_IN_16_0_1,
+  input TILE_00_EFLX_IN_16_1_0,
+  input TILE_00_EFLX_IN_16_1_1,
+  input TILE_00_EFLX_IN_16_30_0,
+  input TILE_00_EFLX_IN_16_30_1,
+  input TILE_00_EFLX_IN_16_31_0,
+  input TILE_00_EFLX_IN_16_31_1,
+  input TILE_00_EFLX_IN_17_0_0,
+  input TILE_00_EFLX_IN_17_0_1,
+  input TILE_00_EFLX_IN_17_1_0,
+  input TILE_00_EFLX_IN_17_1_1,
+  input TILE_00_EFLX_IN_17_30_0,
+  input TILE_00_EFLX_IN_17_30_1,
+  input TILE_00_EFLX_IN_17_31_0,
+  input TILE_00_EFLX_IN_17_31_1,
+  input TILE_00_EFLX_IN_18_0_0,
+  input TILE_00_EFLX_IN_18_0_1,
+  input TILE_00_EFLX_IN_18_1_0,
+  input TILE_00_EFLX_IN_18_1_1,
+  input TILE_00_EFLX_IN_18_30_0,
+  input TILE_00_EFLX_IN_18_30_1,
+  input TILE_00_EFLX_IN_18_31_0,
+  input TILE_00_EFLX_IN_18_31_1,
+  input TILE_00_EFLX_IN_19_0_0,
+  input TILE_00_EFLX_IN_19_0_1,
+  input TILE_00_EFLX_IN_19_1_0,
+  input TILE_00_EFLX_IN_19_1_1,
+  input TILE_00_EFLX_IN_19_30_0,
+  input TILE_00_EFLX_IN_19_30_1,
+  input TILE_00_EFLX_IN_19_31_0,
+  input TILE_00_EFLX_IN_19_31_1,
+  input TILE_00_EFLX_IN_20_0_0,
+  input TILE_00_EFLX_IN_20_0_1,
+  input TILE_00_EFLX_IN_20_1_0,
+  input TILE_00_EFLX_IN_20_1_1,
+  input TILE_00_EFLX_IN_20_30_0,
+  input TILE_00_EFLX_IN_20_30_1,
+  input TILE_00_EFLX_IN_20_31_0,
+  input TILE_00_EFLX_IN_20_31_1,
+  input TILE_00_EFLX_IN_21_0_0,
+  input TILE_00_EFLX_IN_21_0_1,
+  input TILE_00_EFLX_IN_21_1_0,
+  input TILE_00_EFLX_IN_21_1_1,
+  input TILE_00_EFLX_IN_21_30_0,
+  input TILE_00_EFLX_IN_21_30_1,
+  input TILE_00_EFLX_IN_21_31_0,
+  input TILE_00_EFLX_IN_21_31_1,
+  input TILE_00_EFLX_IN_22_0_0,
+  input TILE_00_EFLX_IN_22_0_1,
+  input TILE_00_EFLX_IN_22_1_0,
+  input TILE_00_EFLX_IN_22_1_1,
+  input TILE_00_EFLX_IN_22_30_0,
+  input TILE_00_EFLX_IN_22_30_1,
+  input TILE_00_EFLX_IN_22_31_0,
+  input TILE_00_EFLX_IN_22_31_1,
+  input TILE_00_EFLX_IN_23_0_0,
+  input TILE_00_EFLX_IN_23_0_1,
+  input TILE_00_EFLX_IN_23_1_0,
+  input TILE_00_EFLX_IN_23_1_1,
+  input TILE_00_EFLX_IN_23_30_0,
+  input TILE_00_EFLX_IN_23_30_1,
+  input TILE_00_EFLX_IN_23_31_0,
+  input TILE_00_EFLX_IN_23_31_1,
+  input TILE_00_EFLX_IN_24_0_0,
+  input TILE_00_EFLX_IN_24_0_1,
+  input TILE_00_EFLX_IN_24_1_0,
+  input TILE_00_EFLX_IN_24_1_1,
+  input TILE_00_EFLX_IN_24_30_0,
+  input TILE_00_EFLX_IN_24_30_1,
+  input TILE_00_EFLX_IN_24_31_0,
+  input TILE_00_EFLX_IN_24_31_1,
+  input TILE_00_EFLX_IN_25_0_0,
+  input TILE_00_EFLX_IN_25_0_1,
+  input TILE_00_EFLX_IN_25_1_0,
+  input TILE_00_EFLX_IN_25_1_1,
+  input TILE_00_EFLX_IN_25_30_0,
+  input TILE_00_EFLX_IN_25_30_1,
+  input TILE_00_EFLX_IN_25_31_0,
+  input TILE_00_EFLX_IN_25_31_1,
+  input TILE_00_EFLX_IN_26_0_0,
+  input TILE_00_EFLX_IN_26_0_1,
+  input TILE_00_EFLX_IN_26_1_0,
+  input TILE_00_EFLX_IN_26_1_1,
+  input TILE_00_EFLX_IN_26_30_0,
+  input TILE_00_EFLX_IN_26_30_1,
+  input TILE_00_EFLX_IN_26_31_0,
+  input TILE_00_EFLX_IN_26_31_1,
+  input TILE_00_EFLX_IN_27_0_0,
+  input TILE_00_EFLX_IN_27_0_1,
+  input TILE_00_EFLX_IN_27_1_0,
+  input TILE_00_EFLX_IN_27_1_1,
+  input TILE_00_EFLX_IN_27_30_0,
+  input TILE_00_EFLX_IN_27_30_1,
+  input TILE_00_EFLX_IN_27_31_0,
+  input TILE_00_EFLX_IN_27_31_1,
+  input TILE_00_EFLX_IN_28_0_0,
+  input TILE_00_EFLX_IN_28_0_1,
+  input TILE_00_EFLX_IN_28_1_0,
+  input TILE_00_EFLX_IN_28_1_1,
+  input TILE_00_EFLX_IN_28_30_0,
+  input TILE_00_EFLX_IN_28_30_1,
+  input TILE_00_EFLX_IN_28_31_0,
+  input TILE_00_EFLX_IN_28_31_1,
+  input TILE_00_EFLX_IN_29_0_0,
+  input TILE_00_EFLX_IN_29_0_1,
+  input TILE_00_EFLX_IN_29_1_0,
+  input TILE_00_EFLX_IN_29_1_1,
+  input TILE_00_EFLX_IN_29_30_0,
+  input TILE_00_EFLX_IN_29_30_1,
+  input TILE_00_EFLX_IN_29_31_0,
+  input TILE_00_EFLX_IN_29_31_1,
+  input TILE_00_EFLX_IN_30_0_0,
+  input TILE_00_EFLX_IN_30_0_1,
+  input TILE_00_EFLX_IN_30_1_0,
+  input TILE_00_EFLX_IN_30_1_1,
+  input TILE_00_EFLX_IN_30_30_0,
+  input TILE_00_EFLX_IN_30_30_1,
+  input TILE_00_EFLX_IN_30_31_0,
+  input TILE_00_EFLX_IN_30_31_1,
+  input TILE_00_EFLX_IN_31_0_0,
+  input TILE_00_EFLX_IN_31_0_1,
+  input TILE_00_EFLX_IN_31_1_0,
+  input TILE_00_EFLX_IN_31_1_1,
+  input TILE_00_EFLX_IN_31_2_0,
+  input TILE_00_EFLX_IN_31_2_1,
+  input TILE_00_EFLX_IN_31_3_0,
+  input TILE_00_EFLX_IN_31_3_1,
+  input TILE_00_EFLX_IN_31_4_0,
+  input TILE_00_EFLX_IN_31_4_1,
+  input TILE_00_EFLX_IN_31_5_0,
+  input TILE_00_EFLX_IN_31_5_1,
+  input TILE_00_EFLX_IN_31_6_0,
+  input TILE_00_EFLX_IN_31_6_1,
+  input TILE_00_EFLX_IN_31_7_0,
+  input TILE_00_EFLX_IN_31_7_1,
+  input TILE_00_EFLX_IN_31_8_0,
+  input TILE_00_EFLX_IN_31_8_1,
+  input TILE_00_EFLX_IN_31_9_0,
+  input TILE_00_EFLX_IN_31_9_1,
+  input TILE_00_EFLX_IN_31_10_0,
+  input TILE_00_EFLX_IN_31_10_1,
+  input TILE_00_EFLX_IN_31_11_0,
+  input TILE_00_EFLX_IN_31_11_1,
+  input TILE_00_EFLX_IN_31_12_0,
+  input TILE_00_EFLX_IN_31_12_1,
+  input TILE_00_EFLX_IN_31_13_0,
+  input TILE_00_EFLX_IN_31_13_1,
+  input TILE_00_EFLX_IN_31_14_0,
+  input TILE_00_EFLX_IN_31_14_1,
+  input TILE_00_EFLX_IN_31_15_0,
+  input TILE_00_EFLX_IN_31_15_1,
+  input TILE_00_EFLX_IN_31_16_0,
+  input TILE_00_EFLX_IN_31_16_1,
+  input TILE_00_EFLX_IN_31_17_0,
+  input TILE_00_EFLX_IN_31_17_1,
+  input TILE_00_EFLX_IN_31_18_0,
+  input TILE_00_EFLX_IN_31_18_1,
+  input TILE_00_EFLX_IN_31_19_0,
+  input TILE_00_EFLX_IN_31_19_1,
+  input TILE_00_EFLX_IN_31_20_0,
+  input TILE_00_EFLX_IN_31_20_1,
+  input TILE_00_EFLX_IN_31_21_0,
+  input TILE_00_EFLX_IN_31_21_1,
+  input TILE_00_EFLX_IN_31_22_0,
+  input TILE_00_EFLX_IN_31_22_1,
+  input TILE_00_EFLX_IN_31_23_0,
+  input TILE_00_EFLX_IN_31_23_1,
+  input TILE_00_EFLX_IN_31_24_0,
+  input TILE_00_EFLX_IN_31_24_1,
+  input TILE_00_EFLX_IN_31_25_0,
+  input TILE_00_EFLX_IN_31_25_1,
+  input TILE_00_EFLX_IN_31_26_0,
+  input TILE_00_EFLX_IN_31_26_1,
+  input TILE_00_EFLX_IN_31_27_0,
+  input TILE_00_EFLX_IN_31_27_1,
+  input TILE_00_EFLX_IN_31_28_0,
+  input TILE_00_EFLX_IN_31_28_1,
+  input TILE_00_EFLX_IN_31_29_0,
+  input TILE_00_EFLX_IN_31_29_1,
+  input TILE_00_EFLX_IN_31_30_0,
+  input TILE_00_EFLX_IN_31_30_1,
+  input TILE_00_EFLX_IN_31_31_0,
+  input TILE_00_EFLX_IN_31_31_1,
+  output TILE_00_EFLX_OUT_0_0_0,
+  output TILE_00_EFLX_OUT_0_0_1,
+  output TILE_00_EFLX_OUT_0_1_0,
+  output TILE_00_EFLX_OUT_0_1_1,
+  output TILE_00_EFLX_OUT_0_2_0,
+  output TILE_00_EFLX_OUT_0_2_1,
+  output TILE_00_EFLX_OUT_0_3_0,
+  output TILE_00_EFLX_OUT_0_3_1,
+  output TILE_00_EFLX_OUT_0_4_0,
+  output TILE_00_EFLX_OUT_0_4_1,
+  output TILE_00_EFLX_OUT_0_5_0,
+  output TILE_00_EFLX_OUT_0_5_1,
+  output TILE_00_EFLX_OUT_0_6_0,
+  output TILE_00_EFLX_OUT_0_6_1,
+  output TILE_00_EFLX_OUT_0_7_0,
+  output TILE_00_EFLX_OUT_0_7_1,
+  output TILE_00_EFLX_OUT_0_8_0,
+  output TILE_00_EFLX_OUT_0_8_1,
+  output TILE_00_EFLX_OUT_0_9_0,
+  output TILE_00_EFLX_OUT_0_9_1,
+  output TILE_00_EFLX_OUT_0_10_0,
+  output TILE_00_EFLX_OUT_0_10_1,
+  output TILE_00_EFLX_OUT_0_11_0,
+  output TILE_00_EFLX_OUT_0_11_1,
+  output TILE_00_EFLX_OUT_0_12_0,
+  output TILE_00_EFLX_OUT_0_12_1,
+  output TILE_00_EFLX_OUT_0_13_0,
+  output TILE_00_EFLX_OUT_0_13_1,
+  output TILE_00_EFLX_OUT_0_14_0,
+  output TILE_00_EFLX_OUT_0_14_1,
+  output TILE_00_EFLX_OUT_0_15_0,
+  output TILE_00_EFLX_OUT_0_15_1,
+  output TILE_00_EFLX_OUT_0_16_0,
+  output TILE_00_EFLX_OUT_0_16_1,
+  output TILE_00_EFLX_OUT_0_17_0,
+  output TILE_00_EFLX_OUT_0_17_1,
+  output TILE_00_EFLX_OUT_0_18_0,
+  output TILE_00_EFLX_OUT_0_18_1,
+  output TILE_00_EFLX_OUT_0_19_0,
+  output TILE_00_EFLX_OUT_0_19_1,
+  output TILE_00_EFLX_OUT_0_20_0,
+  output TILE_00_EFLX_OUT_0_20_1,
+  output TILE_00_EFLX_OUT_0_21_0,
+  output TILE_00_EFLX_OUT_0_21_1,
+  output TILE_00_EFLX_OUT_0_22_0,
+  output TILE_00_EFLX_OUT_0_22_1,
+  output TILE_00_EFLX_OUT_0_23_0,
+  output TILE_00_EFLX_OUT_0_23_1,
+  output TILE_00_EFLX_OUT_0_24_0,
+  output TILE_00_EFLX_OUT_0_24_1,
+  output TILE_00_EFLX_OUT_0_25_0,
+  output TILE_00_EFLX_OUT_0_25_1,
+  output TILE_00_EFLX_OUT_0_26_0,
+  output TILE_00_EFLX_OUT_0_26_1,
+  output TILE_00_EFLX_OUT_0_27_0,
+  output TILE_00_EFLX_OUT_0_27_1,
+  output TILE_00_EFLX_OUT_0_28_0,
+  output TILE_00_EFLX_OUT_0_28_1,
+  output TILE_00_EFLX_OUT_0_29_0,
+  output TILE_00_EFLX_OUT_0_29_1,
+  output TILE_00_EFLX_OUT_0_30_0,
+  output TILE_00_EFLX_OUT_0_30_1,
+  output TILE_00_EFLX_OUT_0_31_0,
+  output TILE_00_EFLX_OUT_0_31_1,
+  output TILE_00_EFLX_OUT_1_0_0,
+  output TILE_00_EFLX_OUT_1_0_1,
+  output TILE_00_EFLX_OUT_1_1_0,
+  output TILE_00_EFLX_OUT_1_1_1,
+  output TILE_00_EFLX_OUT_1_30_0,
+  output TILE_00_EFLX_OUT_1_30_1,
+  output TILE_00_EFLX_OUT_1_31_0,
+  output TILE_00_EFLX_OUT_1_31_1,
+  output TILE_00_EFLX_OUT_2_0_0,
+  output TILE_00_EFLX_OUT_2_0_1,
+  output TILE_00_EFLX_OUT_2_1_0,
+  output TILE_00_EFLX_OUT_2_1_1,
+  output TILE_00_EFLX_OUT_2_30_0,
+  output TILE_00_EFLX_OUT_2_30_1,
+  output TILE_00_EFLX_OUT_2_31_0,
+  output TILE_00_EFLX_OUT_2_31_1,
+  output TILE_00_EFLX_OUT_3_0_0,
+  output TILE_00_EFLX_OUT_3_0_1,
+  output TILE_00_EFLX_OUT_3_1_0,
+  output TILE_00_EFLX_OUT_3_1_1,
+  output TILE_00_EFLX_OUT_3_30_0,
+  output TILE_00_EFLX_OUT_3_30_1,
+  output TILE_00_EFLX_OUT_3_31_0,
+  output TILE_00_EFLX_OUT_3_31_1,
+  output TILE_00_EFLX_OUT_4_0_0,
+  output TILE_00_EFLX_OUT_4_0_1,
+  output TILE_00_EFLX_OUT_4_1_0,
+  output TILE_00_EFLX_OUT_4_1_1,
+  output TILE_00_EFLX_OUT_4_30_0,
+  output TILE_00_EFLX_OUT_4_30_1,
+  output TILE_00_EFLX_OUT_4_31_0,
+  output TILE_00_EFLX_OUT_4_31_1,
+  output TILE_00_EFLX_OUT_5_0_0,
+  output TILE_00_EFLX_OUT_5_0_1,
+  output TILE_00_EFLX_OUT_5_1_0,
+  output TILE_00_EFLX_OUT_5_1_1,
+  output TILE_00_EFLX_OUT_5_30_0,
+  output TILE_00_EFLX_OUT_5_30_1,
+  output TILE_00_EFLX_OUT_5_31_0,
+  output TILE_00_EFLX_OUT_5_31_1,
+  output TILE_00_EFLX_OUT_6_0_0,
+  output TILE_00_EFLX_OUT_6_0_1,
+  output TILE_00_EFLX_OUT_6_1_0,
+  output TILE_00_EFLX_OUT_6_1_1,
+  output TILE_00_EFLX_OUT_6_30_0,
+  output TILE_00_EFLX_OUT_6_30_1,
+  output TILE_00_EFLX_OUT_6_31_0,
+  output TILE_00_EFLX_OUT_6_31_1,
+  output TILE_00_EFLX_OUT_7_0_0,
+  output TILE_00_EFLX_OUT_7_0_1,
+  output TILE_00_EFLX_OUT_7_1_0,
+  output TILE_00_EFLX_OUT_7_1_1,
+  output TILE_00_EFLX_OUT_7_30_0,
+  output TILE_00_EFLX_OUT_7_30_1,
+  output TILE_00_EFLX_OUT_7_31_0,
+  output TILE_00_EFLX_OUT_7_31_1,
+  output TILE_00_EFLX_OUT_8_0_0,
+  output TILE_00_EFLX_OUT_8_0_1,
+  output TILE_00_EFLX_OUT_8_1_0,
+  output TILE_00_EFLX_OUT_8_1_1,
+  output TILE_00_EFLX_OUT_8_30_0,
+  output TILE_00_EFLX_OUT_8_30_1,
+  output TILE_00_EFLX_OUT_8_31_0,
+  output TILE_00_EFLX_OUT_8_31_1,
+  output TILE_00_EFLX_OUT_9_0_0,
+  output TILE_00_EFLX_OUT_9_0_1,
+  output TILE_00_EFLX_OUT_9_1_0,
+  output TILE_00_EFLX_OUT_9_1_1,
+  output TILE_00_EFLX_OUT_9_30_0,
+  output TILE_00_EFLX_OUT_9_30_1,
+  output TILE_00_EFLX_OUT_9_31_0,
+  output TILE_00_EFLX_OUT_9_31_1,
+  output TILE_00_EFLX_OUT_10_0_0,
+  output TILE_00_EFLX_OUT_10_0_1,
+  output TILE_00_EFLX_OUT_10_1_0,
+  output TILE_00_EFLX_OUT_10_1_1,
+  output TILE_00_EFLX_OUT_10_30_0,
+  output TILE_00_EFLX_OUT_10_30_1,
+  output TILE_00_EFLX_OUT_10_31_0,
+  output TILE_00_EFLX_OUT_10_31_1,
+  output TILE_00_EFLX_OUT_11_0_0,
+  output TILE_00_EFLX_OUT_11_0_1,
+  output TILE_00_EFLX_OUT_11_1_0,
+  output TILE_00_EFLX_OUT_11_1_1,
+  output TILE_00_EFLX_OUT_11_30_0,
+  output TILE_00_EFLX_OUT_11_30_1,
+  output TILE_00_EFLX_OUT_11_31_0,
+  output TILE_00_EFLX_OUT_11_31_1,
+  output TILE_00_EFLX_OUT_12_0_0,
+  output TILE_00_EFLX_OUT_12_0_1,
+  output TILE_00_EFLX_OUT_12_1_0,
+  output TILE_00_EFLX_OUT_12_1_1,
+  output TILE_00_EFLX_OUT_12_30_0,
+  output TILE_00_EFLX_OUT_12_30_1,
+  output TILE_00_EFLX_OUT_12_31_0,
+  output TILE_00_EFLX_OUT_12_31_1,
+  output TILE_00_EFLX_OUT_13_0_0,
+  output TILE_00_EFLX_OUT_13_0_1,
+  output TILE_00_EFLX_OUT_13_1_0,
+  output TILE_00_EFLX_OUT_13_1_1,
+  output TILE_00_EFLX_OUT_13_30_0,
+  output TILE_00_EFLX_OUT_13_30_1,
+  output TILE_00_EFLX_OUT_13_31_0,
+  output TILE_00_EFLX_OUT_13_31_1,
+  output TILE_00_EFLX_OUT_14_0_0,
+  output TILE_00_EFLX_OUT_14_0_1,
+  output TILE_00_EFLX_OUT_14_1_0,
+  output TILE_00_EFLX_OUT_14_1_1,
+  output TILE_00_EFLX_OUT_14_30_0,
+  output TILE_00_EFLX_OUT_14_30_1,
+  output TILE_00_EFLX_OUT_14_31_0,
+  output TILE_00_EFLX_OUT_14_31_1,
+  output TILE_00_EFLX_OUT_15_0_0,
+  output TILE_00_EFLX_OUT_15_0_1,
+  output TILE_00_EFLX_OUT_15_1_0,
+  output TILE_00_EFLX_OUT_15_1_1,
+  output TILE_00_EFLX_OUT_15_30_0,
+  output TILE_00_EFLX_OUT_15_30_1,
+  output TILE_00_EFLX_OUT_15_31_0,
+  output TILE_00_EFLX_OUT_15_31_1,
+  output TILE_00_EFLX_OUT_16_0_0,
+  output TILE_00_EFLX_OUT_16_0_1,
+  output TILE_00_EFLX_OUT_16_1_0,
+  output TILE_00_EFLX_OUT_16_1_1,
+  output TILE_00_EFLX_OUT_16_30_0,
+  output TILE_00_EFLX_OUT_16_30_1,
+  output TILE_00_EFLX_OUT_16_31_0,
+  output TILE_00_EFLX_OUT_16_31_1,
+  output TILE_00_EFLX_OUT_17_0_0,
+  output TILE_00_EFLX_OUT_17_0_1,
+  output TILE_00_EFLX_OUT_17_1_0,
+  output TILE_00_EFLX_OUT_17_1_1,
+  output TILE_00_EFLX_OUT_17_30_0,
+  output TILE_00_EFLX_OUT_17_30_1,
+  output TILE_00_EFLX_OUT_17_31_0,
+  output TILE_00_EFLX_OUT_17_31_1,
+  output TILE_00_EFLX_OUT_18_0_0,
+  output TILE_00_EFLX_OUT_18_0_1,
+  output TILE_00_EFLX_OUT_18_1_0,
+  output TILE_00_EFLX_OUT_18_1_1,
+  output TILE_00_EFLX_OUT_18_30_0,
+  output TILE_00_EFLX_OUT_18_30_1,
+  output TILE_00_EFLX_OUT_18_31_0,
+  output TILE_00_EFLX_OUT_18_31_1,
+  output TILE_00_EFLX_OUT_19_0_0,
+  output TILE_00_EFLX_OUT_19_0_1,
+  output TILE_00_EFLX_OUT_19_1_0,
+  output TILE_00_EFLX_OUT_19_1_1,
+  output TILE_00_EFLX_OUT_19_30_0,
+  output TILE_00_EFLX_OUT_19_30_1,
+  output TILE_00_EFLX_OUT_19_31_0,
+  output TILE_00_EFLX_OUT_19_31_1,
+  output TILE_00_EFLX_OUT_20_0_0,
+  output TILE_00_EFLX_OUT_20_0_1,
+  output TILE_00_EFLX_OUT_20_1_0,
+  output TILE_00_EFLX_OUT_20_1_1,
+  output TILE_00_EFLX_OUT_20_30_0,
+  output TILE_00_EFLX_OUT_20_30_1,
+  output TILE_00_EFLX_OUT_20_31_0,
+  output TILE_00_EFLX_OUT_20_31_1,
+  output TILE_00_EFLX_OUT_21_0_0,
+  output TILE_00_EFLX_OUT_21_0_1,
+  output TILE_00_EFLX_OUT_21_1_0,
+  output TILE_00_EFLX_OUT_21_1_1,
+  output TILE_00_EFLX_OUT_21_30_0,
+  output TILE_00_EFLX_OUT_21_30_1,
+  output TILE_00_EFLX_OUT_21_31_0,
+  output TILE_00_EFLX_OUT_21_31_1,
+  output TILE_00_EFLX_OUT_22_0_0,
+  output TILE_00_EFLX_OUT_22_0_1,
+  output TILE_00_EFLX_OUT_22_1_0,
+  output TILE_00_EFLX_OUT_22_1_1,
+  output TILE_00_EFLX_OUT_22_30_0,
+  output TILE_00_EFLX_OUT_22_30_1,
+  output TILE_00_EFLX_OUT_22_31_0,
+  output TILE_00_EFLX_OUT_22_31_1,
+  output TILE_00_EFLX_OUT_23_0_0,
+  output TILE_00_EFLX_OUT_23_0_1,
+  output TILE_00_EFLX_OUT_23_1_0,
+  output TILE_00_EFLX_OUT_23_1_1,
+  output TILE_00_EFLX_OUT_23_30_0,
+  output TILE_00_EFLX_OUT_23_30_1,
+  output TILE_00_EFLX_OUT_23_31_0,
+  output TILE_00_EFLX_OUT_23_31_1,
+  output TILE_00_EFLX_OUT_24_0_0,
+  output TILE_00_EFLX_OUT_24_0_1,
+  output TILE_00_EFLX_OUT_24_1_0,
+  output TILE_00_EFLX_OUT_24_1_1,
+  output TILE_00_EFLX_OUT_24_30_0,
+  output TILE_00_EFLX_OUT_24_30_1,
+  output TILE_00_EFLX_OUT_24_31_0,
+  output TILE_00_EFLX_OUT_24_31_1,
+  output TILE_00_EFLX_OUT_25_0_0,
+  output TILE_00_EFLX_OUT_25_0_1,
+  output TILE_00_EFLX_OUT_25_1_0,
+  output TILE_00_EFLX_OUT_25_1_1,
+  output TILE_00_EFLX_OUT_25_30_0,
+  output TILE_00_EFLX_OUT_25_30_1,
+  output TILE_00_EFLX_OUT_25_31_0,
+  output TILE_00_EFLX_OUT_25_31_1,
+  output TILE_00_EFLX_OUT_26_0_0,
+  output TILE_00_EFLX_OUT_26_0_1,
+  output TILE_00_EFLX_OUT_26_1_0,
+  output TILE_00_EFLX_OUT_26_1_1,
+  output TILE_00_EFLX_OUT_26_30_0,
+  output TILE_00_EFLX_OUT_26_30_1,
+  output TILE_00_EFLX_OUT_26_31_0,
+  output TILE_00_EFLX_OUT_26_31_1,
+  output TILE_00_EFLX_OUT_27_0_0,
+  output TILE_00_EFLX_OUT_27_0_1,
+  output TILE_00_EFLX_OUT_27_1_0,
+  output TILE_00_EFLX_OUT_27_1_1,
+  output TILE_00_EFLX_OUT_27_30_0,
+  output TILE_00_EFLX_OUT_27_30_1,
+  output TILE_00_EFLX_OUT_27_31_0,
+  output TILE_00_EFLX_OUT_27_31_1,
+  output TILE_00_EFLX_OUT_28_0_0,
+  output TILE_00_EFLX_OUT_28_0_1,
+  output TILE_00_EFLX_OUT_28_1_0,
+  output TILE_00_EFLX_OUT_28_1_1,
+  output TILE_00_EFLX_OUT_28_30_0,
+  output TILE_00_EFLX_OUT_28_30_1,
+  output TILE_00_EFLX_OUT_28_31_0,
+  output TILE_00_EFLX_OUT_28_31_1,
+  output TILE_00_EFLX_OUT_29_0_0,
+  output TILE_00_EFLX_OUT_29_0_1,
+  output TILE_00_EFLX_OUT_29_1_0,
+  output TILE_00_EFLX_OUT_29_1_1,
+  output TILE_00_EFLX_OUT_29_30_0,
+  output TILE_00_EFLX_OUT_29_30_1,
+  output TILE_00_EFLX_OUT_29_31_0,
+  output TILE_00_EFLX_OUT_29_31_1,
+  output TILE_00_EFLX_OUT_30_0_0,
+  output TILE_00_EFLX_OUT_30_0_1,
+  output TILE_00_EFLX_OUT_30_1_0,
+  output TILE_00_EFLX_OUT_30_1_1,
+  output TILE_00_EFLX_OUT_30_30_0,
+  output TILE_00_EFLX_OUT_30_30_1,
+  output TILE_00_EFLX_OUT_30_31_0,
+  output TILE_00_EFLX_OUT_30_31_1,
+  output TILE_00_EFLX_OUT_31_0_0,
+  output TILE_00_EFLX_OUT_31_0_1,
+  output TILE_00_EFLX_OUT_31_1_0,
+  output TILE_00_EFLX_OUT_31_1_1,
+  output TILE_00_EFLX_OUT_31_2_0,
+  output TILE_00_EFLX_OUT_31_2_1,
+  output TILE_00_EFLX_OUT_31_3_0,
+  output TILE_00_EFLX_OUT_31_3_1,
+  output TILE_00_EFLX_OUT_31_4_0,
+  output TILE_00_EFLX_OUT_31_4_1,
+  output TILE_00_EFLX_OUT_31_5_0,
+  output TILE_00_EFLX_OUT_31_5_1,
+  output TILE_00_EFLX_OUT_31_6_0,
+  output TILE_00_EFLX_OUT_31_6_1,
+  output TILE_00_EFLX_OUT_31_7_0,
+  output TILE_00_EFLX_OUT_31_7_1,
+  output TILE_00_EFLX_OUT_31_8_0,
+  output TILE_00_EFLX_OUT_31_8_1,
+  output TILE_00_EFLX_OUT_31_9_0,
+  output TILE_00_EFLX_OUT_31_9_1,
+  output TILE_00_EFLX_OUT_31_10_0,
+  output TILE_00_EFLX_OUT_31_10_1,
+  output TILE_00_EFLX_OUT_31_11_0,
+  output TILE_00_EFLX_OUT_31_11_1,
+  output TILE_00_EFLX_OUT_31_12_0,
+  output TILE_00_EFLX_OUT_31_12_1,
+  output TILE_00_EFLX_OUT_31_13_0,
+  output TILE_00_EFLX_OUT_31_13_1,
+  output TILE_00_EFLX_OUT_31_14_0,
+  output TILE_00_EFLX_OUT_31_14_1,
+  output TILE_00_EFLX_OUT_31_15_0,
+  output TILE_00_EFLX_OUT_31_15_1,
+  output TILE_00_EFLX_OUT_31_16_0,
+  output TILE_00_EFLX_OUT_31_16_1,
+  output TILE_00_EFLX_OUT_31_17_0,
+  output TILE_00_EFLX_OUT_31_17_1,
+  output TILE_00_EFLX_OUT_31_18_0,
+  output TILE_00_EFLX_OUT_31_18_1,
+  output TILE_00_EFLX_OUT_31_19_0,
+  output TILE_00_EFLX_OUT_31_19_1,
+  output TILE_00_EFLX_OUT_31_20_0,
+  output TILE_00_EFLX_OUT_31_20_1,
+  output TILE_00_EFLX_OUT_31_21_0,
+  output TILE_00_EFLX_OUT_31_21_1,
+  output TILE_00_EFLX_OUT_31_22_0,
+  output TILE_00_EFLX_OUT_31_22_1,
+  output TILE_00_EFLX_OUT_31_23_0,
+  output TILE_00_EFLX_OUT_31_23_1,
+  output TILE_00_EFLX_OUT_31_24_0,
+  output TILE_00_EFLX_OUT_31_24_1,
+  output TILE_00_EFLX_OUT_31_25_0,
+  output TILE_00_EFLX_OUT_31_25_1,
+  output TILE_00_EFLX_OUT_31_26_0,
+  output TILE_00_EFLX_OUT_31_26_1,
+  output TILE_00_EFLX_OUT_31_27_0,
+  output TILE_00_EFLX_OUT_31_27_1,
+  output TILE_00_EFLX_OUT_31_28_0,
+  output TILE_00_EFLX_OUT_31_28_1,
+  output TILE_00_EFLX_OUT_31_29_0,
+  output TILE_00_EFLX_OUT_31_29_1,
+  output TILE_00_EFLX_OUT_31_30_0,
+  output TILE_00_EFLX_OUT_31_30_1,
+  output TILE_00_EFLX_OUT_31_31_0,
+  output TILE_00_EFLX_OUT_31_31_1,
+  input CHIP_RST
+)
+;
+  wire clk ;
+  wire LED ;
+  wire LED_en ;
+  wire clk_en ;
+wire EFLX_CHIP_RST = CHIP_RST;
+wire GND_NET ;
+assign GND_NET = 1'b0 ;
+wire VCC_NET ;
+assign VCC_NET = 1'b1 ;
+assign clk = TILE_00_CLK_IN_W0;
+assign TILE_00_EFLX_OUT_0_25_0 = clk_en;
+assign TILE_00_EFLX_OUT_31_6_0 = LED;
+assign TILE_00_EFLX_OUT_31_6_1 = LED_en;
+  RBBIO TILE_00_RBB_0_25 (
+    .CE(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CLK(1'b0),
+    .EFLX_IN({1'b0, 1'b0}),
+    .EFLX_OUT({UNCON_RBB_0_EFLX_OUT_1, clk_en}),
+    .O0(1'b1),
+    .O1(1'b0),
+    .SR(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_0_25.CE_SEL_I=1'h0;
+defparam TILE_00_RBB_0_25.CE_SEL_O=1'h0;
+defparam TILE_00_RBB_0_25.FF_SEL_I0=1'h1;
+defparam TILE_00_RBB_0_25.FF_SEL_I1=1'h1;
+defparam TILE_00_RBB_0_25.FF_SEL_O0=1'h0;
+defparam TILE_00_RBB_0_25.FF_SEL_O1=1'h1;
+defparam TILE_00_RBB_0_25.I0pol=1'h0;
+defparam TILE_00_RBB_0_25.I1pol=1'h0;
+defparam TILE_00_RBB_0_25.IasyncSRen=1'h1;
+defparam TILE_00_RBB_0_25.IsyncSRen=1'h0;
+defparam TILE_00_RBB_0_25.MUX_IOpol=4'b0000;
+defparam TILE_00_RBB_0_25.O0pol=1'h0;
+defparam TILE_00_RBB_0_25.O1pol=1'h0;
+defparam TILE_00_RBB_0_25.OasyncSRen=1'h1;
+defparam TILE_00_RBB_0_25.OsyncSRen=1'h0;
+  RBBIO TILE_00_RBB_31_6 (
+    .CE(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CLK(clk),
+    .EFLX_IN({1'b0, 1'b0}),
+    .EFLX_OUT({LED_en, LED}),
+    .O0(\_$$_$abc$2664$logic_not$../src/main.v:17$1100_Y ),
+    .O1(1'b1),
+    .SR(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_31_6.CE_SEL_I=1'h0;
+defparam TILE_00_RBB_31_6.CE_SEL_O=1'h1;
+defparam TILE_00_RBB_31_6.FF_SEL_I0=1'h1;
+defparam TILE_00_RBB_31_6.FF_SEL_I1=1'h1;
+defparam TILE_00_RBB_31_6.FF_SEL_O0=1'h1;
+defparam TILE_00_RBB_31_6.FF_SEL_O1=1'h0;
+defparam TILE_00_RBB_31_6.I0pol=1'h0;
+defparam TILE_00_RBB_31_6.I1pol=1'h0;
+defparam TILE_00_RBB_31_6.IasyncSRen=1'h1;
+defparam TILE_00_RBB_31_6.IsyncSRen=1'h0;
+defparam TILE_00_RBB_31_6.MUX_IOpol=4'b0000;
+defparam TILE_00_RBB_31_6.O0pol=1'h0;
+defparam TILE_00_RBB_31_6.O1pol=1'h0;
+defparam TILE_00_RBB_31_6.OasyncSRen=1'h0;
+defparam TILE_00_RBB_31_6.OsyncSRen=1'h0;
+  RBB6L TILE_00_RBB_4_4 (
+    .A(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[5] ),
+    .A1(\counter[23] ),
+    .A2(\counter[22] ),
+    .A3(\counter[21] ),
+    .A4(\counter[20] ),
+    .A5(\_$$_$techmap2671$abc$2664$lut$aiger2663$105.A[4] ),
+    .A6(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .B(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[4] ),
+    .B1(\counter[31] ),
+    .B2(\counter[30] ),
+    .B3(\counter[29] ),
+    .B4(\counter[28] ),
+    .B5(\_$$_$techmap2672$abc$2664$lut$aiger2663$112.A[4] ),
+    .B6(1'b0),
+    .C(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .C1(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[0] ),
+    .C2(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[1] ),
+    .C3(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[2] ),
+    .C4(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[3] ),
+    .C5(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[4] ),
+    .C6(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[5] ),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(1'b0),
+    .CLK(clk),
+    .D(\_$$_$abc$2664$logic_not$../src/main.v:17$1100_Y ),
+    .D1(_$w$_LED),
+    .D2(\counter[27] ),
+    .D3(\counter[26] ),
+    .D4(\counter[25] ),
+    .D5(\counter[24] ),
+    .D6(1'b0),
+    .DMUX(\_$$_$techmap2672$abc$2664$lut$aiger2663$112.A[4] ),
+    .DQ(_$w$_LED),
+    .SRin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_4_4.A6_TIE=1'h0;
+defparam TILE_00_RBB_4_4.AMX_SEL_A=5'b00010;
+defparam TILE_00_RBB_4_4.AMX_SEL_B=5'b00010;
+defparam TILE_00_RBB_4_4.AMX_SEL_C=5'b00010;
+defparam TILE_00_RBB_4_4.AMX_SEL_D=4'b0010;
+defparam TILE_00_RBB_4_4.AQ1_SEL_A=6'b100000;
+defparam TILE_00_RBB_4_4.AQ1_SEL_B=6'b100000;
+defparam TILE_00_RBB_4_4.AQ1_SEL_C=6'b100000;
+defparam TILE_00_RBB_4_4.AQ1_SEL_D=5'b10000;
+defparam TILE_00_RBB_4_4.AQpol=1'h1;
+defparam TILE_00_RBB_4_4.AQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_4.B6_TIE=1'h0;
+defparam TILE_00_RBB_4_4.BC=256'h0010000000100000000100000001000080000000000000005555555500000003;
+defparam TILE_00_RBB_4_4.BQpol=1'h1;
+defparam TILE_00_RBB_4_4.BQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_4.C6_TIE=1'h1;
+defparam TILE_00_RBB_4_4.CE_TIE=1'h1;
+defparam TILE_00_RBB_4_4.CIN_SEL=2'b00;
+defparam TILE_00_RBB_4_4.CQpol=1'h1;
+defparam TILE_00_RBB_4_4.CQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_4.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_4_4.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_4_4.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_4_4.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_4_4.D6_TIE=1'h0;
+defparam TILE_00_RBB_4_4.DQpol=1'h1;
+defparam TILE_00_RBB_4_4.DQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_4.LH_ON=1'h0;
+defparam TILE_00_RBB_4_4.MUX_A5=4'b0001;
+defparam TILE_00_RBB_4_4.MUX_A6=4'b0001;
+defparam TILE_00_RBB_4_4.MUX_AI=6'b110000;
+defparam TILE_00_RBB_4_4.MUX_B5=4'b0010;
+defparam TILE_00_RBB_4_4.MUX_B6=4'b0010;
+defparam TILE_00_RBB_4_4.MUX_BI=6'b110000;
+defparam TILE_00_RBB_4_4.MUX_C5=4'b0100;
+defparam TILE_00_RBB_4_4.MUX_C6=4'b0100;
+defparam TILE_00_RBB_4_4.MUX_CE=6'b000001;
+defparam TILE_00_RBB_4_4.MUX_CI=6'b110000;
+defparam TILE_00_RBB_4_4.MUX_D5=4'b1000;
+defparam TILE_00_RBB_4_4.MUX_D6=4'b1000;
+defparam TILE_00_RBB_4_4.MUX_DI=6'b110000;
+defparam TILE_00_RBB_4_4.MUX_SR=6'b000010;
+defparam TILE_00_RBB_4_4.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_4_4.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_4_4.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_4_4.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_4_4.OAQpol=1'h1;
+defparam TILE_00_RBB_4_4.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_4.OBQpol=1'h1;
+defparam TILE_00_RBB_4_4.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_4.OCQpol=1'h1;
+defparam TILE_00_RBB_4_4.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_4.ODQpol=1'h1;
+defparam TILE_00_RBB_4_4.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_4.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_4_4.QasyncSRen=1'h0;
+  RBB6M TILE_00_RBB_1_6 (
+    .A1(\counter[15] ),
+    .A2(\counter[14] ),
+    .A3(\counter[13] ),
+    .A4(\counter[12] ),
+    .A5(\counter[0] ),
+    .A6(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .AMUX(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[1] ),
+    .AQ(\counter[0] ),
+    .B1(\counter[1] ),
+    .B2(1'b0),
+    .B3(\counter[2] ),
+    .B4(\counter[3] ),
+    .B5(\counter[0] ),
+    .B6(1'b0),
+    .BMUX(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[2] ),
+    .BQ(\counter[1] ),
+    .C1(\counter[7] ),
+    .C2(\counter[6] ),
+    .C3(\counter[2] ),
+    .C4(\counter[5] ),
+    .C5(\counter[4] ),
+    .C6(1'b0),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(1'b0),
+    .CLK(clk),
+    .CMUX(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[3] ),
+    .COUT(_$$_$abc$2664$aiger2663$42),
+    .CQ(\counter[2] ),
+    .D1(\counter[19] ),
+    .D2(\counter[18] ),
+    .D3(\counter[17] ),
+    .D4(\counter[3] ),
+    .D5(\counter[16] ),
+    .D6(1'b0),
+    .DMUX(\_$$_$techmap2671$abc$2664$lut$aiger2663$105.A[4] ),
+    .DQ(\counter[3] ),
+    .SFTin(1'b0),
+    .SRin(1'b0),
+    .WEin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_1_6.A6_TIE=1'h0;
+defparam TILE_00_RBB_1_6.AMX_SEL_A=5'b00100;
+defparam TILE_00_RBB_1_6.AMX_SEL_B=5'b00100;
+defparam TILE_00_RBB_1_6.AMX_SEL_C=5'b00100;
+defparam TILE_00_RBB_1_6.AMX_SEL_D=4'b0010;
+defparam TILE_00_RBB_1_6.AQ1_SEL_A=6'b100000;
+defparam TILE_00_RBB_1_6.AQ1_SEL_B=6'b010000;
+defparam TILE_00_RBB_1_6.AQ1_SEL_C=6'b010000;
+defparam TILE_00_RBB_1_6.AQ1_SEL_D=5'b01000;
+defparam TILE_00_RBB_1_6.AQpol=1'h1;
+defparam TILE_00_RBB_1_6.AQsyncSRen=1'h1;
+defparam TILE_00_RBB_1_6.B6_TIE=1'h0;
+defparam TILE_00_RBB_1_6.BC=256'h0000ffff00200020aaaaaaaa00000500f0f0f0f000000011ff00ff0080800000;
+defparam TILE_00_RBB_1_6.BQpol=1'h1;
+defparam TILE_00_RBB_1_6.BQsyncSRen=1'h1;
+defparam TILE_00_RBB_1_6.C6_TIE=1'h0;
+defparam TILE_00_RBB_1_6.CE_TIE=1'h0;
+defparam TILE_00_RBB_1_6.CIN_SEL=2'b00;
+defparam TILE_00_RBB_1_6.CQpol=1'h1;
+defparam TILE_00_RBB_1_6.CQsyncSRen=1'h1;
+defparam TILE_00_RBB_1_6.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_1_6.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_1_6.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_1_6.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_1_6.D6_TIE=1'h0;
+defparam TILE_00_RBB_1_6.DQpol=1'h1;
+defparam TILE_00_RBB_1_6.DQsyncSRen=1'h1;
+defparam TILE_00_RBB_1_6.LH_ON=1'h0;
+defparam TILE_00_RBB_1_6.LUT_IPT_SEL=5'b00000;
+defparam TILE_00_RBB_1_6.LUT_ON_A=1'h1;
+defparam TILE_00_RBB_1_6.LUT_ON_B=1'h1;
+defparam TILE_00_RBB_1_6.LUT_ON_C=1'h1;
+defparam TILE_00_RBB_1_6.LUT_ON_D=1'h1;
+defparam TILE_00_RBB_1_6.MUX_A5=4'b0001;
+defparam TILE_00_RBB_1_6.MUX_A6=4'b0001;
+defparam TILE_00_RBB_1_6.MUX_AI=6'b110000;
+defparam TILE_00_RBB_1_6.MUX_B5=4'b0010;
+defparam TILE_00_RBB_1_6.MUX_B6=4'b0010;
+defparam TILE_00_RBB_1_6.MUX_BI=6'b010000;
+defparam TILE_00_RBB_1_6.MUX_C5=4'b0100;
+defparam TILE_00_RBB_1_6.MUX_C6=4'b0100;
+defparam TILE_00_RBB_1_6.MUX_CE=6'b010010;
+defparam TILE_00_RBB_1_6.MUX_CI=6'b010000;
+defparam TILE_00_RBB_1_6.MUX_D5=4'b1000;
+defparam TILE_00_RBB_1_6.MUX_D6=4'b1000;
+defparam TILE_00_RBB_1_6.MUX_DI=6'b010000;
+defparam TILE_00_RBB_1_6.MUX_SR=6'b100001;
+defparam TILE_00_RBB_1_6.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_1_6.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_1_6.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_1_6.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_1_6.OAQpol=1'h1;
+defparam TILE_00_RBB_1_6.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_1_6.OBQpol=1'h1;
+defparam TILE_00_RBB_1_6.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_1_6.OCQpol=1'h1;
+defparam TILE_00_RBB_1_6.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_1_6.ODQpol=1'h1;
+defparam TILE_00_RBB_1_6.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_1_6.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_1_6.QasyncSRen=1'h0;
+defparam TILE_00_RBB_1_6.RAM_MODE=2'b00;
+defparam TILE_00_RBB_1_6.WE_SEL=3'b000;
+defparam TILE_00_RBB_1_6.WE_TIE=1'h0;
+defparam TILE_00_RBB_1_6.WEpol=1'h1;
+defparam TILE_00_RBB_1_6.XOR_A=5'b00000;
+defparam TILE_00_RBB_1_6.XOR_B=5'b00000;
+defparam TILE_00_RBB_1_6.XOR_C=5'b00000;
+defparam TILE_00_RBB_1_6.XOR_D=5'b00000;
+  RBB6M TILE_00_RBB_4_6 (
+    .A1(\counter[4] ),
+    .A2(1'b0),
+    .A3(1'b0),
+    .A4(1'b0),
+    .A5(1'b0),
+    .A6(1'b0),
+    .AQ(\counter[4] ),
+    .B1(\counter[5] ),
+    .B2(1'b0),
+    .B3(1'b0),
+    .B4(1'b0),
+    .B5(1'b0),
+    .B6(1'b0),
+    .BQ(\counter[5] ),
+    .C1(\counter[6] ),
+    .C2(1'b0),
+    .C3(1'b0),
+    .C4(1'b0),
+    .C5(1'b0),
+    .C6(1'b0),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(_$$_$abc$2664$aiger2663$42),
+    .CLK(clk),
+    .COUT(_$$_$abc$2664$aiger2663$50),
+    .CQ(\counter[6] ),
+    .D1(\counter[7] ),
+    .D2(\counter[11] ),
+    .D3(\counter[10] ),
+    .D4(\counter[9] ),
+    .D5(\counter[8] ),
+    .D6(1'b0),
+    .DMUX(\_$$_$techmap2677$abc$2664$lut$auto$rtlil.cc:2660:NotGate$2000.A[0] ),
+    .DQ(\counter[7] ),
+    .SFTin(1'b0),
+    .SRin(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .WEin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_4_6.A6_TIE=1'h0;
+defparam TILE_00_RBB_4_6.AMX_SEL_A=5'b00010;
+defparam TILE_00_RBB_4_6.AMX_SEL_B=5'b00010;
+defparam TILE_00_RBB_4_6.AMX_SEL_C=5'b00010;
+defparam TILE_00_RBB_4_6.AMX_SEL_D=4'b0010;
+defparam TILE_00_RBB_4_6.AQ1_SEL_A=6'b010000;
+defparam TILE_00_RBB_4_6.AQ1_SEL_B=6'b010000;
+defparam TILE_00_RBB_4_6.AQ1_SEL_C=6'b010000;
+defparam TILE_00_RBB_4_6.AQ1_SEL_D=5'b01000;
+defparam TILE_00_RBB_4_6.AQpol=1'h1;
+defparam TILE_00_RBB_4_6.AQsyncSRen=1'h1;
+defparam TILE_00_RBB_4_6.B6_TIE=1'h0;
+defparam TILE_00_RBB_4_6.BC=256'haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac0000000;
+defparam TILE_00_RBB_4_6.BQpol=1'h1;
+defparam TILE_00_RBB_4_6.BQsyncSRen=1'h1;
+defparam TILE_00_RBB_4_6.C6_TIE=1'h0;
+defparam TILE_00_RBB_4_6.CE_TIE=1'h0;
+defparam TILE_00_RBB_4_6.CIN_SEL=2'b11;
+defparam TILE_00_RBB_4_6.CQpol=1'h1;
+defparam TILE_00_RBB_4_6.CQsyncSRen=1'h1;
+defparam TILE_00_RBB_4_6.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_4_6.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_4_6.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_4_6.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_4_6.D6_TIE=1'h0;
+defparam TILE_00_RBB_4_6.DQpol=1'h1;
+defparam TILE_00_RBB_4_6.DQsyncSRen=1'h1;
+defparam TILE_00_RBB_4_6.LH_ON=1'h0;
+defparam TILE_00_RBB_4_6.LUT_IPT_SEL=5'b00000;
+defparam TILE_00_RBB_4_6.LUT_ON_A=1'h1;
+defparam TILE_00_RBB_4_6.LUT_ON_B=1'h1;
+defparam TILE_00_RBB_4_6.LUT_ON_C=1'h1;
+defparam TILE_00_RBB_4_6.LUT_ON_D=1'h1;
+defparam TILE_00_RBB_4_6.MUX_A5=4'b0001;
+defparam TILE_00_RBB_4_6.MUX_A6=4'b0001;
+defparam TILE_00_RBB_4_6.MUX_AI=6'b010000;
+defparam TILE_00_RBB_4_6.MUX_B5=4'b0010;
+defparam TILE_00_RBB_4_6.MUX_B6=4'b0010;
+defparam TILE_00_RBB_4_6.MUX_BI=6'b010000;
+defparam TILE_00_RBB_4_6.MUX_C5=4'b0100;
+defparam TILE_00_RBB_4_6.MUX_C6=4'b0100;
+defparam TILE_00_RBB_4_6.MUX_CE=6'b010001;
+defparam TILE_00_RBB_4_6.MUX_CI=6'b010000;
+defparam TILE_00_RBB_4_6.MUX_D5=4'b1000;
+defparam TILE_00_RBB_4_6.MUX_D6=4'b1000;
+defparam TILE_00_RBB_4_6.MUX_DI=6'b010000;
+defparam TILE_00_RBB_4_6.MUX_SR=6'b110000;
+defparam TILE_00_RBB_4_6.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_4_6.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_4_6.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_4_6.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_4_6.OAQpol=1'h1;
+defparam TILE_00_RBB_4_6.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_6.OBQpol=1'h1;
+defparam TILE_00_RBB_4_6.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_6.OCQpol=1'h1;
+defparam TILE_00_RBB_4_6.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_6.ODQpol=1'h1;
+defparam TILE_00_RBB_4_6.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_4_6.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_4_6.QasyncSRen=1'h0;
+defparam TILE_00_RBB_4_6.RAM_MODE=2'b00;
+defparam TILE_00_RBB_4_6.WE_SEL=3'b000;
+defparam TILE_00_RBB_4_6.WE_TIE=1'h0;
+defparam TILE_00_RBB_4_6.WEpol=1'h1;
+defparam TILE_00_RBB_4_6.XOR_A=5'b00000;
+defparam TILE_00_RBB_4_6.XOR_B=5'b00000;
+defparam TILE_00_RBB_4_6.XOR_C=5'b00000;
+defparam TILE_00_RBB_4_6.XOR_D=5'b00000;
+  RBB6M TILE_00_RBB_7_6 (
+    .A1(\counter[8] ),
+    .A2(1'b0),
+    .A3(1'b0),
+    .A4(1'b0),
+    .A5(1'b0),
+    .A6(1'b0),
+    .AQ(\counter[8] ),
+    .B1(\counter[9] ),
+    .B2(1'b0),
+    .B3(1'b0),
+    .B4(1'b0),
+    .B5(1'b0),
+    .B6(1'b0),
+    .BQ(\counter[9] ),
+    .C1(\counter[10] ),
+    .C2(1'b0),
+    .C3(1'b0),
+    .C4(1'b0),
+    .C5(1'b0),
+    .C6(1'b0),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(_$$_$abc$2664$aiger2663$50),
+    .CLK(clk),
+    .COUT(_$$_$abc$2664$aiger2663$58),
+    .CQ(\counter[10] ),
+    .D1(\counter[11] ),
+    .D2(1'b0),
+    .D3(1'b0),
+    .D4(1'b0),
+    .D5(1'b0),
+    .D6(1'b0),
+    .DQ(\counter[11] ),
+    .SFTin(1'b0),
+    .SRin(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .WEin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_7_6.A6_TIE=1'h0;
+defparam TILE_00_RBB_7_6.AMX_SEL_A=5'b00010;
+defparam TILE_00_RBB_7_6.AMX_SEL_B=5'b00010;
+defparam TILE_00_RBB_7_6.AMX_SEL_C=5'b00010;
+defparam TILE_00_RBB_7_6.AMX_SEL_D=4'b0001;
+defparam TILE_00_RBB_7_6.AQ1_SEL_A=6'b010000;
+defparam TILE_00_RBB_7_6.AQ1_SEL_B=6'b010000;
+defparam TILE_00_RBB_7_6.AQ1_SEL_C=6'b010000;
+defparam TILE_00_RBB_7_6.AQ1_SEL_D=5'b01000;
+defparam TILE_00_RBB_7_6.AQpol=1'h1;
+defparam TILE_00_RBB_7_6.AQsyncSRen=1'h1;
+defparam TILE_00_RBB_7_6.B6_TIE=1'h0;
+defparam TILE_00_RBB_7_6.BC=256'haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+defparam TILE_00_RBB_7_6.BQpol=1'h1;
+defparam TILE_00_RBB_7_6.BQsyncSRen=1'h1;
+defparam TILE_00_RBB_7_6.C6_TIE=1'h0;
+defparam TILE_00_RBB_7_6.CE_TIE=1'h0;
+defparam TILE_00_RBB_7_6.CIN_SEL=2'b11;
+defparam TILE_00_RBB_7_6.CQpol=1'h1;
+defparam TILE_00_RBB_7_6.CQsyncSRen=1'h1;
+defparam TILE_00_RBB_7_6.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_7_6.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_7_6.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_7_6.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_7_6.D6_TIE=1'h0;
+defparam TILE_00_RBB_7_6.DQpol=1'h1;
+defparam TILE_00_RBB_7_6.DQsyncSRen=1'h1;
+defparam TILE_00_RBB_7_6.LH_ON=1'h0;
+defparam TILE_00_RBB_7_6.LUT_IPT_SEL=5'b00000;
+defparam TILE_00_RBB_7_6.LUT_ON_A=1'h1;
+defparam TILE_00_RBB_7_6.LUT_ON_B=1'h1;
+defparam TILE_00_RBB_7_6.LUT_ON_C=1'h1;
+defparam TILE_00_RBB_7_6.LUT_ON_D=1'h1;
+defparam TILE_00_RBB_7_6.MUX_A5=4'b0001;
+defparam TILE_00_RBB_7_6.MUX_A6=4'b0001;
+defparam TILE_00_RBB_7_6.MUX_AI=6'b010000;
+defparam TILE_00_RBB_7_6.MUX_B5=4'b0010;
+defparam TILE_00_RBB_7_6.MUX_B6=4'b0010;
+defparam TILE_00_RBB_7_6.MUX_BI=6'b010000;
+defparam TILE_00_RBB_7_6.MUX_C5=4'b0100;
+defparam TILE_00_RBB_7_6.MUX_C6=4'b0100;
+defparam TILE_00_RBB_7_6.MUX_CE=6'b010001;
+defparam TILE_00_RBB_7_6.MUX_CI=6'b010000;
+defparam TILE_00_RBB_7_6.MUX_D5=4'b1000;
+defparam TILE_00_RBB_7_6.MUX_D6=4'b1000;
+defparam TILE_00_RBB_7_6.MUX_DI=6'b010000;
+defparam TILE_00_RBB_7_6.MUX_SR=6'b110000;
+defparam TILE_00_RBB_7_6.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_7_6.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_7_6.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_7_6.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_7_6.OAQpol=1'h1;
+defparam TILE_00_RBB_7_6.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_7_6.OBQpol=1'h1;
+defparam TILE_00_RBB_7_6.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_7_6.OCQpol=1'h1;
+defparam TILE_00_RBB_7_6.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_7_6.ODQpol=1'h1;
+defparam TILE_00_RBB_7_6.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_7_6.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_7_6.QasyncSRen=1'h0;
+defparam TILE_00_RBB_7_6.RAM_MODE=2'b00;
+defparam TILE_00_RBB_7_6.WE_SEL=3'b000;
+defparam TILE_00_RBB_7_6.WE_TIE=1'h0;
+defparam TILE_00_RBB_7_6.WEpol=1'h1;
+defparam TILE_00_RBB_7_6.XOR_A=5'b00000;
+defparam TILE_00_RBB_7_6.XOR_B=5'b00000;
+defparam TILE_00_RBB_7_6.XOR_C=5'b00000;
+defparam TILE_00_RBB_7_6.XOR_D=5'b00000;
+  RBB6M TILE_00_RBB_10_6 (
+    .A1(\counter[12] ),
+    .A2(1'b0),
+    .A3(1'b0),
+    .A4(1'b0),
+    .A5(1'b0),
+    .A6(1'b0),
+    .AQ(\counter[12] ),
+    .B1(\counter[13] ),
+    .B2(1'b0),
+    .B3(1'b0),
+    .B4(1'b0),
+    .B5(1'b0),
+    .B6(1'b0),
+    .BQ(\counter[13] ),
+    .C1(\counter[14] ),
+    .C2(1'b0),
+    .C3(1'b0),
+    .C4(1'b0),
+    .C5(1'b0),
+    .C6(1'b0),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(_$$_$abc$2664$aiger2663$58),
+    .CLK(clk),
+    .COUT(_$$_$abc$2664$aiger2663$66),
+    .CQ(\counter[14] ),
+    .D1(\counter[15] ),
+    .D2(1'b0),
+    .D3(1'b0),
+    .D4(1'b0),
+    .D5(1'b0),
+    .D6(1'b0),
+    .DQ(\counter[15] ),
+    .SFTin(1'b0),
+    .SRin(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .WEin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_10_6.A6_TIE=1'h0;
+defparam TILE_00_RBB_10_6.AMX_SEL_A=5'b00010;
+defparam TILE_00_RBB_10_6.AMX_SEL_B=5'b00010;
+defparam TILE_00_RBB_10_6.AMX_SEL_C=5'b00010;
+defparam TILE_00_RBB_10_6.AMX_SEL_D=4'b0001;
+defparam TILE_00_RBB_10_6.AQ1_SEL_A=6'b010000;
+defparam TILE_00_RBB_10_6.AQ1_SEL_B=6'b010000;
+defparam TILE_00_RBB_10_6.AQ1_SEL_C=6'b010000;
+defparam TILE_00_RBB_10_6.AQ1_SEL_D=5'b01000;
+defparam TILE_00_RBB_10_6.AQpol=1'h1;
+defparam TILE_00_RBB_10_6.AQsyncSRen=1'h1;
+defparam TILE_00_RBB_10_6.B6_TIE=1'h0;
+defparam TILE_00_RBB_10_6.BC=256'haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+defparam TILE_00_RBB_10_6.BQpol=1'h1;
+defparam TILE_00_RBB_10_6.BQsyncSRen=1'h1;
+defparam TILE_00_RBB_10_6.C6_TIE=1'h0;
+defparam TILE_00_RBB_10_6.CE_TIE=1'h0;
+defparam TILE_00_RBB_10_6.CIN_SEL=2'b11;
+defparam TILE_00_RBB_10_6.CQpol=1'h1;
+defparam TILE_00_RBB_10_6.CQsyncSRen=1'h1;
+defparam TILE_00_RBB_10_6.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_10_6.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_10_6.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_10_6.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_10_6.D6_TIE=1'h0;
+defparam TILE_00_RBB_10_6.DQpol=1'h1;
+defparam TILE_00_RBB_10_6.DQsyncSRen=1'h1;
+defparam TILE_00_RBB_10_6.LH_ON=1'h0;
+defparam TILE_00_RBB_10_6.LUT_IPT_SEL=5'b00000;
+defparam TILE_00_RBB_10_6.LUT_ON_A=1'h1;
+defparam TILE_00_RBB_10_6.LUT_ON_B=1'h1;
+defparam TILE_00_RBB_10_6.LUT_ON_C=1'h1;
+defparam TILE_00_RBB_10_6.LUT_ON_D=1'h1;
+defparam TILE_00_RBB_10_6.MUX_A5=4'b0001;
+defparam TILE_00_RBB_10_6.MUX_A6=4'b0001;
+defparam TILE_00_RBB_10_6.MUX_AI=6'b010000;
+defparam TILE_00_RBB_10_6.MUX_B5=4'b0010;
+defparam TILE_00_RBB_10_6.MUX_B6=4'b0010;
+defparam TILE_00_RBB_10_6.MUX_BI=6'b010000;
+defparam TILE_00_RBB_10_6.MUX_C5=4'b0100;
+defparam TILE_00_RBB_10_6.MUX_C6=4'b0100;
+defparam TILE_00_RBB_10_6.MUX_CE=6'b010001;
+defparam TILE_00_RBB_10_6.MUX_CI=6'b010000;
+defparam TILE_00_RBB_10_6.MUX_D5=4'b1000;
+defparam TILE_00_RBB_10_6.MUX_D6=4'b1000;
+defparam TILE_00_RBB_10_6.MUX_DI=6'b010000;
+defparam TILE_00_RBB_10_6.MUX_SR=6'b110000;
+defparam TILE_00_RBB_10_6.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_10_6.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_10_6.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_10_6.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_10_6.OAQpol=1'h1;
+defparam TILE_00_RBB_10_6.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_10_6.OBQpol=1'h1;
+defparam TILE_00_RBB_10_6.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_10_6.OCQpol=1'h1;
+defparam TILE_00_RBB_10_6.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_10_6.ODQpol=1'h1;
+defparam TILE_00_RBB_10_6.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_10_6.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_10_6.QasyncSRen=1'h0;
+defparam TILE_00_RBB_10_6.RAM_MODE=2'b00;
+defparam TILE_00_RBB_10_6.WE_SEL=3'b000;
+defparam TILE_00_RBB_10_6.WE_TIE=1'h0;
+defparam TILE_00_RBB_10_6.WEpol=1'h1;
+defparam TILE_00_RBB_10_6.XOR_A=5'b00000;
+defparam TILE_00_RBB_10_6.XOR_B=5'b00000;
+defparam TILE_00_RBB_10_6.XOR_C=5'b00000;
+defparam TILE_00_RBB_10_6.XOR_D=5'b00000;
+  RBB6M TILE_00_RBB_13_6 (
+    .A1(\counter[16] ),
+    .A2(1'b0),
+    .A3(1'b0),
+    .A4(1'b0),
+    .A5(1'b0),
+    .A6(1'b0),
+    .AQ(\counter[16] ),
+    .B1(\counter[17] ),
+    .B2(1'b0),
+    .B3(1'b0),
+    .B4(1'b0),
+    .B5(1'b0),
+    .B6(1'b0),
+    .BQ(\counter[17] ),
+    .C1(\counter[18] ),
+    .C2(1'b0),
+    .C3(1'b0),
+    .C4(1'b0),
+    .C5(1'b0),
+    .C6(1'b0),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(_$$_$abc$2664$aiger2663$66),
+    .CLK(clk),
+    .COUT(_$$_$abc$2664$aiger2663$74),
+    .CQ(\counter[18] ),
+    .D1(\counter[19] ),
+    .D2(1'b0),
+    .D3(1'b0),
+    .D4(1'b0),
+    .D5(1'b0),
+    .D6(1'b0),
+    .DQ(\counter[19] ),
+    .SFTin(1'b0),
+    .SRin(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .WEin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_13_6.A6_TIE=1'h0;
+defparam TILE_00_RBB_13_6.AMX_SEL_A=5'b00010;
+defparam TILE_00_RBB_13_6.AMX_SEL_B=5'b00010;
+defparam TILE_00_RBB_13_6.AMX_SEL_C=5'b00010;
+defparam TILE_00_RBB_13_6.AMX_SEL_D=4'b0001;
+defparam TILE_00_RBB_13_6.AQ1_SEL_A=6'b010000;
+defparam TILE_00_RBB_13_6.AQ1_SEL_B=6'b010000;
+defparam TILE_00_RBB_13_6.AQ1_SEL_C=6'b010000;
+defparam TILE_00_RBB_13_6.AQ1_SEL_D=5'b01000;
+defparam TILE_00_RBB_13_6.AQpol=1'h1;
+defparam TILE_00_RBB_13_6.AQsyncSRen=1'h1;
+defparam TILE_00_RBB_13_6.B6_TIE=1'h0;
+defparam TILE_00_RBB_13_6.BC=256'haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+defparam TILE_00_RBB_13_6.BQpol=1'h1;
+defparam TILE_00_RBB_13_6.BQsyncSRen=1'h1;
+defparam TILE_00_RBB_13_6.C6_TIE=1'h0;
+defparam TILE_00_RBB_13_6.CE_TIE=1'h0;
+defparam TILE_00_RBB_13_6.CIN_SEL=2'b11;
+defparam TILE_00_RBB_13_6.CQpol=1'h1;
+defparam TILE_00_RBB_13_6.CQsyncSRen=1'h1;
+defparam TILE_00_RBB_13_6.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_13_6.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_13_6.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_13_6.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_13_6.D6_TIE=1'h0;
+defparam TILE_00_RBB_13_6.DQpol=1'h1;
+defparam TILE_00_RBB_13_6.DQsyncSRen=1'h1;
+defparam TILE_00_RBB_13_6.LH_ON=1'h0;
+defparam TILE_00_RBB_13_6.LUT_IPT_SEL=5'b00000;
+defparam TILE_00_RBB_13_6.LUT_ON_A=1'h1;
+defparam TILE_00_RBB_13_6.LUT_ON_B=1'h1;
+defparam TILE_00_RBB_13_6.LUT_ON_C=1'h1;
+defparam TILE_00_RBB_13_6.LUT_ON_D=1'h1;
+defparam TILE_00_RBB_13_6.MUX_A5=4'b0001;
+defparam TILE_00_RBB_13_6.MUX_A6=4'b0001;
+defparam TILE_00_RBB_13_6.MUX_AI=6'b010000;
+defparam TILE_00_RBB_13_6.MUX_B5=4'b0010;
+defparam TILE_00_RBB_13_6.MUX_B6=4'b0010;
+defparam TILE_00_RBB_13_6.MUX_BI=6'b010000;
+defparam TILE_00_RBB_13_6.MUX_C5=4'b0100;
+defparam TILE_00_RBB_13_6.MUX_C6=4'b0100;
+defparam TILE_00_RBB_13_6.MUX_CE=6'b010001;
+defparam TILE_00_RBB_13_6.MUX_CI=6'b010000;
+defparam TILE_00_RBB_13_6.MUX_D5=4'b1000;
+defparam TILE_00_RBB_13_6.MUX_D6=4'b1000;
+defparam TILE_00_RBB_13_6.MUX_DI=6'b010000;
+defparam TILE_00_RBB_13_6.MUX_SR=6'b110000;
+defparam TILE_00_RBB_13_6.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_13_6.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_13_6.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_13_6.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_13_6.OAQpol=1'h1;
+defparam TILE_00_RBB_13_6.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_13_6.OBQpol=1'h1;
+defparam TILE_00_RBB_13_6.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_13_6.OCQpol=1'h1;
+defparam TILE_00_RBB_13_6.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_13_6.ODQpol=1'h1;
+defparam TILE_00_RBB_13_6.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_13_6.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_13_6.QasyncSRen=1'h0;
+defparam TILE_00_RBB_13_6.RAM_MODE=2'b00;
+defparam TILE_00_RBB_13_6.WE_SEL=3'b000;
+defparam TILE_00_RBB_13_6.WE_TIE=1'h0;
+defparam TILE_00_RBB_13_6.WEpol=1'h1;
+defparam TILE_00_RBB_13_6.XOR_A=5'b00000;
+defparam TILE_00_RBB_13_6.XOR_B=5'b00000;
+defparam TILE_00_RBB_13_6.XOR_C=5'b00000;
+defparam TILE_00_RBB_13_6.XOR_D=5'b00000;
+  RBB6M TILE_00_RBB_16_6 (
+    .A1(\counter[20] ),
+    .A2(1'b0),
+    .A3(1'b0),
+    .A4(1'b0),
+    .A5(1'b0),
+    .A6(1'b0),
+    .AQ(\counter[20] ),
+    .B1(\counter[21] ),
+    .B2(1'b0),
+    .B3(1'b0),
+    .B4(1'b0),
+    .B5(1'b0),
+    .B6(1'b0),
+    .BQ(\counter[21] ),
+    .C1(\counter[22] ),
+    .C2(1'b0),
+    .C3(1'b0),
+    .C4(1'b0),
+    .C5(1'b0),
+    .C6(1'b0),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(_$$_$abc$2664$aiger2663$74),
+    .CLK(clk),
+    .COUT(_$$_$abc$2664$aiger2663$82),
+    .CQ(\counter[22] ),
+    .D1(\counter[23] ),
+    .D2(1'b0),
+    .D3(1'b0),
+    .D4(1'b0),
+    .D5(1'b0),
+    .D6(1'b0),
+    .DQ(\counter[23] ),
+    .SFTin(1'b0),
+    .SRin(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .WEin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_16_6.A6_TIE=1'h0;
+defparam TILE_00_RBB_16_6.AMX_SEL_A=5'b00010;
+defparam TILE_00_RBB_16_6.AMX_SEL_B=5'b00010;
+defparam TILE_00_RBB_16_6.AMX_SEL_C=5'b00010;
+defparam TILE_00_RBB_16_6.AMX_SEL_D=4'b0001;
+defparam TILE_00_RBB_16_6.AQ1_SEL_A=6'b010000;
+defparam TILE_00_RBB_16_6.AQ1_SEL_B=6'b010000;
+defparam TILE_00_RBB_16_6.AQ1_SEL_C=6'b010000;
+defparam TILE_00_RBB_16_6.AQ1_SEL_D=5'b01000;
+defparam TILE_00_RBB_16_6.AQpol=1'h1;
+defparam TILE_00_RBB_16_6.AQsyncSRen=1'h1;
+defparam TILE_00_RBB_16_6.B6_TIE=1'h0;
+defparam TILE_00_RBB_16_6.BC=256'haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+defparam TILE_00_RBB_16_6.BQpol=1'h1;
+defparam TILE_00_RBB_16_6.BQsyncSRen=1'h1;
+defparam TILE_00_RBB_16_6.C6_TIE=1'h0;
+defparam TILE_00_RBB_16_6.CE_TIE=1'h0;
+defparam TILE_00_RBB_16_6.CIN_SEL=2'b11;
+defparam TILE_00_RBB_16_6.CQpol=1'h1;
+defparam TILE_00_RBB_16_6.CQsyncSRen=1'h1;
+defparam TILE_00_RBB_16_6.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_16_6.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_16_6.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_16_6.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_16_6.D6_TIE=1'h0;
+defparam TILE_00_RBB_16_6.DQpol=1'h1;
+defparam TILE_00_RBB_16_6.DQsyncSRen=1'h1;
+defparam TILE_00_RBB_16_6.LH_ON=1'h0;
+defparam TILE_00_RBB_16_6.LUT_IPT_SEL=5'b00000;
+defparam TILE_00_RBB_16_6.LUT_ON_A=1'h1;
+defparam TILE_00_RBB_16_6.LUT_ON_B=1'h1;
+defparam TILE_00_RBB_16_6.LUT_ON_C=1'h1;
+defparam TILE_00_RBB_16_6.LUT_ON_D=1'h1;
+defparam TILE_00_RBB_16_6.MUX_A5=4'b0001;
+defparam TILE_00_RBB_16_6.MUX_A6=4'b0001;
+defparam TILE_00_RBB_16_6.MUX_AI=6'b010000;
+defparam TILE_00_RBB_16_6.MUX_B5=4'b0010;
+defparam TILE_00_RBB_16_6.MUX_B6=4'b0010;
+defparam TILE_00_RBB_16_6.MUX_BI=6'b010000;
+defparam TILE_00_RBB_16_6.MUX_C5=4'b0100;
+defparam TILE_00_RBB_16_6.MUX_C6=4'b0100;
+defparam TILE_00_RBB_16_6.MUX_CE=6'b010001;
+defparam TILE_00_RBB_16_6.MUX_CI=6'b010000;
+defparam TILE_00_RBB_16_6.MUX_D5=4'b1000;
+defparam TILE_00_RBB_16_6.MUX_D6=4'b1000;
+defparam TILE_00_RBB_16_6.MUX_DI=6'b010000;
+defparam TILE_00_RBB_16_6.MUX_SR=6'b110000;
+defparam TILE_00_RBB_16_6.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_16_6.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_16_6.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_16_6.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_16_6.OAQpol=1'h1;
+defparam TILE_00_RBB_16_6.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_16_6.OBQpol=1'h1;
+defparam TILE_00_RBB_16_6.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_16_6.OCQpol=1'h1;
+defparam TILE_00_RBB_16_6.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_16_6.ODQpol=1'h1;
+defparam TILE_00_RBB_16_6.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_16_6.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_16_6.QasyncSRen=1'h0;
+defparam TILE_00_RBB_16_6.RAM_MODE=2'b00;
+defparam TILE_00_RBB_16_6.WE_SEL=3'b000;
+defparam TILE_00_RBB_16_6.WE_TIE=1'h0;
+defparam TILE_00_RBB_16_6.WEpol=1'h1;
+defparam TILE_00_RBB_16_6.XOR_A=5'b00000;
+defparam TILE_00_RBB_16_6.XOR_B=5'b00000;
+defparam TILE_00_RBB_16_6.XOR_C=5'b00000;
+defparam TILE_00_RBB_16_6.XOR_D=5'b00000;
+  RBB6M TILE_00_RBB_19_6 (
+    .A1(\counter[24] ),
+    .A2(1'b0),
+    .A3(1'b0),
+    .A4(1'b0),
+    .A5(1'b0),
+    .A6(1'b0),
+    .AQ(\counter[24] ),
+    .B1(\counter[25] ),
+    .B2(1'b0),
+    .B3(1'b0),
+    .B4(1'b0),
+    .B5(1'b0),
+    .B6(1'b0),
+    .BQ(\counter[25] ),
+    .C1(\counter[26] ),
+    .C2(1'b0),
+    .C3(1'b0),
+    .C4(1'b0),
+    .C5(1'b0),
+    .C6(1'b0),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(_$$_$abc$2664$aiger2663$82),
+    .CLK(clk),
+    .COUT(_$$_$abc$2664$aiger2663$90),
+    .CQ(\counter[26] ),
+    .D1(\counter[27] ),
+    .D2(1'b0),
+    .D3(1'b0),
+    .D4(1'b0),
+    .D5(1'b0),
+    .D6(1'b0),
+    .DQ(\counter[27] ),
+    .SFTin(1'b0),
+    .SRin(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .WEin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_19_6.A6_TIE=1'h0;
+defparam TILE_00_RBB_19_6.AMX_SEL_A=5'b00010;
+defparam TILE_00_RBB_19_6.AMX_SEL_B=5'b00010;
+defparam TILE_00_RBB_19_6.AMX_SEL_C=5'b00010;
+defparam TILE_00_RBB_19_6.AMX_SEL_D=4'b0001;
+defparam TILE_00_RBB_19_6.AQ1_SEL_A=6'b010000;
+defparam TILE_00_RBB_19_6.AQ1_SEL_B=6'b010000;
+defparam TILE_00_RBB_19_6.AQ1_SEL_C=6'b010000;
+defparam TILE_00_RBB_19_6.AQ1_SEL_D=5'b01000;
+defparam TILE_00_RBB_19_6.AQpol=1'h1;
+defparam TILE_00_RBB_19_6.AQsyncSRen=1'h1;
+defparam TILE_00_RBB_19_6.B6_TIE=1'h0;
+defparam TILE_00_RBB_19_6.BC=256'haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+defparam TILE_00_RBB_19_6.BQpol=1'h1;
+defparam TILE_00_RBB_19_6.BQsyncSRen=1'h1;
+defparam TILE_00_RBB_19_6.C6_TIE=1'h0;
+defparam TILE_00_RBB_19_6.CE_TIE=1'h0;
+defparam TILE_00_RBB_19_6.CIN_SEL=2'b11;
+defparam TILE_00_RBB_19_6.CQpol=1'h1;
+defparam TILE_00_RBB_19_6.CQsyncSRen=1'h1;
+defparam TILE_00_RBB_19_6.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_19_6.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_19_6.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_19_6.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_19_6.D6_TIE=1'h0;
+defparam TILE_00_RBB_19_6.DQpol=1'h1;
+defparam TILE_00_RBB_19_6.DQsyncSRen=1'h1;
+defparam TILE_00_RBB_19_6.LH_ON=1'h0;
+defparam TILE_00_RBB_19_6.LUT_IPT_SEL=5'b00000;
+defparam TILE_00_RBB_19_6.LUT_ON_A=1'h1;
+defparam TILE_00_RBB_19_6.LUT_ON_B=1'h1;
+defparam TILE_00_RBB_19_6.LUT_ON_C=1'h1;
+defparam TILE_00_RBB_19_6.LUT_ON_D=1'h1;
+defparam TILE_00_RBB_19_6.MUX_A5=4'b0001;
+defparam TILE_00_RBB_19_6.MUX_A6=4'b0001;
+defparam TILE_00_RBB_19_6.MUX_AI=6'b010000;
+defparam TILE_00_RBB_19_6.MUX_B5=4'b0010;
+defparam TILE_00_RBB_19_6.MUX_B6=4'b0010;
+defparam TILE_00_RBB_19_6.MUX_BI=6'b010000;
+defparam TILE_00_RBB_19_6.MUX_C5=4'b0100;
+defparam TILE_00_RBB_19_6.MUX_C6=4'b0100;
+defparam TILE_00_RBB_19_6.MUX_CE=6'b010001;
+defparam TILE_00_RBB_19_6.MUX_CI=6'b010000;
+defparam TILE_00_RBB_19_6.MUX_D5=4'b1000;
+defparam TILE_00_RBB_19_6.MUX_D6=4'b1000;
+defparam TILE_00_RBB_19_6.MUX_DI=6'b010000;
+defparam TILE_00_RBB_19_6.MUX_SR=6'b110000;
+defparam TILE_00_RBB_19_6.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_19_6.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_19_6.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_19_6.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_19_6.OAQpol=1'h1;
+defparam TILE_00_RBB_19_6.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_19_6.OBQpol=1'h1;
+defparam TILE_00_RBB_19_6.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_19_6.OCQpol=1'h1;
+defparam TILE_00_RBB_19_6.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_19_6.ODQpol=1'h1;
+defparam TILE_00_RBB_19_6.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_19_6.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_19_6.QasyncSRen=1'h0;
+defparam TILE_00_RBB_19_6.RAM_MODE=2'b00;
+defparam TILE_00_RBB_19_6.WE_SEL=3'b000;
+defparam TILE_00_RBB_19_6.WE_TIE=1'h0;
+defparam TILE_00_RBB_19_6.WEpol=1'h1;
+defparam TILE_00_RBB_19_6.XOR_A=5'b00000;
+defparam TILE_00_RBB_19_6.XOR_B=5'b00000;
+defparam TILE_00_RBB_19_6.XOR_C=5'b00000;
+defparam TILE_00_RBB_19_6.XOR_D=5'b00000;
+  RBB6M TILE_00_RBB_22_6 (
+    .A1(\counter[28] ),
+    .A2(1'b0),
+    .A3(1'b0),
+    .A4(1'b0),
+    .A5(1'b0),
+    .A6(1'b0),
+    .AQ(\counter[28] ),
+    .B1(\counter[29] ),
+    .B2(1'b0),
+    .B3(1'b0),
+    .B4(1'b0),
+    .B5(1'b0),
+    .B6(1'b0),
+    .BQ(\counter[29] ),
+    .C1(\counter[30] ),
+    .C2(1'b0),
+    .C3(1'b0),
+    .C4(1'b0),
+    .C5(1'b0),
+    .C6(1'b0),
+    .CEin(1'b0),
+    .CHIP_RST(EFLX_CHIP_RST),
+    .CIN(_$$_$abc$2664$aiger2663$90),
+    .CLK(clk),
+    .CQ(\counter[30] ),
+    .D1(\counter[31] ),
+    .D2(1'b0),
+    .D3(1'b0),
+    .D4(1'b0),
+    .D5(1'b0),
+    .D6(1'b0),
+    .DQ(\counter[31] ),
+    .SFTin(1'b0),
+    .SRin(\_$$_$abc$2664$auto$rtlil.cc:2660:NotGate$2000 ),
+    .WEin(1'b0)
+);
+// Configuration for simulation:
+defparam TILE_00_RBB_22_6.A6_TIE=1'h0;
+defparam TILE_00_RBB_22_6.AMX_SEL_A=5'b00010;
+defparam TILE_00_RBB_22_6.AMX_SEL_B=5'b00010;
+defparam TILE_00_RBB_22_6.AMX_SEL_C=5'b00010;
+defparam TILE_00_RBB_22_6.AMX_SEL_D=4'b0001;
+defparam TILE_00_RBB_22_6.AQ1_SEL_A=6'b010000;
+defparam TILE_00_RBB_22_6.AQ1_SEL_B=6'b010000;
+defparam TILE_00_RBB_22_6.AQ1_SEL_C=6'b010000;
+defparam TILE_00_RBB_22_6.AQ1_SEL_D=5'b01000;
+defparam TILE_00_RBB_22_6.AQpol=1'h1;
+defparam TILE_00_RBB_22_6.AQsyncSRen=1'h1;
+defparam TILE_00_RBB_22_6.B6_TIE=1'h0;
+defparam TILE_00_RBB_22_6.BC=256'haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+defparam TILE_00_RBB_22_6.BQpol=1'h1;
+defparam TILE_00_RBB_22_6.BQsyncSRen=1'h1;
+defparam TILE_00_RBB_22_6.C6_TIE=1'h0;
+defparam TILE_00_RBB_22_6.CE_TIE=1'h0;
+defparam TILE_00_RBB_22_6.CIN_SEL=2'b11;
+defparam TILE_00_RBB_22_6.CQpol=1'h1;
+defparam TILE_00_RBB_22_6.CQsyncSRen=1'h1;
+defparam TILE_00_RBB_22_6.CRY_SEL_A=1'h0;
+defparam TILE_00_RBB_22_6.CRY_SEL_B=1'h0;
+defparam TILE_00_RBB_22_6.CRY_SEL_C=1'h0;
+defparam TILE_00_RBB_22_6.CRY_SEL_D=1'h0;
+defparam TILE_00_RBB_22_6.D6_TIE=1'h0;
+defparam TILE_00_RBB_22_6.DQpol=1'h1;
+defparam TILE_00_RBB_22_6.DQsyncSRen=1'h1;
+defparam TILE_00_RBB_22_6.LH_ON=1'h0;
+defparam TILE_00_RBB_22_6.LUT_IPT_SEL=5'b00000;
+defparam TILE_00_RBB_22_6.LUT_ON_A=1'h1;
+defparam TILE_00_RBB_22_6.LUT_ON_B=1'h1;
+defparam TILE_00_RBB_22_6.LUT_ON_C=1'h1;
+defparam TILE_00_RBB_22_6.LUT_ON_D=1'h1;
+defparam TILE_00_RBB_22_6.MUX_A5=4'b0001;
+defparam TILE_00_RBB_22_6.MUX_A6=4'b0001;
+defparam TILE_00_RBB_22_6.MUX_AI=6'b010000;
+defparam TILE_00_RBB_22_6.MUX_B5=4'b0010;
+defparam TILE_00_RBB_22_6.MUX_B6=4'b0010;
+defparam TILE_00_RBB_22_6.MUX_BI=6'b010000;
+defparam TILE_00_RBB_22_6.MUX_C5=4'b0100;
+defparam TILE_00_RBB_22_6.MUX_C6=4'b0100;
+defparam TILE_00_RBB_22_6.MUX_CE=6'b010001;
+defparam TILE_00_RBB_22_6.MUX_CI=6'b010000;
+defparam TILE_00_RBB_22_6.MUX_D5=4'b1000;
+defparam TILE_00_RBB_22_6.MUX_D6=4'b1000;
+defparam TILE_00_RBB_22_6.MUX_DI=6'b010000;
+defparam TILE_00_RBB_22_6.MUX_SR=6'b110000;
+defparam TILE_00_RBB_22_6.OAQ_SEL_A=3'b010;
+defparam TILE_00_RBB_22_6.OAQ_SEL_B=3'b010;
+defparam TILE_00_RBB_22_6.OAQ_SEL_C=3'b010;
+defparam TILE_00_RBB_22_6.OAQ_SEL_D=3'b010;
+defparam TILE_00_RBB_22_6.OAQpol=1'h1;
+defparam TILE_00_RBB_22_6.OAQsyncSRen=1'h0;
+defparam TILE_00_RBB_22_6.OBQpol=1'h1;
+defparam TILE_00_RBB_22_6.OBQsyncSRen=1'h0;
+defparam TILE_00_RBB_22_6.OCQpol=1'h1;
+defparam TILE_00_RBB_22_6.OCQsyncSRen=1'h0;
+defparam TILE_00_RBB_22_6.ODQpol=1'h1;
+defparam TILE_00_RBB_22_6.ODQsyncSRen=1'h0;
+defparam TILE_00_RBB_22_6.OQasyncSRen=1'h1;
+defparam TILE_00_RBB_22_6.QasyncSRen=1'h0;
+defparam TILE_00_RBB_22_6.RAM_MODE=2'b00;
+defparam TILE_00_RBB_22_6.WE_SEL=3'b000;
+defparam TILE_00_RBB_22_6.WE_TIE=1'h0;
+defparam TILE_00_RBB_22_6.WEpol=1'h1;
+defparam TILE_00_RBB_22_6.XOR_A=5'b00000;
+defparam TILE_00_RBB_22_6.XOR_B=5'b00000;
+defparam TILE_00_RBB_22_6.XOR_C=5'b00000;
+defparam TILE_00_RBB_22_6.XOR_D=5'b00000;
+endmodule /* blink */
+// End of EFLX generated Verilog wrapper file to instantiate the EFLX array as a verilog model

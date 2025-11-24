@@ -1,0 +1,6 @@
+read -sv "../src/servant_timer.v" "../src/servant_ram.v" "../src/servant_mux.v" "../src/servant.v" "../src/servant_gpio.v" "../src/servile_rf_mem_if.v" "../src/servile_mux.v" "../src/servile_arbiter.v" "../src/servile.v" "../src/serv_top.v" "../src/serv_state.v" "../src/serv_rf_top.v" "../src/serv_rf_ram_if.v" "../src/serv_rf_ram.v" "../src/serv_rf_if.v" "../src/serv_mem_if.v" "../src/serv_immdec.v" "../src/serv_decode.v" "../src/serv_debug.v" "../src/serv_ctrl.v" "../src/serv_csr.v" "../src/serv_compdec.v" "../src/serv_bufreg2.v" "../src/serv_bufreg.v" "../src/serv_alu.v" "../src/serv_aligner.v"
+synth_xilinx -nobram -noiopad -flatten -nodsp -abc9 -widemux 5 
+clean
+write_verilog "post_synth_results.v"
+write_edif "netlist.edif"
+tee -q -o post_synth_report.txt stat
