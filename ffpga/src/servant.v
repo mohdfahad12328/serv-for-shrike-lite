@@ -1,17 +1,34 @@
 `default_nettype none
+`define BRAM_IMPL
 (* top *)module servant
 (
+    // bram ports
+    `ifdef BRAM_IMPL
+    (* iopad_external_pin *) output wire [1:0] BRAM0_RATIO,
+     (* iopad_external_pin *) output wire [7:0] BRAM0_DATA_IN,
+     (* iopad_external_pin *) output wire BRAM0_WEN,
+     (* iopad_external_pin *) output wire BRAM0_WCLKEN,
+     (* iopad_external_pin *) output wire [8:0] BRAM0_WRITE_ADDR,
+     (* iopad_external_pin *) input  wire [7:0] BRAM0_DATA_OUT,
+     (* iopad_external_pin *) output wire BRAM0_REN,
+     (* iopad_external_pin *) output wire BRAM0_RCLKEN,
+     (* iopad_external_pin *) output wire [8:0] BRAM0_READ_ADDR,
+     `endif
+   //
  (* iopad_external_pin, clkbuf_inhibit *) input wire  wb_clk,
  (* iopad_external_pin *) output wire wb_clk_en,
- (* iopad_external_pin *) input wire  wb_rst,
+ (* iopad_external_pin *) input wire  wb_nrst,
  (* iopad_external_pin *) output wire q,
  (* iopad_external_pin *) output wire q_en
  );
+
+wire wb_rst;
+assign wb_rst = ~wb_nrst;
 assign wb_clk_en = 1'b1;
 assign q_en = 1'b1;
 
    parameter memfile = "blinky.hex";
-   parameter memsize = 8192;
+   parameter memsize = 128;
    parameter reset_strategy = "MINI";
    parameter width = 1;
    parameter sim = 0;
@@ -96,7 +113,20 @@ assign q_en = 1'b1;
        .depth (memsize),
        .RESET_STRATEGY (reset_strategy))
    ram
-     (// Wishbone interface
+     (
+     `ifdef BRAM_IMPL
+     // bram ports
+     .BRAM0_RATIO(BRAM0_RATIO),
+     .BRAM0_DATA_IN(BRAM0_DATA_IN),
+     .BRAM0_WEN(BRAM0_WEN),
+     .BRAM0_WCLKEN(BRAM0_WCLKEN),
+     .BRAM0_WRITE_ADDR(BRAM0_WRITE_ADDR),
+     .BRAM0_DATA_OUT(BRAM0_DATA_OUT),
+     .BRAM0_REN(BRAM0_REN),
+     .BRAM0_RCLKEN(BRAM0_RCLKEN),
+     .BRAM0_READ_ADDR(BRAM0_READ_ADDR),
+    `endif
+     // Wishbone interface
       .i_wb_clk (wb_clk),
       .i_wb_rst (wb_rst),
       .i_wb_adr (wb_mem_adr[$clog2(memsize)-1:2]),
@@ -105,7 +135,8 @@ assign q_en = 1'b1;
       .i_wb_sel (wb_mem_sel),
       .i_wb_dat (wb_mem_dat),
       .o_wb_rdt (wb_mem_rdt),
-      .o_wb_ack (wb_mem_ack));
+      .o_wb_ack (wb_mem_ack)
+   );
 
    servant_timer
      #(.RESET_STRATEGY (reset_strategy),

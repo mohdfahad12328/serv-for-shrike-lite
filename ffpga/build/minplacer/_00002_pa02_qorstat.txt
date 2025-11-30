@@ -1,20 +1,20 @@
-PrePlaceDly=39365
-#PLC_RUNDIR=minplacer/00002_pa02_00003_wl timing=4960 cg=0
-PlaceDly=4960
-TWL=1230
+PrePlaceDly=33834
+#PLC_RUNDIR=minplacer/00002_pa02_00003_wl timing=4527 cg=0
+PlaceDly=4527
+TWL=3360
 PEAKMEM=1304MB
-#PLC_RUNDIR=minplacer/00002_pa02_00004_repopt timing=4960 cg=0
-PlaceDly=4960
-TWL=1230
+#PLC_RUNDIR=minplacer/00002_pa02_00004_repopt timing=4527 cg=0
+PlaceDly=4527
+TWL=3360
 PEAKMEM=1337MB
-#PLC_RUNDIR=minplacer/00002_pa02_00005_post timing=9622 cg=0
-PostIter=8
-PlaceDly=9622
-TWL=1740
+#PLC_RUNDIR=minplacer/00002_pa02_00005_post timing=6899 cg=0
+PostIter=17
+PlaceDly=6899
+TWL=3820
 PEAKMEM=1415MB
-TotPostIter=8
-#PLC_RUNDIR=minplacer/00002_pa02_00006_rplan timing=9622 cg=50
+TotPostIter=17
+#PLC_RUNDIR=minplacer/00002_pa02_00006_rplan timing=6899 cg=50
 FinderPnRatio=50
 FinderPnIter=0
-PlaceDly=9622
+PlaceDly=6899
 PEAKMEM=1374MB

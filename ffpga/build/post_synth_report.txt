@@ -3,24 +3,20 @@
 
 === servant ===
 
-   Number of wires:               2300
-   Number of wire bits:           7641
-   Number of public wires:        1854
-   Number of public wire bits:    6287
+   Number of wires:                757
+   Number of wire bits:           2256
+   Number of public wires:         721
+   Number of public wire bits:    2205
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1029
-     $print                          1
-     CARRY4                         22
-     FDRE                          267
-     INV                            11
-     LUT2                          108
-     LUT3                           52
-     LUT4                          111
-     LUT5                           91
-     LUT6                           91
-     RAM256X1S                     256
-     RAM64X1D                       18
-     SRLC32E                         1
+   Number of cells:                 85
+     CARRY4                          4
+     FDRE                           59
+     INV                             5
+     LUT2                            6
+     LUT3                            4
+     LUT4                            2
+     LUT5                            1
+     RAM64X1D                        4
 

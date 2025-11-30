@@ -3,4695 +3,1634 @@
 (* hdlname = "\\servant" *)
 (* dynports =  1  *)
 (* top =  1  *)
-(* src = "../src/servant.v:2.10-178.10" *)
-module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
-  wire [31:0] _0000_;
-  wire [1:0] _0001_;
-  wire _0002_;
-  wire _0003_;
-  wire _0004_;
-  wire _0005_;
-  wire _0006_;
-  wire _0007_;
-  wire _0008_;
-  wire _0009_;
-  wire _0010_;
-  wire _0011_;
-  wire _0012_;
-  wire _0013_;
-  wire _0014_;
-  wire _0015_;
-  wire _0016_;
-  wire _0017_;
-  wire _0018_;
-  wire _0019_;
-  wire _0020_;
-  wire _0021_;
-  wire _0022_;
-  wire _0023_;
-  wire _0024_;
-  wire _0025_;
-  wire _0026_;
-  wire _0027_;
-  wire _0028_;
-  wire _0029_;
-  wire _0030_;
-  wire _0031_;
-  wire _0032_;
-  wire _0033_;
-  wire _0034_;
-  wire _0035_;
-  wire _0036_;
-  wire _0037_;
-  wire _0038_;
-  wire _0039_;
-  wire _0040_;
+(* src = "../src/servant.v:3.10-209.10" *)
+module servant(BRAM0_RATIO, BRAM0_DATA_IN, BRAM0_WEN, BRAM0_WCLKEN, BRAM0_WRITE_ADDR, BRAM0_DATA_OUT, BRAM0_REN, BRAM0_RCLKEN, BRAM0_READ_ADDR, wb_clk, wb_clk_en, wb_nrst, q, q_en);
+  wire [1:0] _000_;
   (* unused_bits = "0" *)
-  wire _0041_;
+  wire _001_;
   (* unused_bits = "0" *)
-  wire _0042_;
+  wire _002_;
   (* unused_bits = "0" *)
-  wire _0043_;
+  wire _003_;
   (* unused_bits = "0" *)
-  wire _0044_;
+  wire _004_;
+  wire _005_;
+  wire _006_;
   (* unused_bits = "0" *)
-  wire _0045_;
+  wire _007_;
   (* unused_bits = "0" *)
-  wire _0046_;
+  wire _008_;
   (* unused_bits = "0" *)
-  wire _0047_;
+  wire _009_;
   (* unused_bits = "0" *)
-  wire _0048_;
+  wire _010_;
   (* unused_bits = "0" *)
-  wire _0049_;
-  wire _0050_;
+  wire _011_;
   (* unused_bits = "0" *)
-  wire _0051_;
+  wire _012_;
   (* unused_bits = "0" *)
-  wire _0052_;
+  wire _013_;
   (* unused_bits = "0" *)
-  wire _0053_;
+  wire _014_;
   (* unused_bits = "0" *)
-  wire _0054_;
+  wire _015_;
   (* unused_bits = "0" *)
-  wire _0055_;
+  wire _016_;
+  wire _017_;
   (* unused_bits = "0" *)
-  wire _0056_;
+  wire _018_;
   (* unused_bits = "0" *)
-  wire _0057_;
+  wire _019_;
   (* unused_bits = "0" *)
-  wire _0058_;
+  wire _020_;
   (* unused_bits = "0" *)
-  wire _0059_;
+  wire _021_;
   (* unused_bits = "0" *)
-  wire _0060_;
+  wire _022_;
   (* unused_bits = "0" *)
-  wire _0061_;
+  wire _023_;
   (* unused_bits = "0" *)
-  wire _0062_;
+  wire _024_;
   (* unused_bits = "0" *)
-  wire _0063_;
-  (* unused_bits = "0" *)
-  wire _0064_;
-  (* unused_bits = "0" *)
-  wire _0065_;
-  (* unused_bits = "0" *)
-  wire _0066_;
-  wire _0067_;
-  (* unused_bits = "0" *)
-  wire _0068_;
-  (* unused_bits = "0" *)
-  wire _0069_;
-  (* unused_bits = "0" *)
-  wire _0070_;
-  (* unused_bits = "0" *)
-  wire _0071_;
-  wire _0072_;
-  (* unused_bits = "0" *)
-  wire _0073_;
-  (* unused_bits = "0" *)
-  wire _0074_;
-  (* unused_bits = "0" *)
-  wire _0075_;
-  wire _0076_;
-  (* unused_bits = "0" *)
-  wire _0077_;
-  (* unused_bits = "0" *)
-  wire _0078_;
-  (* unused_bits = "0" *)
-  wire _0079_;
-  (* unused_bits = "0" *)
-  wire _0080_;
-  (* unused_bits = "0" *)
-  wire _0081_;
-  (* unused_bits = "0" *)
-  wire _0082_;
-  (* unused_bits = "0" *)
-  wire _0083_;
-  (* unused_bits = "0" *)
-  wire _0084_;
-  (* unused_bits = "0" *)
-  wire _0085_;
-  (* unused_bits = "0" *)
-  wire _0086_;
-  (* unused_bits = "0" *)
-  wire _0087_;
-  (* unused_bits = "0" *)
-  wire _0088_;
-  (* unused_bits = "0" *)
-  wire _0089_;
-  (* unused_bits = "0" *)
-  wire _0090_;
-  wire _0091_;
-  (* unused_bits = "0" *)
-  wire _0092_;
-  (* unused_bits = "0" *)
-  wire _0093_;
-  (* unused_bits = "0" *)
-  wire _0094_;
-  (* unused_bits = "0" *)
-  wire _0095_;
-  (* unused_bits = "0" *)
-  wire _0096_;
-  (* unused_bits = "0" *)
-  wire _0097_;
-  (* unused_bits = "0" *)
-  wire _0098_;
-  wire _0099_;
-  (* unused_bits = "0" *)
-  wire _0100_;
-  (* unused_bits = "0" *)
-  wire _0101_;
-  (* unused_bits = "0" *)
-  wire _0102_;
-  (* unused_bits = "0" *)
-  wire _0103_;
-  (* unused_bits = "0" *)
-  wire _0104_;
-  (* unused_bits = "0" *)
-  wire _0105_;
-  (* unused_bits = "0" *)
-  wire _0106_;
-  wire _0107_;
-  (* unused_bits = "0" *)
-  wire _0108_;
-  (* unused_bits = "0" *)
-  wire _0109_;
-  (* unused_bits = "0" *)
-  wire _0110_;
-  (* unused_bits = "0" *)
-  wire _0111_;
-  (* unused_bits = "0" *)
-  wire _0112_;
-  (* unused_bits = "0" *)
-  wire _0113_;
-  (* unused_bits = "0" *)
-  wire _0114_;
-  wire _0115_;
-  (* unused_bits = "0" *)
-  wire _0116_;
-  (* unused_bits = "0" *)
-  wire _0117_;
-  (* unused_bits = "0" *)
-  wire _0118_;
-  (* unused_bits = "0" *)
-  wire _0119_;
-  (* unused_bits = "0" *)
-  wire _0120_;
-  (* unused_bits = "0" *)
-  wire _0121_;
-  (* unused_bits = "0" *)
-  wire _0122_;
-  wire _0123_;
-  (* unused_bits = "0" *)
-  wire _0124_;
-  (* unused_bits = "0" *)
-  wire _0125_;
-  (* unused_bits = "0" *)
-  wire _0126_;
-  (* unused_bits = "0" *)
-  wire _0127_;
-  (* unused_bits = "0" *)
-  wire _0128_;
-  (* unused_bits = "0" *)
-  wire _0129_;
-  (* unused_bits = "0" *)
-  wire _0130_;
-  wire _0131_;
-  (* unused_bits = "0" *)
-  wire _0132_;
-  (* unused_bits = "0" *)
-  wire _0133_;
-  (* unused_bits = "0" *)
-  wire _0134_;
-  (* unused_bits = "0" *)
-  wire _0135_;
-  (* unused_bits = "0" *)
-  wire _0136_;
-  (* unused_bits = "0" *)
-  wire _0137_;
-  (* unused_bits = "0" *)
-  wire _0138_;
-  wire _0139_;
-  (* unused_bits = "0" *)
-  wire _0140_;
-  (* unused_bits = "0" *)
-  wire _0141_;
-  (* unused_bits = "0" *)
-  wire _0142_;
-  (* unused_bits = "0" *)
-  wire _0143_;
-  (* unused_bits = "0" *)
-  wire _0144_;
-  (* unused_bits = "0" *)
-  wire _0145_;
-  (* unused_bits = "0" *)
-  wire _0146_;
-  (* unused_bits = "0" *)
-  wire _0147_;
-  (* unused_bits = "0" *)
-  wire _0148_;
-  (* unused_bits = "0" *)
-  wire _0149_;
-  wire _0150_;
-  (* unused_bits = "0" *)
-  wire _0151_;
-  (* unused_bits = "0" *)
-  wire _0152_;
-  (* unused_bits = "0" *)
-  wire _0153_;
-  wire _0154_;
-  (* unused_bits = "0" *)
-  wire _0155_;
-  (* unused_bits = "0" *)
-  wire _0156_;
-  (* unused_bits = "0" *)
-  wire _0157_;
-  wire _0158_;
-  (* unused_bits = "0" *)
-  wire _0159_;
-  (* unused_bits = "0" *)
-  wire _0160_;
-  (* unused_bits = "0" *)
-  wire _0161_;
-  wire _0162_;
-  (* unused_bits = "0" *)
-  wire _0163_;
-  (* unused_bits = "0" *)
-  wire _0164_;
-  (* unused_bits = "0" *)
-  wire _0165_;
-  wire _0166_;
-  (* unused_bits = "0" *)
-  wire _0167_;
-  (* unused_bits = "0" *)
-  wire _0168_;
-  (* unused_bits = "0" *)
-  wire _0169_;
-  (* unused_bits = "0" *)
-  wire _0170_;
-  wire _0171_;
-  wire _0172_;
-  wire _0173_;
-  wire _0174_;
-  wire _0175_;
-  wire _0176_;
-  wire _0177_;
-  wire _0178_;
-  wire _0179_;
-  wire _0180_;
-  (* unused_bits = "0" *)
-  wire [7:0] _0181_;
-  wire [23:0] _0182_;
-  wire _0183_;
-  wire _0184_;
-  wire _0185_;
-  wire _0186_;
-  wire _0187_;
-  wire _0188_;
-  wire _0189_;
-  wire _0190_;
-  wire _0191_;
-  wire _0192_;
-  wire _0193_;
-  wire _0194_;
-  wire _0195_;
-  wire _0196_;
-  (* unused_bits = "0 1 2 3 4 5 6 7" *)
-  wire [8:0] _0197_;
-  wire [5:0] _0198_;
-  wire [4:0] _0199_;
-  wire _0200_;
-  wire _0201_;
-  wire _0202_;
-  wire _0203_;
-  wire _0204_;
-  wire _0205_;
-  wire _0206_;
-  wire _0207_;
-  (* force_downto = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:112.26-112.27" *)
-  wire [31:0] _0208_;
-  (* force_downto = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:163.15-163.39|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:112.26-112.27" *)
-  (* unused_bits = "1" *)
-  wire [4:0] _0209_;
-  (* force_downto = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:199.22-199.45|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:112.26-112.27" *)
-  wire [2:0] _0210_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/techmap.v:614.34-614.35" *)
-  wire [31:0] _0211_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/techmap.v:614.34-614.35" *)
-  (* unused_bits = "9 10 11 12 13 14 15" *)
-  wire [15:0] _0212_;
-  wire _0213_;
-  wire _0214_;
-  wire _0215_;
-  wire _0216_;
-  wire _0217_;
-  wire _0218_;
-  wire _0219_;
-  wire _0220_;
-  wire _0221_;
-  wire _0222_;
-  wire _0223_;
-  wire _0224_;
-  wire _0225_;
-  wire _0226_;
-  wire _0227_;
-  wire _0228_;
-  wire _0229_;
-  wire _0230_;
-  (* force_downto = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.43|/usr/local/go-configure-sw-hub/bin/external/yosys/share/cmp2lcu.v:46.13-46.74|/usr/local/go-configure-sw-hub/bin/external/yosys/share/cmp2lcu.v:90.17-90.86|/usr/local/go-configure-sw-hub/bin/external/yosys/share/cmp2lcu.v:125.21-125.104|/usr/local/go-configure-sw-hub/bin/external/yosys/share/cmp2lcu.v:122.21-122.74|/usr/local/go-configure-sw-hub/bin/external/yosys/share/cmp2lcu.v:77.35-77.85|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:32.21-32.23" *)
-  (* unused_bits = "0 1 2 3 4" *)
-  wire [5:0] _0231_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0232_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0233_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0234_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0235_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0236_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [2:0] _0237_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0238_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0239_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0240_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0241_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0242_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0243_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0244_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0245_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0246_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0247_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0248_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0249_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0250_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0251_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0252_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0253_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0254_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [2:0] _0255_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0256_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0257_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0258_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0259_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0260_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [2:0] _0261_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0262_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0263_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0264_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0265_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0266_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0267_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0268_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0269_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0270_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0271_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0272_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0273_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0274_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0275_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0276_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0277_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0278_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0279_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0280_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0281_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0282_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0283_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0284_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0285_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0286_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0287_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0288_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0289_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0290_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0291_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0292_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0293_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0294_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0295_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0296_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0297_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0298_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0299_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0300_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [2:0] _0301_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0302_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0303_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0304_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0305_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0306_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0307_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0308_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0309_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0310_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0311_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0312_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0313_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [2:0] _0314_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0315_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0316_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0317_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0318_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire _0319_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0320_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0321_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0322_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0323_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0324_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0325_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0326_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0327_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0328_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0329_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0330_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0331_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [2:0] _0332_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0333_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0334_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0335_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0336_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0337_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0338_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0339_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0340_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0341_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0342_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0343_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0344_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0345_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0346_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0347_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0348_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0349_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0350_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0351_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0352_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0353_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0354_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0355_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0356_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0357_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0358_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0359_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0360_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0361_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0362_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0363_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0364_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0365_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0366_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0367_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0368_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0369_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0370_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0371_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0372_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0373_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0374_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0375_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0376_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0377_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0378_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0379_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0380_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0381_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0382_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0383_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0384_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0385_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0386_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0387_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0388_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0389_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0390_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0391_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0392_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0393_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0394_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0395_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0396_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0397_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0398_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0399_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0400_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0401_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0402_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0403_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0404_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0405_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0406_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0407_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0408_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0409_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0410_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0411_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0412_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0413_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0414_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0415_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0416_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0417_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0418_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0419_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0420_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0421_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0422_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0423_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0424_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0425_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0426_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0427_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [2:0] _0428_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0429_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0430_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0431_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0432_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0433_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0434_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0435_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0436_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0437_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0438_;
-  (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [5:0] _0439_;
+  wire _025_;
+  wire _026_;
+  wire _027_;
+  wire _028_;
   (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0440_;
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:163.15-163.39|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:112.26-112.27" *)
+  wire [4:0] _029_;
   (* force_downto = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [3:0] _0441_;
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:199.22-199.45|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:112.26-112.27" *)
+  wire [2:0] _030_;
+  wire _031_;
   (* force_downto = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0442_;
+  wire [1:0] _032_;
   (* force_downto = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0443_;
+  wire [2:0] _033_;
   (* force_downto = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [4:0] _0444_;
+  wire [3:0] _034_;
   (* force_downto = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:30.21-30.22" *)
-  wire [1:0] _0445_;
+  wire [2:0] _035_;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:8.49-8.62" *)
+  output [7:0] BRAM0_DATA_IN;
+  wire [7:0] BRAM0_DATA_IN;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:12.49-12.63" *)
+  input [7:0] BRAM0_DATA_OUT;
+  wire [7:0] BRAM0_DATA_OUT;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:7.48-7.59" *)
+  output [1:0] BRAM0_RATIO;
+  wire [1:0] BRAM0_RATIO;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:14.43-14.55" *)
+  output BRAM0_RCLKEN;
+  wire BRAM0_RCLKEN;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:15.49-15.64" *)
+  output [8:0] BRAM0_READ_ADDR;
+  wire [8:0] BRAM0_READ_ADDR;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:13.43-13.52" *)
+  output BRAM0_REN;
+  wire BRAM0_REN;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:10.43-10.55" *)
+  output BRAM0_WCLKEN;
+  wire BRAM0_WCLKEN;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:9.43-9.52" *)
+  output BRAM0_WEN;
+  wire BRAM0_WEN;
+  (* iopad_external_pin = 32'd1 *)
+  (* src = "../src/servant.v:11.49-11.65" *)
+  output [8:0] BRAM0_WRITE_ADDR;
+  wire [8:0] BRAM0_WRITE_ADDR;
   (* hdlname = "cpu arbiter i_wb_cpu_dbus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:11.23-11.40|../src/servile.v:129.20-149.36" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:11.23-11.40|../src/servile.v:129.20-149.36" *)
   wire [31:0] \cpu.arbiter.i_wb_cpu_dbus_adr ;
-  (* hdlname = "cpu arbiter i_wb_cpu_dbus_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:12.23-12.40|../src/servile.v:129.20-149.36" *)
-  wire [31:0] \cpu.arbiter.i_wb_cpu_dbus_dat ;
+  (* hdlname = "cpu arbiter i_wb_cpu_dbus_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:13.23-13.40|../src/servile.v:129.20-149.36" *)
+  wire [3:0] \cpu.arbiter.i_wb_cpu_dbus_sel ;
+  (* hdlname = "cpu arbiter i_wb_cpu_dbus_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:15.22-15.39|../src/servile.v:129.20-149.36" *)
+  wire \cpu.arbiter.i_wb_cpu_dbus_stb ;
   (* hdlname = "cpu arbiter i_wb_cpu_dbus_we" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:14.22-14.38|../src/servile.v:129.20-149.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:14.22-14.38|../src/servile.v:129.20-149.36" *)
   wire \cpu.arbiter.i_wb_cpu_dbus_we ;
   (* hdlname = "cpu arbiter i_wb_cpu_ibus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:19.23-19.40|../src/servile.v:129.20-149.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:19.23-19.40|../src/servile.v:129.20-149.36" *)
   wire [31:0] \cpu.arbiter.i_wb_cpu_ibus_adr ;
+  (* hdlname = "cpu arbiter i_wb_cpu_ibus_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:20.22-20.39|../src/servile.v:129.20-149.36" *)
+  wire \cpu.arbiter.i_wb_cpu_ibus_stb ;
   (* hdlname = "cpu arbiter i_wb_mem_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:30.22-30.34|../src/servile.v:129.20-149.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:30.22-30.34|../src/servile.v:129.20-149.36" *)
   wire \cpu.arbiter.i_wb_mem_ack ;
-  (* hdlname = "cpu arbiter i_wb_mem_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:29.23-29.35|../src/servile.v:129.20-149.36" *)
-  wire [31:0] \cpu.arbiter.i_wb_mem_rdt ;
-  (* hdlname = "cpu arbiter o_wb_cpu_dbus_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:16.23-16.40|../src/servile.v:129.20-149.36" *)
-  wire [31:0] \cpu.arbiter.o_wb_cpu_dbus_rdt ;
+  (* hdlname = "cpu arbiter o_wb_cpu_dbus_ack" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:17.23-17.40|../src/servile.v:129.20-149.36" *)
+  wire \cpu.arbiter.o_wb_cpu_dbus_ack ;
   (* hdlname = "cpu arbiter o_wb_cpu_ibus_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:22.23-22.40|../src/servile.v:129.20-149.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:22.23-22.40|../src/servile.v:129.20-149.36" *)
   wire \cpu.arbiter.o_wb_cpu_ibus_ack ;
-  (* hdlname = "cpu arbiter o_wb_cpu_ibus_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:21.23-21.40|../src/servile.v:129.20-149.36" *)
-  wire [31:0] \cpu.arbiter.o_wb_cpu_ibus_rdt ;
   (* hdlname = "cpu arbiter o_wb_mem_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:24.23-24.35|../src/servile.v:129.20-149.36" *)
-  (* unused_bits = "10 11 12" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:24.23-24.35|../src/servile.v:129.20-149.36" *)
   wire [31:0] \cpu.arbiter.o_wb_mem_adr ;
-  (* hdlname = "cpu arbiter o_wb_mem_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_arbiter.v:25.23-25.35|../src/servile.v:129.20-149.36" *)
-  wire [31:0] \cpu.arbiter.o_wb_mem_dat ;
-  (* hdlname = "cpu cpu alu add_cy_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:37.16-37.24|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.alu.add_cy_r ;
+  (* hdlname = "cpu arbiter o_wb_mem_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:26.23-26.35|../src/servile.v:129.20-149.36" *)
+  wire [3:0] \cpu.arbiter.o_wb_mem_sel ;
+  (* hdlname = "cpu arbiter o_wb_mem_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:28.23-28.35|../src/servile.v:129.20-149.36" *)
+  wire \cpu.arbiter.o_wb_mem_stb ;
+  (* hdlname = "cpu arbiter o_wb_mem_we" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_arbiter.v:27.23-27.34|../src/servile.v:129.20-149.36" *)
+  wire \cpu.arbiter.o_wb_mem_we ;
+  (* hdlname = "cpu cpu alu add_b" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:43.15-43.20|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.add_b ;
   (* hdlname = "cpu cpu alu clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:14.20-14.23|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:14.20-14.23|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.alu.clk ;
-  (* hdlname = "cpu cpu alu cmp_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:34.16-34.21|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.alu.cmp_r ;
   (* hdlname = "cpu cpu alu i_bool_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:21.21-21.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:21.21-21.30|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.alu.i_bool_op ;
+  (* hdlname = "cpu cpu alu i_buf" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:28.22-28.27|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.i_buf ;
+  (* hdlname = "cpu cpu alu i_cmp_eq" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:22.20-22.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.i_cmp_eq ;
+  (* hdlname = "cpu cpu alu i_cmp_sig" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:23.20-23.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.i_cmp_sig ;
   (* hdlname = "cpu cpu alu i_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:16.20-16.24|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:16.20-16.24|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.alu.i_en ;
   (* hdlname = "cpu cpu alu i_rd_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:24.21-24.29|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:24.21-24.29|../src/servile.v:210.4-276.33" *)
   wire [2:0] \cpu.cpu.alu.i_rd_sel ;
-  (* hdlname = "cpu cpu alu i_rs1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:26.22-26.27|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.alu.i_rs1 ;
-  (* hdlname = "cpu cpu alu o_cmp" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:18.21-18.26|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.alu.o_cmp ;
+  (* hdlname = "cpu cpu alu i_sub" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:20.20-20.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.i_sub ;
+  (* hdlname = "cpu cpu alu o_rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:29.22-29.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.o_rd ;
+  (* hdlname = "cpu cpu alu op_b_sx" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:41.9-41.16|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.op_b_sx ;
+  (* hdlname = "cpu cpu alu result_bool" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:65.15-65.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.result_bool ;
+  (* hdlname = "cpu cpu alu rs1_sx" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:40.9-40.15|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu.rs1_sx ;
   (* hdlname = "cpu cpu alu_bool_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:144.17-144.28|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:144.17-144.28|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.alu_bool_op ;
-  (* hdlname = "cpu cpu alu_cmp" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:147.18-147.25|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.alu_cmp ;
+  (* hdlname = "cpu cpu alu_cmp_eq" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:145.18-145.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu_cmp_eq ;
+  (* hdlname = "cpu cpu alu_cmp_sig" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:146.18-146.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu_cmp_sig ;
+  (* hdlname = "cpu cpu alu_rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:104.18-104.24|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu_rd ;
   (* hdlname = "cpu cpu alu_rd_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:148.18-148.28|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:148.18-148.28|../src/servile.v:210.4-276.33" *)
   wire [2:0] \cpu.cpu.alu_rd_sel ;
+  (* hdlname = "cpu cpu alu_sub" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:143.18-143.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.alu_sub ;
   (* hdlname = "cpu cpu bne_or_bge" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:90.11-90.21|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:90.11-90.21|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bne_or_bge ;
   (* hdlname = "cpu cpu branch_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:95.11-95.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:95.11-95.20|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.branch_op ;
+  (* hdlname = "cpu cpu bufreg c" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:38.16-38.17|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.c ;
   (* hdlname = "cpu cpu bufreg c_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:40.20-40.23|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:40.20-40.23|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg.c_r ;
+  (* hdlname = "cpu cpu bufreg clr_lsb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:42.21-42.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.clr_lsb ;
   (* hdlname = "cpu cpu bufreg data" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:41.21-41.25|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:41.21-41.25|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.bufreg.data ;
   (* hdlname = "cpu cpu bufreg i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:12.22-12.27|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:12.22-12.27|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg.i_clk ;
-  (* hdlname = "cpu cpu bufreg i_cnt_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:16.22-16.32|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.bufreg.i_cnt_done ;
+  (* hdlname = "cpu cpu bufreg i_clr_lsb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:24.22-24.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.i_clr_lsb ;
   (* hdlname = "cpu cpu bufreg i_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:17.22-17.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:17.22-17.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg.i_en ;
+  (* hdlname = "cpu cpu bufreg i_imm_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:23.22-23.30|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.i_imm_en ;
+  (* hdlname = "cpu cpu bufreg i_init" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:18.22-18.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.i_init ;
   (* hdlname = "cpu cpu bufreg i_mdu_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:19.25-19.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:19.25-19.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg.i_mdu_op ;
   (* hdlname = "cpu cpu bufreg i_right_shift_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:26.22-26.38|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:26.22-26.38|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg.i_right_shift_op ;
-  (* hdlname = "cpu cpu bufreg i_rs1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:30.21-30.26|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.bufreg.i_rs1 ;
+  (* hdlname = "cpu cpu bufreg i_rs1_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:22.22-22.30|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.i_rs1_en ;
   (* hdlname = "cpu cpu bufreg i_sh_signed" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:28.22-28.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:28.22-28.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg.i_sh_signed ;
-  (* hdlname = "cpu cpu bufreg i_shamt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:27.23-27.30|../src/servile.v:210.4-276.33" *)
-  wire [2:0] \cpu.cpu.bufreg.i_shamt ;
+  (* hdlname = "cpu cpu bufreg i_shift_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:25.22-25.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.i_shift_op ;
   (* hdlname = "cpu cpu bufreg o_dbus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:34.23-34.33|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:34.23-34.33|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.bufreg.o_dbus_adr ;
   (* hdlname = "cpu cpu bufreg o_ext_rs1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:36.23-36.32|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:36.23-36.32|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.bufreg.o_ext_rs1 ;
   (* hdlname = "cpu cpu bufreg o_lsb" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:20.25-20.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:20.25-20.30|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.bufreg.o_lsb ;
-  (* hdlname = "cpu cpu bufreg2 cnt_next" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:73.16-73.24|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1 2 3 4 5 7" *)
-  wire [7:0] \cpu.cpu.bufreg2.cnt_next ;
-  (* hdlname = "cpu cpu bufreg2 dat_shamt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:82.15-82.24|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1 2 3 4 5 7" *)
-  wire [7:0] \cpu.cpu.bufreg2.dat_shamt ;
-  (* hdlname = "cpu cpu bufreg2 dhi" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:36.16-36.19|../src/servile.v:210.4-276.33" *)
-  wire [7:0] \cpu.cpu.bufreg2.dhi ;
-  (* hdlname = "cpu cpu bufreg2 dlo" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:37.17-37.20|../src/servile.v:210.4-276.33" *)
-  wire [23:0] \cpu.cpu.bufreg2.dlo ;
+  (* hdlname = "cpu cpu bufreg o_q" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:32.22-32.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.o_q ;
+  (* hdlname = "cpu cpu bufreg q" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:39.21-39.22|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg.q ;
+  (* hdlname = "cpu cpu bufreg2 cnt_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:58.11-58.17|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg2.cnt_en ;
   (* hdlname = "cpu cpu bufreg2 i_bytecnt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:20.23-20.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:20.23-20.32|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.bufreg2.i_bytecnt ;
   (* hdlname = "cpu cpu bufreg2 i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:12.21-12.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:12.21-12.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg2.i_clk ;
-  (* hdlname = "cpu cpu bufreg2 i_cnt_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:17.21-17.31|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.bufreg2.i_cnt_done ;
   (* hdlname = "cpu cpu bufreg2 i_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:14.21-14.25|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:14.21-14.25|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg2.i_en ;
+  (* hdlname = "cpu cpu bufreg2 i_init" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:15.21-15.27|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg2.i_init ;
+  (* hdlname = "cpu cpu bufreg2 i_load" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:32.21-32.27|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg2.i_load ;
   (* hdlname = "cpu cpu bufreg2 i_lsb" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:19.23-19.28|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:19.23-19.28|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.bufreg2.i_lsb ;
   (* hdlname = "cpu cpu bufreg2 i_op_b_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:23.21-23.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:23.21-23.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg2.i_op_b_sel ;
   (* hdlname = "cpu cpu bufreg2 i_sh_right" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:18.21-18.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:18.21-18.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg2.i_sh_right ;
-  (* hdlname = "cpu cpu bufreg2 o_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:31.23-31.28|../src/servile.v:210.4-276.33" *)
-  wire [31:0] \cpu.cpu.bufreg2.o_dat ;
-  (* hdlname = "cpu cpu bufreg2 o_q" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:29.23-29.26|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.bufreg2.o_q ;
-  (* hdlname = "cpu cpu bufreg2 o_sh_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:21.22-21.31|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0" *)
-  wire \cpu.cpu.bufreg2.o_sh_done ;
-  (* hdlname = "cpu cpu bufreg2_q" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:139.18-139.27|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.bufreg2_q ;
+  (* hdlname = "cpu cpu bufreg2 i_shift_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:24.21-24.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg2.i_shift_op ;
+  (* hdlname = "cpu cpu bufreg_clr_lsb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:137.11-137.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg_clr_lsb ;
   (* hdlname = "cpu cpu bufreg_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:133.11-133.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:133.11-133.20|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg_en ;
+  (* hdlname = "cpu cpu bufreg_imm_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:136.11-136.24|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg_imm_en ;
+  (* hdlname = "cpu cpu bufreg_q" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:138.18-138.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg_q ;
+  (* hdlname = "cpu cpu bufreg_rs1_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:135.11-135.24|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.bufreg_rs1_en ;
   (* hdlname = "cpu cpu bufreg_sh_signed" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:134.18-134.34|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:134.18-134.34|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.bufreg_sh_signed ;
   (* hdlname = "cpu cpu clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:21.23-21.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:21.23-21.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.clk ;
-  (* hdlname = "cpu cpu cnt_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:131.11-131.19|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.cnt_done ;
   (* hdlname = "cpu cpu cnt_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:120.18-120.24|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:120.18-120.24|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.cnt_en ;
+  (* hdlname = "cpu cpu csr_addr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:174.17-174.25|../src/servile.v:210.4-276.33" *)
+  wire [1:0] \cpu.cpu.csr_addr ;
   (* hdlname = "cpu cpu csr_d_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:172.11-172.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:172.11-172.20|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.csr_d_sel ;
+  (* hdlname = "cpu cpu csr_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:173.11-173.17|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.csr_en ;
   (* hdlname = "cpu cpu csr_imm" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:171.16-171.23|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:171.16-171.23|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.csr_imm ;
+  (* hdlname = "cpu cpu csr_imm_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:176.11-176.21|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.csr_imm_en ;
   (* hdlname = "cpu cpu csr_in" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:177.18-177.24|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:177.18-177.24|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.csr_in ;
+  (* hdlname = "cpu cpu csr_mcause_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:169.11-169.24|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.csr_mcause_en ;
+  (* hdlname = "cpu cpu csr_mstatus_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:167.11-167.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.csr_mstatus_en ;
+  (* hdlname = "cpu cpu csr_rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:106.18-106.24|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.csr_rd ;
   (* hdlname = "cpu cpu csr_source" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:170.16-170.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:170.16-170.26|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.csr_source ;
   (* hdlname = "cpu cpu ctrl clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:16.21-16.24|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:16.21-16.24|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.ctrl.clk ;
+  (* hdlname = "cpu cpu ctrl i_buf" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:33.21-33.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.i_buf ;
   (* hdlname = "cpu cpu ctrl i_iscomp" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:30.22-30.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:30.22-30.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.ctrl.i_iscomp ;
+  (* hdlname = "cpu cpu ctrl i_jal_or_jalr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:26.21-26.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.i_jal_or_jalr ;
   (* hdlname = "cpu cpu ctrl i_jump" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:25.21-25.27|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:25.21-25.27|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.ctrl.i_jump ;
-  (* hdlname = "cpu cpu ctrl i_rst" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:17.21-17.26|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.ctrl.i_rst ;
+  (* hdlname = "cpu cpu ctrl i_pc_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:19.21-19.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.i_pc_en ;
+  (* hdlname = "cpu cpu ctrl i_pc_rel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:28.21-28.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.i_pc_rel ;
+  (* hdlname = "cpu cpu ctrl i_trap" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:29.21-29.27|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.i_trap ;
+  (* hdlname = "cpu cpu ctrl i_utype" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:27.21-27.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.i_utype ;
   (* hdlname = "cpu cpu ctrl new_pc" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:53.15-53.21|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:53.15-53.21|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.ctrl.new_pc ;
   (* hdlname = "cpu cpu ctrl o_ibus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:38.22-38.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:38.22-38.32|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.ctrl.o_ibus_adr ;
+  (* hdlname = "cpu cpu ctrl o_rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:35.22-35.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.o_rd ;
+  (* hdlname = "cpu cpu ctrl offset_a" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:55.15-55.23|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.offset_a ;
+  (* hdlname = "cpu cpu ctrl offset_b" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:56.15-56.23|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.offset_b ;
   (* hdlname = "cpu cpu ctrl pc" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:51.15-51.17|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:51.15-51.17|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.ctrl.pc ;
-  (* hdlname = "cpu cpu ctrl pc_plus_4_cy_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:42.15-42.29|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.ctrl.pc_plus_4_cy_r ;
-  (* hdlname = "cpu cpu ctrl pc_plus_4_cy_r_w" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:43.15-43.31|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.ctrl.pc_plus_4_cy_r_w ;
+  (* hdlname = "cpu cpu ctrl pc_plus_offset" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:44.15-44.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.pc_plus_offset ;
+  (* hdlname = "cpu cpu ctrl pc_plus_offset_cy" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:45.15-45.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl.pc_plus_offset_cy ;
   (* hdlname = "cpu cpu ctrl pc_plus_offset_cy_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:46.14-46.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:46.14-46.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.ctrl.pc_plus_offset_cy_r ;
   (* hdlname = "cpu cpu ctrl pc_plus_offset_cy_r_w" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:47.15-47.36|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:47.15-47.36|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.ctrl.pc_plus_offset_cy_r_w ;
+  (* hdlname = "cpu cpu ctrl_pc_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:109.18-109.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl_pc_en ;
+  (* hdlname = "cpu cpu ctrl_rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:103.18-103.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.ctrl_rd ;
+  (* hdlname = "cpu cpu dbus_ack" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:141.16-141.24|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.dbus_ack ;
+  (* hdlname = "cpu cpu dbus_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:179.11-179.18|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.dbus_en ;
   (* hdlname = "cpu cpu decode clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:12.22-12.25|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:12.22-12.25|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.clk ;
   (* hdlname = "cpu cpu decode co_alu_bool_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:212.15-212.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:212.15-212.29|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.decode.co_alu_bool_op ;
+  (* hdlname = "cpu cpu decode co_alu_cmp_eq" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:204.9-204.22|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_alu_cmp_eq ;
+  (* hdlname = "cpu cpu decode co_alu_cmp_sig" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:206.9-206.23|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_alu_cmp_sig ;
   (* hdlname = "cpu cpu decode co_alu_rd_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:230.15-230.28|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:230.15-230.28|../src/servile.v:210.4-276.33" *)
   wire [2:0] \cpu.cpu.decode.co_alu_rd_sel ;
+  (* hdlname = "cpu cpu decode co_alu_sub" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:165.9-165.19|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_alu_sub ;
   (* hdlname = "cpu cpu decode co_bne_or_bge" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:134.9-134.22|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:134.9-134.22|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_bne_or_bge ;
   (* hdlname = "cpu cpu decode co_branch_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:87.9-87.21|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:87.9-87.21|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_branch_op ;
+  (* hdlname = "cpu cpu decode co_bufreg_clr_lsb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:105.9-105.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_bufreg_clr_lsb ;
+  (* hdlname = "cpu cpu decode co_bufreg_imm_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:100.9-100.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_bufreg_imm_en ;
+  (* hdlname = "cpu cpu decode co_bufreg_rs1_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:99.9-99.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_bufreg_rs1_en ;
   (* hdlname = "cpu cpu decode co_bufreg_sh_signed" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:153.9-153.28|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:153.9-153.28|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_bufreg_sh_signed ;
+  (* hdlname = "cpu cpu decode co_csr_addr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:202.15-202.26|../src/servile.v:210.4-276.33" *)
+  wire [1:0] \cpu.cpu.decode.co_csr_addr ;
   (* hdlname = "cpu cpu decode co_csr_d_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:200.9-200.21|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:200.9-200.21|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_csr_d_sel ;
+  (* hdlname = "cpu cpu decode co_csr_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:194.9-194.18|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_csr_en ;
+  (* hdlname = "cpu cpu decode co_csr_imm_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:201.9-201.22|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_csr_imm_en ;
+  (* hdlname = "cpu cpu decode co_csr_mcause_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:197.9-197.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_csr_mcause_en ;
+  (* hdlname = "cpu cpu decode co_csr_mstatus_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:195.9-195.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_csr_mstatus_en ;
   (* hdlname = "cpu cpu decode co_csr_source" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:199.15-199.28|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:199.15-199.28|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.decode.co_csr_source ;
+  (* hdlname = "cpu cpu decode co_ctrl_jal_or_jalr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:113.9-113.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_ctrl_jal_or_jalr ;
+  (* hdlname = "cpu cpu decode co_ctrl_mret" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:146.9-146.21|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_ctrl_mret ;
+  (* hdlname = "cpu cpu decode co_ctrl_pc_rel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:118.9-118.23|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_ctrl_pc_rel ;
+  (* hdlname = "cpu cpu decode co_ctrl_utype" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:112.9-112.22|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_ctrl_utype ;
+  (* hdlname = "cpu cpu decode co_dbus_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:88.9-88.19|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_dbus_en ;
+  (* hdlname = "cpu cpu decode co_e_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:149.9-149.16|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_e_op ;
   (* hdlname = "cpu cpu decode co_ebreak" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:141.9-141.18|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:141.9-141.18|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_ebreak ;
   (* hdlname = "cpu cpu decode co_ext_funct3" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:93.15-93.28|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:93.15-93.28|../src/servile.v:210.4-276.33" *)
   wire [2:0] \cpu.cpu.decode.co_ext_funct3 ;
   (* hdlname = "cpu cpu decode co_immdec_ctrl" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:214.15-214.29|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1 2" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:214.15-214.29|../src/servile.v:210.4-276.33" *)
   wire [3:0] \cpu.cpu.decode.co_immdec_ctrl ;
+  (* hdlname = "cpu cpu decode co_immdec_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:224.15-224.27|../src/servile.v:210.4-276.33" *)
+  wire [3:0] \cpu.cpu.decode.co_immdec_en ;
   (* hdlname = "cpu cpu decode co_mdu_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:81.9-81.18|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:81.9-81.18|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_mdu_op ;
   (* hdlname = "cpu cpu decode co_mem_cmd" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:208.9-208.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:208.9-208.19|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_mem_cmd ;
   (* hdlname = "cpu cpu decode co_mem_half" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:210.9-210.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:210.9-210.20|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_mem_half ;
+  (* hdlname = "cpu cpu decode co_mem_signed" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:209.9-209.22|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_mem_signed ;
   (* hdlname = "cpu cpu decode co_mem_word" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:90.9-90.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:90.9-90.20|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_mem_word ;
   (* hdlname = "cpu cpu decode co_mtval_pc" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:89.9-89.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:89.9-89.20|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_mtval_pc ;
   (* hdlname = "cpu cpu decode co_op_b_source" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:237.9-237.23|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:237.9-237.23|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_op_b_source ;
+  (* hdlname = "cpu cpu decode co_rd_alu_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:91.9-91.21|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_rd_alu_en ;
+  (* hdlname = "cpu cpu decode co_rd_csr_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:192.9-192.21|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_rd_csr_en ;
+  (* hdlname = "cpu cpu decode co_rd_mem_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:92.9-92.21|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_rd_mem_en ;
+  (* hdlname = "cpu cpu decode co_rd_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:125.9-125.17|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_rd_op ;
   (* hdlname = "cpu cpu decode co_sh_right" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:133.9-133.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:133.9-133.20|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.co_sh_right ;
+  (* hdlname = "cpu cpu decode co_shift_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:86.9-86.20|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_shift_op ;
+  (* hdlname = "cpu cpu decode co_two_stage_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:83.9-83.24|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.co_two_stage_op ;
+  (* hdlname = "cpu cpu decode csr_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:137.9-137.15|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.csr_op ;
+  (* hdlname = "cpu cpu decode csr_valid" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:190.9-190.18|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.csr_valid ;
   (* hdlname = "cpu cpu decode funct3" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:72.14-72.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:72.14-72.20|../src/servile.v:210.4-276.33" *)
   wire [2:0] \cpu.cpu.decode.funct3 ;
   (* hdlname = "cpu cpu decode i_wb_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:15.22-15.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:15.22-15.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.i_wb_en ;
-  (* hdlname = "cpu cpu decode i_wb_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:14.22-14.30|../src/servile.v:210.4-276.33" *)
-  wire [31:2] \cpu.cpu.decode.i_wb_rdt ;
   (* hdlname = "cpu cpu decode imm30" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:79.14-79.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:79.14-79.19|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.imm30 ;
   (* hdlname = "cpu cpu decode o_alu_bool_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:43.21-43.34|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:43.21-43.34|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.decode.o_alu_bool_op ;
+  (* hdlname = "cpu cpu decode o_alu_cmp_eq" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:44.21-44.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_alu_cmp_eq ;
+  (* hdlname = "cpu cpu decode o_alu_cmp_sig" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:45.21-45.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_alu_cmp_sig ;
   (* hdlname = "cpu cpu decode o_alu_rd_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:46.21-46.33|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:46.21-46.33|../src/servile.v:210.4-276.33" *)
   wire [2:0] \cpu.cpu.decode.o_alu_rd_sel ;
+  (* hdlname = "cpu cpu decode o_alu_sub" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:42.21-42.30|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_alu_sub ;
   (* hdlname = "cpu cpu decode o_bne_or_bge" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:18.21-18.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:18.21-18.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_bne_or_bge ;
   (* hdlname = "cpu cpu decode o_branch_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:22.21-22.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:22.21-22.32|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_branch_op ;
+  (* hdlname = "cpu cpu decode o_bufreg_clr_lsb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:34.21-34.37|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_bufreg_clr_lsb ;
+  (* hdlname = "cpu cpu decode o_bufreg_imm_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:33.21-33.36|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_bufreg_imm_en ;
+  (* hdlname = "cpu cpu decode o_bufreg_rs1_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:32.21-32.36|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_bufreg_rs1_en ;
   (* hdlname = "cpu cpu decode o_bufreg_sh_signed" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:35.21-35.39|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:35.21-35.39|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_bufreg_sh_signed ;
+  (* hdlname = "cpu cpu decode o_csr_addr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:54.21-54.31|../src/servile.v:210.4-276.33" *)
+  wire [1:0] \cpu.cpu.decode.o_csr_addr ;
   (* hdlname = "cpu cpu decode o_csr_d_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:59.21-59.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:59.21-59.32|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_csr_d_sel ;
+  (* hdlname = "cpu cpu decode o_csr_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:53.21-53.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_csr_en ;
+  (* hdlname = "cpu cpu decode o_csr_imm_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:60.21-60.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_csr_imm_en ;
+  (* hdlname = "cpu cpu decode o_csr_mcause_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:57.21-57.36|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_csr_mcause_en ;
+  (* hdlname = "cpu cpu decode o_csr_mstatus_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:55.21-55.37|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_csr_mstatus_en ;
   (* hdlname = "cpu cpu decode o_csr_source" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:58.21-58.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:58.21-58.33|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.decode.o_csr_source ;
+  (* hdlname = "cpu cpu decode o_ctrl_jal_or_jalr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:37.21-37.39|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_ctrl_jal_or_jalr ;
+  (* hdlname = "cpu cpu decode o_ctrl_mret" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:40.21-40.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_ctrl_mret ;
+  (* hdlname = "cpu cpu decode o_ctrl_pc_rel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:39.21-39.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_ctrl_pc_rel ;
+  (* hdlname = "cpu cpu decode o_ctrl_utype" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:38.21-38.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_ctrl_utype ;
+  (* hdlname = "cpu cpu decode o_dbus_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:26.21-26.30|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_dbus_en ;
+  (* hdlname = "cpu cpu decode o_e_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:20.21-20.27|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_e_op ;
   (* hdlname = "cpu cpu decode o_ebreak" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:21.21-21.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:21.21-21.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_ebreak ;
   (* hdlname = "cpu cpu decode o_ext_funct3" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:30.21-30.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:30.21-30.33|../src/servile.v:210.4-276.33" *)
   wire [2:0] \cpu.cpu.decode.o_ext_funct3 ;
   (* hdlname = "cpu cpu decode o_immdec_ctrl" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:63.21-63.34|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1 2" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:63.21-63.34|../src/servile.v:210.4-276.33" *)
   wire [3:0] \cpu.cpu.decode.o_immdec_ctrl ;
+  (* hdlname = "cpu cpu decode o_immdec_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:64.21-64.32|../src/servile.v:210.4-276.33" *)
+  wire [3:0] \cpu.cpu.decode.o_immdec_en ;
   (* hdlname = "cpu cpu decode o_mdu_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:28.21-28.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:28.21-28.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_mdu_op ;
   (* hdlname = "cpu cpu decode o_mem_cmd" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:51.21-51.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:51.21-51.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_mem_cmd ;
   (* hdlname = "cpu cpu decode o_mem_half" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:50.21-50.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:50.21-50.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_mem_half ;
+  (* hdlname = "cpu cpu decode o_mem_signed" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:48.21-48.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_mem_signed ;
   (* hdlname = "cpu cpu decode o_mem_word" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:49.21-49.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:49.21-49.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_mem_word ;
   (* hdlname = "cpu cpu decode o_mtval_pc" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:61.21-61.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:61.21-61.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_mtval_pc ;
   (* hdlname = "cpu cpu decode o_op_b_source" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:65.21-65.34|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:65.21-65.34|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_op_b_source ;
+  (* hdlname = "cpu cpu decode o_rd_alu_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:69.21-69.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_rd_alu_en ;
+  (* hdlname = "cpu cpu decode o_rd_csr_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:68.21-68.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_rd_csr_en ;
+  (* hdlname = "cpu cpu decode o_rd_mem_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:67.21-67.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_rd_mem_en ;
+  (* hdlname = "cpu cpu decode o_rd_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:24.21-24.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_rd_op ;
   (* hdlname = "cpu cpu decode o_sh_right" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:17.21-17.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:17.21-17.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.o_sh_right ;
+  (* hdlname = "cpu cpu decode o_shift_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:23.21-23.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_shift_op ;
+  (* hdlname = "cpu cpu decode o_two_stage_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:25.21-25.35|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.decode.o_two_stage_op ;
   (* hdlname = "cpu cpu decode op20" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:73.15-73.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:73.15-73.19|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.op20 ;
   (* hdlname = "cpu cpu decode op21" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:74.15-74.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:74.15-74.19|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.op21 ;
   (* hdlname = "cpu cpu decode op22" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:75.15-75.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:75.15-75.19|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.op22 ;
   (* hdlname = "cpu cpu decode op26" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:76.15-76.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:76.15-76.19|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.decode.op26 ;
   (* hdlname = "cpu cpu decode opcode" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:71.14-71.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:71.14-71.20|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.decode.opcode ;
+  (* hdlname = "cpu cpu e_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:93.11-93.15|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.e_op ;
   (* hdlname = "cpu cpu ebreak" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:94.11-94.17|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:94.11-94.17|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.ebreak ;
   (* hdlname = "cpu cpu gen_csr.csr csr_in" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:61.15-61.21|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:61.15-61.21|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.csr_in ;
+  (* hdlname = "cpu cpu gen_csr.csr csr_out" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:62.15-62.22|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.csr_out ;
   (* hdlname = "cpu cpu gen_csr.csr i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:15.20-15.25|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:15.20-15.25|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.i_clk ;
-  (* hdlname = "cpu cpu gen_csr.csr i_cnt_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:25.20-25.30|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.gen_csr.csr.i_cnt_done ;
   (* hdlname = "cpu cpu gen_csr.csr i_csr_d_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:39.20-39.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:39.20-39.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.i_csr_d_sel ;
   (* hdlname = "cpu cpu gen_csr.csr i_csr_imm" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:43.25-43.34|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:43.25-43.34|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.i_csr_imm ;
   (* hdlname = "cpu cpu gen_csr.csr i_csr_source" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:37.21-37.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:37.21-37.33|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.gen_csr.csr.i_csr_source ;
+  (* hdlname = "cpu cpu gen_csr.csr i_e_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:31.20-31.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.i_e_op ;
   (* hdlname = "cpu cpu gen_csr.csr i_ebreak" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:32.20-32.28|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:32.20-32.28|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.i_ebreak ;
   (* hdlname = "cpu cpu gen_csr.csr i_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:19.20-19.24|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:19.20-19.24|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.i_en ;
+  (* hdlname = "cpu cpu gen_csr.csr i_mcause_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:36.20-36.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.i_mcause_en ;
   (* hdlname = "cpu cpu gen_csr.csr i_mem_cmd" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:33.20-33.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:33.20-33.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.i_mem_cmd ;
-  (* hdlname = "cpu cpu gen_csr.csr i_mtip" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:27.20-27.26|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.gen_csr.csr.i_mtip ;
-  (* hdlname = "cpu cpu gen_csr.csr i_rs1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:44.25-44.30|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.gen_csr.csr.i_rs1 ;
-  (* hdlname = "cpu cpu gen_csr.csr i_rst" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:16.20-16.25|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.gen_csr.csr.i_rst ;
+  (* hdlname = "cpu cpu gen_csr.csr i_mem_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:26.20-26.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.i_mem_op ;
+  (* hdlname = "cpu cpu gen_csr.csr i_mret" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:38.20-38.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.i_mret ;
+  (* hdlname = "cpu cpu gen_csr.csr i_mstatus_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:34.20-34.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.i_mstatus_en ;
+  (* hdlname = "cpu cpu gen_csr.csr i_rf_csr_out" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:41.25-41.37|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.i_rf_csr_out ;
+  (* hdlname = "cpu cpu gen_csr.csr i_trap" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:28.20-28.26|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.i_trap ;
   (* hdlname = "cpu cpu gen_csr.csr i_trig_irq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:18.20-18.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:18.20-18.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.i_trig_irq ;
   (* hdlname = "cpu cpu gen_csr.csr mcause31" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:57.10-57.18|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:57.10-57.18|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.mcause31 ;
   (* hdlname = "cpu cpu gen_csr.csr mcause3_0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:58.15-58.24|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:58.15-58.24|../src/servile.v:210.4-276.33" *)
   wire [3:0] \cpu.cpu.gen_csr.csr.mcause3_0 ;
-  (* hdlname = "cpu cpu gen_csr.csr mie_mtie" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:55.14-55.22|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.gen_csr.csr.mie_mtie ;
   (* hdlname = "cpu cpu gen_csr.csr mstatus_mie" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:53.14-53.25|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:53.14-53.25|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.mstatus_mie ;
-  (* hdlname = "cpu cpu gen_csr.csr mstatus_mpie" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:54.14-54.26|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.gen_csr.csr.mstatus_mpie ;
   (* hdlname = "cpu cpu gen_csr.csr o_csr_in" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:42.26-42.34|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:42.26-42.34|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.o_csr_in ;
   (* hdlname = "cpu cpu gen_csr.csr o_new_irq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:29.20-29.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:29.20-29.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.o_new_irq ;
-  (* hdlname = "cpu cpu gen_csr.csr timer_irq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:90.10-90.19|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.gen_csr.csr.timer_irq ;
+  (* hdlname = "cpu cpu gen_csr.csr o_q" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:45.26-45.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.gen_csr.csr.o_q ;
   (* hdlname = "cpu cpu gen_csr.csr timer_irq_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:64.10-64.21|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:64.10-64.21|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.gen_csr.csr.timer_irq_r ;
+  (* hdlname = "cpu cpu i_dbus_ack" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:72.23-72.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.i_dbus_ack ;
   (* hdlname = "cpu cpu i_ext_rd" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:76.23-76.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:76.23-76.31|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.i_ext_rd ;
   (* hdlname = "cpu cpu i_ext_ready" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:75.23-75.34|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:75.23-75.34|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.i_ext_ready ;
   (* hdlname = "cpu cpu i_ibus_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:65.23-65.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:65.23-65.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.i_ibus_ack ;
-  (* hdlname = "cpu cpu i_ibus_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:64.29-64.39|../src/servile.v:210.4-276.33" *)
-  wire [31:0] \cpu.cpu.i_ibus_rdt ;
-  (* hdlname = "cpu cpu i_rdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:59.22-59.30|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.i_rdata0 ;
-  (* hdlname = "cpu cpu i_rst" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:22.23-22.28|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.i_rst ;
-  (* hdlname = "cpu cpu i_timer_irq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:23.23-23.34|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.i_timer_irq ;
-  (* hdlname = "cpu cpu i_wb_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:185.16-185.24|../src/servile.v:210.4-276.33" *)
-  wire [31:0] \cpu.cpu.i_wb_rdt ;
+  (* hdlname = "cpu cpu i_rf_ready" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:50.23-50.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.i_rf_ready ;
   (* hdlname = "cpu cpu immdec gen_immdec_w_eq_1.imm11_7" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:38.15-38.22|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:38.15-38.22|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 ;
   (* hdlname = "cpu cpu immdec gen_immdec_w_eq_1.imm19_12_20" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:34.15-34.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:34.15-34.26|../src/servile.v:210.4-276.33" *)
   wire [8:0] \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 ;
   (* hdlname = "cpu cpu immdec gen_immdec_w_eq_1.imm24_20" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:37.15-37.23|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:37.15-37.23|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 ;
   (* hdlname = "cpu cpu immdec gen_immdec_w_eq_1.imm30_25" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:36.15-36.23|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:36.15-36.23|../src/servile.v:210.4-276.33" *)
   wire [5:0] \cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 ;
   (* hdlname = "cpu cpu immdec gen_immdec_w_eq_1.imm31" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:32.15-32.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:32.15-32.20|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.immdec.gen_immdec_w_eq_1.imm31 ;
   (* hdlname = "cpu cpu immdec gen_immdec_w_eq_1.imm7" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:35.15-35.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:35.15-35.19|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.immdec.gen_immdec_w_eq_1.imm7 ;
+  (* hdlname = "cpu cpu immdec gen_immdec_w_eq_1.signbit" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:42.15-42.22|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.immdec.gen_immdec_w_eq_1.signbit ;
   (* hdlname = "cpu cpu immdec i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:12.21-12.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:12.21-12.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.immdec.i_clk ;
-  (* hdlname = "cpu cpu immdec i_cnt_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:15.21-15.31|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.immdec.i_cnt_done ;
   (* hdlname = "cpu cpu immdec i_cnt_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:14.21-14.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:14.21-14.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.immdec.i_cnt_en ;
+  (* hdlname = "cpu cpu immdec i_csr_imm_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:18.21-18.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.immdec.i_csr_imm_en ;
   (* hdlname = "cpu cpu immdec i_ctrl" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:19.22-19.28|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1 2" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:19.22-19.28|../src/servile.v:210.4-276.33" *)
   wire [3:0] \cpu.cpu.immdec.i_ctrl ;
+  (* hdlname = "cpu cpu immdec i_immdec_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:17.22-17.33|../src/servile.v:210.4-276.33" *)
+  wire [3:0] \cpu.cpu.immdec.i_immdec_en ;
   (* hdlname = "cpu cpu immdec i_wb_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:27.21-27.28|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:27.21-27.28|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.immdec.i_wb_en ;
-  (* hdlname = "cpu cpu immdec i_wb_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:28.22-28.30|../src/servile.v:210.4-276.33" *)
-  wire [31:7] \cpu.cpu.immdec.i_wb_rdt ;
   (* hdlname = "cpu cpu immdec o_csr_imm" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:24.24-24.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:24.24-24.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.immdec.o_csr_imm ;
   (* hdlname = "cpu cpu immdec o_rd_addr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:20.22-20.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:20.22-20.31|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.immdec.o_rd_addr ;
   (* hdlname = "cpu cpu immdec o_rs1_addr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:21.22-21.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:21.22-21.32|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.immdec.o_rs1_addr ;
   (* hdlname = "cpu cpu immdec o_rs2_addr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:22.22-22.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:22.22-22.32|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.immdec.o_rs2_addr ;
   (* hdlname = "cpu cpu immdec_ctrl" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:86.17-86.28|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 1 2" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:86.17-86.28|../src/servile.v:210.4-276.33" *)
   wire [3:0] \cpu.cpu.immdec_ctrl ;
+  (* hdlname = "cpu cpu immdec_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:87.16-87.25|../src/servile.v:210.4-276.33" *)
+  wire [3:0] \cpu.cpu.immdec_en ;
+  (* hdlname = "cpu cpu init" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:119.18-119.22|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.init ;
   (* hdlname = "cpu cpu iscomp" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:117.18-117.24|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:117.18-117.24|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.iscomp ;
+  (* hdlname = "cpu cpu jal_or_jalr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:111.18-111.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.jal_or_jalr ;
   (* hdlname = "cpu cpu jump" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:110.18-110.22|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:110.18-110.22|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.jump ;
   (* hdlname = "cpu cpu lsb" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:183.17-183.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:183.17-183.20|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.lsb ;
   (* hdlname = "cpu cpu mdu_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:98.11-98.17|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:98.11-98.17|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mdu_op ;
   (* hdlname = "cpu cpu mem_bytecnt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:160.17-160.28|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:160.17-160.28|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.mem_bytecnt ;
   (* hdlname = "cpu cpu mem_half" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:159.18-159.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:159.18-159.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mem_half ;
   (* hdlname = "cpu cpu mem_if dat_valid" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:34.9-34.18|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:34.9-34.18|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mem_if.dat_valid ;
-  (* hdlname = "cpu cpu mem_if i_bufreg2_q" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:27.21-27.32|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.mem_if.i_bufreg2_q ;
   (* hdlname = "cpu cpu mem_if i_bytecnt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:17.22-17.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:17.22-17.31|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.mem_if.i_bytecnt ;
   (* hdlname = "cpu cpu mem_if i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:15.21-15.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:15.21-15.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mem_if.i_clk ;
   (* hdlname = "cpu cpu mem_if i_half" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:23.21-23.27|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:23.21-23.27|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mem_if.i_half ;
   (* hdlname = "cpu cpu mem_if i_lsb" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:18.22-18.27|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:18.22-18.27|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.mem_if.i_lsb ;
   (* hdlname = "cpu cpu mem_if i_mdu_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:25.21-25.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:25.21-25.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mem_if.i_mdu_op ;
+  (* hdlname = "cpu cpu mem_if i_signed" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:21.21-21.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.mem_if.i_signed ;
   (* hdlname = "cpu cpu mem_if i_word" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:22.21-22.27|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:22.21-22.27|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mem_if.i_word ;
-  (* hdlname = "cpu cpu mem_if signbit" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:32.8-32.15|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.mem_if.signbit ;
+  (* hdlname = "cpu cpu mem_if o_misalign" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:19.22-19.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.mem_if.o_misalign ;
+  (* hdlname = "cpu cpu mem_if o_wb_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:30.22-30.30|../src/servile.v:210.4-276.33" *)
+  wire [3:0] \cpu.cpu.mem_if.o_wb_sel ;
+  (* hdlname = "cpu cpu mem_misalign" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:163.11-163.23|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.mem_misalign ;
+  (* hdlname = "cpu cpu mem_signed" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:157.18-157.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.mem_signed ;
   (* hdlname = "cpu cpu mem_word" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:158.18-158.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:158.18-158.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mem_word ;
+  (* hdlname = "cpu cpu mret" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:113.11-113.15|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.mret ;
   (* hdlname = "cpu cpu mtval_pc" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:107.11-107.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:107.11-107.19|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.mtval_pc ;
   (* hdlname = "cpu cpu new_irq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:181.11-181.18|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:181.11-181.18|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.new_irq ;
   (* hdlname = "cpu cpu o_dbus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:66.30-66.40|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:66.30-66.40|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.o_dbus_adr ;
-  (* hdlname = "cpu cpu o_dbus_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:67.30-67.40|../src/servile.v:210.4-276.33" *)
-  wire [31:0] \cpu.cpu.o_dbus_dat ;
+  (* hdlname = "cpu cpu o_dbus_cyc" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:70.24-70.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.o_dbus_cyc ;
+  (* hdlname = "cpu cpu o_dbus_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:68.29-68.39|../src/servile.v:210.4-276.33" *)
+  wire [3:0] \cpu.cpu.o_dbus_sel ;
   (* hdlname = "cpu cpu o_dbus_we" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:69.24-69.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:69.24-69.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.o_dbus_we ;
   (* hdlname = "cpu cpu o_ext_funct3" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:74.23-74.35|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:74.23-74.35|../src/servile.v:210.4-276.33" *)
   wire [2:0] \cpu.cpu.o_ext_funct3 ;
   (* hdlname = "cpu cpu o_ext_rs1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:77.23-77.32|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:77.23-77.32|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.o_ext_rs1 ;
-  (* hdlname = "cpu cpu o_ext_rs2" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:78.23-78.32|../src/servile.v:210.4-276.33" *)
-  wire [31:0] \cpu.cpu.o_ext_rs2 ;
   (* hdlname = "cpu cpu o_ibus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:62.30-62.40|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:62.30-62.40|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.o_ibus_adr ;
+  (* hdlname = "cpu cpu o_ibus_cyc" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:63.24-63.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.o_ibus_cyc ;
   (* hdlname = "cpu cpu o_mdu_valid" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:80.23-80.34|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:80.23-80.34|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.o_mdu_valid ;
   (* hdlname = "cpu cpu o_rf_rreq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:48.24-48.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:48.24-48.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.o_rf_rreq ;
+  (* hdlname = "cpu cpu o_rf_wreq" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:49.24-49.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.o_rf_wreq ;
   (* hdlname = "cpu cpu o_rreg0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:57.31-57.38|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:57.31-57.38|../src/servile.v:210.4-276.33" *)
   wire [5:0] \cpu.cpu.o_rreg0 ;
+  (* hdlname = "cpu cpu o_rreg1" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:58.31-58.38|../src/servile.v:210.4-276.33" *)
+  wire [5:0] \cpu.cpu.o_rreg1 ;
   (* hdlname = "cpu cpu o_wdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:55.22-55.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:55.22-55.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.o_wdata0 ;
   (* hdlname = "cpu cpu o_wdata1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:56.22-56.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:56.22-56.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.o_wdata1 ;
   (* hdlname = "cpu cpu o_wen0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:53.24-53.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:53.24-53.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.o_wen0 ;
   (* hdlname = "cpu cpu o_wen1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:54.24-54.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:54.24-54.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.o_wen1 ;
   (* hdlname = "cpu cpu o_wreg0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:51.31-51.38|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 2 3 4 5" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:51.31-51.38|../src/servile.v:210.4-276.33" *)
   wire [5:0] \cpu.cpu.o_wreg0 ;
   (* hdlname = "cpu cpu o_wreg1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:52.31-52.38|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:52.31-52.38|../src/servile.v:210.4-276.33" *)
   wire [5:0] \cpu.cpu.o_wreg1 ;
   (* hdlname = "cpu cpu op_b_sel" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:155.18-155.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:155.18-155.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.op_b_sel ;
+  (* hdlname = "cpu cpu pc_rel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:116.11-116.17|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.pc_rel ;
   (* hdlname = "cpu cpu rd_addr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:82.18-82.25|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:82.18-82.25|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.rd_addr ;
+  (* hdlname = "cpu cpu rd_alu_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:100.11-100.20|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rd_alu_en ;
+  (* hdlname = "cpu cpu rd_csr_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:101.11-101.20|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rd_csr_en ;
+  (* hdlname = "cpu cpu rd_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:152.18-152.23|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rd_en ;
+  (* hdlname = "cpu cpu rd_mem_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:102.11-102.20|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rd_mem_en ;
+  (* hdlname = "cpu cpu rd_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:97.11-97.16|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rd_op ;
+  (* hdlname = "cpu cpu rf_csr_out" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:178.18-178.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_csr_out ;
+  (* hdlname = "cpu cpu rf_if gen_csr.mtval" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:72.16-72.21|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.gen_csr.mtval ;
+  (* hdlname = "cpu cpu rf_if gen_csr.rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:66.15-66.17|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.gen_csr.rd ;
+  (* hdlname = "cpu cpu rf_if gen_csr.sel_rs2" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:122.9-122.16|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.gen_csr.sel_rs2 ;
+  (* hdlname = "cpu cpu rf_if i_alu_rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:43.21-43.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_alu_rd ;
+  (* hdlname = "cpu cpu rf_if i_bufreg_q" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:31.21-31.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_bufreg_q ;
   (* hdlname = "cpu cpu rf_if i_cnt_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:14.23-14.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:14.23-14.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.rf_if.i_cnt_en ;
   (* hdlname = "cpu cpu rf_if i_csr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:37.21-37.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:37.21-37.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.rf_if.i_csr ;
+  (* hdlname = "cpu cpu rf_if i_csr_addr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:36.28-36.38|../src/servile.v:210.4-276.33" *)
+  wire [1:0] \cpu.cpu.rf_if.i_csr_addr ;
+  (* hdlname = "cpu cpu rf_if i_csr_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:35.23-35.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_csr_en ;
+  (* hdlname = "cpu cpu rf_if i_csr_rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:45.21-45.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_csr_rd ;
+  (* hdlname = "cpu cpu rf_if i_ctrl_rd" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:42.21-42.30|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_ctrl_rd ;
   (* hdlname = "cpu cpu rf_if i_mepc" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:29.21-29.27|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:29.21-29.27|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.rf_if.i_mepc ;
+  (* hdlname = "cpu cpu rf_if i_mret" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:28.23-28.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_mret ;
   (* hdlname = "cpu cpu rf_if i_mtval_pc" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:30.36-30.46|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:30.36-30.46|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.rf_if.i_mtval_pc ;
+  (* hdlname = "cpu cpu rf_if i_rd_alu_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:44.23-44.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_rd_alu_en ;
+  (* hdlname = "cpu cpu rf_if i_rd_csr_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:46.23-46.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_rd_csr_en ;
+  (* hdlname = "cpu cpu rf_if i_rd_mem_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:48.23-48.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_rd_mem_en ;
   (* hdlname = "cpu cpu rf_if i_rd_waddr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:41.28-41.38|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:41.28-41.38|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.rf_if.i_rd_waddr ;
-  (* hdlname = "cpu cpu rf_if i_rdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:23.22-23.30|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.rf_if.i_rdata0 ;
+  (* hdlname = "cpu cpu rf_if i_rd_wen" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:40.23-40.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_rd_wen ;
   (* hdlname = "cpu cpu rf_if i_rs1_raddr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:51.28-51.39|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:51.28-51.39|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.rf_if.i_rs1_raddr ;
   (* hdlname = "cpu cpu rf_if i_rs2_raddr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:54.28-54.39|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:54.28-54.39|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.rf_if.i_rs2_raddr ;
+  (* hdlname = "cpu cpu rf_if i_trap" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:27.23-27.29|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.i_trap ;
+  (* hdlname = "cpu cpu rf_if o_csr" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:38.22-38.27|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.o_csr ;
   (* hdlname = "cpu cpu rf_if o_rreg0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:21.31-21.38|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:21.31-21.38|../src/servile.v:210.4-276.33" *)
   wire [5:0] \cpu.cpu.rf_if.o_rreg0 ;
-  (* hdlname = "cpu cpu rf_if o_rs1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:52.22-52.27|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.rf_if.o_rs1 ;
+  (* hdlname = "cpu cpu rf_if o_rreg1" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:22.31-22.38|../src/servile.v:210.4-276.33" *)
+  wire [5:0] \cpu.cpu.rf_if.o_rreg1 ;
   (* hdlname = "cpu cpu rf_if o_wdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:19.23-19.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:19.23-19.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.rf_if.o_wdata0 ;
   (* hdlname = "cpu cpu rf_if o_wdata1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:20.23-20.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:20.23-20.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.rf_if.o_wdata1 ;
   (* hdlname = "cpu cpu rf_if o_wen0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:17.24-17.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:17.24-17.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.rf_if.o_wen0 ;
   (* hdlname = "cpu cpu rf_if o_wen1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:18.24-18.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:18.24-18.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.rf_if.o_wen1 ;
   (* hdlname = "cpu cpu rf_if o_wreg0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:15.31-15.38|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0 2 3 4 5" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:15.31-15.38|../src/servile.v:210.4-276.33" *)
   wire [5:0] \cpu.cpu.rf_if.o_wreg0 ;
   (* hdlname = "cpu cpu rf_if o_wreg1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:16.31-16.38|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:16.31-16.38|../src/servile.v:210.4-276.33" *)
   wire [5:0] \cpu.cpu.rf_if.o_wreg1 ;
-  (* hdlname = "cpu cpu rs1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:150.18-150.21|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.rs1 ;
+  (* hdlname = "cpu cpu rf_if rd_wen" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:484.4-529.33|../src/serv_rf_if.v:62.15-62.21|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.rf_if.rd_wen ;
   (* hdlname = "cpu cpu rs1_addr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:83.18-83.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:83.18-83.26|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.rs1_addr ;
   (* hdlname = "cpu cpu rs2_addr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:84.18-84.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:84.18-84.26|../src/servile.v:210.4-276.33" *)
   wire [4:0] \cpu.cpu.rs2_addr ;
-  (* hdlname = "cpu cpu sh_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:161.11-161.18|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0" *)
-  wire \cpu.cpu.sh_done ;
   (* hdlname = "cpu cpu sh_right" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:89.18-89.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:89.18-89.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.sh_right ;
+  (* hdlname = "cpu cpu shift_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:96.11-96.19|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.shift_op ;
   (* hdlname = "cpu cpu state cnt_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:72.15-72.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:72.15-72.20|../src/servile.v:210.4-276.33" *)
   wire [3:0] \cpu.cpu.state.cnt_r ;
   (* hdlname = "cpu cpu state gen_cnt_w_eq_1.cnt_lsb" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:197.13-197.20|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:197.13-197.20|../src/servile.v:210.4-276.33" *)
   wire [3:0] \cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb ;
-  (* hdlname = "cpu cpu state gen_csr.misalign_trap_sync_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:228.8-228.28|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.state.gen_csr.misalign_trap_sync_r ;
-  (* hdlname = "cpu cpu state i_alu_cmp" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:19.21-19.30|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.state.i_alu_cmp ;
   (* hdlname = "cpu cpu state i_alu_rd_sel1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:48.21-48.34|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:48.21-48.34|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_alu_rd_sel1 ;
   (* hdlname = "cpu cpu state i_bne_or_bge" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:41.21-41.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:41.21-41.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_bne_or_bge ;
   (* hdlname = "cpu cpu state i_branch_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:45.21-45.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:45.21-45.32|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_branch_op ;
   (* hdlname = "cpu cpu state i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:15.21-15.26|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:15.21-15.26|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_clk ;
   (* hdlname = "cpu cpu state i_ctrl_misalign" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:36.21-36.36|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:36.21-36.36|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_ctrl_misalign ;
+  (* hdlname = "cpu cpu state i_dbus_ack" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:59.21-59.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_dbus_ack ;
+  (* hdlname = "cpu cpu state i_dbus_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:43.21-43.30|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_dbus_en ;
+  (* hdlname = "cpu cpu state i_e_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:50.21-50.27|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_e_op ;
   (* hdlname = "cpu cpu state i_ibus_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:61.21-61.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:61.21-61.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_ibus_ack ;
   (* hdlname = "cpu cpu state i_mdu_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:53.21-53.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:53.21-53.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_mdu_op ;
   (* hdlname = "cpu cpu state i_mdu_ready" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:56.21-56.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:56.21-56.32|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_mdu_ready ;
+  (* hdlname = "cpu cpu state i_mem_misalign" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:39.21-39.35|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_mem_misalign ;
   (* hdlname = "cpu cpu state i_new_irq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:18.21-18.30|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:18.21-18.30|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_new_irq ;
-  (* hdlname = "cpu cpu state i_rst" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:16.21-16.26|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.state.i_rst ;
-  (* hdlname = "cpu cpu state i_sh_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:37.21-37.30|../src/servile.v:210.4-276.33" *)
-  (* unused_bits = "0" *)
-  wire \cpu.cpu.state.i_sh_done ;
+  (* hdlname = "cpu cpu state i_rd_alu_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:49.21-49.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_rd_alu_en ;
+  (* hdlname = "cpu cpu state i_rd_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:51.21-51.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_rd_op ;
+  (* hdlname = "cpu cpu state i_rf_ready" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:65.21-65.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_rf_ready ;
   (* hdlname = "cpu cpu state i_sh_right" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:47.21-47.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:47.21-47.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.i_sh_right ;
+  (* hdlname = "cpu cpu state i_shift_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:46.21-46.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_shift_op ;
+  (* hdlname = "cpu cpu state i_two_stage_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:44.21-44.35|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.i_two_stage_op ;
   (* hdlname = "cpu cpu state ibus_cyc" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:74.14-74.22|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:74.14-74.22|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.ibus_cyc ;
   (* hdlname = "cpu cpu state init_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:68.9-68.18|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:68.9-68.18|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.init_done ;
-  (* hdlname = "cpu cpu state misalign_trap_sync" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:69.9-69.27|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.state.misalign_trap_sync ;
+  (* hdlname = "cpu cpu state last_init" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:98.9-98.18|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.last_init ;
   (* hdlname = "cpu cpu state o_bufreg_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:32.22-32.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:32.22-32.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.o_bufreg_en ;
   (* hdlname = "cpu cpu state o_cnt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:71.14-71.19|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:71.14-71.19|../src/servile.v:210.4-276.33" *)
   wire [4:2] \cpu.cpu.state.o_cnt ;
-  (* hdlname = "cpu cpu state o_cnt_done" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:31.22-31.32|../src/servile.v:210.4-276.33" *)
-  wire \cpu.cpu.state.o_cnt_done ;
   (* hdlname = "cpu cpu state o_cnt_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:21.21-21.29|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:21.21-21.29|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.o_cnt_en ;
   (* hdlname = "cpu cpu state o_ctrl_jump" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:34.21-34.32|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:34.21-34.32|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.o_ctrl_jump ;
+  (* hdlname = "cpu cpu state o_ctrl_pc_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:33.22-33.34|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.o_ctrl_pc_en ;
+  (* hdlname = "cpu cpu state o_ctrl_trap" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:35.22-35.33|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.o_ctrl_trap ;
+  (* hdlname = "cpu cpu state o_dbus_cyc" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:58.22-58.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.o_dbus_cyc ;
+  (* hdlname = "cpu cpu state o_ibus_cyc" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:60.22-60.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.o_ibus_cyc ;
+  (* hdlname = "cpu cpu state o_init" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:20.22-20.28|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.o_init ;
   (* hdlname = "cpu cpu state o_mdu_valid" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:54.22-54.33|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:54.22-54.33|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.o_mdu_valid ;
   (* hdlname = "cpu cpu state o_mem_bytecnt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:38.22-38.35|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:38.22-38.35|../src/servile.v:210.4-276.33" *)
   wire [1:0] \cpu.cpu.state.o_mem_bytecnt ;
+  (* hdlname = "cpu cpu state o_rf_rd_en" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:66.22-66.32|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.o_rf_rd_en ;
   (* hdlname = "cpu cpu state o_rf_rreq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:63.22-63.31|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:63.22-63.31|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.state.o_rf_rreq ;
+  (* hdlname = "cpu cpu state o_rf_wreq" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:64.22-64.31|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.o_rf_wreq ;
+  (* hdlname = "cpu cpu state take_branch" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:96.14-96.25|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.take_branch ;
+  (* hdlname = "cpu cpu state trap_pending" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:105.9-105.21|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.state.trap_pending ;
+  (* hdlname = "cpu cpu trap" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:115.11-115.15|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.trap ;
+  (* hdlname = "cpu cpu two_stage_op" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:92.11-92.23|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.two_stage_op ;
+  (* hdlname = "cpu cpu utype" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:112.18-112.23|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.utype ;
   (* hdlname = "cpu cpu wb_ibus_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:190.16-190.27|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:190.16-190.27|../src/servile.v:210.4-276.33" *)
   wire \cpu.cpu.wb_ibus_ack ;
   (* hdlname = "cpu cpu wb_ibus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:187.16-187.27|../src/servile.v:210.4-276.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:187.16-187.27|../src/servile.v:210.4-276.33" *)
   wire [31:0] \cpu.cpu.wb_ibus_adr ;
-  (* hdlname = "cpu cpu wb_ibus_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:189.16-189.27|../src/servile.v:210.4-276.33" *)
-  wire [31:0] \cpu.cpu.wb_ibus_rdt ;
+  (* hdlname = "cpu cpu wb_ibus_cyc" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:188.16-188.27|../src/servile.v:210.4-276.33" *)
+  wire \cpu.cpu.wb_ibus_cyc ;
   (* hdlname = "cpu i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:25.22-25.27" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:25.22-25.27" *)
   wire \cpu.i_clk ;
   (* hdlname = "cpu i_rf_rdata" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:52.31-52.41" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:52.31-52.41" *)
   wire [1:0] \cpu.i_rf_rdata ;
-  (* hdlname = "cpu i_rst" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:26.22-26.27" *)
-  wire \cpu.i_rst ;
-  (* hdlname = "cpu i_timer_irq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:27.22-27.33" *)
-  wire \cpu.i_timer_irq ;
   (* hdlname = "cpu i_wb_ext_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:45.22-45.34" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:45.22-45.34" *)
   wire \cpu.i_wb_ext_ack ;
   (* hdlname = "cpu i_wb_mem_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:36.22-36.34" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:36.22-36.34" *)
   wire \cpu.i_wb_mem_ack ;
-  (* hdlname = "cpu i_wb_mem_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:35.28-35.40" *)
-  wire [31:0] \cpu.i_wb_mem_rdt ;
   (* hdlname = "cpu mdu_op" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:94.20-94.26" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:94.20-94.26" *)
   wire [2:0] \cpu.mdu_op ;
   (* hdlname = "cpu mdu_rd" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:96.20-96.26" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:96.20-96.26" *)
   wire [31:0] \cpu.mdu_rd ;
   (* hdlname = "cpu mdu_ready" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:97.14-97.23" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:97.14-97.23" *)
   wire \cpu.mdu_ready ;
   (* hdlname = "cpu mdu_rs1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:92.20-92.27" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:92.20-92.27" *)
   wire [31:0] \cpu.mdu_rs1 ;
-  (* hdlname = "cpu mdu_rs2" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:93.20-93.27" *)
-  wire [31:0] \cpu.mdu_rs2 ;
   (* hdlname = "cpu mdu_valid" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:95.14-95.23" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:95.14-95.23" *)
   wire \cpu.mdu_valid ;
   (* hdlname = "cpu mux halt_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:41.17-41.24|../src/servile.v:101.4-127.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:41.17-41.24|../src/servile.v:101.4-127.36" *)
   wire \cpu.mux.halt_en ;
   (* hdlname = "cpu mux i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:13.23-13.28|../src/servile.v:101.4-127.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:13.23-13.28|../src/servile.v:101.4-127.36" *)
   wire \cpu.mux.i_clk ;
-  (* hdlname = "cpu mux i_rst" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:14.23-14.28|../src/servile.v:101.4-127.36" *)
-  wire \cpu.mux.i_rst ;
   (* hdlname = "cpu mux i_wb_cpu_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:16.24-16.36|../src/servile.v:101.4-127.36" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:16.24-16.36|../src/servile.v:101.4-127.36" *)
   wire [31:0] \cpu.mux.i_wb_cpu_adr ;
-  (* hdlname = "cpu mux i_wb_cpu_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:17.24-17.36|../src/servile.v:101.4-127.36" *)
-  wire [31:0] \cpu.mux.i_wb_cpu_dat ;
+  (* hdlname = "cpu mux i_wb_cpu_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:18.24-18.36|../src/servile.v:101.4-127.36" *)
+  wire [3:0] \cpu.mux.i_wb_cpu_sel ;
+  (* hdlname = "cpu mux i_wb_cpu_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:20.23-20.35|../src/servile.v:101.4-127.36" *)
+  wire \cpu.mux.i_wb_cpu_stb ;
   (* hdlname = "cpu mux i_wb_cpu_we" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:19.23-19.34|../src/servile.v:101.4-127.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:19.23-19.34|../src/servile.v:101.4-127.36" *)
   wire \cpu.mux.i_wb_cpu_we ;
   (* hdlname = "cpu mux i_wb_ext_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:38.23-38.35|../src/servile.v:101.4-127.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:38.23-38.35|../src/servile.v:101.4-127.36" *)
   wire \cpu.mux.i_wb_ext_ack ;
-  (* hdlname = "cpu mux i_wb_mem_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:29.24-29.36|../src/servile.v:101.4-127.36" *)
-  wire [31:0] \cpu.mux.i_wb_mem_rdt ;
+  (* hdlname = "cpu mux i_wb_mem_ack" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:30.23-30.35|../src/servile.v:101.4-127.36" *)
+  wire \cpu.mux.i_wb_mem_ack ;
+  (* hdlname = "cpu mux o_wb_cpu_ack" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:22.24-22.36|../src/servile.v:101.4-127.36" *)
+  wire \cpu.mux.o_wb_cpu_ack ;
   (* hdlname = "cpu mux o_wb_ext_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:32.24-32.36|../src/servile.v:101.4-127.36" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:32.24-32.36|../src/servile.v:101.4-127.36" *)
   wire [31:0] \cpu.mux.o_wb_ext_adr ;
-  (* hdlname = "cpu mux o_wb_ext_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:33.24-33.36|../src/servile.v:101.4-127.36" *)
-  wire [31:0] \cpu.mux.o_wb_ext_dat ;
+  (* hdlname = "cpu mux o_wb_ext_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:34.24-34.36|../src/servile.v:101.4-127.36" *)
+  wire [3:0] \cpu.mux.o_wb_ext_sel ;
+  (* hdlname = "cpu mux o_wb_ext_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:36.24-36.36|../src/servile.v:101.4-127.36" *)
+  wire \cpu.mux.o_wb_ext_stb ;
   (* hdlname = "cpu mux o_wb_ext_we" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:35.24-35.35|../src/servile.v:101.4-127.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:35.24-35.35|../src/servile.v:101.4-127.36" *)
   wire \cpu.mux.o_wb_ext_we ;
   (* hdlname = "cpu mux o_wb_mem_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:24.24-24.36|../src/servile.v:101.4-127.36" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:24.24-24.36|../src/servile.v:101.4-127.36" *)
   wire [31:0] \cpu.mux.o_wb_mem_adr ;
-  (* hdlname = "cpu mux o_wb_mem_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:25.24-25.36|../src/servile.v:101.4-127.36" *)
-  wire [31:0] \cpu.mux.o_wb_mem_dat ;
+  (* hdlname = "cpu mux o_wb_mem_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:26.24-26.36|../src/servile.v:101.4-127.36" *)
+  wire [3:0] \cpu.mux.o_wb_mem_sel ;
+  (* hdlname = "cpu mux o_wb_mem_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:28.24-28.36|../src/servile.v:101.4-127.36" *)
+  wire \cpu.mux.o_wb_mem_stb ;
   (* hdlname = "cpu mux o_wb_mem_we" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:27.24-27.35|../src/servile.v:101.4-127.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:27.24-27.35|../src/servile.v:101.4-127.36" *)
   wire \cpu.mux.o_wb_mem_we ;
   (* hdlname = "cpu mux sig_en" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:40.17-40.23|../src/servile.v:101.4-127.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:40.17-40.23|../src/servile.v:101.4-127.36" *)
   wire \cpu.mux.sig_en ;
   (* hdlname = "cpu mux sim_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile_mux.v:42.16-42.23|../src/servile.v:101.4-127.36" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile_mux.v:42.16-42.23|../src/servile.v:101.4-127.36" *)
   wire \cpu.mux.sim_ack ;
   (* hdlname = "cpu o_rf_raddr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:51.31-51.41" *)
-  (* unused_bits = "6 7 8 9" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:51.31-51.41" *)
   wire [9:0] \cpu.o_rf_raddr ;
   (* hdlname = "cpu o_rf_waddr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:48.31-48.41" *)
-  (* unused_bits = "6 7 8 9" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:48.31-48.41" *)
   wire [9:0] \cpu.o_rf_waddr ;
   (* hdlname = "cpu o_rf_wdata" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:49.31-49.41" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:49.31-49.41" *)
   wire [1:0] \cpu.o_rf_wdata ;
+  (* hdlname = "cpu o_rf_wen" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:50.23-50.31" *)
+  wire \cpu.o_rf_wen ;
   (* hdlname = "cpu o_wb_ext_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:39.29-39.41" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:39.29-39.41" *)
   wire [31:0] \cpu.o_wb_ext_adr ;
-  (* hdlname = "cpu o_wb_ext_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:40.29-40.41" *)
-  wire [31:0] \cpu.o_wb_ext_dat ;
+  (* hdlname = "cpu o_wb_ext_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:41.28-41.40" *)
+  wire [3:0] \cpu.o_wb_ext_sel ;
+  (* hdlname = "cpu o_wb_ext_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:43.23-43.35" *)
+  wire \cpu.o_wb_ext_stb ;
   (* hdlname = "cpu o_wb_ext_we" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:42.23-42.34" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:42.23-42.34" *)
   wire \cpu.o_wb_ext_we ;
   (* hdlname = "cpu o_wb_mem_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:30.29-30.41" *)
-  (* unused_bits = "10 11 12" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:30.29-30.41" *)
   wire [31:0] \cpu.o_wb_mem_adr ;
-  (* hdlname = "cpu o_wb_mem_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:31.29-31.41" *)
-  wire [31:0] \cpu.o_wb_mem_dat ;
-  (* hdlname = "cpu rdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:89.19-89.25" *)
-  wire \cpu.rdata0 ;
+  (* hdlname = "cpu o_wb_mem_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:32.28-32.40" *)
+  wire [3:0] \cpu.o_wb_mem_sel ;
+  (* hdlname = "cpu o_wb_mem_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:34.23-34.35" *)
+  wire \cpu.o_wb_mem_stb ;
+  (* hdlname = "cpu o_wb_mem_we" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:33.23-33.34" *)
+  wire \cpu.o_wb_mem_we ;
   (* hdlname = "cpu rf_ram_if i_clk" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:29.19-29.24|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:29.19-29.24|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.i_clk ;
   (* hdlname = "cpu rf_ram_if i_rdata" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:50.28-50.35|../src/servile.v:158.4-181.30" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:50.28-50.35|../src/servile.v:158.4-181.30" *)
   wire [1:0] \cpu.rf_ram_if.i_rdata ;
   (* hdlname = "cpu rf_ram_if i_rreg0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:40.28-40.35|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:40.28-40.35|../src/servile.v:158.4-181.30" *)
   wire [5:0] \cpu.rf_ram_if.i_rreg0 ;
+  (* hdlname = "cpu rf_ram_if i_rreg1" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:41.28-41.35|../src/servile.v:158.4-181.30" *)
+  wire [5:0] \cpu.rf_ram_if.i_rreg1 ;
   (* hdlname = "cpu rf_ram_if i_rreq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:32.19-32.25|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:32.19-32.25|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.i_rreq ;
-  (* hdlname = "cpu rf_ram_if i_rst" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:30.19-30.24|../src/servile.v:158.4-181.30" *)
-  wire \cpu.rf_ram_if.i_rst ;
   (* hdlname = "cpu rf_ram_if i_wdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:38.24-38.32|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:38.24-38.32|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.i_wdata0 ;
   (* hdlname = "cpu rf_ram_if i_wdata1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:39.24-39.32|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:39.24-39.32|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.i_wdata1 ;
   (* hdlname = "cpu rf_ram_if i_wen0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:36.19-36.25|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:36.19-36.25|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.i_wen0 ;
   (* hdlname = "cpu rf_ram_if i_wen1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:37.19-37.25|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:37.19-37.25|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.i_wen1 ;
   (* hdlname = "cpu rf_ram_if i_wreg0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:34.28-34.35|../src/servile.v:158.4-181.30" *)
-  (* unused_bits = "0 2 3 4 5" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:34.28-34.35|../src/servile.v:158.4-181.30" *)
   wire [5:0] \cpu.rf_ram_if.i_wreg0 ;
   (* hdlname = "cpu rf_ram_if i_wreg1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:35.28-35.35|../src/servile.v:158.4-181.30" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:35.28-35.35|../src/servile.v:158.4-181.30" *)
   wire [5:0] \cpu.rf_ram_if.i_wreg1 ;
+  (* hdlname = "cpu rf_ram_if i_wreq" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:31.19-31.25|../src/servile.v:158.4-181.30" *)
+  wire \cpu.rf_ram_if.i_wreq ;
   (* hdlname = "cpu rf_ram_if o_raddr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:48.28-48.35|../src/servile.v:158.4-181.30" *)
-  (* unused_bits = "6 7 8 9" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:48.28-48.35|../src/servile.v:158.4-181.30" *)
   wire [9:0] \cpu.rf_ram_if.o_raddr ;
-  (* hdlname = "cpu rf_ram_if o_rdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:42.25-42.33|../src/servile.v:158.4-181.30" *)
-  wire \cpu.rf_ram_if.o_rdata0 ;
+  (* hdlname = "cpu rf_ram_if o_ready" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:33.20-33.27|../src/servile.v:158.4-181.30" *)
+  wire \cpu.rf_ram_if.o_ready ;
   (* hdlname = "cpu rf_ram_if o_waddr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:45.28-45.35|../src/servile.v:158.4-181.30" *)
-  (* unused_bits = "6 7 8 9" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:45.28-45.35|../src/servile.v:158.4-181.30" *)
   wire [9:0] \cpu.rf_ram_if.o_waddr ;
   (* hdlname = "cpu rf_ram_if o_wdata" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:46.28-46.35|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:46.28-46.35|../src/servile.v:158.4-181.30" *)
   wire [1:0] \cpu.rf_ram_if.o_wdata ;
+  (* hdlname = "cpu rf_ram_if o_wen" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:47.20-47.25|../src/servile.v:158.4-181.30" *)
+  wire \cpu.rf_ram_if.o_wen ;
   (* hdlname = "cpu rf_ram_if rcnt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:58.20-58.24|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:58.20-58.24|../src/servile.v:158.4-181.30" *)
   wire [4:0] \cpu.rf_ram_if.rcnt ;
-  (* hdlname = "cpu rf_ram_if rdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:128.21-128.27|../src/servile.v:158.4-181.30" *)
-  wire [1:0] \cpu.rf_ram_if.rdata0 ;
   (* hdlname = "cpu rf_ram_if rdata1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:129.23-129.29|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:129.23-129.29|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.rdata1 ;
   (* hdlname = "cpu rf_ram_if rgnt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:56.15-56.19|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:56.15-56.19|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.rgnt ;
   (* hdlname = "cpu rf_ram_if rreg" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:120.19-120.23|../src/servile.v:158.4-181.30" *)
-  (* unused_bits = "2 3 4 5" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:120.19-120.23|../src/servile.v:158.4-181.30" *)
   wire [5:0] \cpu.rf_ram_if.rreg ;
   (* hdlname = "cpu rf_ram_if rreq_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:145.15-145.21|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:145.15-145.21|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.rreq_r ;
   (* hdlname = "cpu rf_ram_if rtrig0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:118.12-118.18|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:118.12-118.18|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.rtrig0 ;
   (* hdlname = "cpu rf_ram_if rtrig1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:60.12-60.18|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:60.12-60.18|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.rtrig1 ;
   (* hdlname = "cpu rf_ram_if wcnt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:65.24-65.28|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:65.24-65.28|../src/servile.v:158.4-181.30" *)
   wire [4:0] \cpu.rf_ram_if.wcnt ;
   (* hdlname = "cpu rf_ram_if wdata0_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:67.22-67.30|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:67.22-67.30|../src/servile.v:158.4-181.30" *)
   wire [1:0] \cpu.rf_ram_if.wdata0_r ;
   (* hdlname = "cpu rf_ram_if wdata1_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:68.24-68.32|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:68.24-68.32|../src/servile.v:158.4-181.30" *)
   wire [2:0] \cpu.rf_ram_if.wdata1_r ;
   (* hdlname = "cpu rf_ram_if wen0_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:70.15-70.21|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:70.15-70.21|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.wen0_r ;
   (* hdlname = "cpu rf_ram_if wen1_r" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:71.15-71.21|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:71.15-71.21|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.wen1_r ;
   (* hdlname = "cpu rf_ram_if wreg" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:90.19-90.23|../src/servile.v:158.4-181.30" *)
-  (* unused_bits = "2 3 4 5" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:90.19-90.23|../src/servile.v:158.4-181.30" *)
   wire [5:0] \cpu.rf_ram_if.wreg ;
   (* hdlname = "cpu rf_ram_if wtrig0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:72.15-72.21|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:72.15-72.21|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.wtrig0 ;
   (* hdlname = "cpu rf_ram_if wtrig1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:73.15-73.21|../src/servile.v:158.4-181.30" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:73.15-73.21|../src/servile.v:158.4-181.30" *)
   wire \cpu.rf_ram_if.wtrig1 ;
+  (* hdlname = "cpu rf_ready" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:88.14-88.22" *)
+  wire \cpu.rf_ready ;
   (* hdlname = "cpu rf_rreq" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:79.14-79.21" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:79.14-79.21" *)
   wire \cpu.rf_rreq ;
+  (* hdlname = "cpu rf_wreq" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:78.14-78.21" *)
+  wire \cpu.rf_wreq ;
   (* hdlname = "cpu rreg0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:86.28-86.33" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:86.28-86.33" *)
   wire [5:0] \cpu.rreg0 ;
+  (* hdlname = "cpu rreg1" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:87.28-87.33" *)
+  wire [5:0] \cpu.rreg1 ;
+  (* hdlname = "cpu wb_dbus_ack" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:68.10-68.21" *)
+  wire \cpu.wb_dbus_ack ;
   (* hdlname = "cpu wb_dbus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:62.17-62.28" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:62.17-62.28" *)
   wire [31:0] \cpu.wb_dbus_adr ;
-  (* hdlname = "cpu wb_dbus_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:63.17-63.28" *)
-  wire [31:0] \cpu.wb_dbus_dat ;
+  (* hdlname = "cpu wb_dbus_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:64.16-64.27" *)
+  wire [3:0] \cpu.wb_dbus_sel ;
+  (* hdlname = "cpu wb_dbus_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:66.10-66.21" *)
+  wire \cpu.wb_dbus_stb ;
   (* hdlname = "cpu wb_dbus_we" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:65.10-65.20" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:65.10-65.20" *)
   wire \cpu.wb_dbus_we ;
+  (* hdlname = "cpu wb_dmem_ack" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:76.10-76.21" *)
+  wire \cpu.wb_dmem_ack ;
   (* hdlname = "cpu wb_dmem_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:70.17-70.28" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:70.17-70.28" *)
   wire [31:0] \cpu.wb_dmem_adr ;
-  (* hdlname = "cpu wb_dmem_dat" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:71.17-71.28" *)
-  wire [31:0] \cpu.wb_dmem_dat ;
-  (* hdlname = "cpu wb_dmem_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:75.17-75.28" *)
-  wire [31:0] \cpu.wb_dmem_rdt ;
+  (* hdlname = "cpu wb_dmem_sel" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:72.16-72.27" *)
+  wire [3:0] \cpu.wb_dmem_sel ;
+  (* hdlname = "cpu wb_dmem_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:74.10-74.21" *)
+  wire \cpu.wb_dmem_stb ;
   (* hdlname = "cpu wb_dmem_we" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:73.10-73.20" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:73.10-73.20" *)
   wire \cpu.wb_dmem_we ;
   (* hdlname = "cpu wb_ibus_ack" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:60.10-60.21" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:60.10-60.21" *)
   wire \cpu.wb_ibus_ack ;
   (* hdlname = "cpu wb_ibus_adr" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:57.17-57.28" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:57.17-57.28" *)
   wire [31:0] \cpu.wb_ibus_adr ;
-  (* hdlname = "cpu wb_ibus_rdt" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:59.17-59.28" *)
-  wire [31:0] \cpu.wb_ibus_rdt ;
+  (* hdlname = "cpu wb_ibus_stb" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:58.10-58.21" *)
+  wire \cpu.wb_ibus_stb ;
   (* hdlname = "cpu wdata0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:84.19-84.25" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:84.19-84.25" *)
   wire \cpu.wdata0 ;
   (* hdlname = "cpu wdata1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:85.19-85.25" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:85.19-85.25" *)
   wire \cpu.wdata1 ;
   (* hdlname = "cpu wen0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:82.14-82.18" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:82.14-82.18" *)
   wire \cpu.wen0 ;
   (* hdlname = "cpu wen1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:83.14-83.18" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:83.14-83.18" *)
   wire \cpu.wen1 ;
   (* hdlname = "cpu wreg0" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:80.28-80.33" *)
-  (* unused_bits = "0 2 3 4 5" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:80.28-80.33" *)
   wire [5:0] \cpu.wreg0 ;
   (* hdlname = "cpu wreg1" *)
-  (* src = "../src/servant.v:149.4-176.31|../src/servile.v:81.28-81.33" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/servile.v:81.28-81.33" *)
   wire [5:0] \cpu.wreg1 ;
   (* hdlname = "gpio i_wb_clk" *)
-  (* src = "../src/servant.v:122.17-128.21|../src/servant_gpio.v:2.15-2.23" *)
+  (* src = "../src/servant.v:153.17-159.21|../src/servant_gpio.v:2.15-2.23" *)
   wire \gpio.i_wb_clk ;
-  (* hdlname = "gpio i_wb_dat" *)
-  (* src = "../src/servant.v:122.17-128.21|../src/servant_gpio.v:3.15-3.23" *)
-  wire \gpio.i_wb_dat ;
+  (* hdlname = "gpio i_wb_cyc" *)
+  (* src = "../src/servant.v:153.17-159.21|../src/servant_gpio.v:5.15-5.23" *)
+  wire \gpio.i_wb_cyc ;
   (* hdlname = "gpio i_wb_we" *)
-  (* src = "../src/servant.v:122.17-128.21|../src/servant_gpio.v:4.15-4.22" *)
+  (* src = "../src/servant.v:153.17-159.21|../src/servant_gpio.v:4.15-4.22" *)
   wire \gpio.i_wb_we ;
   (* hdlname = "gpio o_gpio" *)
-  (* src = "../src/servant.v:122.17-128.21|../src/servant_gpio.v:7.15-7.21" *)
+  (* src = "../src/servant.v:153.17-159.21|../src/servant_gpio.v:7.15-7.21" *)
   wire \gpio.o_gpio ;
-  (* hdlname = "gpio o_wb_rdt" *)
-  (* src = "../src/servant.v:122.17-128.21|../src/servant_gpio.v:6.15-6.23" *)
-  wire \gpio.o_wb_rdt ;
   (* iopad_external_pin = 32'd1 *)
-  (* src = "../src/servant.v:7.39-7.40" *)
+  (* src = "../src/servant.v:21.39-21.40" *)
   output q;
   wire q;
   (* iopad_external_pin = 32'd1 *)
-  (* src = "../src/servant.v:8.39-8.43" *)
+  (* src = "../src/servant.v:22.39-22.43" *)
   output q_en;
   wire q_en;
-  (* hdlname = "ram addr" *)
-  (* src = "../src/servant.v:98.4-108.30|../src/servant_ram.v:22.19-22.23" *)
-  (* unused_bits = "8 9 10" *)
-  wire [10:0] \ram.addr ;
+  (* hdlname = "ram BRAM0_DATA_IN" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:17.21-17.34" *)
+  wire [7:0] \ram.BRAM0_DATA_IN ;
+  (* hdlname = "ram BRAM0_DATA_OUT" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:21.16-21.30" *)
+  (* unused_bits = "0 1 2 3 4 5 6 7" *)
+  wire [7:0] \ram.BRAM0_DATA_OUT ;
+  (* hdlname = "ram BRAM0_RATIO" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:16.18-16.29" *)
+  wire [1:0] \ram.BRAM0_RATIO ;
+  (* hdlname = "ram BRAM0_RCLKEN" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:23.15-23.27" *)
+  wire \ram.BRAM0_RCLKEN ;
+  (* hdlname = "ram BRAM0_READ_ADDR" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:24.21-24.36" *)
+  wire [8:0] \ram.BRAM0_READ_ADDR ;
+  (* hdlname = "ram BRAM0_REN" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:22.15-22.24" *)
+  wire \ram.BRAM0_REN ;
+  (* hdlname = "ram BRAM0_WCLKEN" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:19.15-19.27" *)
+  wire \ram.BRAM0_WCLKEN ;
+  (* hdlname = "ram BRAM0_WEN" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:18.15-18.24" *)
+  wire \ram.BRAM0_WEN ;
+  (* hdlname = "ram BRAM0_WRITE_ADDR" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:20.21-20.37" *)
+  wire [8:0] \ram.BRAM0_WRITE_ADDR ;
   (* hdlname = "ram i_wb_adr" *)
-  (* src = "../src/servant.v:98.4-108.30|../src/servant_ram.v:10.25-10.33" *)
-  (* unused_bits = "8 9 10" *)
-  wire [12:2] \ram.i_wb_adr ;
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:29.25-29.33" *)
+  wire [6:2] \ram.i_wb_adr ;
   (* hdlname = "ram i_wb_clk" *)
-  (* src = "../src/servant.v:98.4-108.30|../src/servant_ram.v:8.18-8.26" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:27.17-27.25" *)
   wire \ram.i_wb_clk ;
-  (* hdlname = "ram i_wb_dat" *)
-  (* src = "../src/servant.v:98.4-108.30|../src/servant_ram.v:11.24-11.32" *)
-  wire [31:0] \ram.i_wb_dat ;
-  (* hdlname = "ram i_wb_rst" *)
-  (* src = "../src/servant.v:98.4-108.30|../src/servant_ram.v:9.18-9.26" *)
-  wire \ram.i_wb_rst ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.0.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.0.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.0.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.0.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.0.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.1.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.1.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.1.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.1.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.1.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.10.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.10.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.10.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.10.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.10.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.100.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.100.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.100.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.100.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.100.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.101.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.101.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.101.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.101.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.101.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.102.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.102.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.102.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.102.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.102.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.103.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.103.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.103.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.103.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.103.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.104.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.104.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.104.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.104.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.104.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.105.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.105.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.105.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.105.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.105.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.106.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.106.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.106.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.106.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.106.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.107.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.107.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.107.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.107.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.107.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.108.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.108.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.108.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.108.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.108.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.109.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.109.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.109.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.109.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.109.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.11.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.11.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.11.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.11.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.11.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.110.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.110.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.110.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.110.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.110.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.111.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.111.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.111.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.111.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.111.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.112.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.112.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.112.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.112.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.112.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.113.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.113.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.113.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.113.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.113.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.114.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.114.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.114.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.114.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.114.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.115.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.115.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.115.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.115.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.115.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.116.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.116.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.116.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.116.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.116.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.117.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.117.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.117.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.117.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.117.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.118.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.118.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.118.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.118.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.118.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.119.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.119.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.119.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.119.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.119.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.12.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.12.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.12.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.12.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.12.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.120.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.120.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.120.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.120.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.120.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.121.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.121.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.121.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.121.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.121.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.122.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.122.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.122.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.122.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.122.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.123.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.123.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.123.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.123.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.123.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.124.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.124.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.124.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.124.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.124.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.125.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.125.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.125.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.125.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.125.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.126.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.126.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.126.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.126.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.126.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.127.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.127.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.127.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.127.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.127.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.128.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.128.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.128.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.128.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.128.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.129.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.129.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.129.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.129.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.129.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.13.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.13.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.13.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.13.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.13.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.130.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.130.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.130.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.130.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.130.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.131.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.131.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.131.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.131.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.131.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.132.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.132.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.132.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.132.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.132.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.133.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.133.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.133.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.133.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.133.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.134.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.134.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.134.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.134.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.134.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.135.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.135.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.135.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.135.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.135.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.136.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.136.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.136.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.136.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.136.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.137.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.137.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.137.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.137.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.137.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.138.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.138.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.138.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.138.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.138.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.139.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.139.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.139.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.139.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.139.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.14.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.14.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.14.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.14.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.14.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.140.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.140.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.140.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.140.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.140.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.141.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.141.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.141.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.141.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.141.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.142.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.142.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.142.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.142.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.142.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.143.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.143.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.143.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.143.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.143.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.144.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.144.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.144.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.144.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.144.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.145.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.145.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.145.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.145.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.145.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.146.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.146.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.146.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.146.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.146.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.147.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.147.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.147.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.147.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.147.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.148.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.148.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.148.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.148.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.148.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.149.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.149.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.149.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.149.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.149.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.15.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.15.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.15.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.15.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.15.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.150.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.150.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.150.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.150.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.150.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.151.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.151.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.151.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.151.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.151.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.152.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.152.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.152.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.152.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.152.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.153.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.153.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.153.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.153.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.153.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.154.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.154.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.154.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.154.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.154.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.155.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.155.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.155.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.155.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.155.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.156.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.156.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.156.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.156.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.156.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.157.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.157.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.157.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.157.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.157.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.158.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.158.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.158.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.158.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.158.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.159.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.159.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.159.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.159.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.159.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.16.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.16.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.16.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.16.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.16.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.160.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.160.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.160.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.160.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.160.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.161.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.161.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.161.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.161.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.161.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.162.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.162.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.162.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.162.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.162.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.163.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.163.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.163.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.163.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.163.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.164.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.164.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.164.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.164.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.164.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.165.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.165.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.165.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.165.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.165.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.166.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.166.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.166.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.166.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.166.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.167.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.167.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.167.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.167.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.167.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.168.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.168.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.168.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.168.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.168.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.169.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.169.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.169.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.169.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.169.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.17.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.17.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.17.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.17.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.17.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.170.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.170.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.170.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.170.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.170.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.171.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.171.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.171.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.171.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.171.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.172.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.172.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.172.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.172.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.172.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.173.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.173.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.173.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.173.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.173.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.174.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.174.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.174.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.174.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.174.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.175.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.175.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.175.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.175.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.175.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.176.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.176.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.176.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.176.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.176.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.177.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.177.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.177.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.177.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.177.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.178.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.178.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.178.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.178.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.178.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.179.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.179.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.179.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.179.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.179.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.18.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.18.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.18.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.18.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.18.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.180.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.180.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.180.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.180.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.180.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.181.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.181.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.181.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.181.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.181.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.182.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.182.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.182.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.182.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.182.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.183.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.183.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.183.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.183.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.183.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.184.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.184.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.184.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.184.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.184.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.185.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.185.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.185.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.185.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.185.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.186.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.186.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.186.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.186.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.186.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.187.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.187.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.187.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.187.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.187.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.188.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.188.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.188.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.188.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.188.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.189.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.189.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.189.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.189.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.189.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.19.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.19.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.19.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.19.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.19.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.190.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.190.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.190.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.190.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.190.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.191.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.191.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.191.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.191.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.191.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.192.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.192.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.192.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.192.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.192.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.193.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.193.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.193.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.193.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.193.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.194.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.194.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.194.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.194.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.194.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.195.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.195.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.195.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.195.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.195.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.196.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.196.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.196.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.196.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.196.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.197.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.197.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.197.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.197.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.197.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.198.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.198.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.198.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.198.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.198.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.199.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.199.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.199.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.199.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.199.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.2.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.2.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.2.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.2.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.2.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.20.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.20.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.20.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.20.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.20.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.200.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.200.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.200.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.200.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.200.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.201.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.201.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.201.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.201.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.201.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.202.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.202.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.202.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.202.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.202.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.203.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.203.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.203.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.203.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.203.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.204.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.204.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.204.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.204.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.204.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.205.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.205.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.205.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.205.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.205.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.206.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.206.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.206.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.206.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.206.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.207.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.207.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.207.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.207.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.207.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.208.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.208.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.208.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.208.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.208.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.209.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.209.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.209.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.209.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.209.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.21.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.21.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.21.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.21.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.21.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.210.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.210.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.210.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.210.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.210.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.211.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.211.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.211.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.211.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.211.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.212.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.212.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.212.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.212.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.212.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.213.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.213.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.213.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.213.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.213.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.214.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.214.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.214.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.214.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.214.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.215.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.215.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.215.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.215.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.215.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.216.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.216.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.216.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.216.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.216.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.217.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.217.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.217.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.217.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.217.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.218.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.218.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.218.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.218.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.218.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.219.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.219.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.219.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.219.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.219.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.22.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.22.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.22.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.22.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.22.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.220.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.220.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.220.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.220.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.220.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.221.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.221.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.221.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.221.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.221.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.222.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.222.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.222.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.222.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.222.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.223.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.223.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.223.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.223.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.223.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.224.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.224.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.224.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.224.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.224.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.225.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.225.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.225.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.225.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.225.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.226.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.226.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.226.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.226.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.226.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.227.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.227.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.227.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.227.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.227.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.228.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.228.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.228.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.228.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.228.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.229.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.229.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.229.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.229.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.229.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.23.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.23.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.23.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.23.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.23.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.230.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.230.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.230.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.230.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.230.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.231.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.231.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.231.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.231.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.231.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.232.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.232.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.232.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.232.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.232.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.233.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.233.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.233.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.233.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.233.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.234.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.234.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.234.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.234.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.234.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.235.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.235.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.235.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.235.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.235.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.236.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.236.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.236.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.236.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.236.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.237.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.237.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.237.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.237.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.237.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.238.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.238.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.238.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.238.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.238.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.239.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.239.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.239.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.239.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.239.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.24.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.24.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.24.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.24.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.24.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.240.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.240.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.240.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.240.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.240.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.241.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.241.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.241.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.241.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.241.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.242.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.242.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.242.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.242.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.242.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.243.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.243.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.243.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.243.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.243.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.244.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.244.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.244.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.244.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.244.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.245.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.245.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.245.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.245.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.245.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.246.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.246.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.246.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.246.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.246.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.247.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.247.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.247.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.247.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.247.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.248.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.248.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.248.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.248.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.248.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.249.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.249.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.249.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.249.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.249.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.25.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.25.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.25.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.25.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.25.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.250.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.250.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.250.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.250.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.250.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.251.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.251.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.251.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.251.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.251.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.252.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.252.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.252.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.252.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.252.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.253.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.253.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.253.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.253.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.253.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.254.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.254.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.254.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.254.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.254.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.255.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.255.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.255.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.255.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.255.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.26.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.26.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.26.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.26.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.26.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.27.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.27.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.27.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.27.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.27.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.28.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.28.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.28.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.28.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.28.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.29.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.29.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.29.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.29.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.29.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.3.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.3.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.3.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.3.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.3.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.30.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.30.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.30.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.30.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.30.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.31.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.31.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.31.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.31.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.31.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.32.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.32.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.32.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.32.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.32.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.33.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.33.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.33.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.33.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.33.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.34.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.34.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.34.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.34.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.34.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.35.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.35.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.35.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.35.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.35.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.36.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.36.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.36.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.36.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.36.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.37.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.37.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.37.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.37.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.37.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.38.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.38.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.38.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.38.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.38.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.39.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.39.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.39.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.39.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.39.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.4.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.4.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.4.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.4.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.4.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.40.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.40.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.40.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.40.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.40.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.41.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.41.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.41.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.41.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.41.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.42.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.42.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.42.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.42.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.42.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.43.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.43.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.43.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.43.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.43.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.44.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.44.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.44.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.44.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.44.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.45.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.45.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.45.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.45.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.45.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.46.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.46.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.46.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.46.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.46.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.47.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.47.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.47.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.47.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.47.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.48.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.48.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.48.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.48.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.48.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.49.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.49.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.49.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.49.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.49.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.5.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.5.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.5.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.5.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.5.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.50.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.50.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.50.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.50.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.50.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.51.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.51.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.51.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.51.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.51.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.52.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.52.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.52.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.52.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.52.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.53.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.53.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.53.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.53.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.53.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.54.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.54.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.54.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.54.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.54.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.55.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.55.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.55.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.55.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.55.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.56.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.56.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.56.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.56.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.56.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.57.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.57.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.57.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.57.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.57.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.58.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.58.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.58.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.58.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.58.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.59.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.59.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.59.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.59.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.59.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.6.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.6.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.6.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.6.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.6.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.60.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.60.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.60.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.60.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.60.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.61.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.61.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.61.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.61.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.61.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.62.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.62.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.62.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.62.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.62.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.63.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.63.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.63.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.63.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.63.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.64.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.64.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.64.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.64.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.64.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.65.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.65.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.65.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.65.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.65.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.66.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.66.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.66.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.66.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.66.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.67.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.67.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.67.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.67.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.67.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.68.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.68.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.68.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.68.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.68.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.69.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.69.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.69.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.69.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.69.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.7.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.7.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.7.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.7.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.7.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.70.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.70.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.70.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.70.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.70.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.71.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.71.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.71.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.71.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.71.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.72.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.72.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.72.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.72.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.72.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.73.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.73.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.73.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.73.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.73.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.74.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.74.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.74.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.74.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.74.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.75.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.75.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.75.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.75.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.75.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.76.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.76.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.76.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.76.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.76.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.77.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.77.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.77.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.77.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.77.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.78.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.78.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.78.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.78.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.78.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.79.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.79.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.79.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.79.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.79.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.8.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.8.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.8.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.8.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.8.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.80.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.80.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.80.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.80.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.80.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.81.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.81.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.81.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.81.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.81.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.82.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.82.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.82.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.82.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.82.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.83.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.83.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.83.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.83.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.83.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.84.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.84.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.84.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.84.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.84.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.85.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.85.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.85.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.85.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.85.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.86.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.86.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.86.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.86.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.86.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.87.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.87.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.87.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.87.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.87.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.88.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.88.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.88.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.88.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.88.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.89.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.89.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.89.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.89.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.89.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.9.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.9.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.9.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.9.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.9.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.90.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.90.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.90.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.90.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.90.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.91.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.91.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.91.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.91.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.91.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.92.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.92.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.92.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.92.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.92.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.93.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.93.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.93.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.93.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.93.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.94.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.94.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.94.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.94.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.94.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.95.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.95.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.95.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.95.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.95.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.96.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.96.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.96.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.96.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.96.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.97.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.97.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.97.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.97.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.97.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.98.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.98.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.98.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.98.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.98.PORT_RW_WR_EN ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:15.26-15.38" *)
-  wire [7:0] \ram.mem.0.99.PORT_RW_ADDR ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:17.7-17.18" *)
-  wire \ram.mem.0.99.PORT_RW_CLK ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:13.20-13.35" *)
-  wire \ram.mem.0.99.PORT_RW_RD_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:14.19-14.34" *)
-  wire \ram.mem.0.99.PORT_RW_WR_DATA ;
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:16.7-16.20" *)
-  wire \ram.mem.0.99.PORT_RW_WR_EN ;
+  (* hdlname = "ram i_wb_cyc" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:33.18-33.26" *)
+  wire \ram.i_wb_cyc ;
+  (* hdlname = "ram i_wb_sel" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:31.23-31.31" *)
+  wire [3:0] \ram.i_wb_sel ;
+  (* hdlname = "ram i_wb_we" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:32.18-32.25" *)
+  wire \ram.i_wb_we ;
   (* hdlname = "ram o_wb_ack" *)
-  (* src = "../src/servant.v:98.4-108.30|../src/servant_ram.v:16.18-16.26" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:35.18-35.26" *)
   wire \ram.o_wb_ack ;
-  (* hdlname = "ram o_wb_rdt" *)
-  (* src = "../src/servant.v:98.4-108.30|../src/servant_ram.v:15.24-15.32" *)
-  wire [31:0] \ram.o_wb_rdt ;
-  (* src = "../src/servant.v:68.24-68.32" *)
-  (* unused_bits = "6 7 8 9" *)
+  (* src = "../src/servant.v:85.24-85.32" *)
   wire [9:0] rf_raddr;
   (* hdlname = "rf_ram i_clk" *)
-  (* src = "../src/servant.v:133.4-140.28|../src/serv_rf_ram.v:11.16-11.21" *)
+  (* src = "../src/servant.v:164.4-171.28|../src/serv_rf_ram.v:11.16-11.21" *)
   wire \rf_ram.i_clk ;
   (* hdlname = "rf_ram i_raddr" *)
-  (* src = "../src/servant.v:133.4-140.28|../src/serv_rf_ram.v:15.36-15.43" *)
-  (* unused_bits = "6 7 8 9" *)
+  (* src = "../src/servant.v:164.4-171.28|../src/serv_rf_ram.v:15.36-15.43" *)
   wire [9:0] \rf_ram.i_raddr ;
   (* hdlname = "rf_ram i_waddr" *)
-  (* src = "../src/servant.v:133.4-140.28|../src/serv_rf_ram.v:12.36-12.43" *)
-  (* unused_bits = "6 7 8 9" *)
+  (* src = "../src/servant.v:164.4-171.28|../src/serv_rf_ram.v:12.36-12.43" *)
   wire [9:0] \rf_ram.i_waddr ;
   (* hdlname = "rf_ram i_wdata" *)
-  (* src = "../src/servant.v:133.4-140.28|../src/serv_rf_ram.v:13.32-13.39" *)
+  (* src = "../src/servant.v:164.4-171.28|../src/serv_rf_ram.v:13.32-13.39" *)
   wire [1:0] \rf_ram.i_wdata ;
+  (* hdlname = "rf_ram i_wen" *)
+  (* src = "../src/servant.v:164.4-171.28|../src/serv_rf_ram.v:14.22-14.27" *)
+  wire \rf_ram.i_wen ;
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:668.26-668.37" *)
   wire [5:0] \rf_ram.memory.0.0.PORT_R_ADDR ;
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:667.20-667.34" *)
@@ -5035,3628 +1974,238 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1580.11-1580.13" *)
   wire \rf_ram.memory.0.8.genblk1.genblk1.ram64m_sdp.WE ;
   (* hdlname = "rf_ram o_rdata" *)
-  (* src = "../src/servant.v:133.4-140.28|../src/serv_rf_ram.v:17.33-17.40" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:164.4-171.28|../src/serv_rf_ram.v:17.33-17.40" *)
   wire [1:0] \rf_ram.o_rdata ;
   (* hdlname = "rf_ram rdata" *)
-  (* src = "../src/servant.v:133.4-140.28|../src/serv_rf_ram.v:20.25-20.30" *)
+  (* src = "../src/servant.v:164.4-171.28|../src/serv_rf_ram.v:20.25-20.30" *)
   wire [1:0] \rf_ram.rdata ;
   (* hdlname = "rf_ram regzero" *)
-  (* src = "../src/servant.v:133.4-140.28|../src/serv_rf_ram.v:38.8-38.15" *)
+  (* src = "../src/servant.v:164.4-171.28|../src/serv_rf_ram.v:38.8-38.15" *)
   wire \rf_ram.regzero ;
-  (* src = "../src/servant.v:70.24-70.32" *)
-  (* unused_bits = "0" *)
+  (* src = "../src/servant.v:87.24-87.32" *)
   wire [1:0] rf_rdata;
-  (* src = "../src/servant.v:65.24-65.32" *)
-  (* unused_bits = "6 7 8 9" *)
+  (* src = "../src/servant.v:82.24-82.32" *)
   wire [9:0] rf_waddr;
-  (* src = "../src/servant.v:66.24-66.32" *)
+  (* src = "../src/servant.v:83.24-83.32" *)
   wire [1:0] rf_wdata;
+  (* src = "../src/servant.v:84.17-84.23" *)
+  wire rf_wen;
   (* hdlname = "servant_mux i_clk" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:9.22-9.27" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:9.22-9.27" *)
   wire \servant_mux.i_clk ;
-  (* hdlname = "servant_mux i_rst" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:10.22-10.27" *)
-  wire \servant_mux.i_rst ;
   (* hdlname = "servant_mux i_wb_cpu_adr" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:11.23-11.35" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:11.23-11.35" *)
   wire [31:0] \servant_mux.i_wb_cpu_adr ;
-  (* hdlname = "servant_mux i_wb_cpu_dat" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:12.23-12.35" *)
-  wire [31:0] \servant_mux.i_wb_cpu_dat ;
+  (* hdlname = "servant_mux i_wb_cpu_cyc" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:15.22-15.34" *)
+  wire \servant_mux.i_wb_cpu_cyc ;
+  (* hdlname = "servant_mux i_wb_cpu_sel" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:13.23-13.35" *)
+  wire [3:0] \servant_mux.i_wb_cpu_sel ;
   (* hdlname = "servant_mux i_wb_cpu_we" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:14.22-14.33" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:14.22-14.33" *)
   wire \servant_mux.i_wb_cpu_we ;
-  (* hdlname = "servant_mux i_wb_gpio_rdt" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:22.22-22.35" *)
-  wire \servant_mux.i_wb_gpio_rdt ;
-  (* hdlname = "servant_mux i_wb_timer_rdt" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:27.23-27.37" *)
-  wire [31:0] \servant_mux.i_wb_timer_rdt ;
   (* hdlname = "servant_mux o_wb_cpu_ack" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:17.22-17.34" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:17.22-17.34" *)
   wire \servant_mux.o_wb_cpu_ack ;
-  (* hdlname = "servant_mux o_wb_gpio_dat" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:19.23-19.36" *)
-  wire \servant_mux.o_wb_gpio_dat ;
+  (* hdlname = "servant_mux o_wb_gpio_cyc" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:21.23-21.36" *)
+  wire \servant_mux.o_wb_gpio_cyc ;
   (* hdlname = "servant_mux o_wb_gpio_we" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:20.23-20.35" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:20.23-20.35" *)
   wire \servant_mux.o_wb_gpio_we ;
-  (* hdlname = "servant_mux o_wb_timer_dat" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:24.23-24.37" *)
-  wire [31:0] \servant_mux.o_wb_timer_dat ;
   (* hdlname = "servant_mux o_wb_timer_we" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:25.23-25.36" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:25.23-25.36" *)
   wire \servant_mux.o_wb_timer_we ;
   (* hdlname = "servant_mux s" *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:31.18-31.19" *)
+  (* src = "../src/servant.v:89.16-109.38|../src/servant_mux.v:31.18-31.19" *)
   wire [1:0] \servant_mux.s ;
   (* hdlname = "timer i_clk" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:6.21-6.26" *)
+  (* src = "../src/servant.v:144.4-151.32|../src/servant_timer.v:6.21-6.26" *)
   wire \timer.i_clk ;
-  (* hdlname = "timer i_rst" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:7.21-7.26" *)
-  wire \timer.i_rst ;
-  (* hdlname = "timer i_wb_dat" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:9.22-9.30" *)
-  wire [31:0] \timer.i_wb_dat ;
   (* hdlname = "timer i_wb_we" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:10.21-10.28" *)
+  (* src = "../src/servant.v:144.4-151.32|../src/servant_timer.v:10.21-10.28" *)
   wire \timer.i_wb_we ;
-  (* hdlname = "timer mtime" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:16.22-16.27" *)
-  wire [31:0] \timer.mtime ;
-  (* hdlname = "timer mtimecmp" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:17.29-17.37" *)
-  wire [31:0] \timer.mtimecmp ;
-  (* hdlname = "timer mtimeslice" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:19.29-19.39" *)
-  wire [31:0] \timer.mtimeslice ;
-  (* hdlname = "timer o_irq" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:8.21-8.26" *)
-  wire \timer.o_irq ;
-  (* hdlname = "timer o_wb_dat" *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:12.22-12.30" *)
-  wire [31:0] \timer.o_wb_dat ;
-  (* src = "../src/servant.v:36.10-36.19" *)
-  wire timer_irq;
   (* clkbuf_inhibit = 32'd1 *)
   (* iopad_external_pin = 32'd1 *)
-  (* src = "../src/servant.v:4.55-4.61" *)
+  (* src = "../src/servant.v:18.55-18.61" *)
   input wb_clk;
   wire wb_clk;
   (* iopad_external_pin = 32'd1 *)
-  (* src = "../src/servant.v:5.39-5.48" *)
+  (* src = "../src/servant.v:19.39-19.48" *)
   output wb_clk_en;
   wire wb_clk_en;
-  (* src = "../src/servant.v:63.13-63.23" *)
+  (* src = "../src/servant.v:80.13-80.23" *)
   wire wb_ext_ack;
-  (* src = "../src/servant.v:57.19-57.29" *)
-  (* unused_bits = "13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29" *)
+  (* src = "../src/servant.v:74.19-74.29" *)
   wire [31:0] wb_ext_adr;
-  (* src = "../src/servant.v:58.19-58.29" *)
-  wire [31:0] wb_ext_dat;
-  (* src = "../src/servant.v:60.13-60.22" *)
+  (* src = "../src/servant.v:76.18-76.28" *)
+  wire [3:0] wb_ext_sel;
+  (* src = "../src/servant.v:78.13-78.23" *)
+  wire wb_ext_stb;
+  (* src = "../src/servant.v:77.13-77.22" *)
   wire wb_ext_we;
-  (* src = "../src/servant.v:47.10-47.21" *)
-  wire wb_gpio_dat;
-  (* src = "../src/servant.v:50.10-50.21" *)
-  wire wb_gpio_rdt;
-  (* src = "../src/servant.v:48.10-48.20" *)
+  (* src = "../src/servant.v:66.10-66.21" *)
+  wire wb_gpio_stb;
+  (* src = "../src/servant.v:65.10-65.20" *)
   wire wb_gpio_we;
-  (* src = "../src/servant.v:45.10-45.20" *)
+  (* src = "../src/servant.v:62.10-62.20" *)
   wire wb_mem_ack;
-  (* unused_bits = "10 11 12" *)
-  wire [12:0] wb_mem_adr;
-  (* src = "../src/servant.v:40.17-40.27" *)
-  wire [31:0] wb_mem_dat;
-  (* src = "../src/servant.v:44.17-44.27" *)
-  wire [31:0] wb_mem_rdt;
+  wire [6:0] wb_mem_adr;
+  (* src = "../src/servant.v:58.16-58.26" *)
+  wire [3:0] wb_mem_sel;
+  (* src = "../src/servant.v:60.10-60.20" *)
+  wire wb_mem_stb;
+  (* src = "../src/servant.v:59.10-59.19" *)
+  wire wb_mem_we;
   (* iopad_external_pin = 32'd1 *)
-  (* src = "../src/servant.v:6.39-6.45" *)
-  input wb_rst;
-  wire wb_rst;
-  (* src = "../src/servant.v:52.17-52.29" *)
-  wire [31:0] wb_timer_dat;
-  (* src = "../src/servant.v:55.17-55.29" *)
-  wire [31:0] wb_timer_rdt;
-  (* src = "../src/servant.v:53.10-53.21" *)
+  (* src = "../src/servant.v:20.39-20.46" *)
+  input wb_nrst;
+  wire wb_nrst;
+  (* src = "../src/servant.v:70.10-70.21" *)
   wire wb_timer_we;
   (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h1111111122212122)
-  ) _0446_ (
-    .I0(\cpu.cpu.bne_or_bge ),
-    .I1(\cpu.cpu.decode.opcode [0]),
-    .I2(_0259_[3]),
-    .I3(_0260_[3]),
-    .I4(_0260_[4]),
-    .I5(_0260_[5]),
-    .O(_0261_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h4e5f)
-  ) _0447_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\timer.mtime [24]),
-    .I3(\ram.o_wb_rdt [24]),
-    .O(_0444_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0448_ (
-    .I0(_0236_[2]),
-    .I1(\cpu.cpu.bufreg2.i_cnt_done ),
-    .O(_0279_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0008050500000)
-  ) _0449_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.state.init_done ),
-    .I2(_0236_[1]),
-    .I3(\cpu.cpu.alu.i_en ),
-    .I4(_0279_[4]),
-    .I5(_0238_[4]),
-    .O(_0280_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h04)
-  ) _0450_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(\cpu.cpu.decode.opcode [2]),
-    .I2(\cpu.cpu.decode.opcode [0]),
-    .O(_0280_[1])
-  );
-  (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
   LUT5 #(
-    .INIT(32'd45296)
-  ) _0451_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(_0280_[1]),
-    .I2(_0252_[5]),
-    .I3(_0279_[4]),
-    .I4(_0280_[4]),
-    .O(_0349_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd1057013504)
-  ) _0452_ (
-    .I0(\cpu.cpu.state.i_ctrl_misalign ),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(_0279_[4]),
-    .I3(_0349_[3]),
-    .I4(_0261_[2]),
-    .O(_0350_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8200)
-  ) _0453_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(\cpu.cpu.decode.opcode [1]),
-    .I2(\cpu.cpu.decode.opcode [0]),
-    .I3(_0259_[4]),
-    .O(_0439_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h7050)
-  ) _0454_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(\cpu.cpu.decode.opcode [1]),
-    .I2(\cpu.cpu.alu.i_rs1 ),
-    .I3(\cpu.cpu.decode.opcode [0]),
-    .O(_0439_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h3c003c003c006900)
-  ) _0455_ (
-    .I0(\cpu.cpu.decode.opcode [2]),
-    .I1(\cpu.cpu.bufreg.c_r ),
-    .I2(_0439_[2]),
-    .I3(_0236_[2]),
-    .I4(_0439_[3]),
-    .I5(_0255_[2]),
-    .O(_0441_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h030a)
-  ) _0456_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(\cpu.cpu.decode.opcode [2]),
-    .I3(\cpu.cpu.decode.opcode [0]),
-    .O(_0440_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0457_ (
-    .I0(_0331_[0]),
-    .I1(_0331_[1]),
-    .O(_0332_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h80)
-  ) _0458_ (
-    .I0(\cpu.cpu.decode.op21 ),
-    .I1(_0233_[2]),
-    .I2(_0233_[3]),
-    .O(_0340_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4279203591)
-  ) _0459_ (
-    .I0(\cpu.cpu.state.i_ctrl_misalign ),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(_0330_[1]),
-    .I3(_0330_[2]),
-    .I4(_0261_[2]),
-    .O(_0350_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd1)
-  ) _0460_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [4]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I2(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I3(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [1]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [0]),
-    .O(_0440_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h20)
-  ) _0461_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(_0239_[4]),
-    .I2(_0332_[2]),
-    .O(_0333_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h10)
-  ) _0462_ (
-    .I0(\cpu.cpu.state.i_ctrl_misalign ),
-    .I1(\cpu.cpu.bufreg.data [0]),
-    .I2(_0333_[4]),
-    .O(_0407_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4291623674)
-  ) _0463_ (
-    .I0(\cpu.cpu.bufreg.data [12]),
-    .I1(\cpu.cpu.ctrl.o_ibus_adr [12]),
-    .I2(\cpu.cpu.bufreg.data [11]),
-    .I3(\cpu.cpu.ctrl.o_ibus_adr [11]),
-    .I4(_0239_[4]),
-    .O(_0241_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0464_ (
-    .I0(\cpu.cpu.ctrl.o_ibus_adr [10]),
-    .I1(\cpu.cpu.bufreg.data [10]),
-    .I2(_0239_[4]),
-    .O(_0240_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0465_ (
-    .I0(_0240_[1]),
-    .I1(_0241_[1]),
-    .O(_0245_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h40)
-  ) _0466_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [4]),
-    .I1(\cpu.rf_ram_if.rtrig1 ),
-    .I2(\cpu.rf_ram_if.wen0_r ),
-    .O(_0326_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3439308719)
-  ) _0467_ (
-    .I0(\cpu.cpu.bufreg.data [12]),
-    .I1(\cpu.cpu.ctrl.o_ibus_adr [12]),
-    .I2(\cpu.cpu.bufreg.data [11]),
-    .I3(\cpu.cpu.ctrl.o_ibus_adr [11]),
-    .I4(_0239_[4]),
-    .O(_0242_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0468_ (
-    .I0(_0242_[0]),
-    .I1(_0240_[1]),
-    .O(_0246_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd872374111)
-  ) _0469_ (
-    .I0(\cpu.cpu.bufreg.data [12]),
-    .I1(\cpu.cpu.ctrl.o_ibus_adr [12]),
-    .I2(\cpu.cpu.bufreg.data [11]),
-    .I3(\cpu.cpu.ctrl.o_ibus_adr [11]),
-    .I4(_0239_[4]),
-    .O(_0244_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0470_ (
-    .I0(_0244_[0]),
-    .I1(_0240_[1]),
-    .O(_0245_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h2)
-  ) _0471_ (
-    .I0(_0240_[1]),
-    .I1(_0241_[1]),
-    .O(_0243_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h01031133050f55ff)
-  ) _0472_ (
-    .I0(_0253_[0]),
-    .I1(_0253_[1]),
-    .I2(_0253_[2]),
-    .I3(_0243_[5]),
-    .I4(_0245_[2]),
-    .I5(_0246_[3]),
-    .O(_0383_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0473_ (
-    .I0(_0244_[0]),
-    .I1(_0240_[1]),
-    .O(_0246_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd356450304)
-  ) _0474_ (
-    .I0(_0383_[0]),
-    .I1(_0383_[1]),
-    .I2(_0246_[2]),
-    .I3(_0245_[3]),
-    .I4(_0383_[4]),
-    .O(_0384_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4281595381)
-  ) _0475_ (
-    .I0(\cpu.cpu.bufreg.data [12]),
-    .I1(\cpu.cpu.ctrl.o_ibus_adr [12]),
-    .I2(\cpu.cpu.bufreg.data [11]),
-    .I3(\cpu.cpu.ctrl.o_ibus_adr [11]),
-    .I4(_0239_[4]),
-    .O(_0240_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0476_ (
-    .I0(_0240_[0]),
-    .I1(_0240_[1]),
-    .O(_0243_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0477_ (
-    .I0(_0242_[0]),
-    .I1(_0240_[1]),
-    .O(_0243_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0478_ (
-    .I0(_0327_[0]),
-    .I1(_0327_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0384_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0479_ (
-    .I0(_0240_[0]),
-    .I1(_0240_[1]),
-    .O(_0247_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0480_ (
-    .I0(_0340_[0]),
-    .I1(_0235_[4]),
-    .O(_0342_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0481_ (
-    .I0(_0342_[0]),
-    .I1(_0342_[1]),
-    .O(_0343_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hd0)
-  ) _0482_ (
-    .I0(\cpu.cpu.decode.op26 ),
-    .I1(\cpu.cpu.decode.op21 ),
-    .I2(_0342_[0]),
-    .O(_0435_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0483_ (
-    .I0(_0342_[0]),
-    .I1(_0235_[4]),
-    .O(_0436_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2752682)
-  ) _0484_ (
-    .I0(\cpu.rf_ram_if.rtrig0 ),
-    .I1(\cpu.cpu.decode.op20 ),
-    .I2(\cpu.cpu.decode.op26 ),
-    .I3(_0340_[0]),
-    .I4(_0341_[3]),
-    .O(_0436_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hca)
-  ) _0485_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [6]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .O(_0339_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0486_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [7]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .O(_0339_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'ha820)
-  ) _0487_ (
-    .I0(_0339_[0]),
-    .I1(_0339_[1]),
-    .I2(_0346_[2]),
-    .I3(_0346_[3]),
-    .O(_0347_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2868891599)
-  ) _0488_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [7]),
-    .I2(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [6]),
-    .I3(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [2]),
-    .I4(\cpu.rf_ram_if.rtrig0 ),
-    .O(_0338_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4289395964)
-  ) _0489_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [7]),
-    .I2(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [6]),
-    .I3(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [2]),
-    .I4(\cpu.rf_ram_if.rtrig0 ),
-    .O(_0338_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8acf)
-  ) _0490_ (
-    .I0(_0338_[0]),
-    .I1(_0338_[1]),
-    .I2(_0345_[2]),
-    .I3(_0345_[3]),
-    .O(_0347_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h53f3)
-  ) _0491_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [4]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0343_[3]),
-    .O(_0344_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h2)
-  ) _0492_ (
-    .I0(\cpu.rf_ram_if.rtrig0 ),
-    .I1(_0343_[3]),
-    .O(_0344_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0493_ (
-    .I0(_0344_[0]),
-    .I1(_0344_[1]),
-    .O(_0347_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd117929735)
-  ) _0494_ (
-    .I0(_0344_[0]),
-    .I1(_0347_[1]),
-    .I2(_0347_[2]),
-    .I3(_0347_[3]),
-    .I4(_0347_[4]),
-    .O(_0348_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'ha820)
-  ) _0495_ (
-    .I0(_0339_[0]),
-    .I1(_0339_[1]),
-    .I2(_0339_[2]),
-    .I3(_0339_[3]),
-    .O(_0348_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8caf)
-  ) _0496_ (
-    .I0(_0338_[0]),
-    .I1(_0338_[1]),
-    .I2(_0338_[2]),
-    .I3(_0338_[3]),
-    .O(_0348_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0497_ (
-    .I0(\cpu.cpu.ctrl.pc_plus_offset_cy_r ),
-    .I1(_0325_[1]),
-    .O(_0428_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h14)
-  ) _0498_ (
-    .I0(_0259_[4]),
-    .I1(_0428_[1]),
-    .I2(_0325_[3]),
-    .O(_0429_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h001f)
-  ) _0499_ (
-    .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [1]),
-    .I1(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [0]),
-    .I2(_0258_[1]),
-    .I3(_0255_[1]),
-    .O(_0434_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h6999)
-  ) _0500_ (
-    .I0(\cpu.cpu.ctrl.pc ),
-    .I1(\cpu.cpu.ctrl.pc_plus_4_cy_r ),
-    .I2(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [2]),
-    .I3(_0258_[1]),
-    .O(_0432_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd16977167)
-  ) _0501_ (
-    .I0(\cpu.cpu.bufreg.data [0]),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(_0235_[4]),
-    .I3(\cpu.cpu.bufreg.i_en ),
-    .I4(_0429_[4]),
-    .O(_0433_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h6090)
-  ) _0502_ (
-    .I0(\cpu.cpu.alu.i_rs1 ),
-    .I1(\cpu.cpu.alu.add_cy_r ),
-    .I2(_0233_[3]),
-    .I3(_0259_[5]),
-    .O(_0431_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd167806986)
-  ) _0503_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.decode.co_mem_word ),
-    .I2(\cpu.cpu.bne_or_bge ),
-    .I3(\cpu.cpu.alu.i_rs1 ),
-    .I4(_0256_[1]),
-    .O(_0430_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd49151)
-  ) _0504_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.decode.co_mem_word ),
-    .I2(\cpu.cpu.alu.cmp_r ),
-    .I3(_0259_[4]),
-    .I4(_0430_[4]),
-    .O(_0431_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3435954380)
-  ) _0505_ (
-    .I0(\cpu.cpu.bufreg.data [0]),
-    .I1(_0280_[1]),
-    .I2(\cpu.cpu.bufreg.i_en ),
-    .I3(_0431_[3]),
-    .I4(_0431_[4]),
-    .O(_0433_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h0bfb)
-  ) _0506_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.mem_if.signbit ),
-    .I2(\cpu.cpu.mem_if.dat_valid ),
-    .I3(\cpu.cpu.mem_if.i_bufreg2_q ),
-    .O(_0432_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hfffc5f5c00000000)
-  ) _0507_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(\cpu.cpu.decode.opcode [2]),
-    .I2(\cpu.cpu.decode.opcode [0]),
-    .I3(_0432_[3]),
-    .I4(_0432_[4]),
-    .I5(_0368_[5]),
-    .O(_0433_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hfd75ec64b931a820)
-  ) _0508_ (
-    .I0(_0339_[0]),
-    .I1(_0339_[1]),
-    .I2(_0352_[2]),
-    .I3(_0352_[3]),
-    .I4(_0352_[4]),
-    .I5(_0352_[5]),
-    .O(_0354_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hfd75b931ec64a820)
-  ) _0509_ (
-    .I0(_0339_[0]),
-    .I1(_0339_[1]),
-    .I2(_0353_[2]),
-    .I3(_0353_[3]),
-    .I4(_0353_[4]),
-    .I5(_0353_[5]),
-    .O(_0354_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h4e5f)
-  ) _0510_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\timer.mtime [25]),
-    .I3(\ram.o_wb_rdt [25]),
-    .O(_0356_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3149529088)
-  ) _0511_ (
-    .I0(\cpu.cpu.decode.co_mem_word ),
-    .I1(\cpu.cpu.state.i_ctrl_misalign ),
-    .I2(\cpu.cpu.bufreg.data [0]),
-    .I3(\cpu.cpu.bne_or_bge ),
-    .I4(_0333_[4]),
-    .O(_0404_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h01031133050f55ff)
-  ) _0512_ (
-    .I0(_0357_[0]),
-    .I1(_0357_[1]),
-    .I2(_0357_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0358_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd324993024)
-  ) _0513_ (
-    .I0(_0358_[0]),
-    .I1(_0358_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[2]),
-    .I4(_0358_[4]),
-    .O(_0360_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0514_ (
-    .I0(_0359_[0]),
-    .I1(_0359_[1]),
-    .I2(_0246_[2]),
-    .I3(_0245_[3]),
-    .O(_0360_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0515_ (
-    .I0(_0362_[0]),
-    .I1(_0362_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .O(_0363_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd356450304)
-  ) _0516_ (
-    .I0(_0363_[0]),
-    .I1(_0363_[1]),
-    .I2(_0243_[5]),
-    .I3(_0246_[2]),
-    .I4(_0363_[4]),
-    .O(_0364_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0517_ (
-    .I0(_0361_[0]),
-    .I1(_0361_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0364_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h45ef)
-  ) _0518_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\ram.o_wb_rdt [26]),
-    .I3(\timer.mtime [26]),
-    .O(_0385_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hae00)
-  ) _0519_ (
-    .I0(\cpu.cpu.decode.co_mem_word ),
-    .I1(\cpu.cpu.state.i_ctrl_misalign ),
-    .I2(\cpu.cpu.bufreg.data [0]),
-    .I3(_0333_[4]),
-    .O(_0397_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h4e5f)
-  ) _0520_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\timer.mtime [27]),
-    .I3(\ram.o_wb_rdt [27]),
-    .O(_0386_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4008312832)
-  ) _0521_ (
-    .I0(\cpu.cpu.decode.co_mem_word ),
-    .I1(\cpu.cpu.state.i_ctrl_misalign ),
-    .I2(\cpu.cpu.bufreg.data [0]),
-    .I3(\cpu.cpu.bne_or_bge ),
-    .I4(_0333_[4]),
-    .O(_0408_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0522_ (
-    .I0(_0328_[0]),
-    .I1(_0328_[1]),
-    .I2(_0245_[2]),
-    .I3(_0245_[3]),
-    .O(_0329_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd324993024)
-  ) _0523_ (
-    .I0(_0329_[0]),
-    .I1(_0329_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .I4(_0329_[4]),
-    .O(_0388_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h01051155030f33ff)
-  ) _0524_ (
-    .I0(_0387_[0]),
-    .I1(_0387_[1]),
-    .I2(_0387_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0388_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h45ef)
-  ) _0525_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\ram.o_wb_rdt [28]),
-    .I3(\timer.mtime [28]),
-    .O(_0389_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h80)
-  ) _0526_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [4]),
-    .I1(\cpu.rf_ram_if.rtrig1 ),
-    .I2(\cpu.rf_ram_if.wen0_r ),
-    .O(_0423_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0105030f115533ff)
-  ) _0527_ (
-    .I0(_0370_[0]),
-    .I1(_0370_[1]),
-    .I2(_0370_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0245_[3]),
-    .O(_0372_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0528_ (
-    .I0(_0371_[0]),
-    .I1(_0371_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[2]),
-    .O(_0372_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0529_ (
-    .I0(_0369_[0]),
-    .I1(_0369_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0372_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h80)
-  ) _0530_ (
-    .I0(_0236_[1]),
-    .I1(_0390_[3]),
-    .I2(_0236_[2]),
-    .O(_0391_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h45ef)
-  ) _0531_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\ram.o_wb_rdt [29]),
-    .I3(\timer.mtime [29]),
-    .O(_0391_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0111033305550fff)
-  ) _0532_ (
-    .I0(_0393_[0]),
-    .I1(_0393_[1]),
-    .I2(_0393_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0395_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0533_ (
-    .I0(_0392_[0]),
-    .I1(_0392_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .O(_0395_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0534_ (
-    .I0(_0394_[0]),
-    .I1(_0394_[1]),
-    .I2(_0246_[2]),
-    .I3(_0245_[3]),
-    .O(_0395_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd15471615)
-  ) _0535_ (
-    .I0(\cpu.cpu.decode.opcode [2]),
-    .I1(\cpu.cpu.decode.opcode [1]),
-    .I2(\cpu.cpu.decode.opcode [0]),
-    .I3(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [0]),
-    .I4(_0254_[3]),
-    .O(_0396_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0536_ (
-    .I0(_0399_[0]),
-    .I1(_0399_[1]),
-    .I2(_0243_[5]),
-    .I3(_0246_[2]),
-    .O(_0400_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd324993024)
-  ) _0537_ (
-    .I0(_0400_[0]),
-    .I1(_0400_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .I4(_0400_[4]),
-    .O(_0401_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0111055503330fff)
-  ) _0538_ (
-    .I0(_0398_[0]),
-    .I1(_0398_[1]),
-    .I2(_0398_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0245_[3]),
-    .O(_0401_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0111055503330fff)
-  ) _0539_ (
-    .I0(_0411_[0]),
-    .I1(_0411_[1]),
-    .I2(_0411_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0245_[3]),
-    .O(_0412_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0540_ (
-    .I0(_0410_[0]),
-    .I1(_0410_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[2]),
-    .O(_0412_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0541_ (
-    .I0(_0409_[0]),
-    .I1(_0409_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0412_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0111055503330fff)
-  ) _0542_ (
-    .I0(_0415_[0]),
-    .I1(_0415_[1]),
-    .I2(_0415_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0245_[3]),
-    .O(_0416_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0543_ (
-    .I0(_0414_[0]),
-    .I1(_0414_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0416_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0544_ (
-    .I0(_0413_[0]),
-    .I1(_0413_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[2]),
-    .O(_0416_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0111033305550fff)
-  ) _0545_ (
-    .I0(_0335_[0]),
-    .I1(_0335_[1]),
-    .I2(_0335_[2]),
-    .I3(_0247_[1]),
-    .I4(_0245_[2]),
-    .I5(_0246_[3]),
-    .O(_0337_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0546_ (
-    .I0(_0334_[0]),
-    .I1(_0334_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0337_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h00ac)
-  ) _0547_ (
-    .I0(_0336_[0]),
-    .I1(_0336_[1]),
-    .I2(_0240_[1]),
-    .I3(_0241_[1]),
-    .O(_0337_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0548_ (
-    .I0(_0421_[0]),
-    .I1(_0421_[1]),
-    .I2(_0245_[2]),
-    .I3(_0245_[3]),
-    .O(_0422_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd356450304)
-  ) _0549_ (
-    .I0(_0422_[0]),
-    .I1(_0422_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .I4(_0422_[4]),
-    .O(_0437_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h01051155030f33ff)
-  ) _0550_ (
-    .I0(_0420_[0]),
-    .I1(_0420_[1]),
-    .I2(_0420_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0437_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0551_ (
-    .I0(_0320_[0]),
-    .I1(_0320_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0321_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd356450304)
-  ) _0552_ (
-    .I0(_0321_[0]),
-    .I1(_0321_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[3]),
-    .I4(_0321_[4]),
-    .O(_0323_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0553_ (
-    .I0(_0322_[0]),
-    .I1(_0322_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[2]),
-    .O(_0323_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0554_ (
-    .I0(_0419_[0]),
-    .I1(_0419_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0438_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0555_ (
-    .I0(_0418_[0]),
-    .I1(_0418_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[2]),
-    .O(_0438_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hff33ff33ff0f5505)
-  ) _0556_ (
-    .I0(_0417_[0]),
-    .I1(_0417_[1]),
-    .I2(_0417_[2]),
-    .I3(_0240_[0]),
-    .I4(_0242_[0]),
-    .I5(_0240_[1]),
-    .O(_0438_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0103050f113355ff)
-  ) _0557_ (
-    .I0(_0286_[0]),
-    .I1(_0286_[1]),
-    .I2(_0286_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0288_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0558_ (
-    .I0(_0287_[0]),
-    .I1(_0287_[1]),
-    .I2(_0245_[2]),
-    .I3(_0245_[3]),
-    .O(_0288_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0559_ (
-    .I0(_0285_[0]),
-    .I1(_0285_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0288_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0111055503330fff)
-  ) _0560_ (
-    .I0(_0282_[0]),
-    .I1(_0282_[1]),
-    .I2(_0282_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0245_[3]),
-    .O(_0284_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0561_ (
-    .I0(_0283_[0]),
-    .I1(_0283_[1]),
-    .I2(_0243_[5]),
-    .I3(_0246_[2]),
-    .O(_0284_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0562_ (
-    .I0(_0281_[0]),
-    .I1(_0281_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .O(_0284_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0563_ (
-    .I0(_0275_[0]),
-    .I1(_0275_[1]),
-    .I2(_0245_[2]),
-    .I3(_0245_[3]),
-    .O(_0276_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd324993024)
-  ) _0564_ (
-    .I0(_0276_[0]),
-    .I1(_0276_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .I4(_0276_[4]),
-    .O(_0278_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0103050f113355ff)
-  ) _0565_ (
-    .I0(_0277_[0]),
-    .I1(_0277_[1]),
-    .I2(_0277_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0278_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0566_ (
-    .I0(_0272_[0]),
-    .I1(_0272_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0273_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd324993024)
-  ) _0567_ (
-    .I0(_0273_[0]),
-    .I1(_0273_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[3]),
-    .I4(_0273_[4]),
-    .O(_0274_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0568_ (
-    .I0(_0271_[0]),
-    .I1(_0271_[1]),
-    .I2(_0243_[5]),
-    .I3(_0246_[2]),
-    .O(_0274_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0103050f113355ff)
-  ) _0569_ (
-    .I0(_0250_[0]),
-    .I1(_0250_[1]),
-    .I2(_0250_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0251_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0570_ (
-    .I0(_0249_[0]),
-    .I1(_0249_[1]),
-    .I2(_0246_[2]),
-    .I3(_0245_[3]),
-    .O(_0251_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0571_ (
-    .I0(_0248_[0]),
-    .I1(_0248_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .O(_0251_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0572_ (
-    .I0(_0245_[0]),
-    .I1(_0245_[1]),
-    .I2(_0245_[2]),
-    .I3(_0245_[3]),
-    .O(_0246_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd356450304)
-  ) _0573_ (
-    .I0(_0246_[0]),
-    .I1(_0246_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .I4(_0246_[4]),
-    .O(_0247_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0103050f113355ff)
-  ) _0574_ (
-    .I0(_0243_[0]),
-    .I1(_0243_[1]),
-    .I2(_0243_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0247_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0575_ (
-    .I0(_0264_[0]),
-    .I1(_0264_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0265_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd356450304)
-  ) _0576_ (
-    .I0(_0265_[0]),
-    .I1(_0265_[1]),
-    .I2(_0247_[1]),
-    .I3(_0243_[5]),
-    .I4(_0265_[4]),
-    .O(_0266_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0577_ (
-    .I0(_0263_[0]),
-    .I1(_0263_[1]),
-    .I2(_0245_[2]),
-    .I3(_0245_[3]),
-    .O(_0266_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0578_ (
-    .I0(_0268_[0]),
-    .I1(_0268_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .O(_0270_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0579_ (
-    .I0(_0267_[0]),
-    .I1(_0267_[1]),
-    .I2(_0243_[5]),
-    .I3(_0246_[2]),
-    .O(_0270_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hff0fff0fff335511)
-  ) _0580_ (
-    .I0(_0269_[0]),
-    .I1(_0269_[1]),
-    .I2(_0269_[2]),
-    .I3(_0240_[0]),
-    .I4(_0242_[0]),
-    .I5(_0240_[1]),
-    .O(_0270_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0581_ (
-    .I0(_0377_[0]),
-    .I1(_0377_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .O(_0378_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0582_ (
-    .I0(_0376_[0]),
-    .I1(_0376_[1]),
-    .I2(_0246_[2]),
-    .I3(_0245_[3]),
-    .O(_0378_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hff0fff0fff553311)
-  ) _0583_ (
-    .I0(_0375_[0]),
-    .I1(_0375_[1]),
-    .I2(_0375_[2]),
-    .I3(_0240_[0]),
-    .I4(_0242_[0]),
-    .I5(_0240_[1]),
-    .O(_0378_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0584_ (
-    .I0(_0380_[0]),
-    .I1(_0380_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .O(_0382_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0585_ (
-    .I0(_0379_[0]),
-    .I1(_0379_[1]),
-    .I2(_0243_[5]),
-    .I3(_0246_[2]),
-    .O(_0382_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hff55ff55ff0f3303)
-  ) _0586_ (
-    .I0(_0381_[0]),
-    .I1(_0381_[1]),
-    .I2(_0381_[2]),
-    .I3(_0240_[0]),
-    .I4(_0242_[0]),
-    .I5(_0240_[1]),
-    .O(_0382_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0587_ (
-    .I0(_0290_[0]),
-    .I1(_0290_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0291_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd324993024)
-  ) _0588_ (
-    .I0(_0291_[0]),
-    .I1(_0291_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[2]),
-    .I4(_0291_[4]),
-    .O(_0292_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0589_ (
-    .I0(_0289_[0]),
-    .I1(_0289_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0292_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h01051155030f33ff)
-  ) _0590_ (
-    .I0(_0294_[0]),
-    .I1(_0294_[1]),
-    .I2(_0294_[2]),
-    .I3(_0243_[5]),
-    .I4(_0246_[2]),
-    .I5(_0246_[3]),
-    .O(_0296_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0591_ (
-    .I0(_0295_[0]),
-    .I1(_0295_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0296_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0592_ (
-    .I0(_0293_[0]),
-    .I1(_0293_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[3]),
-    .O(_0296_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0593_ (
-    .I0(_0405_[0]),
-    .I1(_0405_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0406_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd324993024)
-  ) _0594_ (
-    .I0(_0406_[0]),
-    .I1(_0406_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[2]),
-    .I4(_0406_[4]),
-    .O(_0425_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0595_ (
-    .I0(_0424_[0]),
-    .I1(_0424_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0425_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0596_ (
-    .I0(_0402_[0]),
-    .I1(_0402_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0403_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd356450304)
-  ) _0597_ (
-    .I0(_0403_[0]),
-    .I1(_0403_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[2]),
-    .I4(_0403_[4]),
-    .O(_0427_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0598_ (
-    .I0(_0426_[0]),
-    .I1(_0426_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0427_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0599_ (
-    .I0(_0308_[0]),
-    .I1(_0308_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .O(_0309_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0600_ (
-    .I0(_0307_[0]),
-    .I1(_0307_[1]),
-    .I2(_0243_[5]),
-    .I3(_0246_[2]),
-    .O(_0309_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hff55ff55ff0f3303)
-  ) _0601_ (
-    .I0(_0306_[0]),
-    .I1(_0306_[1]),
-    .I2(_0306_[2]),
-    .I3(_0240_[0]),
-    .I4(_0242_[0]),
-    .I5(_0240_[1]),
-    .O(_0309_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h01031133050f55ff)
-  ) _0602_ (
-    .I0(_0311_[0]),
-    .I1(_0311_[1]),
-    .I2(_0311_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0243_[5]),
-    .O(_0313_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0603_ (
-    .I0(_0310_[0]),
-    .I1(_0310_[1]),
-    .I2(_0246_[2]),
-    .I3(_0245_[3]),
-    .O(_0313_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0604_ (
-    .I0(_0312_[0]),
-    .I1(_0312_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[2]),
-    .O(_0313_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0605_ (
-    .I0(_0298_[0]),
-    .I1(_0298_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[2]),
-    .O(_0299_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd324993024)
-  ) _0606_ (
-    .I0(_0299_[0]),
-    .I1(_0299_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .I4(_0299_[4]),
-    .O(_0300_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0105030f115533ff)
-  ) _0607_ (
-    .I0(_0297_[0]),
-    .I1(_0297_[1]),
-    .I2(_0297_[2]),
-    .I3(_0243_[3]),
-    .I4(_0243_[4]),
-    .I5(_0245_[3]),
-    .O(_0300_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0111055503330fff)
-  ) _0608_ (
-    .I0(_0303_[0]),
-    .I1(_0303_[1]),
-    .I2(_0303_[2]),
-    .I3(_0247_[1]),
-    .I4(_0246_[2]),
-    .I5(_0246_[3]),
-    .O(_0305_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0609_ (
-    .I0(_0304_[0]),
-    .I1(_0304_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0305_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h00ca)
-  ) _0610_ (
-    .I0(_0302_[0]),
-    .I1(_0302_[1]),
-    .I2(_0240_[1]),
-    .I3(_0241_[1]),
-    .O(_0305_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h135f)
-  ) _0611_ (
-    .I0(_0315_[0]),
-    .I1(_0315_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .O(_0316_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd356450304)
-  ) _0612_ (
-    .I0(_0316_[0]),
-    .I1(_0316_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[2]),
-    .I4(_0316_[4]),
-    .O(_0318_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h153f)
-  ) _0613_ (
-    .I0(_0317_[0]),
-    .I1(_0317_[1]),
-    .I2(_0243_[3]),
-    .I3(_0243_[4]),
-    .O(_0318_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0614_ (
-    .I0(\cpu.cpu.decode.co_mem_word ),
-    .I1(\cpu.cpu.bne_or_bge ),
-    .O(_0232_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0615_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(_0232_[1]),
-    .O(_0233_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0616_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(\cpu.cpu.decode.opcode [2]),
-    .O(_0233_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h2)
-  ) _0617_ (
-    .I0(_0233_[2]),
-    .I1(_0233_[3]),
-    .O(_0341_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0618_ (
+    .INIT(32'd4368)
+  ) _036_ (
     .I0(\cpu.cpu.state.o_cnt [4]),
     .I1(\cpu.cpu.state.o_cnt [3]),
-    .O(_0257_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h80)
-  ) _0619_ (
-    .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
-    .I1(\cpu.cpu.state.o_cnt [2]),
-    .I2(_0257_[1]),
-    .O(_0390_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hae00)
-  ) _0620_ (
-    .I0(\cpu.cpu.decode.op20 ),
-    .I1(\cpu.cpu.decode.op26 ),
-    .I2(\cpu.cpu.decode.op21 ),
-    .I3(_0341_[3]),
-    .O(_0342_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h40)
-  ) _0621_ (
-    .I0(\cpu.cpu.decode.op20 ),
-    .I1(\cpu.cpu.decode.op21 ),
-    .I2(_0341_[3]),
-    .O(_0366_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h0001)
-  ) _0622_ (
-    .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
-    .I1(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [2]),
     .I2(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [1]),
     .I3(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [0]),
-    .O(_0443_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hb1bb)
-  ) _0623_ (
-    .I0(\cpu.rf_ram_if.rtrig1 ),
-    .I1(\cpu.rf_ram_if.rdata1 ),
-    .I2(\rf_ram.regzero ),
-    .I3(\rf_ram.rdata [0]),
-    .O(_0255_[1])
+    .I4(\cpu.cpu.state.o_cnt [2]),
+    .O(_034_[3])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
   LUT2 #(
-    .INIT(4'h4)
-  ) _0624_ (
-    .I0(\cpu.cpu.state.o_cnt [2]),
-    .I1(_0257_[1]),
-    .O(_0258_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h70f0f0f077ffffff)
-  ) _0625_ (
-    .I0(\cpu.cpu.gen_csr.csr.mcause3_0 [0]),
-    .I1(_0258_[1]),
-    .I2(_0255_[1]),
-    .I3(\cpu.cpu.alu.i_en ),
-    .I4(_0366_[4]),
-    .I5(_0342_[0]),
-    .O(_0367_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0626_ (
-    .I0(\cpu.cpu.gen_csr.csr.mcause31 ),
-    .I1(_0366_[4]),
-    .O(_0367_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h0100)
-  ) _0627_ (
-    .I0(\cpu.cpu.decode.op20 ),
-    .I1(\cpu.cpu.decode.op26 ),
-    .I2(\cpu.cpu.decode.op22 ),
-    .I3(_0341_[3]),
-    .O(_0365_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd1145045056)
-  ) _0628_ (
-    .I0(\cpu.cpu.state.o_cnt [4]),
-    .I1(\cpu.cpu.state.o_cnt [3]),
-    .I2(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
-    .I3(\cpu.cpu.state.o_cnt [2]),
-    .I4(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [0]),
-    .O(_0365_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4286578688)
-  ) _0629_ (
+    .INIT(4'h6)
+  ) _037_ (
     .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
-    .I1(\cpu.cpu.gen_csr.csr.mstatus_mie ),
-    .I2(_0258_[1]),
-    .I3(_0365_[3]),
-    .I4(_0365_[4]),
-    .O(_0367_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h1300)
-  ) _0630_ (
-    .I0(\cpu.cpu.bufreg2.i_cnt_done ),
-    .I1(_0367_[1]),
-    .I2(_0367_[2]),
-    .I3(_0367_[3]),
-    .O(_0368_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h0757)
-  ) _0631_ (
-    .I0(\cpu.cpu.decode.co_mem_word ),
-    .I1(\cpu.cpu.state.i_ctrl_misalign ),
-    .I2(\cpu.cpu.bufreg.data [0]),
-    .I3(\cpu.cpu.bne_or_bge ),
-    .O(_0330_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0632_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(\cpu.cpu.decode.opcode [2]),
-    .O(_0330_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h0080)
-  ) _0633_ (
-    .I0(\cpu.cpu.state.init_done ),
-    .I1(_0330_[1]),
-    .I2(_0330_[2]),
-    .I3(\cpu.cpu.alu.i_en ),
-    .O(_0331_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0634_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .O(_0331_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0635_ (
-    .I0(_0331_[0]),
-    .I1(_0331_[1]),
-    .O(_0373_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0636_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(_0373_[1]),
-    .O(_0374_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0637_ (
-    .I0(wb_rst),
-    .I1(\cpu.cpu.state.ibus_cyc ),
-    .O(_0239_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd1011839)
-  ) _0638_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(\cpu.cpu.decode.opcode [2]),
-    .I3(\cpu.cpu.decode.opcode [1]),
-    .I4(\cpu.cpu.decode.opcode [0]),
-    .O(_0314_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h31)
-  ) _0639_ (
-    .I0(\ram.o_wb_ack ),
-    .I1(\servant_mux.o_wb_cpu_ack ),
-    .I2(_0239_[4]),
-    .O(_0252_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd28001775)
-  ) _0640_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\ram.o_wb_rdt [0]),
-    .I3(\timer.mtime [0]),
-    .I4(\gpio.o_wb_rdt ),
-    .O(_0301_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hffff0000ff8b0000)
-  ) _0641_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.decode.co_mem_word ),
-    .I2(\cpu.cpu.bne_or_bge ),
-    .I3(\cpu.cpu.branch_op ),
-    .I4(\cpu.cpu.decode.opcode [2]),
-    .I5(\cpu.cpu.decode.opcode [0]),
-    .O(_0235_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h1777)
-  ) _0642_ (
-    .I0(\cpu.cpu.state.o_cnt [4]),
-    .I1(\cpu.cpu.state.i_ctrl_misalign ),
-    .I2(\cpu.cpu.state.o_cnt [3]),
-    .I3(\cpu.cpu.bufreg.data [0]),
-    .O(_0351_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0643_ (
-    .I0(\cpu.cpu.decode.co_mem_word ),
-    .I1(\cpu.cpu.decode.opcode [2]),
-    .O(_0236_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h47ff0000cfff0000)
-  ) _0644_ (
-    .I0(_0257_[1]),
-    .I1(_0236_[1]),
-    .I2(_0351_[2]),
-    .I3(\cpu.cpu.alu.i_en ),
-    .I4(_0252_[5]),
-    .I5(_0236_[2]),
-    .O(_0445_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8c0c)
-  ) _0645_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(_0236_[1]),
-    .I2(_0236_[2]),
-    .I3(\cpu.cpu.bufreg2.i_cnt_done ),
-    .O(_0237_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hca)
-  ) _0646_ (
-    .I0(\cpu.cpu.bufreg2.dhi [6]),
-    .I1(_0237_[1]),
-    .I2(_0237_[2]),
-    .O(_0238_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h4555)
-  ) _0647_ (
-    .I0(\cpu.cpu.gen_csr.csr.o_new_irq ),
-    .I1(\cpu.cpu.decode.op21 ),
-    .I2(_0233_[2]),
-    .I3(_0233_[3]),
-    .O(_0234_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0648_ (
-    .I0(\cpu.cpu.state.gen_csr.misalign_trap_sync_r ),
-    .I1(_0234_[1]),
-    .O(_0235_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd184553216)
-  ) _0649_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(\cpu.cpu.state.init_done ),
-    .I2(_0235_[2]),
-    .I3(\cpu.cpu.alu.i_en ),
-    .I4(_0235_[4]),
-    .O(_0238_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h4c)
-  ) _0650_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm31 ),
-    .I2(_0233_[2]),
-    .O(_0254_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h0002)
-  ) _0651_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(\cpu.cpu.decode.opcode [2]),
-    .I2(\cpu.cpu.decode.opcode [1]),
-    .I3(\cpu.cpu.decode.opcode [0]),
-    .O(_0254_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd16725301)
-  ) _0652_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [0]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [0]),
-    .I2(_0254_[2]),
-    .I3(_0254_[3]),
-    .I4(\cpu.cpu.bufreg2.i_cnt_done ),
-    .O(_0255_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h00ea)
-  ) _0653_ (
-    .I0(\cpu.cpu.state.o_cnt [4]),
-    .I1(\cpu.cpu.state.o_cnt [3]),
-    .I2(\cpu.cpu.state.o_cnt [2]),
-    .I3(_0255_[2]),
-    .O(_0262_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h40)
-  ) _0654_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(\cpu.cpu.decode.opcode [2]),
-    .I2(\cpu.cpu.decode.opcode [0]),
-    .O(_0262_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h1d3f)
-  ) _0655_ (
-    .I0(\cpu.cpu.bufreg.data [0]),
-    .I1(_0262_[1]),
-    .I2(_0262_[2]),
-    .I3(\cpu.cpu.bufreg.i_en ),
-    .O(_0325_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h2)
-  ) _0656_ (
-    .I0(\cpu.cpu.alu.i_en ),
-    .I1(_0236_[2]),
-    .O(_0325_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd15658720)
-  ) _0657_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(\cpu.cpu.decode.opcode [2]),
-    .I3(\cpu.cpu.decode.opcode [1]),
-    .I4(\cpu.cpu.decode.opcode [0]),
-    .O(_0324_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h80aa)
-  ) _0658_ (
-    .I0(\cpu.cpu.ctrl.pc ),
-    .I1(\cpu.cpu.decode.op20 ),
-    .I2(_0233_[2]),
-    .I3(_0324_[3]),
-    .O(_0325_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hd8)
-  ) _0659_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(_0255_[1]),
-    .I2(_0255_[2]),
-    .O(_0256_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h0700)
-  ) _0660_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(\cpu.cpu.decode.imm30 ),
-    .I2(\cpu.cpu.branch_op ),
-    .I3(_0232_[1]),
-    .O(_0256_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0661_ (
-    .I0(_0256_[0]),
-    .I1(_0256_[1]),
-    .O(_0259_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0662_ (
-    .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [0]),
-    .I1(_0258_[1]),
-    .O(_0259_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h1)
-  ) _0663_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.decode.co_mem_word ),
-    .O(_0259_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h5a007b00a500b700)
-  ) _0664_ (
-    .I0(\cpu.cpu.alu.i_rs1 ),
-    .I1(\cpu.cpu.alu.cmp_r ),
-    .I2(\cpu.cpu.alu.add_cy_r ),
-    .I3(_0259_[3]),
-    .I4(_0259_[4]),
-    .I5(_0259_[5]),
-    .O(_0260_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h8e)
-  ) _0665_ (
-    .I0(\cpu.cpu.alu.i_rs1 ),
-    .I1(\cpu.cpu.alu.add_cy_r ),
-    .I2(_0259_[5]),
-    .O(_0260_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd922746935)
-  ) _0666_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.decode.co_mem_word ),
-    .I2(\cpu.cpu.bne_or_bge ),
-    .I3(\cpu.cpu.alu.i_rs1 ),
-    .I4(_0256_[1]),
-    .O(_0260_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0667_ (
-    .I0(_0245_[3]),
-    .I1(_0407_[1]),
-    .O(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0668_ (
-    .I0(_0243_[3]),
-    .I1(_0397_[1]),
-    .O(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0669_ (
-    .I0(_0243_[3]),
-    .I1(_0408_[1]),
-    .O(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0670_ (
-    .I0(_0246_[3]),
-    .I1(_0407_[1]),
-    .O(_0211_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0671_ (
-    .I0(_0246_[3]),
-    .I1(_0404_[1]),
-    .O(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0672_ (
-    .I0(_0246_[3]),
-    .I1(_0397_[1]),
-    .O(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0673_ (
-    .I0(_0246_[3]),
-    .I1(_0408_[1]),
-    .O(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0674_ (
-    .I0(_0247_[1]),
-    .I1(_0407_[1]),
-    .O(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0675_ (
-    .I0(_0247_[1]),
-    .I1(_0404_[1]),
-    .O(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0676_ (
-    .I0(_0247_[1]),
-    .I1(_0397_[1]),
-    .O(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0677_ (
-    .I0(_0247_[1]),
-    .I1(_0408_[1]),
-    .O(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0678_ (
-    .I0(_0245_[3]),
-    .I1(_0404_[1]),
-    .O(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0679_ (
-    .I0(_0243_[4]),
-    .I1(_0407_[1]),
-    .O(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0680_ (
-    .I0(_0243_[4]),
-    .I1(_0404_[1]),
-    .O(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0681_ (
-    .I0(_0243_[4]),
-    .I1(_0397_[1]),
-    .O(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0682_ (
-    .I0(_0243_[4]),
-    .I1(_0408_[1]),
-    .O(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0683_ (
-    .I0(_0246_[2]),
-    .I1(_0407_[1]),
-    .O(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0684_ (
-    .I0(_0246_[2]),
-    .I1(_0404_[1]),
-    .O(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0685_ (
-    .I0(_0246_[2]),
-    .I1(_0397_[1]),
-    .O(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0686_ (
-    .I0(_0246_[2]),
-    .I1(_0408_[1]),
-    .O(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0687_ (
-    .I0(_0245_[2]),
-    .I1(_0407_[1]),
-    .O(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0688_ (
-    .I0(_0245_[2]),
-    .I1(_0404_[1]),
-    .O(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0689_ (
-    .I0(_0245_[3]),
-    .I1(_0397_[1]),
-    .O(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0690_ (
-    .I0(_0245_[2]),
-    .I1(_0397_[1]),
-    .O(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0691_ (
-    .I0(_0245_[2]),
-    .I1(_0408_[1]),
-    .O(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0692_ (
-    .I0(_0245_[3]),
-    .I1(_0408_[1]),
-    .O(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0693_ (
-    .I0(_0243_[5]),
-    .I1(_0407_[1]),
-    .O(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0694_ (
-    .I0(_0243_[5]),
-    .I1(_0404_[1]),
-    .O(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0695_ (
-    .I0(_0243_[5]),
-    .I1(_0397_[1]),
-    .O(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0696_ (
-    .I0(_0243_[5]),
-    .I1(_0408_[1]),
-    .O(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0697_ (
-    .I0(_0243_[3]),
-    .I1(_0407_[1]),
-    .O(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0698_ (
-    .I0(_0243_[3]),
-    .I1(_0404_[1]),
-    .O(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd16777216)
-  ) _0699_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0326_[3]),
-    .I4(_0235_[4]),
-    .O(_0212_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd67108864)
-  ) _0700_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0326_[3]),
-    .I4(_0235_[4]),
-    .O(_0212_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd33554432)
-  ) _0701_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0326_[3]),
-    .I4(_0235_[4]),
-    .O(_0212_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd134217728)
-  ) _0702_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0326_[3]),
-    .I4(_0235_[4]),
-    .O(_0212_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd16777216)
-  ) _0703_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0423_[3]),
-    .I4(_0235_[4]),
-    .O(_0212_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd67108864)
-  ) _0704_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0423_[3]),
-    .I4(_0235_[4]),
-    .O(_0212_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd33554432)
-  ) _0705_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0423_[3]),
-    .I4(_0235_[4]),
-    .O(_0212_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd134217728)
-  ) _0706_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0423_[3]),
-    .I4(_0235_[4]),
-    .O(_0212_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hd1)
-  ) _0707_ (
-    .I0(_0256_[0]),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0260_[4]),
-    .O(_0174_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hc0c0c0d400000000)
-  ) _0708_ (
-    .I0(\cpu.cpu.decode.opcode [2]),
-    .I1(\cpu.cpu.bufreg.c_r ),
-    .I2(_0439_[2]),
-    .I3(_0439_[3]),
-    .I4(_0255_[2]),
-    .I5(\cpu.cpu.bufreg.i_en ),
-    .O(_0175_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3774865408)
-  ) _0709_ (
-    .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [1]),
-    .I1(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [0]),
-    .I2(_0258_[1]),
-    .I3(_0236_[2]),
-    .I4(\cpu.cpu.bufreg.i_en ),
-    .O(_0176_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3901227008)
-  ) _0710_ (
-    .I0(\cpu.cpu.ctrl.pc ),
-    .I1(\cpu.cpu.ctrl.pc_plus_4_cy_r ),
-    .I2(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [2]),
-    .I3(_0258_[1]),
-    .I4(_0325_[2]),
-    .O(_0183_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h80e0)
-  ) _0711_ (
-    .I0(\cpu.cpu.ctrl.pc_plus_offset_cy_r ),
-    .I1(_0325_[1]),
-    .I2(_0325_[2]),
-    .I3(_0325_[3]),
-    .O(_0184_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd268435456)
-  ) _0712_ (
-    .I0(\cpu.cpu.decode.op20 ),
-    .I1(\cpu.cpu.decode.op26 ),
-    .I2(\cpu.cpu.decode.op22 ),
-    .I3(_0390_[3]),
-    .I4(_0341_[3]),
-    .O(_0186_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h2)
-  ) _0713_ (
-    .I0(\cpu.cpu.bufreg2.i_cnt_done ),
-    .I1(_0235_[4]),
-    .O(_0442_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hf080)
-  ) _0714_ (
-    .I0(\cpu.cpu.gen_csr.csr.mstatus_mpie ),
-    .I1(_0340_[0]),
-    .I2(_0235_[4]),
-    .I3(\cpu.cpu.gen_csr.csr.csr_in ),
-    .O(_0187_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2863332364)
-  ) _0715_ (
-    .I0(\ram.o_wb_rdt [19]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [0]),
-    .I2(\cpu.cpu.branch_op ),
-    .I3(_0254_[3]),
-    .I4(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0197_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0716_ (
-    .I0(\ram.o_wb_rdt [25]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [1]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0198_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0717_ (
-    .I0(\ram.o_wb_rdt [26]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [2]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0198_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0718_ (
-    .I0(\ram.o_wb_rdt [27]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [3]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0198_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0719_ (
-    .I0(\ram.o_wb_rdt [28]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [4]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0198_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0720_ (
-    .I0(\ram.o_wb_rdt [29]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [5]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0198_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0721_ (
-    .I0(\ram.o_wb_rdt [20]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [1]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0199_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0722_ (
-    .I0(\ram.o_wb_rdt [21]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [2]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0199_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0723_ (
-    .I0(\ram.o_wb_rdt [22]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [3]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0199_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0724_ (
-    .I0(\ram.o_wb_rdt [23]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [4]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0199_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0725_ (
-    .I0(\ram.o_wb_rdt [24]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [0]),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0199_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h01)
-  ) _0726_ (
-    .I0(\cpu.cpu.gen_csr.csr.o_new_irq ),
-    .I1(\cpu.cpu.state.init_done ),
-    .I2(_0235_[2]),
-    .O(_0236_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h08)
-  ) _0727_ (
-    .I0(\cpu.cpu.branch_op ),
-    .I1(_0236_[2]),
-    .I2(_0261_[2]),
-    .O(_0200_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0728_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(_0374_[1]),
-    .O(_0203_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h54)
-  ) _0729_ (
-    .I0(\ram.o_wb_ack ),
-    .I1(_0239_[4]),
-    .I2(_0332_[2]),
-    .O(_0204_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h0100)
-  ) _0730_ (
-    .I0(\cpu.rf_ram_if.rreg [1]),
-    .I1(_0338_[0]),
-    .I2(\cpu.rf_ram_if.rreg [0]),
-    .I3(_0347_[2]),
-    .O(_0205_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h4)
-  ) _0731_ (
-    .I0(\servant_mux.o_wb_cpu_ack ),
-    .I1(_0373_[1]),
-    .O(_0206_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h8)
-  ) _0732_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(_0374_[1]),
-    .O(_0207_)
+    .I1(\cpu.cpu.state.o_cnt [2]),
+    .O(_030_[0])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0733_ (
+  INV _038_ (
     .I(\cpu.rf_ram_if.rcnt [2]),
     .O(\cpu.rf_ram_if.wcnt [2])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0734_ (
+  INV _039_ (
     .I(\cpu.rf_ram_if.rcnt [3]),
-    .O(_0002_)
+    .O(_005_)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0735_ (
+  INV _040_ (
     .I(\cpu.rf_ram_if.rcnt [4]),
-    .O(_0003_)
+    .O(_006_)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0736_ (
-    .I(\timer.mtime [0]),
-    .O(_0208_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0737_ (
-    .I(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0036_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0738_ (
-    .I(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0037_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0739_ (
-    .I(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0038_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0740_ (
-    .I(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0039_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0741_ (
-    .I(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0040_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0742_ (
-    .I(_0319_),
-    .O(_0231_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
-  INV _0743_ (
+  INV _041_ (
     .I(\cpu.rf_ram_if.rtrig0 ),
-    .O(_0209_[0])
+    .O(\cpu.rf_ram_if.wreg [0])
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3153072624)
-  ) _0744_ (
-    .I0(\cpu.cpu.state.o_ctrl_jump ),
-    .I1(_0432_[4]),
-    .I2(_0434_[2]),
-    .I3(_0342_[1]),
-    .I4(_0429_[4]),
-    .O(\cpu.cpu.ctrl.new_pc )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h3c1428003f9f6fcf)
-  ) _0745_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.decode.co_mem_word ),
-    .I2(\cpu.cpu.bne_or_bge ),
-    .I3(\cpu.cpu.csr_imm ),
-    .I4(\cpu.cpu.alu.i_rs1 ),
-    .I5(_0368_[5]),
-    .O(\cpu.cpu.gen_csr.csr.csr_in )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h80)
-  ) _0746_ (
-    .I0(\timer.o_irq ),
-    .I1(\cpu.cpu.gen_csr.csr.mstatus_mie ),
-    .I2(\cpu.cpu.gen_csr.csr.mie_mtie ),
-    .O(\cpu.cpu.gen_csr.csr.timer_irq )
+  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:36.13-36.48" *)
+  INV _042_ (
+    .I(wb_nrst),
+    .O(_026_)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
   LUT2 #(
     .INIT(4'h8)
-  ) _0747_ (
-    .I0(\ram.o_wb_ack ),
-    .I1(_0239_[4]),
-    .O(\cpu.cpu.immdec.i_wb_en )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'haaf0aaf0ccffcc00)
-  ) _0748_ (
-    .I0(\cpu.cpu.bufreg2.dhi [0]),
-    .I1(\cpu.cpu.bufreg2.dlo [16]),
-    .I2(\cpu.cpu.bufreg2.dlo [8]),
-    .I3(\cpu.cpu.state.i_ctrl_misalign ),
-    .I4(\gpio.i_wb_dat ),
-    .I5(\cpu.cpu.bufreg.data [0]),
-    .O(\cpu.cpu.mem_if.i_bufreg2_q )
+  ) _043_ (
+    .I0(wb_nrst),
+    .I1(\cpu.cpu.state.ibus_cyc ),
+    .O(\cpu.arbiter.i_wb_cpu_ibus_stb )
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
   LUT4 #(
-    .INIT(16'h00eb)
-  ) _0749_ (
-    .I0(_0259_[3]),
-    .I1(_0260_[3]),
-    .I2(_0260_[4]),
-    .I3(_0260_[5]),
-    .O(\cpu.cpu.state.i_alu_cmp )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h2)
-  ) _0750_ (
-    .I0(\rf_ram.rdata [1]),
-    .I1(\rf_ram.regzero ),
-    .O(\cpu.rf_ram_if.i_rdata [1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h00000000ffffbf3f)
-  ) _0751_ (
-    .I0(_0262_[1]),
-    .I1(_0235_[4]),
-    .I2(_0433_[2]),
-    .I3(_0429_[4]),
-    .I4(_0433_[4]),
-    .I5(_0433_[5]),
-    .O(\cpu.rf_ram_if.i_wdata0 )
+    .INIT(16'h00b8)
+  ) _044_ (
+    .I0(\rf_ram.rdata [0]),
+    .I1(\cpu.rf_ram_if.rtrig1 ),
+    .I2(\cpu.rf_ram_if.rdata1 ),
+    .I3(_034_[3]),
+    .O(\cpu.cpu.ctrl.new_pc )
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
   LUT3 #(
-    .INIT(8'he2)
-  ) _0752_ (
-    .I0(\cpu.cpu.ctrl.pc ),
-    .I1(_0235_[4]),
-    .I2(\cpu.cpu.gen_csr.csr.csr_in ),
-    .O(\cpu.rf_ram_if.i_wdata1 )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd1110256)
-  ) _0753_ (
-    .I0(_0440_[0]),
-    .I1(_0440_[1]),
-    .I2(\cpu.cpu.alu.i_en ),
-    .I3(_0236_[2]),
-    .I4(_0235_[4]),
-    .O(\cpu.rf_ram_if.i_wen0 )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h2)
-  ) _0754_ (
-    .I0(\cpu.cpu.alu.i_en ),
-    .I1(_0436_[4]),
-    .O(\cpu.rf_ram_if.i_wen1 )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hfcfcb8fcfcfc30fc)
-  ) _0755_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [0]),
-    .I1(\cpu.rf_ram_if.rtrig0 ),
-    .I2(\cpu.cpu.csr_imm ),
-    .I3(_0235_[4]),
-    .I4(_0435_[4]),
-    .I5(_0343_[3]),
-    .O(\cpu.rf_ram_if.rreg [0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2835087612)
-  ) _0756_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [1]),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [5]),
-    .I2(\cpu.rf_ram_if.rtrig0 ),
-    .I3(_0436_[3]),
-    .I4(_0436_[4]),
-    .O(\cpu.rf_ram_if.rreg [1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3998111061)
-  ) _0757_ (
+    .INIT(8'he0)
+  ) _045_ (
     .I0(\cpu.rf_ram_if.rtrig0 ),
-    .I1(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [0]),
-    .I2(\cpu.cpu.decode.op26 ),
-    .I3(\cpu.cpu.decode.op21 ),
-    .I4(_0235_[4]),
-    .O(\cpu.rf_ram_if.wreg [0])
+    .I1(\cpu.rf_ram_if.rtrig1 ),
+    .I2(\cpu.rf_ram_if.wen1_r ),
+    .O(\cpu.o_rf_wen )
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hd8)
-  ) _0758_ (
+  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
+  LUT2 #(
+    .INIT(4'h8)
+  ) _046_ (
     .I0(\cpu.rf_ram_if.rtrig0 ),
     .I1(\cpu.rf_ram_if.wdata1_r [0]),
-    .I2(\cpu.rf_ram_if.wdata0_r [0]),
     .O(\rf_ram.i_wdata [0])
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hd8)
-  ) _0759_ (
+  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
+  LUT2 #(
+    .INIT(4'h8)
+  ) _047_ (
     .I0(\cpu.rf_ram_if.rtrig0 ),
     .I1(\cpu.rf_ram_if.wdata1_r [1]),
-    .I2(\cpu.rf_ram_if.wdata0_r [1]),
     .O(\rf_ram.i_wdata [1])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
   LUT3 #(
-    .INIT(8'hac)
-  ) _0760_ (
-    .I0(\cpu.cpu.ctrl.o_ibus_adr [2]),
-    .I1(\cpu.cpu.bufreg.data [2]),
-    .I2(_0239_[4]),
-    .O(wb_mem_adr[2])
+    .INIT(8'hd8)
+  ) _048_ (
+    .I0(\cpu.rf_ram_if.rtrig0 ),
+    .I1(_033_[1]),
+    .I2(_033_[2]),
+    .O(_000_[1])
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
   LUT3 #(
-    .INIT(8'hca)
-  ) _0761_ (
-    .I0(\cpu.cpu.bufreg.data [3]),
-    .I1(\cpu.cpu.ctrl.o_ibus_adr [3]),
-    .I2(_0239_[4]),
-    .O(wb_mem_adr[3])
+    .INIT(8'hd8)
+  ) _049_ (
+    .I0(\cpu.rf_ram_if.rtrig0 ),
+    .I1(_035_[1]),
+    .I2(_035_[2]),
+    .O(_000_[0])
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hca)
-  ) _0762_ (
-    .I0(\cpu.cpu.bufreg.data [4]),
-    .I1(\cpu.cpu.ctrl.o_ibus_adr [4]),
-    .I2(_0239_[4]),
-    .O(wb_mem_adr[4])
+  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
+  LUT2 #(
+    .INIT(4'hd)
+  ) _050_ (
+    .I0(wb_nrst),
+    .I1(_032_[1]),
+    .O(_028_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0763_ (
-    .I0(\cpu.cpu.ctrl.o_ibus_adr [5]),
-    .I1(\cpu.cpu.bufreg.data [5]),
-    .I2(_0239_[4]),
-    .O(wb_mem_adr[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0764_ (
-    .I0(\cpu.cpu.ctrl.o_ibus_adr [6]),
-    .I1(\cpu.cpu.bufreg.data [6]),
-    .I2(_0239_[4]),
-    .O(wb_mem_adr[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hca)
-  ) _0765_ (
-    .I0(\cpu.cpu.bufreg.data [7]),
-    .I1(\cpu.cpu.ctrl.o_ibus_adr [7]),
-    .I2(_0239_[4]),
-    .O(wb_mem_adr[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0766_ (
-    .I0(\cpu.cpu.ctrl.o_ibus_adr [8]),
-    .I1(\cpu.cpu.bufreg.data [8]),
-    .I2(_0239_[4]),
-    .O(wb_mem_adr[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hac)
-  ) _0767_ (
-    .I0(\cpu.cpu.ctrl.o_ibus_adr [9]),
-    .I1(\cpu.cpu.bufreg.data [9]),
-    .I2(_0239_[4]),
-    .O(wb_mem_adr[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4290838400)
-  ) _0768_ (
-    .I0(\cpu.cpu.bufreg.i_right_shift_op ),
-    .I1(\cpu.cpu.state.init_done ),
-    .I2(_0236_[1]),
-    .I3(_0238_[3]),
-    .I4(_0238_[4]),
-    .O(\cpu.cpu.bufreg.i_en )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hb800ffff3000ffff)
-  ) _0769_ (
-    .I0(_0257_[1]),
-    .I1(_0236_[1]),
-    .I2(_0351_[2]),
-    .I3(\cpu.cpu.alu.i_en ),
-    .I4(_0252_[5]),
-    .I5(_0236_[2]),
-    .O(_0179_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'ha3)
-  ) _0770_ (
-    .I0(\cpu.cpu.bufreg2.dlo [1]),
-    .I1(_0301_[1]),
-    .I2(_0252_[5]),
-    .O(_0182_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hf4)
-  ) _0771_ (
-    .I0(_0314_[0]),
+  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
+  LUT2 #(
+    .INIT(4'hd)
+  ) _051_ (
+    .I0(wb_nrst),
     .I1(\cpu.cpu.alu.i_en ),
-    .I2(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0194_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4294966528)
-  ) _0772_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(\cpu.cpu.decode.opcode [0]),
-    .I2(_0233_[2]),
-    .I3(\cpu.cpu.alu.i_en ),
-    .I4(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0196_)
+    .O(_027_)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
   LUT4 #(
     .INIT(16'hfffe)
-  ) _0773_ (
+  ) _052_ (
     .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
     .I1(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [2]),
     .I2(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [1]),
@@ -8664,2543 +2213,116 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
     .O(\cpu.cpu.alu.i_en )
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'heac0ffffffffffff)
-  ) _0774_ (
-    .I0(_0318_[0]),
-    .I1(_0318_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[3]),
-    .I4(_0318_[4]),
-    .I5(_0318_[5]),
-    .O(_0000_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3976200191)
-  ) _0775_ (
-    .I0(_0305_[0]),
-    .I1(_0305_[1]),
-    .I2(_0245_[2]),
-    .I3(_0305_[3]),
-    .I4(_0305_[4]),
-    .O(_0000_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8fff)
-  ) _0776_ (
-    .I0(_0300_[0]),
-    .I1(_0247_[1]),
-    .I2(_0300_[2]),
-    .I3(_0300_[3]),
-    .O(_0000_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0777_ (
-    .I0(_0313_[0]),
-    .I1(_0246_[3]),
-    .I2(_0313_[2]),
-    .I3(_0313_[3]),
-    .I4(_0313_[4]),
-    .O(_0000_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0778_ (
-    .I0(_0309_[0]),
-    .I1(_0245_[3]),
-    .I2(_0309_[2]),
-    .I3(_0309_[3]),
-    .I4(_0309_[4]),
-    .O(_0000_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'heca0ffffffffffff)
-  ) _0779_ (
-    .I0(_0427_[0]),
-    .I1(_0427_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[3]),
-    .I4(_0427_[4]),
-    .I5(_0427_[5]),
-    .O(_0000_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'heca0ffffffffffff)
-  ) _0780_ (
-    .I0(_0425_[0]),
-    .I1(_0425_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[3]),
-    .I4(_0425_[4]),
-    .I5(_0425_[5]),
-    .O(_0000_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0781_ (
-    .I0(_0296_[0]),
-    .I1(_0245_[2]),
-    .I2(_0296_[2]),
-    .I3(_0296_[3]),
-    .I4(_0296_[4]),
-    .O(_0000_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'heac0ffffffffffff)
-  ) _0782_ (
-    .I0(_0292_[0]),
-    .I1(_0292_[1]),
-    .I2(_0243_[5]),
-    .I3(_0245_[3]),
-    .I4(_0292_[4]),
-    .I5(_0292_[5]),
-    .O(_0000_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0783_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dhi [0]),
-    .I3(\ram.o_wb_rdt [23]),
-    .I4(\timer.mtime [23]),
-    .I5(_0252_[5]),
-    .O(_0182_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0784_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [23]),
-    .I3(\ram.o_wb_rdt [22]),
-    .I4(\timer.mtime [22]),
-    .I5(_0252_[5]),
-    .O(_0182_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0785_ (
-    .I0(_0382_[0]),
-    .I1(_0245_[3]),
-    .I2(_0382_[2]),
-    .I3(_0382_[3]),
-    .I4(_0382_[4]),
-    .O(_0000_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0786_ (
-    .I0(_0378_[0]),
-    .I1(_0243_[5]),
-    .I2(_0378_[2]),
-    .I3(_0378_[3]),
-    .I4(_0378_[4]),
-    .O(_0000_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0787_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [22]),
-    .I3(\timer.mtime [21]),
-    .I4(\ram.o_wb_rdt [21]),
-    .I5(_0252_[5]),
-    .O(_0182_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0788_ (
-    .I0(_0270_[0]),
-    .I1(_0245_[3]),
-    .I2(_0270_[2]),
-    .I3(_0270_[3]),
-    .I4(_0270_[4]),
-    .O(_0000_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0789_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [21]),
-    .I3(\ram.o_wb_rdt [20]),
-    .I4(\timer.mtime [20]),
-    .I5(_0252_[5]),
-    .O(_0182_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'heca0ffffffffffff)
-  ) _0790_ (
-    .I0(_0266_[0]),
-    .I1(_0266_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .I4(_0266_[4]),
-    .I5(_0266_[5]),
-    .O(_0000_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0791_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [20]),
-    .I3(\timer.mtime [19]),
-    .I4(\ram.o_wb_rdt [19]),
-    .I5(_0252_[5]),
-    .O(_0182_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8fff)
-  ) _0792_ (
-    .I0(_0247_[0]),
-    .I1(_0247_[1]),
-    .I2(_0247_[2]),
-    .I3(_0247_[3]),
-    .O(_0000_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0793_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [19]),
-    .I3(\timer.mtime [18]),
-    .I4(\ram.o_wb_rdt [18]),
-    .I5(_0252_[5]),
-    .O(_0182_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0794_ (
-    .I0(_0251_[0]),
-    .I1(_0247_[1]),
-    .I2(_0251_[2]),
-    .I3(_0251_[3]),
-    .I4(_0251_[4]),
-    .O(_0000_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0795_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [18]),
-    .I3(\timer.mtime [17]),
-    .I4(\ram.o_wb_rdt [17]),
-    .I5(_0252_[5]),
-    .O(_0182_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0796_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [17]),
-    .I3(\ram.o_wb_rdt [16]),
-    .I4(\timer.mtime [16]),
-    .I5(_0252_[5]),
-    .O(_0182_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'heca0ffffffffffff)
-  ) _0797_ (
-    .I0(_0274_[0]),
-    .I1(_0274_[1]),
-    .I2(_0245_[2]),
-    .I3(_0246_[3]),
-    .I4(_0274_[4]),
-    .I5(_0274_[5]),
-    .O(_0000_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0798_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [16]),
-    .I3(\timer.mtime [15]),
-    .I4(\ram.o_wb_rdt [15]),
-    .I5(_0252_[5]),
-    .O(_0182_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8fff)
-  ) _0799_ (
-    .I0(_0278_[0]),
-    .I1(_0247_[1]),
-    .I2(_0278_[2]),
-    .I3(_0278_[3]),
-    .O(_0000_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0800_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [15]),
-    .I3(\ram.o_wb_rdt [14]),
-    .I4(\timer.mtime [14]),
-    .I5(_0252_[5]),
-    .O(_0182_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0801_ (
-    .I0(_0284_[0]),
-    .I1(_0247_[1]),
-    .I2(_0284_[2]),
-    .I3(_0284_[3]),
-    .I4(_0284_[4]),
-    .O(_0000_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0802_ (
-    .I0(_0288_[0]),
-    .I1(_0247_[1]),
-    .I2(_0288_[2]),
-    .I3(_0288_[3]),
-    .I4(_0288_[4]),
-    .O(_0000_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0803_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [14]),
-    .I3(\timer.mtime [13]),
-    .I4(\ram.o_wb_rdt [13]),
-    .I5(_0252_[5]),
-    .O(_0182_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0804_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [13]),
-    .I3(\ram.o_wb_rdt [12]),
-    .I4(\timer.mtime [12]),
-    .I5(_0252_[5]),
-    .O(_0182_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0805_ (
-    .I0(_0438_[0]),
-    .I1(_0245_[3]),
-    .I2(_0438_[2]),
-    .I3(_0438_[3]),
-    .I4(_0438_[4]),
-    .O(_0000_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0806_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [12]),
-    .I3(\ram.o_wb_rdt [11]),
-    .I4(\timer.mtime [11]),
-    .I5(_0252_[5]),
-    .O(_0182_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'heac0ffffffffffff)
-  ) _0807_ (
-    .I0(_0323_[0]),
-    .I1(_0323_[1]),
-    .I2(_0246_[2]),
-    .I3(_0246_[3]),
-    .I4(_0323_[4]),
-    .I5(_0323_[5]),
-    .O(_0000_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8fff)
-  ) _0808_ (
-    .I0(_0437_[0]),
-    .I1(_0247_[1]),
-    .I2(_0437_[2]),
-    .I3(_0437_[3]),
-    .O(_0000_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0809_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [11]),
-    .I3(\ram.o_wb_rdt [10]),
-    .I4(\timer.mtime [10]),
-    .I5(_0252_[5]),
-    .O(_0182_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3976200191)
-  ) _0810_ (
-    .I0(_0337_[0]),
-    .I1(_0337_[1]),
-    .I2(_0246_[2]),
-    .I3(_0337_[3]),
-    .I4(_0337_[4]),
-    .O(_0000_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0811_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [10]),
-    .I3(\ram.o_wb_rdt [9]),
-    .I4(\timer.mtime [9]),
-    .I5(_0252_[5]),
-    .O(_0182_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2860575424)
-  ) _0812_ (
-    .I0(\cpu.rf_ram_if.rtrig0 ),
-    .I1(\cpu.rf_ram_if.rtrig1 ),
-    .I2(\cpu.rf_ram_if.wen0_r ),
-    .I3(\cpu.rf_ram_if.wen1_r ),
-    .I4(_0235_[4]),
-    .O(_0212_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0813_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [9]),
-    .I3(\timer.mtime [8]),
-    .I4(\ram.o_wb_rdt [8]),
-    .I5(_0252_[5]),
-    .O(_0182_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0814_ (
-    .I0(_0416_[0]),
-    .I1(_0247_[1]),
-    .I2(_0416_[2]),
-    .I3(_0416_[3]),
-    .I4(_0416_[4]),
-    .O(_0000_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0815_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [8]),
-    .I3(\timer.mtime [7]),
-    .I4(\ram.o_wb_rdt [7]),
-    .I5(_0252_[5]),
-    .O(_0182_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0816_ (
-    .I0(_0412_[0]),
-    .I1(_0247_[1]),
-    .I2(_0412_[2]),
-    .I3(_0412_[3]),
-    .I4(_0412_[4]),
-    .O(_0000_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'h0000a0e4ffffa0e4)
-  ) _0817_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\ram.o_wb_rdt [31]),
-    .I2(\timer.mtime [31]),
-    .I3(\cpu.cpu.bufreg.data [30]),
-    .I4(_0252_[5]),
-    .I5(_0256_[1]),
-    .O(_0181_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hcccccccca0a0f5a0)
-  ) _0818_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg2.dhi [7]),
-    .I2(\timer.mtime [30]),
-    .I3(\ram.o_wb_rdt [30]),
-    .I4(\cpu.cpu.bufreg.data [30]),
-    .I5(_0252_[5]),
-    .O(_0181_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8fff)
-  ) _0819_ (
-    .I0(_0401_[0]),
-    .I1(_0247_[1]),
-    .I2(_0401_[2]),
-    .I3(_0401_[3]),
-    .O(_0000_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0820_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [7]),
-    .I3(\ram.o_wb_rdt [6]),
-    .I4(\timer.mtime [6]),
-    .I5(_0252_[5]),
-    .O(_0182_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'haaaa00c0aaaafff3)
-  ) _0821_ (
-    .I0(\ram.o_wb_rdt [30]),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm7 ),
-    .I3(\cpu.cpu.decode.opcode [0]),
-    .I4(\cpu.cpu.immdec.i_wb_en ),
-    .I5(_0396_[5]),
-    .O(_0198_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0822_ (
-    .I0(_0395_[0]),
-    .I1(_0247_[1]),
-    .I2(_0395_[2]),
-    .I3(_0395_[3]),
-    .I4(_0395_[4]),
-    .O(_0000_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h1d11)
-  ) _0823_ (
-    .I0(_0391_[0]),
-    .I1(_0252_[5]),
-    .I2(_0391_[2]),
-    .I3(_0238_[4]),
-    .O(_0181_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0824_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [6]),
-    .I3(\ram.o_wb_rdt [5]),
-    .I4(\timer.mtime [5]),
-    .I5(_0252_[5]),
-    .O(_0182_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd2415919103)
-  ) _0825_ (
-    .I0(_0372_[0]),
-    .I1(_0247_[1]),
-    .I2(_0372_[2]),
-    .I3(_0372_[3]),
-    .I4(_0372_[4]),
-    .O(_0000_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0826_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [5]),
-    .I3(\timer.mtime [4]),
-    .I4(\ram.o_wb_rdt [4]),
-    .I5(_0252_[5]),
-    .O(_0182_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3423578639)
-  ) _0827_ (
-    .I0(\cpu.cpu.bufreg2.dhi [5]),
-    .I1(_0389_[1]),
-    .I2(_0389_[2]),
-    .I3(_0252_[5]),
-    .I4(_0237_[2]),
-    .O(_0181_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bbaa1100)
-  ) _0828_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [4]),
-    .I3(\ram.o_wb_rdt [3]),
-    .I4(\timer.mtime [3]),
-    .I5(_0252_[5]),
-    .O(_0182_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8fff)
-  ) _0829_ (
-    .I0(_0388_[0]),
-    .I1(_0247_[1]),
-    .I2(_0388_[2]),
-    .I3(_0388_[3]),
-    .O(_0000_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3423578639)
-  ) _0830_ (
-    .I0(\cpu.cpu.bufreg2.dhi [4]),
-    .I1(_0386_[1]),
-    .I2(_0386_[2]),
-    .I3(_0252_[5]),
-    .I4(_0237_[2]),
-    .O(_0181_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0831_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [3]),
-    .I3(\timer.mtime [2]),
-    .I4(\ram.o_wb_rdt [2]),
-    .I5(_0252_[5]),
-    .O(_0182_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3423578639)
-  ) _0832_ (
-    .I0(\cpu.cpu.bufreg2.dhi [3]),
-    .I1(_0385_[1]),
-    .I2(_0385_[2]),
-    .I3(_0252_[5]),
-    .I4(_0237_[2]),
-    .O(_0181_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'heca0ffffffffffff)
-  ) _0833_ (
-    .I0(_0364_[0]),
-    .I1(_0364_[1]),
-    .I2(_0247_[1]),
-    .I3(_0245_[3]),
-    .I4(_0364_[4]),
-    .I5(_0364_[5]),
-    .O(_0000_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8fff)
-  ) _0834_ (
-    .I0(_0360_[0]),
-    .I1(_0246_[3]),
-    .I2(_0360_[2]),
-    .I3(_0360_[3]),
-    .O(_0000_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3423578639)
-  ) _0835_ (
-    .I0(\cpu.cpu.bufreg2.dhi [2]),
-    .I1(_0356_[1]),
-    .I2(_0356_[2]),
-    .I3(_0252_[5]),
-    .I4(_0237_[2]),
-    .O(_0181_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hf0f0f0f0bb11aa00)
-  ) _0836_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.bufreg.data [30]),
-    .I2(\cpu.cpu.bufreg2.dlo [2]),
-    .I3(\timer.mtime [1]),
-    .I4(\ram.o_wb_rdt [1]),
-    .I5(_0252_[5]),
-    .O(_0182_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd570621951)
-  ) _0837_ (
-    .I0(_0355_[0]),
-    .I1(\cpu.cpu.immdec.i_wb_en ),
-    .I2(_0279_[4]),
-    .I3(_0350_[3]),
-    .I4(_0350_[4]),
-    .O(_0173_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4155761824)
-  ) _0838_ (
-    .I0(_0344_[0]),
-    .I1(_0344_[1]),
-    .I2(_0354_[2]),
-    .I3(_0354_[3]),
-    .I4(_0354_[4]),
-    .O(_0001_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hfe)
-  ) _0839_ (
-    .I0(wb_rst),
-    .I1(\cpu.cpu.immdec.i_wb_en ),
-    .I2(\cpu.cpu.bufreg2.i_cnt_done ),
-    .O(_0201_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hddcd)
-  ) _0840_ (
-    .I0(\cpu.cpu.state.o_cnt [4]),
-    .I1(\cpu.cpu.decode.co_mem_word ),
-    .I2(\cpu.cpu.state.o_cnt [3]),
-    .I3(\cpu.cpu.bne_or_bge ),
-    .O(\cpu.cpu.mem_if.dat_valid )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4009689087)
-  ) _0841_ (
-    .I0(wb_rst),
-    .I1(\cpu.cpu.immdec.i_wb_en ),
-    .I2(_0279_[4]),
-    .I3(_0350_[3]),
-    .I4(_0350_[4]),
-    .O(_0171_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h51ff)
-  ) _0842_ (
-    .I0(_0344_[1]),
-    .I1(_0348_[1]),
-    .I2(_0348_[2]),
-    .I3(_0348_[3]),
-    .O(_0001_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h4e44)
-  ) _0843_ (
-    .I0(\cpu.rf_ram_if.rtrig0 ),
-    .I1(\cpu.rf_ram_if.rdata0 [1]),
-    .I2(\rf_ram.regzero ),
-    .I3(\rf_ram.rdata [0]),
-    .O(_0172_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'he)
-  ) _0844_ (
-    .I0(wb_rst),
-    .I1(_0325_[2]),
-    .O(_0185_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'h8fff)
-  ) _0845_ (
-    .I0(_0384_[0]),
-    .I1(_0247_[1]),
-    .I2(_0384_[2]),
-    .I3(_0384_[3]),
-    .O(_0000_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hff08)
-  ) _0846_ (
-    .I0(\cpu.cpu.bufreg.data [31]),
-    .I1(\cpu.cpu.decode.imm30 ),
-    .I2(_0236_[2]),
-    .I3(_0441_[3]),
-    .O(_0177_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hae)
-  ) _0847_ (
-    .I0(\cpu.cpu.immdec.i_wb_en ),
-    .I1(_0279_[4]),
-    .I2(_0350_[3]),
-    .O(\cpu.rf_ram_if.i_rreq )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4294965488)
-  ) _0848_ (
-    .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
-    .I1(_0258_[1]),
-    .I2(_0340_[0]),
-    .I3(_0365_[4]),
-    .I4(_0442_[4]),
-    .O(_0188_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'h4f)
-  ) _0849_ (
-    .I0(\cpu.cpu.state.gen_csr.misalign_trap_sync_r ),
-    .I1(\cpu.cpu.gen_csr.csr.mcause3_0 [1]),
-    .I2(_0234_[1]),
-    .O(_0193_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hfbbb)
-  ) _0850_ (
-    .I0(\cpu.cpu.gen_csr.csr.o_new_irq ),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(\cpu.cpu.gen_csr.csr.mcause3_0 [3]),
-    .I3(_0235_[4]),
-    .O(_0191_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd790822911)
-  ) _0851_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(\cpu.cpu.branch_op ),
-    .I2(\cpu.cpu.state.gen_csr.misalign_trap_sync_r ),
-    .I3(\cpu.cpu.gen_csr.csr.mcause3_0 [2]),
-    .I4(_0234_[1]),
-    .O(_0192_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT3 #(
-    .INIT(8'hf2)
-  ) _0852_ (
-    .I0(\cpu.cpu.bufreg.data [2]),
-    .I1(_0236_[2]),
-    .I2(_0441_[3]),
-    .O(_0178_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:61.26-63.41" *)
-  LUT6 #(
-    .INIT(64'hffff100010001000)
-  ) _0853_ (
-    .I0(\cpu.cpu.decode.op20 ),
-    .I1(\cpu.cpu.decode.op21 ),
-    .I2(_0233_[2]),
-    .I3(_0233_[3]),
-    .I4(_0235_[4]),
-    .I5(\cpu.cpu.gen_csr.csr.csr_in ),
-    .O(_0190_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hff20)
-  ) _0854_ (
-    .I0(_0258_[1]),
-    .I1(_0443_[0]),
-    .I2(_0366_[4]),
-    .I3(_0442_[4]),
-    .O(_0189_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd4294901951)
-  ) _0855_ (
-    .I0(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .I1(\cpu.cpu.decode.opcode [0]),
-    .I2(_0330_[1]),
-    .I3(_0443_[0]),
-    .I4(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0195_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:51.26-53.19" *)
-  LUT4 #(
-    .INIT(16'hceff)
-  ) _0856_ (
-    .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
-    .I1(\cpu.rf_ram_if.rgnt ),
-    .I2(\cpu.cpu.bufreg2.i_cnt_done ),
-    .I3(_0350_[4]),
-    .O(_0202_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'hd)
-  ) _0857_ (
-    .I0(_0445_[0]),
-    .I1(_0237_[2]),
-    .O(_0180_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT5 #(
-    .INIT(32'd3793944575)
-  ) _0858_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [1]),
-    .I1(\cpu.rf_ram_if.rtrig0 ),
-    .I2(\cpu.cpu.decode.op20 ),
-    .I3(\cpu.cpu.decode.op26 ),
-    .I4(_0235_[4]),
-    .O(\cpu.rf_ram_if.wreg [1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h6)
-  ) _0859_ (
-    .I0(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
-    .I1(\cpu.cpu.state.o_cnt [2]),
-    .O(_0210_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0860_ (
-    .I0(\timer.mtime [31]),
-    .I1(\timer.mtimecmp [31]),
-    .O(_0007_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0861_ (
-    .I0(\timer.mtime [30]),
-    .I1(\timer.mtimecmp [30]),
-    .O(_0006_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0862_ (
-    .I0(\timer.mtime [29]),
-    .I1(\timer.mtimecmp [29]),
-    .O(_0005_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0863_ (
-    .I0(\timer.mtime [28]),
-    .I1(\timer.mtimecmp [28]),
-    .O(_0004_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0864_ (
-    .I0(\timer.mtime [27]),
-    .I1(\timer.mtimecmp [27]),
-    .O(_0011_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0865_ (
-    .I0(\timer.mtime [26]),
-    .I1(\timer.mtimecmp [26]),
-    .O(_0010_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0866_ (
-    .I0(\timer.mtime [25]),
-    .I1(\timer.mtimecmp [25]),
-    .O(_0009_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0867_ (
-    .I0(\timer.mtime [24]),
-    .I1(\timer.mtimecmp [24]),
-    .O(_0008_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0868_ (
-    .I0(\timer.mtime [23]),
-    .I1(\timer.mtimecmp [23]),
-    .O(_0015_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0869_ (
-    .I0(\timer.mtime [22]),
-    .I1(\timer.mtimecmp [22]),
-    .O(_0014_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0870_ (
-    .I0(\timer.mtime [21]),
-    .I1(\timer.mtimecmp [21]),
-    .O(_0013_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0871_ (
-    .I0(\timer.mtime [20]),
-    .I1(\timer.mtimecmp [20]),
-    .O(_0012_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0872_ (
-    .I0(\timer.mtime [19]),
-    .I1(\timer.mtimecmp [19]),
-    .O(_0019_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0873_ (
-    .I0(\timer.mtime [18]),
-    .I1(\timer.mtimecmp [18]),
-    .O(_0018_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0874_ (
-    .I0(\timer.mtime [17]),
-    .I1(\timer.mtimecmp [17]),
-    .O(_0017_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0875_ (
-    .I0(\timer.mtime [16]),
-    .I1(\timer.mtimecmp [16]),
-    .O(_0016_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0876_ (
-    .I0(\timer.mtime [15]),
-    .I1(\timer.mtimecmp [15]),
-    .O(_0023_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0877_ (
-    .I0(\timer.mtime [14]),
-    .I1(\timer.mtimecmp [14]),
-    .O(_0022_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0878_ (
-    .I0(\timer.mtime [13]),
-    .I1(\timer.mtimecmp [13]),
-    .O(_0021_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0879_ (
-    .I0(\timer.mtime [12]),
-    .I1(\timer.mtimecmp [12]),
-    .O(_0020_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0880_ (
-    .I0(\timer.mtime [11]),
-    .I1(\timer.mtimecmp [11]),
-    .O(_0027_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0881_ (
-    .I0(\timer.mtime [10]),
-    .I1(\timer.mtimecmp [10]),
-    .O(_0026_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0882_ (
-    .I0(\timer.mtime [9]),
-    .I1(\timer.mtimecmp [9]),
-    .O(_0025_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0883_ (
-    .I0(\timer.mtime [8]),
-    .I1(\timer.mtimecmp [8]),
-    .O(_0024_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0884_ (
-    .I0(\timer.mtime [7]),
-    .I1(\timer.mtimecmp [7]),
-    .O(_0031_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0885_ (
-    .I0(\timer.mtime [6]),
-    .I1(\timer.mtimecmp [6]),
-    .O(_0030_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0886_ (
-    .I0(\timer.mtime [5]),
-    .I1(\timer.mtimecmp [5]),
-    .O(_0029_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0887_ (
-    .I0(\timer.mtime [4]),
-    .I1(\timer.mtimecmp [4]),
-    .O(_0028_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0888_ (
-    .I0(\timer.mtime [3]),
-    .I1(\timer.mtimecmp [3]),
-    .O(_0035_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0889_ (
-    .I0(\timer.mtime [2]),
-    .I1(\timer.mtimecmp [2]),
-    .O(_0034_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0890_ (
-    .I0(\timer.mtime [1]),
-    .I1(\timer.mtimecmp [1]),
-    .O(_0033_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT2 #(
-    .INIT(4'h9)
-  ) _0891_ (
-    .I0(\timer.mtime [0]),
-    .I1(\timer.mtimecmp [0]),
-    .O(_0032_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.38|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
-  CARRY4 _0892_ (
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:100.18-100.24|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
+  CARRY4 _053_ (
     .CI(1'h0),
-    .CO({ _0091_, _0090_, _0089_, _0088_ }),
-    .CYINIT(1'h1),
-    .DI(\timer.mtime [3:0]),
-    .O({ _0087_, _0086_, _0085_, _0084_ }),
-    .S({ _0035_, _0034_, _0033_, _0032_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.38|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0893_ (
-    .CI(_0091_),
-    .CO({ _0099_, _0098_, _0097_, _0096_ }),
-    .CYINIT(1'h0),
-    .DI(\timer.mtime [7:4]),
-    .O({ _0095_, _0094_, _0093_, _0092_ }),
-    .S({ _0031_, _0030_, _0029_, _0028_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.38|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0894_ (
-    .CI(_0099_),
-    .CO({ _0107_, _0106_, _0105_, _0104_ }),
-    .CYINIT(1'h0),
-    .DI(\timer.mtime [11:8]),
-    .O({ _0103_, _0102_, _0101_, _0100_ }),
-    .S({ _0027_, _0026_, _0025_, _0024_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.38|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0895_ (
-    .CI(_0107_),
-    .CO({ _0115_, _0114_, _0113_, _0112_ }),
-    .CYINIT(1'h0),
-    .DI(\timer.mtime [15:12]),
-    .O({ _0111_, _0110_, _0109_, _0108_ }),
-    .S({ _0023_, _0022_, _0021_, _0020_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.38|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0896_ (
-    .CI(_0115_),
-    .CO({ _0123_, _0122_, _0121_, _0120_ }),
-    .CYINIT(1'h0),
-    .DI(\timer.mtime [19:16]),
-    .O({ _0119_, _0118_, _0117_, _0116_ }),
-    .S({ _0019_, _0018_, _0017_, _0016_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.38|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0897_ (
-    .CI(_0123_),
-    .CO({ _0131_, _0130_, _0129_, _0128_ }),
-    .CYINIT(1'h0),
-    .DI(\timer.mtime [23:20]),
-    .O({ _0127_, _0126_, _0125_, _0124_ }),
-    .S({ _0015_, _0014_, _0013_, _0012_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.38|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0898_ (
-    .CI(_0131_),
-    .CO({ _0139_, _0138_, _0137_, _0136_ }),
-    .CYINIT(1'h0),
-    .DI(\timer.mtime [27:24]),
-    .O({ _0135_, _0134_, _0133_, _0132_ }),
-    .S({ _0011_, _0010_, _0009_, _0008_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:30.17-30.38|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0899_ (
-    .CI(_0139_),
-    .CO({ _0146_, _0145_, _0144_, _0143_ }),
-    .CYINIT(1'h0),
-    .DI(\timer.mtime [31:28]),
-    .O({ _0319_, _0142_, _0141_, _0140_ }),
-    .S({ _0007_, _0006_, _0005_, _0004_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
-  CARRY4 _0900_ (
-    .CI(1'h0),
-    .CO({ _0072_, _0071_, _0070_, _0069_ }),
-    .CYINIT(1'h0),
-    .DI(4'h1),
-    .O({ _0208_[3:1], _0068_ }),
-    .S({ \timer.mtime [3:1], _0208_[0] })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0901_ (
-    .CI(_0072_),
-    .CO({ _0076_, _0075_, _0074_, _0073_ }),
-    .CYINIT(1'h0),
-    .DI(4'h0),
-    .O(_0208_[7:4]),
-    .S(\timer.mtime [7:4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0902_ (
-    .CI(_0076_),
-    .CO({ _0150_, _0149_, _0148_, _0147_ }),
-    .CYINIT(1'h0),
-    .DI(4'h0),
-    .O(_0208_[11:8]),
-    .S(\timer.mtime [11:8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0903_ (
-    .CI(_0150_),
-    .CO({ _0154_, _0153_, _0152_, _0151_ }),
-    .CYINIT(1'h0),
-    .DI(4'h0),
-    .O(_0208_[15:12]),
-    .S(\timer.mtime [15:12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0904_ (
-    .CI(_0154_),
-    .CO({ _0158_, _0157_, _0156_, _0155_ }),
-    .CYINIT(1'h0),
-    .DI(4'h0),
-    .O(_0208_[19:16]),
-    .S(\timer.mtime [19:16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0905_ (
-    .CI(_0158_),
-    .CO({ _0162_, _0161_, _0160_, _0159_ }),
-    .CYINIT(1'h0),
-    .DI(4'h0),
-    .O(_0208_[23:20]),
-    .S(\timer.mtime [23:20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0906_ (
-    .CI(_0162_),
-    .CO({ _0166_, _0165_, _0164_, _0163_ }),
-    .CYINIT(1'h0),
-    .DI(4'h0),
-    .O(_0208_[27:24]),
-    .S(\timer.mtime [27:24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:29.16-29.27|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0907_ (
-    .CI(_0166_),
-    .CO({ _0170_, _0169_, _0168_, _0167_ }),
-    .CYINIT(1'h0),
-    .DI(4'h0),
-    .O(_0208_[31:28]),
-    .S(\timer.mtime [31:28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:100.18-100.24|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
-  CARRY4 _0908_ (
-    .CI(1'h0),
-    .CO({ _0062_, _0061_, _0060_, _0059_ }),
+    .CO({ _012_, _011_, _010_, _009_ }),
     .CYINIT(1'h1),
     .DI({ 1'h0, \cpu.rf_ram_if.rcnt [4:2] }),
-    .O({ _0058_, \cpu.rf_ram_if.wcnt [4:3], _0057_ }),
-    .S({ 1'h0, _0003_, _0002_, \cpu.rf_ram_if.rcnt [2] })
+    .O({ _008_, \cpu.rf_ram_if.wcnt [4:3], _007_ }),
+    .S({ 1'h0, _006_, _005_, \cpu.rf_ram_if.rcnt [2] })
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:76.38-76.51|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
-  CARRY4 _0909_ (
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:163.15-163.39|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
+  CARRY4 _054_ (
     .CI(1'h0),
-    .CO({ _0050_, _0049_, _0048_, _0047_ }),
-    .CYINIT(1'h1),
-    .DI(\cpu.cpu.bufreg2.dhi [3:0]),
-    .O({ _0386_[1], _0385_[1], _0356_[1], _0046_ }),
-    .S({ _0038_, _0037_, _0036_, \cpu.cpu.bufreg2.dhi [0] })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:76.38-76.51|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0910_ (
-    .CI(_0050_),
-    .CO({ _0056_, _0055_, _0054_, _0053_ }),
-    .CYINIT(1'h0),
-    .DI({ 2'h0, \cpu.cpu.bufreg2.dhi [5:4] }),
-    .O({ _0052_, _0051_, _0237_[1], _0389_[1] }),
-    .S({ 2'h0, _0040_, _0039_ })
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:163.15-163.39|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
-  CARRY4 _0911_ (
-    .CI(1'h0),
-    .CO({ _0067_, _0066_, _0065_, _0064_ }),
+    .CO({ _017_, _016_, _015_, _014_ }),
     .CYINIT(1'h0),
     .DI(4'h1),
-    .O({ _0209_[3:2], _0355_[0], _0063_ }),
-    .S({ \cpu.rf_ram_if.rcnt [3:1], _0209_[0] })
+    .O({ _029_[3:1], _013_ }),
+    .S({ \cpu.rf_ram_if.rcnt [3:1], \cpu.rf_ram_if.wreg [0] })
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:163.15-163.39|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
-  CARRY4 _0912_ (
-    .CI(_0067_),
-    .CO({ _0083_, _0082_, _0081_, _0080_ }),
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:163.15-163.39|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:186.14-194.8" *)
+  CARRY4 _055_ (
+    .CI(_017_),
+    .CO({ _024_, _023_, _022_, _021_ }),
     .CYINIT(1'h0),
     .DI(4'h0),
-    .O({ _0079_, _0078_, _0077_, _0209_[4] }),
+    .O({ _020_, _019_, _018_, _029_[4] }),
     .S({ 3'h0, \cpu.rf_ram_if.rcnt [4] })
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:199.22-199.45|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
-  CARRY4 _0913_ (
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:199.22-199.45|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/arith_map.v:176.11-184.5" *)
+  CARRY4 _056_ (
     .CI(1'h0),
-    .CO({ _0045_, _0044_, _0043_, _0042_ }),
+    .CO({ _004_, _003_, _002_, _001_ }),
     .CYINIT(1'h0),
     .DI({ 3'h0, \cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3] }),
-    .O({ \cpu.cpu.bufreg2.i_cnt_done , _0210_[2:1], _0041_ }),
-    .S({ 1'h0, \cpu.cpu.state.o_cnt [4:3], _0210_[0] })
+    .O({ _032_[1], _030_[2:1], _025_ }),
+    .S({ 1'h0, \cpu.cpu.state.o_cnt [4:3], _030_[0] })
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:98.4-108.30|../src/servant_ram.v:24.4-28.41|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _0914_ (
+  ) _057_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0204_),
-    .Q(\ram.o_wb_ack ),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0915_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[0]),
-    .Q(\ram.o_wb_rdt [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0916_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[1]),
-    .Q(\ram.o_wb_rdt [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0917_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[2]),
-    .Q(\ram.o_wb_rdt [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0918_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[3]),
-    .Q(\ram.o_wb_rdt [3]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0919_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[4]),
-    .Q(\ram.o_wb_rdt [4]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0920_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[5]),
-    .Q(\ram.o_wb_rdt [5]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0921_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[6]),
-    .Q(\ram.o_wb_rdt [6]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0922_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[7]),
-    .Q(\ram.o_wb_rdt [7]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0923_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[8]),
-    .Q(\ram.o_wb_rdt [8]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0924_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[9]),
-    .Q(\ram.o_wb_rdt [9]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0925_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[10]),
-    .Q(\ram.o_wb_rdt [10]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0926_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[11]),
-    .Q(\ram.o_wb_rdt [11]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0927_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[12]),
-    .Q(\ram.o_wb_rdt [12]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0928_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[13]),
-    .Q(\ram.o_wb_rdt [13]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0929_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[14]),
-    .Q(\ram.o_wb_rdt [14]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0930_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[15]),
-    .Q(\ram.o_wb_rdt [15]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0931_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[16]),
-    .Q(\ram.o_wb_rdt [16]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0932_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[17]),
-    .Q(\ram.o_wb_rdt [17]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0933_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[18]),
-    .Q(\ram.o_wb_rdt [18]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0934_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[19]),
-    .Q(\ram.o_wb_rdt [19]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0935_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[20]),
-    .Q(\ram.o_wb_rdt [20]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0936_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[21]),
-    .Q(\ram.o_wb_rdt [21]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0937_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[22]),
-    .Q(\ram.o_wb_rdt [22]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0938_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[23]),
-    .Q(\ram.o_wb_rdt [23]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0939_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[24]),
-    .Q(\ram.o_wb_rdt [24]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0940_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[25]),
-    .Q(\ram.o_wb_rdt [25]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0941_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[26]),
-    .Q(\ram.o_wb_rdt [26]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0942_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[27]),
-    .Q(\ram.o_wb_rdt [27]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0943_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[28]),
-    .Q(\ram.o_wb_rdt [28]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0944_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[29]),
-    .Q(\ram.o_wb_rdt [29]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0945_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[30]),
-    .Q(\ram.o_wb_rdt [30]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0946_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0000_[31]),
-    .Q(\ram.o_wb_rdt [31]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0947_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[0]),
-    .Q(\timer.mtime [0]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0948_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[1]),
-    .Q(\timer.mtime [1]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0949_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[2]),
-    .Q(\timer.mtime [2]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0950_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[3]),
-    .Q(\timer.mtime [3]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0951_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[4]),
-    .Q(\timer.mtime [4]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0952_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[5]),
-    .Q(\timer.mtime [5]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0953_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[6]),
-    .Q(\timer.mtime [6]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0954_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[7]),
-    .Q(\timer.mtime [7]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0955_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[8]),
-    .Q(\timer.mtime [8]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0956_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[9]),
-    .Q(\timer.mtime [9]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0957_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[10]),
-    .Q(\timer.mtime [10]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0958_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[11]),
-    .Q(\timer.mtime [11]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0959_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[12]),
-    .Q(\timer.mtime [12]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0960_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[13]),
-    .Q(\timer.mtime [13]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0961_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[14]),
-    .Q(\timer.mtime [14]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0962_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[15]),
-    .Q(\timer.mtime [15]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0963_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[16]),
-    .Q(\timer.mtime [16]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0964_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[17]),
-    .Q(\timer.mtime [17]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0965_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[18]),
-    .Q(\timer.mtime [18]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0966_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[19]),
-    .Q(\timer.mtime [19]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0967_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[20]),
-    .Q(\timer.mtime [20]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0968_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[21]),
-    .Q(\timer.mtime [21]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0969_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[22]),
-    .Q(\timer.mtime [22]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0970_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[23]),
-    .Q(\timer.mtime [23]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0971_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[24]),
-    .Q(\timer.mtime [24]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0972_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[25]),
-    .Q(\timer.mtime [25]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0973_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[26]),
-    .Q(\timer.mtime [26]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0974_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[27]),
-    .Q(\timer.mtime [27]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0975_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[28]),
-    .Q(\timer.mtime [28]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0976_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[29]),
-    .Q(\timer.mtime [29]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0977_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[30]),
-    .Q(\timer.mtime [30]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0978_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0208_[31]),
-    .Q(\timer.mtime [31]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0979_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0209_[0]),
+    .D(\cpu.rf_ram_if.wreg [0]),
     .Q(\cpu.rf_ram_if.rtrig0 ),
-    .R(_0171_)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _0980_ (
+  ) _058_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0209_[2]),
+    .D(_029_[2]),
     .Q(\cpu.rf_ram_if.rcnt [2]),
-    .R(_0171_)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _0981_ (
+  ) _059_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0209_[3]),
+    .D(_029_[3]),
     .Q(\cpu.rf_ram_if.rcnt [3]),
-    .R(_0171_)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _0982_ (
+  ) _060_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0209_[4]),
+    .D(_029_[4]),
     .Q(\cpu.rf_ram_if.rcnt [4]),
-    .R(_0171_)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:147.4-171.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _0983_ (
+  ) _061_ (
     .C(wb_clk),
-    .CE(1'h1),
-    .D(_0001_[0]),
-    .Q(\rf_ram.rdata [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0984_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0001_[1]),
-    .Q(\rf_ram.rdata [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0985_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0172_),
-    .Q(\cpu.cpu.alu.i_rs1 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0986_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [3]),
-    .Q(\cpu.cpu.bufreg.data [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0987_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [4]),
-    .Q(\cpu.cpu.bufreg.data [3]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0988_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [5]),
-    .Q(\cpu.cpu.bufreg.data [4]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0989_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [6]),
-    .Q(\cpu.cpu.bufreg.data [5]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0990_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [7]),
-    .Q(\cpu.cpu.bufreg.data [6]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0991_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [8]),
-    .Q(\cpu.cpu.bufreg.data [7]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0992_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [9]),
-    .Q(\cpu.cpu.bufreg.data [8]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0993_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [10]),
-    .Q(\cpu.cpu.bufreg.data [9]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0994_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [11]),
-    .Q(\cpu.cpu.bufreg.data [10]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0995_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [12]),
-    .Q(\cpu.cpu.bufreg.data [11]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/cells_map.v:66.62-66.124" *)
-  SRLC32E #(
-    .INIT(18'h00000),
-    .IS_CLK_INVERTED(1'h0)
-  ) _0996_ (
-    .A(5'h11),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .CLK(wb_clk),
-    .D(\cpu.cpu.bufreg.data [30]),
-    .Q(\cpu.cpu.bufreg.data [12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0997_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(\cpu.cpu.bufreg.data [31]),
-    .Q(\cpu.cpu.bufreg.data [30]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0998_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg.i_en ),
-    .D(_0177_),
-    .Q(\cpu.cpu.bufreg.data [31]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _0999_ (
-    .C(wb_clk),
-    .CE(\cpu.rf_ram_if.rtrig0 ),
-    .D(\cpu.rf_ram_if.i_wen0 ),
-    .Q(\cpu.rf_ram_if.wen0_r ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:147.4-171.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1000_ (
-    .C(wb_clk),
-    .CE(_0201_),
-    .D(_0185_),
+    .CE(_028_),
+    .D(_027_),
     .Q(\cpu.cpu.state.ibus_cyc ),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:154.7-154.70|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:154.7-154.70|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1001_ (
+  ) _062_ (
     .C(wb_clk),
     .CE(\cpu.rf_ram_if.rtrig1 ),
-    .D(\cpu.rf_ram_if.i_rdata [1]),
+    .D(\rf_ram.rdata [1]),
     .Q(\cpu.rf_ram_if.rdata1 ),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1002_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(\cpu.rf_ram_if.i_rdata [1]),
-    .Q(\cpu.rf_ram_if.rdata0 [1]),
-    .R(_0209_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1003_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(\cpu.rf_ram_if.rreq_r ),
-    .Q(\cpu.rf_ram_if.rgnt ),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1004_ (
+  ) _063_ (
     .C(wb_clk),
     .CE(1'h1),
     .D(\cpu.rf_ram_if.rtrig0 ),
@@ -11208,43 +2330,21 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1005_ (
+  ) _064_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0173_),
+    .D(_029_[1]),
     .Q(\cpu.rf_ram_if.rcnt [1]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1006_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(\cpu.rf_ram_if.wdata0_r [1]),
-    .Q(\cpu.rf_ram_if.wdata0_r [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1007_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(\cpu.rf_ram_if.i_wdata0 ),
-    .Q(\cpu.rf_ram_if.wdata0_r [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1008_ (
+  ) _065_ (
     .C(wb_clk),
     .CE(1'h1),
     .D(\cpu.rf_ram_if.wdata1_r [1]),
@@ -11252,10 +2352,10 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1009_ (
+  ) _066_ (
     .C(wb_clk),
     .CE(1'h1),
     .D(\cpu.rf_ram_if.wdata1_r [2]),
@@ -11263,4944 +2363,553 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1010_ (
+  ) _067_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(\cpu.rf_ram_if.i_wdata1 ),
+    .D(\cpu.cpu.ctrl.pc ),
     .Q(\cpu.rf_ram_if.wdata1_r [2]),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:158.4-182.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1011_ (
+  ) _068_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(\cpu.rf_ram_if.i_rreq ),
-    .Q(\cpu.rf_ram_if.rreq_r ),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:534.4-550.34|../src/serv_mem_if.v:47.4-50.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1012_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.mem_if.dat_valid ),
-    .D(\cpu.cpu.mem_if.i_bufreg2_q ),
-    .Q(\cpu.cpu.mem_if.signbit ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:230.3-233.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1013_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0213_),
-    .Q(\cpu.cpu.state.gen_csr.misalign_trap_sync_r ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1014_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0210_[0]),
+    .D(_030_[0]),
     .Q(\cpu.cpu.state.o_cnt [2]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1015_ (
+  ) _069_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0210_[1]),
+    .D(_030_[1]),
     .Q(\cpu.cpu.state.o_cnt [3]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1016_ (
+  ) _070_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0210_[2]),
+    .D(_030_[2]),
     .Q(\cpu.cpu.state.o_cnt [4]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:147.4-171.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1017_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg2.i_cnt_done ),
-    .D(_0200_),
-    .Q(\cpu.cpu.state.o_ctrl_jump ),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:147.4-171.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1018_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.bufreg2.i_cnt_done ),
-    .D(_0236_[2]),
-    .Q(\cpu.cpu.state.init_done ),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1019_ (
+  ) _071_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0202_),
+    .D(_031_),
     .Q(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [0]),
-    .R(wb_rst)
+    .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1020_ (
+  ) _072_ (
     .C(wb_clk),
     .CE(1'h1),
     .D(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [0]),
     .Q(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [1]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1021_ (
+  ) _073_ (
     .C(wb_clk),
     .CE(1'h1),
     .D(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [1]),
     .Q(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [2]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:237.4-290.31|../src/serv_state.v:198.3-205.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1022_ (
+  ) _074_ (
     .C(wb_clk),
     .CE(1'h1),
     .D(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [2]),
     .Q(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1023_ (
+  ) _075_ (
     .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[0]),
-    .Q(\gpio.i_wb_dat ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1024_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[1]),
-    .Q(\cpu.cpu.bufreg2.dlo [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1025_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[2]),
-    .Q(\cpu.cpu.bufreg2.dlo [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1026_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[3]),
-    .Q(\cpu.cpu.bufreg2.dlo [3]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1027_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[4]),
-    .Q(\cpu.cpu.bufreg2.dlo [4]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1028_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[5]),
-    .Q(\cpu.cpu.bufreg2.dlo [5]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1029_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[6]),
-    .Q(\cpu.cpu.bufreg2.dlo [6]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1030_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[7]),
-    .Q(\cpu.cpu.bufreg2.dlo [7]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1031_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[8]),
-    .Q(\cpu.cpu.bufreg2.dlo [8]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1032_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[9]),
-    .Q(\cpu.cpu.bufreg2.dlo [9]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1033_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[10]),
-    .Q(\cpu.cpu.bufreg2.dlo [10]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1034_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[11]),
-    .Q(\cpu.cpu.bufreg2.dlo [11]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1035_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[12]),
-    .Q(\cpu.cpu.bufreg2.dlo [12]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1036_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[13]),
-    .Q(\cpu.cpu.bufreg2.dlo [13]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1037_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[14]),
-    .Q(\cpu.cpu.bufreg2.dlo [14]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1038_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[15]),
-    .Q(\cpu.cpu.bufreg2.dlo [15]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1039_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[16]),
-    .Q(\cpu.cpu.bufreg2.dlo [16]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1040_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[17]),
-    .Q(\cpu.cpu.bufreg2.dlo [17]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1041_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[18]),
-    .Q(\cpu.cpu.bufreg2.dlo [18]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1042_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[19]),
-    .Q(\cpu.cpu.bufreg2.dlo [19]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1043_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[20]),
-    .Q(\cpu.cpu.bufreg2.dlo [20]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1044_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[21]),
-    .Q(\cpu.cpu.bufreg2.dlo [21]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1045_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[22]),
-    .Q(\cpu.cpu.bufreg2.dlo [22]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1046_ (
-    .C(wb_clk),
-    .CE(_0179_),
-    .D(_0182_[23]),
-    .Q(\cpu.cpu.bufreg2.dlo [23]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1047_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [2]),
-    .Q(\cpu.cpu.decode.opcode [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1048_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [3]),
-    .Q(\cpu.cpu.decode.opcode [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1049_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [4]),
-    .Q(\cpu.cpu.decode.opcode [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1050_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [5]),
-    .Q(\cpu.arbiter.i_wb_cpu_dbus_we ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1051_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [6]),
-    .Q(\cpu.cpu.branch_op ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1052_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [12]),
-    .Q(\cpu.cpu.bne_or_bge ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1053_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [13]),
-    .Q(\cpu.cpu.decode.co_mem_word ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1054_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [14]),
-    .Q(\cpu.cpu.bufreg.i_right_shift_op ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1055_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [20]),
-    .Q(\cpu.cpu.decode.op20 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1056_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [21]),
-    .Q(\cpu.cpu.decode.op21 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1057_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [22]),
-    .Q(\cpu.cpu.decode.op22 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1058_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [26]),
-    .Q(\cpu.cpu.decode.op26 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1059_ (
-    .C(wb_clk),
-    .CE(_0196_),
-    .D(_0199_[0]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1060_ (
-    .C(wb_clk),
-    .CE(_0196_),
-    .D(_0199_[1]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1061_ (
-    .C(wb_clk),
-    .CE(_0196_),
-    .D(_0199_[2]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1062_ (
-    .C(wb_clk),
-    .CE(_0196_),
-    .D(_0199_[3]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [3]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1063_ (
-    .C(wb_clk),
-    .CE(_0196_),
-    .D(_0199_[4]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [4]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1064_ (
-    .C(wb_clk),
-    .CE(_0195_),
-    .D(_0198_[0]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1065_ (
-    .C(wb_clk),
-    .CE(_0195_),
-    .D(_0198_[1]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1066_ (
-    .C(wb_clk),
-    .CE(_0195_),
-    .D(_0198_[2]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1067_ (
-    .C(wb_clk),
-    .CE(_0195_),
-    .D(_0198_[3]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [3]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1068_ (
-    .C(wb_clk),
-    .CE(_0195_),
-    .D(_0198_[4]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [4]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1069_ (
-    .C(wb_clk),
-    .CE(_0195_),
-    .D(_0198_[5]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [5]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1070_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0214_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm7 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1071_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0215_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1072_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0216_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1073_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0217_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1074_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0218_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [3]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1075_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0219_),
-    .Q(\cpu.cpu.csr_imm ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1076_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0220_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [5]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1077_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0221_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [6]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1078_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0222_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [7]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1079_ (
-    .C(wb_clk),
-    .CE(_0194_),
-    .D(_0197_[8]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1080_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [31]),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm31 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1081_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\cpu.cpu.gen_csr.csr.timer_irq ),
-    .Q(\cpu.cpu.gen_csr.csr.timer_irq_r ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:79.4-85.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1082_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.alu.i_en ),
-    .D(\cpu.cpu.state.i_alu_cmp ),
-    .Q(\cpu.cpu.alu.cmp_r ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:54.4-58.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1083_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0175_),
-    .Q(\cpu.cpu.bufreg.c_r ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1084_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0223_),
-    .Q(\cpu.cpu.bufreg2.dhi [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1085_ (
-    .C(wb_clk),
-    .CE(_0180_),
-    .D(_0181_[1]),
-    .Q(\cpu.cpu.bufreg2.dhi [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1086_ (
-    .C(wb_clk),
-    .CE(_0180_),
-    .D(_0181_[2]),
-    .Q(\cpu.cpu.bufreg2.dhi [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1087_ (
-    .C(wb_clk),
-    .CE(_0180_),
-    .D(_0181_[3]),
-    .Q(\cpu.cpu.bufreg2.dhi [3]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1088_ (
-    .C(wb_clk),
-    .CE(_0180_),
-    .D(_0181_[4]),
-    .Q(\cpu.cpu.bufreg2.dhi [4]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1089_ (
-    .C(wb_clk),
-    .CE(_0180_),
-    .D(_0181_[5]),
-    .Q(\cpu.cpu.bufreg2.dhi [5]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1090_ (
-    .C(wb_clk),
-    .CE(_0180_),
-    .D(_0181_[6]),
-    .Q(\cpu.cpu.bufreg2.dhi [6]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:407.26-430.32|../src/serv_bufreg2.v:98.4-103.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1091_ (
-    .C(wb_clk),
-    .CE(_0180_),
-    .D(_0181_[7]),
-    .Q(\cpu.cpu.bufreg2.dhi [7]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1092_ (
-    .C(wb_clk),
-    .CE(_0176_),
-    .D(\cpu.cpu.state.i_ctrl_misalign ),
-    .Q(\cpu.cpu.bufreg.data [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:380.4-405.31|../src/serv_bufreg.v:62.3-68.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1093_ (
-    .C(wb_clk),
-    .CE(_0176_),
-    .D(_0178_),
-    .Q(\cpu.cpu.state.i_ctrl_misalign ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1094_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0184_),
-    .Q(\cpu.cpu.ctrl.pc_plus_offset_cy_r ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1095_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0183_),
-    .Q(\cpu.cpu.ctrl.pc_plus_4_cy_r ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1096_ (
-    .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [1]),
     .Q(\cpu.cpu.ctrl.pc ),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1097_ (
+  ) _076_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [2]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [1]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1098_ (
+  ) _077_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [3]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [2]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1099_ (
+  ) _078_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [4]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [3]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1100_ (
+  ) _079_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [5]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [4]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1101_ (
+  ) _080_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [6]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [5]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1102_ (
+  ) _081_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [7]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [6]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1103_ (
+  ) _082_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [8]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [7]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1104_ (
+  ) _083_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [9]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [8]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1105_ (
+  ) _084_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [10]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [9]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1106_ (
+  ) _085_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [11]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [10]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1107_ (
+  ) _086_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [12]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [11]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1108_ (
+  ) _087_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [13]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [12]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1109_ (
+  ) _088_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [14]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [13]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1110_ (
+  ) _089_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [15]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [14]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1111_ (
+  ) _090_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [16]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [15]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1112_ (
+  ) _091_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [17]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [16]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1113_ (
+  ) _092_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [18]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [17]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1114_ (
+  ) _093_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [19]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [18]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1115_ (
+  ) _094_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [20]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [19]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1116_ (
+  ) _095_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [21]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [20]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1117_ (
+  ) _096_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [22]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [21]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1118_ (
+  ) _097_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [23]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [22]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1119_ (
+  ) _098_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [24]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [23]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1120_ (
+  ) _099_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [25]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [24]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1121_ (
+  ) _100_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [26]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [25]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1122_ (
+  ) _101_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [27]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [26]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1123_ (
+  ) _102_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [28]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [27]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1124_ (
+  ) _103_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [29]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [28]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1125_ (
+  ) _104_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [30]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [29]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1126_ (
+  ) _105_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.o_ibus_adr [31]),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [30]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_top.v:437.4-461.33|../src/serv_ctrl.v:103.4-114.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1127_ (
+  ) _106_ (
     .C(wb_clk),
-    .CE(_0185_),
+    .CE(_027_),
     .D(\cpu.cpu.ctrl.new_pc ),
     .Q(\cpu.cpu.ctrl.o_ibus_adr [31]),
-    .R(wb_rst)
+    .R(_026_)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:463.23-480.28|../src/serv_alu.v:79.4-85.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:40.4-51.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1128_ (
+  ) _107_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0174_),
-    .Q(\cpu.cpu.alu.add_cy_r ),
+    .D(\cpu.arbiter.i_wb_cpu_ibus_stb ),
+    .Q(\ram.BRAM0_RCLKEN ),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:40.4-51.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1129_ (
+  ) _108_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0224_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [0]),
+    .D(\cpu.cpu.ctrl.o_ibus_adr [2]),
+    .Q(\ram.BRAM0_WRITE_ADDR [0]),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:40.4-51.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1130_ (
+  ) _109_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0225_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [1]),
+    .D(\cpu.cpu.ctrl.o_ibus_adr [3]),
+    .Q(\ram.BRAM0_WRITE_ADDR [1]),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:40.4-51.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1131_ (
+  ) _110_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0226_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
+    .D(\cpu.cpu.ctrl.o_ibus_adr [4]),
+    .Q(\ram.BRAM0_WRITE_ADDR [2]),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:40.4-51.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1132_ (
+  ) _111_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0227_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
+    .D(\cpu.cpu.ctrl.o_ibus_adr [5]),
+    .Q(\ram.BRAM0_WRITE_ADDR [3]),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:357.26-375.38|../src/serv_immdec.v:49.3-67.6|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:115.4-139.5|../src/servant_ram.v:40.4-51.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1133_ (
+  ) _112_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0228_),
-    .Q(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [4]),
+    .D(\cpu.cpu.ctrl.o_ibus_adr [6]),
+    .Q(\ram.BRAM0_WRITE_ADDR [4]),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "../src/servant.v:180.4-207.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1134_ (
-    .C(wb_clk),
-    .CE(_0189_),
-    .D(_0193_),
-    .Q(\cpu.cpu.gen_csr.csr.mcause3_0 [0]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1135_ (
-    .C(wb_clk),
-    .CE(_0189_),
-    .D(_0192_),
-    .Q(\cpu.cpu.gen_csr.csr.mcause3_0 [1]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1136_ (
-    .C(wb_clk),
-    .CE(_0189_),
-    .D(_0191_),
-    .Q(\cpu.cpu.gen_csr.csr.mcause3_0 [2]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1137_ (
-    .C(wb_clk),
-    .CE(_0189_),
-    .D(_0190_),
-    .Q(\cpu.cpu.gen_csr.csr.mcause3_0 [3]),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1138_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0229_),
-    .Q(\cpu.cpu.gen_csr.csr.mcause31 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1139_ (
-    .C(wb_clk),
-    .CE(_0442_[4]),
-    .D(\cpu.cpu.gen_csr.csr.mstatus_mie ),
-    .Q(\cpu.cpu.gen_csr.csr.mstatus_mpie ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1140_ (
-    .C(wb_clk),
-    .CE(_0186_),
-    .D(\cpu.cpu.gen_csr.csr.csr_in ),
-    .Q(\cpu.cpu.gen_csr.csr.mie_mtie ),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1141_ (
-    .C(wb_clk),
-    .CE(_0188_),
-    .D(_0187_),
-    .Q(\cpu.cpu.gen_csr.csr.mstatus_mie ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:295.4-355.39|../src/serv_decode.v:242.10-253.13|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1142_ (
-    .C(wb_clk),
-    .CE(\cpu.cpu.immdec.i_wb_en ),
-    .D(\ram.o_wb_rdt [30]),
-    .Q(\cpu.cpu.decode.imm30 ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_top.v:557.3-589.29|../src/serv_csr.v:98.4-162.7|../src/servile.v:210.4-276.33|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1143_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0230_),
-    .Q(\cpu.cpu.gen_csr.csr.o_new_irq ),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:122.17-128.21|../src/servant_gpio.v:9.4-13.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1144_ (
-    .C(wb_clk),
-    .CE(_0203_),
-    .D(\gpio.i_wb_dat ),
-    .Q(\gpio.o_gpio ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1145_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\gpio.i_wb_dat ),
-    .Q(\timer.mtimecmp [0]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1146_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .Q(\timer.mtimecmp [1]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1147_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .Q(\timer.mtimecmp [2]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1148_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .Q(\timer.mtimecmp [3]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1149_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .Q(\timer.mtimecmp [4]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1150_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .Q(\timer.mtimecmp [5]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1151_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .Q(\timer.mtimecmp [6]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1152_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .Q(\timer.mtimecmp [7]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1153_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .Q(\timer.mtimecmp [8]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1154_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .Q(\timer.mtimecmp [9]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1155_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .Q(\timer.mtimecmp [10]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1156_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .Q(\timer.mtimecmp [11]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1157_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .Q(\timer.mtimecmp [12]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1158_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .Q(\timer.mtimecmp [13]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1159_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .Q(\timer.mtimecmp [14]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1160_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .Q(\timer.mtimecmp [15]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1161_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .Q(\timer.mtimecmp [16]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1162_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .Q(\timer.mtimecmp [17]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1163_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .Q(\timer.mtimecmp [18]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1164_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .Q(\timer.mtimecmp [19]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1165_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .Q(\timer.mtimecmp [20]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1166_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .Q(\timer.mtimecmp [21]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1167_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .Q(\timer.mtimecmp [22]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1168_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .Q(\timer.mtimecmp [23]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1169_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .Q(\timer.mtimecmp [24]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1170_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .Q(\timer.mtimecmp [25]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1171_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .Q(\timer.mtimecmp [26]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1172_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .Q(\timer.mtimecmp [27]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1173_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .Q(\timer.mtimecmp [28]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1174_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .Q(\timer.mtimecmp [29]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1175_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .Q(\timer.mtimecmp [30]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1176_ (
-    .C(wb_clk),
-    .CE(_0207_),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .Q(\timer.mtimecmp [31]),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:72.16-92.38|../src/servant_mux.v:35.4-41.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1177_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0206_),
-    .Q(\servant_mux.o_wb_cpu_ack ),
-    .R(wb_rst)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:113.4-120.32|../src/servant_timer.v:26.4-36.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1178_ (
-    .C(wb_clk),
-    .CE(1'h1),
-    .D(_0231_[5]),
-    .Q(\timer.o_irq ),
-    .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:149.4-176.31|../src/serv_rf_ram_if.v:102.4-111.7|../src/servile.v:158.4-181.30|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
-  FDRE #(
-    .INIT(1'hx)
-  ) _1179_ (
+  ) _113_ (
     .C(wb_clk),
     .CE(\cpu.rf_ram_if.rtrig0 ),
-    .D(\cpu.rf_ram_if.i_wen1 ),
+    .D(\cpu.cpu.alu.i_en ),
     .Q(\cpu.rf_ram_if.wen1_r ),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:122.17-128.21|../src/servant_gpio.v:9.4-13.7|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1180_ (
+  ) _114_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(\gpio.o_gpio ),
-    .Q(\gpio.o_wb_rdt ),
+    .D(_000_[0]),
+    .Q(\rf_ram.rdata [0]),
     .R(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "../src/servant.v:133.4-140.28|../src/serv_rf_ram.v:40.4-41.62|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
+  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/ff_map.v:68.41-68.95" *)
   FDRE #(
     .INIT(1'hx)
-  ) _1181_ (
+  ) _115_ (
     .C(wb_clk),
     .CE(1'h1),
-    .D(_0205_),
-    .Q(\rf_ram.regzero ),
+    .D(_000_[1]),
+    .Q(\rf_ram.rdata [1]),
     .R(1'h0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT5 #(
-    .INIT(32'd4042308488)
-  ) _1182_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm7 ),
-    .I1(_0443_[0]),
-    .I2(\ram.o_wb_rdt [7]),
-    .I3(_0254_[3]),
-    .I4(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0214_)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:43.26-44.30" *)
-  LUT5 #(
-    .INIT(32'd719989290)
-  ) _1183_ (
-    .I0(\cpu.cpu.gen_csr.csr.o_new_irq ),
-    .I1(_0239_[4]),
-    .I2(\ram.o_wb_ack ),
-    .I3(\cpu.cpu.gen_csr.csr.timer_irq_r ),
-    .I4(\cpu.cpu.gen_csr.csr.timer_irq ),
-    .O(_0230_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT6 #(
-    .INIT(64'h0030003000320030)
-  ) _1184_ (
-    .I0(\cpu.cpu.bufreg2.i_cnt_done ),
-    .I1(wb_rst),
-    .I2(\cpu.cpu.state.gen_csr.misalign_trap_sync_r ),
-    .I3(\cpu.cpu.immdec.i_wb_en ),
-    .I4(_0236_[2]),
-    .I5(_0350_[3]),
-    .O(_0213_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00aeaea2a2)
-  ) _1185_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [0]),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0314_[0]),
-    .I3(\ram.o_wb_rdt [20]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [1]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0215_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00aeaea2a2)
-  ) _1186_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [1]),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0314_[0]),
-    .I3(\ram.o_wb_rdt [12]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [2]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0216_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00aeaea2a2)
-  ) _1187_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [2]),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0314_[0]),
-    .I3(\ram.o_wb_rdt [13]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [3]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0217_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00aeaea2a2)
-  ) _1188_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [3]),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0314_[0]),
-    .I3(\ram.o_wb_rdt [14]),
-    .I4(\cpu.cpu.csr_imm ),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0218_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00aeaea2a2)
-  ) _1189_ (
-    .I0(\cpu.cpu.csr_imm ),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0314_[0]),
-    .I3(\ram.o_wb_rdt [15]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [5]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0219_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00aeaea2a2)
-  ) _1190_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [5]),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0314_[0]),
-    .I3(\ram.o_wb_rdt [16]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [6]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0220_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00aeaea2a2)
-  ) _1191_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [6]),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0314_[0]),
-    .I3(\ram.o_wb_rdt [17]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [7]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0221_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00aeaea2a2)
-  ) _1192_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [7]),
-    .I1(\cpu.cpu.alu.i_en ),
-    .I2(_0314_[0]),
-    .I3(\ram.o_wb_rdt [18]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0222_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:56.26-58.30" *)
-  LUT6 #(
-    .INIT(64'h0f0f00ffe4e4a0f5)
-  ) _1193_ (
-    .I0(_0445_[0]),
-    .I1(\cpu.cpu.bufreg2.dhi [1]),
-    .I2(\cpu.cpu.bufreg2.dhi [0]),
-    .I3(_0444_[2]),
-    .I4(_0252_[5]),
-    .I5(_0237_[2]),
-    .O(_0223_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00baba8a8a)
-  ) _1194_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [0]),
-    .I1(_0443_[0]),
-    .I2(_0440_[0]),
-    .I3(\ram.o_wb_rdt [7]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [1]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0224_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00baba8a8a)
-  ) _1195_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [1]),
-    .I1(_0443_[0]),
-    .I2(_0440_[0]),
-    .I3(\ram.o_wb_rdt [8]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0225_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00baba8a8a)
-  ) _1196_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2]),
-    .I1(_0443_[0]),
-    .I2(_0440_[0]),
-    .I3(\ram.o_wb_rdt [9]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0226_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00baba8a8a)
-  ) _1197_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3]),
-    .I1(_0443_[0]),
-    .I2(_0440_[0]),
-    .I3(\ram.o_wb_rdt [10]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [4]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0227_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'hff00ff00baba8a8a)
-  ) _1198_ (
-    .I0(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [4]),
-    .I1(_0443_[0]),
-    .I2(_0440_[0]),
-    .I3(\ram.o_wb_rdt [11]),
-    .I4(\cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25 [0]),
-    .I5(\cpu.cpu.immdec.i_wb_en ),
-    .O(_0228_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lut_map.v:47.26-48.41" *)
-  LUT6 #(
-    .INIT(64'heaeaff00ea2aff00)
-  ) _1199_ (
-    .I0(\cpu.cpu.gen_csr.csr.mcause31 ),
-    .I1(_0366_[4]),
-    .I2(\cpu.cpu.bufreg2.i_cnt_done ),
-    .I3(\cpu.cpu.gen_csr.csr.o_new_irq ),
-    .I4(_0235_[4]),
-    .I5(\cpu.cpu.gen_csr.csr.csr_in ),
-    .O(_0229_)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000003ff)
-  ) \ram.mem.0.0.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\gpio.i_wb_dat ),
-    .O(_0383_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000003ff)
-  ) \ram.mem.0.1.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .O(_0359_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000103)
-  ) \ram.mem.0.10.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .O(_0421_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.100.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .O(_0369_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.101.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .O(_0392_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.102.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .O(_0400_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.103.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .O(_0409_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.104.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .O(_0414_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.105.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .O(_0335_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.106.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .O(_0422_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.107.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .O(_0323_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.108.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .O(_0419_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.109.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .O(_0285_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000100)
-  ) \ram.mem.0.11.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .O(_0321_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.110.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .O(_0281_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.111.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .O(_0276_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.112.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .O(_0274_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.113.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .O(_0248_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.114.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .O(_0246_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.115.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .O(_0266_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.116.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .O(_0268_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.117.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .O(_0377_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.118.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .O(_0380_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.119.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .O(_0290_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000340)
-  ) \ram.mem.0.12.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .O(_0438_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.120.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .O(_0294_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.121.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0405_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.122.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0402_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.123.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0308_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.124.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0313_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.125.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0299_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.126.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .O(_0303_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.127.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .O(_0315_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.128.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\gpio.i_wb_dat ),
-    .O(_0384_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.129.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .O(_0358_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000240)
-  ) \ram.mem.0.13.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .O(_0287_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.130.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .O(_0364_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.131.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .O(_0388_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.132.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .O(_0372_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.133.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .O(_0395_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.134.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .O(_0401_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.135.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .O(_0412_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.136.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .O(_0416_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.137.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .O(_0335_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.138.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .O(_0437_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.139.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .O(_0321_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000260)
-  ) \ram.mem.0.14.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .O(_0282_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.140.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .O(_0417_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.141.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .O(_0288_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.142.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .O(_0284_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.143.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .O(_0278_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.144.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .O(_0273_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.145.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .O(_0251_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.146.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .O(_0247_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.147.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .O(_0265_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.148.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .O(_0269_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.149.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .O(_0375_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000002a0)
-  ) \ram.mem.0.15.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .O(_0275_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.150.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .O(_0381_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.151.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .O(_0291_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.152.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .O(_0293_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.153.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0406_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.154.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0427_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.155.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0306_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.156.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0312_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.157.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0300_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.158.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .O(_0303_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.159.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .O(_0316_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000392)
-  ) \ram.mem.0.16.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .O(_0273_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.160.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\gpio.i_wb_dat ),
-    .O(_0327_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.161.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .O(_0357_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.162.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .O(_0361_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.163.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .O(_0387_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.164.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .O(_0370_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.165.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .O(_0393_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.166.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .O(_0398_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.167.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .O(_0411_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.168.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .O(_0415_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.169.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .O(_0334_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000003a0)
-  ) \ram.mem.0.17.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .O(_0249_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.170.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .O(_0420_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.171.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .O(_0320_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.172.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .O(_0417_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.173.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .O(_0286_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.174.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .O(_0282_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.175.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .O(_0277_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.176.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .O(_0272_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.177.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .O(_0250_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.178.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .O(_0243_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.179.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .O(_0264_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000212)
-  ) \ram.mem.0.18.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .O(_0245_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.180.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .O(_0269_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.181.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .O(_0375_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.182.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .O(_0381_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.183.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .O(_0289_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.184.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .O(_0295_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.185.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0424_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.186.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0426_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.187.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0306_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.188.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0311_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.189.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0297_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000200)
-  ) \ram.mem.0.19.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .O(_0263_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.190.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .O(_0304_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.191.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .O(_0317_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.192.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\gpio.i_wb_dat ),
-    .O(_0383_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.193.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .O(_0359_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.194.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .O(_0363_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.195.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .O(_0329_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.196.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .O(_0369_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.197.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .O(_0394_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.198.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .O(_0399_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.199.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .O(_0409_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000205)
-  ) \ram.mem.0.2.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .O(_0364_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000003b4)
-  ) \ram.mem.0.20.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .O(_0270_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.200.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .O(_0414_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.201.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .O(_0337_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.202.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .O(_0422_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.203.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .O(_0323_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.204.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .O(_0419_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.205.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .O(_0285_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.206.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .O(_0283_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.207.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .O(_0276_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.208.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .O(_0271_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.209.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .O(_0249_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000100)
-  ) \ram.mem.0.21.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .O(_0376_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.210.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .O(_0246_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.211.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .O(_0266_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.212.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .O(_0267_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.213.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .O(_0376_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.214.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .O(_0379_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.215.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .O(_0290_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.216.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .O(_0294_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.217.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0405_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.218.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0402_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.219.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0307_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000310)
-  ) \ram.mem.0.22.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .O(_0382_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.220.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0310_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.221.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0299_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.222.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .O(_0303_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.223.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .O(_0315_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.224.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\gpio.i_wb_dat ),
-    .O(_0253_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.225.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .O(_0358_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.226.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .O(_0362_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.227.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .O(_0328_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.228.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .O(_0371_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.229.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .O(_0392_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000200)
-  ) \ram.mem.0.23.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .O(_0292_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.230.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .O(_0400_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.231.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .O(_0410_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.232.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .O(_0413_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.233.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .O(_0335_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.234.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .O(_0421_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.235.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .O(_0322_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.236.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .O(_0418_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.237.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .O(_0287_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.238.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .O(_0281_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.239.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .O(_0275_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.24.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .O(_0293_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.240.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .O(_0274_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.241.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .O(_0248_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.242.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .O(_0245_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.243.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .O(_0263_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.244.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .O(_0268_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.245.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .O(_0377_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.246.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .O(_0380_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.247.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .O(_0291_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.248.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .O(_0296_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.249.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0406_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000300)
-  ) \ram.mem.0.25.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0425_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.250.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0403_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.251.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0308_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.252.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0312_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.253.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0298_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.254.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .O(_0305_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.255.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .O(_0316_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000300)
-  ) \ram.mem.0.26.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0427_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000300)
-  ) \ram.mem.0.27.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0309_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000300)
-  ) \ram.mem.0.28.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0310_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000300)
-  ) \ram.mem.0.29.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0297_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000200)
-  ) \ram.mem.0.3.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .O(_0328_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000301)
-  ) \ram.mem.0.30.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .O(_0302_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000300)
-  ) \ram.mem.0.31.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .O(_0318_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.32.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\gpio.i_wb_dat ),
-    .O(_0253_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.33.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .O(_0357_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.34.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .O(_0363_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.35.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .O(_0387_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.36.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .O(_0371_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.37.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .O(_0393_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.38.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .O(_0399_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.39.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .O(_0410_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000000ef)
-  ) \ram.mem.0.4.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .O(_0370_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.40.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .O(_0413_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.41.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .O(_0336_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.42.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .O(_0420_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.43.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .O(_0322_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.44.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .O(_0418_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.45.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .O(_0286_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.46.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .O(_0283_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.47.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .O(_0277_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.48.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .O(_0271_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.49.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .O(_0250_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000355)
-  ) \ram.mem.0.5.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .O(_0394_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.50.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .O(_0243_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.51.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .O(_0265_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.52.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .O(_0267_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.53.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .O(_0378_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.54.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .O(_0379_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.55.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .O(_0292_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.56.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .O(_0294_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.57.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0425_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.58.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0403_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.59.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0307_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000300)
-  ) \ram.mem.0.6.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .O(_0398_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.60.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0311_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.61.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0298_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.62.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .O(_0302_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.63.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .O(_0318_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.64.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\gpio.i_wb_dat ),
-    .O(_0327_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.65.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .O(_0357_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.66.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .O(_0361_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.67.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .O(_0387_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.68.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [4]),
-    .O(_0370_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.69.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [5]),
-    .O(_0393_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000001e8)
-  ) \ram.mem.0.7.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .O(_0411_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.70.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [6]),
-    .O(_0398_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.71.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [7]),
-    .O(_0411_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.72.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .O(_0415_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.73.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .O(_0334_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.74.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [10]),
-    .O(_0420_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.75.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [11]),
-    .O(_0320_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.76.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [12]),
-    .O(_0417_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.77.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [13]),
-    .O(_0286_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.78.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [14]),
-    .O(_0282_[2]),
-    .WCLK(wb_clk),
-    .WE(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.79.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [15]),
-    .O(_0277_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[9])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000000c7)
-  ) \ram.mem.0.8.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [8]),
-    .O(_0415_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.80.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [16]),
-    .O(_0272_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.81.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [17]),
-    .O(_0250_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.82.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [18]),
-    .O(_0243_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.83.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [19]),
-    .O(_0264_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.84.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [20]),
-    .O(_0269_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.85.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [21]),
-    .O(_0375_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.86.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [22]),
-    .O(_0381_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.87.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [23]),
-    .O(_0289_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.88.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [0]),
-    .O(_0295_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.89.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [1]),
-    .O(_0424_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h00000000000000000000000000000000000000000000000000000000000001ec)
-  ) \ram.mem.0.9.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [9]),
-    .O(_0336_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.90.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [2]),
-    .O(_0426_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.91.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [3]),
-    .O(_0306_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.92.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [4]),
-    .O(_0311_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.93.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [5]),
-    .O(_0297_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.94.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [6]),
-    .O(_0304_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.95.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dhi [7]),
-    .O(_0317_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.96.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\gpio.i_wb_dat ),
-    .O(_0253_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.97.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [1]),
-    .O(_0360_[0]),
-    .WCLK(wb_clk),
-    .WE(_0211_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.98.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [2]),
-    .O(_0362_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:154.4-161.5" *)
-  RAM256X1S #(
-    .INIT(256'h0000000000000000000000000000000000000000000000000000000000000000)
-  ) \ram.mem.0.99.genblk1.genblk1[0].genblk1.slice  (
-    .A(wb_mem_adr[9:2]),
-    .D(\cpu.cpu.bufreg2.dlo [3]),
-    .O(_0329_[1]),
-    .WCLK(wb_clk),
-    .WE(_0211_[12])
+  LUT3 #(
+    .INIT(8'h08)
+  ) _116_ (
+    .I0(wb_nrst),
+    .I1(\cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3]),
+    .I2(_032_[1]),
+    .O(_031_)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
@@ -16212,17 +2921,17 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
     .A2(\cpu.rf_ram_if.wcnt [3]),
     .A3(\cpu.rf_ram_if.wcnt [4]),
     .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
+    .A5(1'h1),
     .D(\rf_ram.i_wdata [1]),
-    .DPO(_0353_[5]),
+    .DPO(_033_[2]),
     .DPRA0(\cpu.rf_ram_if.rcnt [1]),
     .DPRA1(\cpu.rf_ram_if.rcnt [2]),
     .DPRA2(\cpu.rf_ram_if.rcnt [3]),
     .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
+    .DPRA4(1'h1),
+    .DPRA5(1'h1),
     .WCLK(wb_clk),
-    .WE(_0212_[0])
+    .WE(1'h0)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
@@ -16234,325 +2943,17 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
     .A2(\cpu.rf_ram_if.wcnt [3]),
     .A3(\cpu.rf_ram_if.wcnt [4]),
     .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
+    .A5(1'h1),
     .D(\rf_ram.i_wdata [0]),
-    .DPO(_0345_[3]),
+    .DPO(_035_[2]),
     .DPRA0(\cpu.rf_ram_if.rcnt [1]),
     .DPRA1(\cpu.rf_ram_if.rcnt [2]),
     .DPRA2(\cpu.rf_ram_if.rcnt [3]),
     .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
+    .DPRA4(1'h1),
+    .DPRA5(1'h1),
     .WCLK(wb_clk),
-    .WE(_0212_[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.1.genblk1.genblk1.ram64m_sdp.slice_b  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [1]),
-    .DPO(_0353_[4]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.1.genblk1.genblk1.ram64m_sdp.slice_c  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [0]),
-    .DPO(_0345_[2]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.2.genblk1.genblk1.ram64m_sdp.slice_b  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [1]),
-    .DPO(_0353_[2]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.2.genblk1.genblk1.ram64m_sdp.slice_c  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [0]),
-    .DPO(_0346_[2]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.3.genblk1.genblk1.ram64m_sdp.slice_b  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [1]),
-    .DPO(_0353_[3]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.3.genblk1.genblk1.ram64m_sdp.slice_c  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [0]),
-    .DPO(_0346_[3]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.4.genblk1.genblk1.ram64m_sdp.slice_b  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [1]),
-    .DPO(_0352_[4]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.4.genblk1.genblk1.ram64m_sdp.slice_c  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [0]),
-    .DPO(_0338_[2]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.5.genblk1.genblk1.ram64m_sdp.slice_b  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [1]),
-    .DPO(_0352_[5]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.5.genblk1.genblk1.ram64m_sdp.slice_c  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [0]),
-    .DPO(_0338_[3]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.6.genblk1.genblk1.ram64m_sdp.slice_b  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [1]),
-    .DPO(_0352_[2]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.6.genblk1.genblk1.ram64m_sdp.slice_c  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [0]),
-    .DPO(_0339_[2]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.7.genblk1.genblk1.ram64m_sdp.slice_b  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [1]),
-    .DPO(_0352_[3]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
-  RAM64X1D #(
-    .INIT(64'h0000000000000000)
-  ) \rf_ram.memory.0.7.genblk1.genblk1.ram64m_sdp.slice_c  (
-    .A0(\cpu.rf_ram_if.rcnt [1]),
-    .A1(\cpu.rf_ram_if.wcnt [2]),
-    .A2(\cpu.rf_ram_if.wcnt [3]),
-    .A3(\cpu.rf_ram_if.wcnt [4]),
-    .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
-    .D(\rf_ram.i_wdata [0]),
-    .DPO(_0339_[3]),
-    .DPRA0(\cpu.rf_ram_if.rcnt [1]),
-    .DPRA1(\cpu.rf_ram_if.rcnt [2]),
-    .DPRA2(\cpu.rf_ram_if.rcnt [3]),
-    .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
-    .WCLK(wb_clk),
-    .WE(_0212_[7])
+    .WE(1'h0)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1641.7-1662.6" *)
@@ -16564,17 +2965,17 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
     .A2(\cpu.rf_ram_if.wcnt [3]),
     .A3(\cpu.rf_ram_if.wcnt [4]),
     .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
+    .A5(1'h1),
     .D(\rf_ram.i_wdata [1]),
-    .DPO(_0354_[2]),
+    .DPO(_033_[1]),
     .DPRA0(\cpu.rf_ram_if.rcnt [1]),
     .DPRA1(\cpu.rf_ram_if.rcnt [2]),
     .DPRA2(\cpu.rf_ram_if.rcnt [3]),
     .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
+    .DPRA4(1'h1),
+    .DPRA5(1'h1),
     .WCLK(wb_clk),
-    .WE(_0212_[8])
+    .WE(\cpu.o_rf_wen )
   );
   (* module_not_derived = 32'd1 *)
   (* src = "/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:753.2-767.3|/usr/local/go-configure-sw-hub/bin/external/yosys/share/xilinx/lutrams_xc5v_map.v:1616.7-1637.6" *)
@@ -16586,1792 +2987,522 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
     .A2(\cpu.rf_ram_if.wcnt [3]),
     .A3(\cpu.rf_ram_if.wcnt [4]),
     .A4(\cpu.rf_ram_if.wreg [0]),
-    .A5(\cpu.rf_ram_if.wreg [1]),
+    .A5(1'h1),
     .D(\rf_ram.i_wdata [0]),
-    .DPO(_0347_[1]),
+    .DPO(_035_[1]),
     .DPRA0(\cpu.rf_ram_if.rcnt [1]),
     .DPRA1(\cpu.rf_ram_if.rcnt [2]),
     .DPRA2(\cpu.rf_ram_if.rcnt [3]),
     .DPRA3(\cpu.rf_ram_if.rcnt [4]),
-    .DPRA4(\cpu.rf_ram_if.rreg [0]),
-    .DPRA5(\cpu.rf_ram_if.rreg [1]),
+    .DPRA4(1'h1),
+    .DPRA5(1'h1),
     .WCLK(wb_clk),
-    .WE(_0212_[8])
+    .WE(\cpu.o_rf_wen )
   );
-  initial begin
-    if (1'h1)
-      $write("Preloading $paramod$25fb61c1398337c95006e17860064905c5e12823\\servant_ram from %s\n", $unsigned(80'h626c696e6b792e686578));
-  end
-  assign _0232_[0] = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign _0233_[1:0] = { \cpu.cpu.decode.op21 , \cpu.cpu.gen_csr.csr.o_new_irq  };
-  assign _0234_[0] = \cpu.cpu.state.gen_csr.misalign_trap_sync_r ;
-  assign { _0235_[3], _0235_[1:0] } = { \cpu.cpu.alu.i_en , \cpu.cpu.state.init_done , \cpu.cpu.branch_op  };
-  assign { _0236_[3], _0236_[0] } = { \cpu.cpu.bufreg2.i_cnt_done , \cpu.cpu.bufreg.i_right_shift_op  };
-  assign _0237_[0] = \cpu.cpu.bufreg2.dhi [6];
-  assign _0238_[2:0] = { _0236_[1], \cpu.cpu.state.init_done , \cpu.cpu.bufreg.i_right_shift_op  };
-  assign _0239_[3:0] = { \cpu.cpu.ctrl.o_ibus_adr [11], \cpu.cpu.bufreg.data [11], \cpu.cpu.ctrl.o_ibus_adr [12], \cpu.cpu.bufreg.data [12] };
-  assign _0241_[0] = _0240_[1];
-  assign _0242_[1] = _0240_[1];
-  assign _0244_[1] = _0240_[1];
-  assign _0248_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0249_[3:2] = { _0245_[3], _0246_[2] };
-  assign _0250_[5:3] = _0243_[5:3];
-  assign _0251_[1] = _0247_[1];
-  assign _0252_[4:0] = { \ram.o_wb_rdt [17], \timer.mtime [17], \cpu.cpu.bufreg2.dlo [18], \cpu.cpu.bufreg.data [30], \cpu.cpu.bufreg.data [31] };
-  assign _0253_[5:3] = { _0246_[3], _0245_[2], _0243_[5] };
-  assign { _0254_[4], _0254_[1:0] } = { \cpu.cpu.bufreg2.i_cnt_done , \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [0], \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [0] };
-  assign _0255_[0] = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign _0257_[0] = \cpu.cpu.state.o_cnt [2];
-  assign _0258_[0] = \cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [0];
-  assign _0259_[2:0] = { \cpu.cpu.alu.add_cy_r , \cpu.cpu.alu.cmp_r , \cpu.cpu.alu.i_rs1  };
-  assign _0260_[2:0] = { _0259_[3], \cpu.cpu.decode.opcode [0], \cpu.cpu.bne_or_bge  };
-  assign _0261_[1:0] = { _0236_[2], \cpu.cpu.branch_op  };
-  assign { _0262_[3], _0262_[0] } = { \cpu.cpu.bufreg.i_en , \cpu.cpu.bufreg.data [0] };
-  assign _0263_[3:2] = _0245_[3:2];
-  assign _0264_[3:2] = _0243_[4:3];
-  assign _0265_[3:2] = { _0243_[5], _0247_[1] };
-  assign _0266_[3:2] = _0246_[3:2];
-  assign _0267_[3:2] = { _0246_[2], _0243_[5] };
-  assign _0268_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0269_[5:3] = { _0240_[1], _0242_[0], _0240_[0] };
-  assign _0270_[1] = _0245_[3];
-  assign _0271_[3:2] = { _0246_[2], _0243_[5] };
-  assign _0272_[3:2] = _0243_[4:3];
-  assign _0273_[3:2] = { _0245_[3], _0247_[1] };
-  assign _0274_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0275_[3:2] = _0245_[3:2];
-  assign _0276_[3:2] = _0246_[3:2];
-  assign _0277_[5:3] = _0243_[5:3];
-  assign _0278_[1] = _0247_[1];
-  assign { _0279_[5], _0279_[3:0] } = { _0238_[4], \cpu.cpu.alu.i_en , _0236_[1], \cpu.cpu.state.init_done , \cpu.cpu.bufreg.i_right_shift_op  };
-  assign { _0280_[3:2], _0280_[0] } = { _0279_[4], _0252_[5], \cpu.cpu.bufreg.i_right_shift_op  };
-  assign _0281_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0282_[5:3] = { _0245_[3], _0243_[4:3] };
-  assign _0283_[3:2] = { _0246_[2], _0243_[5] };
-  assign _0284_[1] = _0247_[1];
-  assign _0285_[3:2] = _0246_[3:2];
-  assign _0286_[5:3] = _0243_[5:3];
-  assign _0287_[3:2] = _0245_[3:2];
-  assign _0288_[1] = _0247_[1];
-  assign _0289_[3:2] = _0243_[4:3];
-  assign _0290_[3:2] = _0246_[3:2];
-  assign _0291_[3:2] = { _0245_[2], _0247_[1] };
-  assign _0292_[3:2] = { _0245_[3], _0243_[5] };
-  assign _0293_[3:2] = { _0245_[3], _0247_[1] };
-  assign _0294_[5:3] = { _0246_[3:2], _0243_[5] };
-  assign _0295_[3:2] = _0243_[4:3];
-  assign _0296_[1] = _0245_[2];
-  assign _0297_[5:3] = { _0245_[3], _0243_[4:3] };
-  assign _0298_[3:2] = { _0245_[2], _0243_[5] };
-  assign _0299_[3:2] = _0246_[3:2];
-  assign _0300_[1] = _0247_[1];
-  assign { _0301_[2], _0301_[0] } = { _0252_[5], \cpu.cpu.bufreg2.dlo [1] };
-  assign _0302_[3:2] = { _0241_[1], _0240_[1] };
-  assign _0303_[5:3] = { _0246_[3:2], _0247_[1] };
-  assign _0304_[3:2] = _0243_[4:3];
-  assign _0305_[2] = _0245_[2];
-  assign _0306_[5:3] = { _0240_[1], _0242_[0], _0240_[0] };
-  assign _0307_[3:2] = { _0246_[2], _0243_[5] };
-  assign _0308_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0309_[1] = _0245_[3];
-  assign _0310_[3:2] = { _0245_[3], _0246_[2] };
-  assign _0311_[5:3] = _0243_[5:3];
-  assign _0312_[3:2] = { _0245_[2], _0247_[1] };
-  assign _0313_[1] = _0246_[3];
-  assign _0314_[2:1] = { \cpu.cpu.immdec.i_wb_en , \cpu.cpu.alu.i_en  };
-  assign _0315_[3:2] = _0246_[3:2];
-  assign _0316_[3:2] = { _0245_[2], _0247_[1] };
-  assign _0317_[3:2] = _0243_[4:3];
-  assign _0318_[3:2] = { _0245_[3], _0243_[5] };
-  assign _0320_[3:2] = _0243_[4:3];
-  assign _0321_[3:2] = { _0245_[3], _0247_[1] };
-  assign _0322_[3:2] = { _0245_[2], _0243_[5] };
-  assign _0323_[3:2] = _0246_[3:2];
-  assign _0324_[2:0] = { _0233_[2], \cpu.cpu.decode.op20 , \cpu.cpu.ctrl.pc  };
-  assign _0325_[0] = \cpu.cpu.ctrl.pc_plus_offset_cy_r ;
-  assign { _0326_[4], _0326_[2:0] } = { _0235_[4], \cpu.rf_ram_if.rtrig0 , \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2], \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3] };
-  assign _0327_[3:2] = _0243_[4:3];
-  assign _0328_[3:2] = _0245_[3:2];
-  assign _0329_[3:2] = _0246_[3:2];
-  assign { _0330_[3], _0330_[0] } = { \cpu.cpu.alu.i_en , \cpu.cpu.state.init_done  };
-  assign _0332_[1:0] = { _0239_[4], \cpu.arbiter.i_wb_cpu_dbus_we  };
-  assign _0333_[3:0] = { \cpu.cpu.bne_or_bge , \cpu.cpu.bufreg.data [0], \cpu.cpu.state.i_ctrl_misalign , \cpu.cpu.decode.co_mem_word  };
-  assign _0334_[3:2] = _0243_[4:3];
-  assign _0335_[5:3] = { _0246_[3], _0245_[2], _0247_[1] };
-  assign _0336_[3:2] = { _0241_[1], _0240_[1] };
-  assign _0337_[2] = _0246_[2];
-  assign _0340_[1] = _0235_[4];
-  assign _0341_[2:0] = { \cpu.cpu.decode.op21 , \cpu.cpu.decode.op26 , \cpu.cpu.decode.op20  };
-  assign _0343_[2:0] = { \cpu.rf_ram_if.rtrig0 , \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8], \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [4] };
-  assign _0345_[1:0] = _0338_[1:0];
-  assign _0346_[1:0] = _0339_[1:0];
-  assign _0347_[0] = _0344_[0];
-  assign _0348_[0] = _0344_[1];
-  assign { _0349_[4], _0349_[2:0] } = { _0261_[2], _0279_[4], \cpu.cpu.branch_op , \cpu.cpu.state.i_ctrl_misalign  };
-  assign _0350_[2:0] = { _0279_[4], \cpu.cpu.immdec.i_wb_en , wb_rst };
-  assign { _0351_[5:3], _0351_[1:0] } = { _0236_[2], _0252_[5], \cpu.cpu.alu.i_en , _0236_[1], _0257_[1] };
-  assign _0352_[1:0] = _0339_[1:0];
-  assign _0353_[1:0] = _0339_[1:0];
-  assign _0354_[1:0] = _0344_;
-  assign _0355_[4:1] = { _0350_[4:3], _0279_[4], \cpu.cpu.immdec.i_wb_en  };
-  assign { _0356_[4:3], _0356_[0] } = { _0237_[2], _0252_[5], \cpu.cpu.bufreg2.dhi [2] };
-  assign _0357_[5:3] = _0243_[5:3];
-  assign _0358_[3:2] = { _0245_[2], _0247_[1] };
-  assign _0359_[3:2] = { _0245_[3], _0246_[2] };
-  assign _0360_[1] = _0246_[3];
-  assign _0361_[3:2] = _0243_[4:3];
-  assign _0362_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0363_[3:2] = { _0246_[2], _0243_[5] };
-  assign _0364_[3:2] = { _0245_[3], _0247_[1] };
-  assign _0365_[2:0] = { _0258_[1], \cpu.cpu.gen_csr.csr.mstatus_mie , \cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3] };
-  assign { _0366_[5], _0366_[3:0] } = { _0342_[0], \cpu.cpu.alu.i_en , _0255_[1], _0258_[1], \cpu.cpu.gen_csr.csr.mcause3_0 [0] };
-  assign _0367_[0] = \cpu.cpu.bufreg2.i_cnt_done ;
-  assign _0368_[4:0] = { \cpu.cpu.alu.i_rs1 , \cpu.cpu.csr_imm , \cpu.cpu.bne_or_bge , \cpu.cpu.decode.co_mem_word , \cpu.cpu.bufreg.i_right_shift_op  };
-  assign _0369_[3:2] = _0246_[3:2];
-  assign _0370_[5:3] = { _0245_[3], _0243_[4:3] };
-  assign _0371_[3:2] = { _0245_[2], _0243_[5] };
-  assign _0372_[1] = _0247_[1];
-  assign _0373_[0] = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign _0374_[0] = \cpu.cpu.bufreg.data [31];
-  assign _0375_[5:3] = { _0240_[1], _0242_[0], _0240_[0] };
-  assign _0376_[3:2] = { _0245_[3], _0246_[2] };
-  assign _0377_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0378_[1] = _0243_[5];
-  assign _0379_[3:2] = { _0246_[2], _0243_[5] };
-  assign _0380_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0381_[5:3] = { _0240_[1], _0242_[0], _0240_[0] };
-  assign _0382_[1] = _0245_[3];
-  assign _0383_[3:2] = { _0245_[3], _0246_[2] };
-  assign _0384_[1] = _0247_[1];
-  assign { _0385_[4:3], _0385_[0] } = { _0237_[2], _0252_[5], \cpu.cpu.bufreg2.dhi [3] };
-  assign { _0386_[4:3], _0386_[0] } = { _0237_[2], _0252_[5], \cpu.cpu.bufreg2.dhi [4] };
-  assign _0387_[5:3] = _0243_[5:3];
-  assign _0388_[1] = _0247_[1];
-  assign { _0389_[4:3], _0389_[0] } = { _0237_[2], _0252_[5], \cpu.cpu.bufreg2.dhi [5] };
-  assign { _0390_[4], _0390_[2:0] } = { _0341_[3], \cpu.cpu.decode.op22 , \cpu.cpu.decode.op26 , \cpu.cpu.decode.op20  };
-  assign { _0391_[3], _0391_[1] } = { _0238_[4], _0252_[5] };
-  assign _0392_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0393_[5:3] = _0243_[5:3];
-  assign _0394_[3:2] = { _0245_[3], _0246_[2] };
-  assign _0395_[1] = _0247_[1];
-  assign _0396_[4:0] = { \cpu.cpu.immdec.i_wb_en , \cpu.cpu.decode.opcode [0], \cpu.cpu.immdec.gen_immdec_w_eq_1.imm7 , \cpu.cpu.branch_op , \ram.o_wb_rdt [30] };
-  assign _0397_[0] = _0245_[2];
-  assign _0398_[5:3] = { _0245_[3], _0243_[4:3] };
-  assign _0399_[3:2] = { _0246_[2], _0243_[5] };
-  assign _0400_[3:2] = { _0246_[3], _0245_[2] };
-  assign _0401_[1] = _0247_[1];
-  assign _0402_[3:2] = _0246_[3:2];
-  assign _0403_[3:2] = { _0245_[2], _0243_[5] };
-  assign _0404_[0] = _0246_[2];
-  assign _0405_[3:2] = _0246_[3:2];
-  assign _0406_[3:2] = { _0245_[2], _0247_[1] };
-  assign _0407_[0] = _0246_[2];
-  assign _0408_[0] = _0243_[4];
-  assign _0409_[3:2] = _0246_[3:2];
-  assign _0410_[3:2] = { _0245_[2], _0243_[5] };
-  assign _0411_[5:3] = { _0245_[3], _0243_[4:3] };
-  assign _0412_[1] = _0247_[1];
-  assign _0413_[3:2] = { _0245_[2], _0243_[5] };
-  assign _0414_[3:2] = _0246_[3:2];
-  assign _0415_[5:3] = { _0245_[3], _0243_[4:3] };
-  assign _0416_[1] = _0247_[1];
-  assign _0417_[5:3] = { _0240_[1], _0242_[0], _0240_[0] };
-  assign _0418_[3:2] = { _0245_[2], _0243_[5] };
-  assign _0419_[3:2] = _0246_[3:2];
-  assign _0420_[5:3] = _0243_[5:3];
-  assign _0421_[3:2] = _0245_[3:2];
-  assign _0422_[3:2] = _0246_[3:2];
-  assign { _0423_[4], _0423_[2:0] } = { _0235_[4], \cpu.rf_ram_if.rtrig0 , \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [2], \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 [3] };
-  assign _0424_[3:2] = _0243_[4:3];
-  assign _0425_[3:2] = { _0245_[3], _0243_[5] };
-  assign _0426_[3:2] = _0243_[4:3];
-  assign _0427_[3:2] = { _0245_[3], _0247_[1] };
-  assign { _0428_[2], _0428_[0] } = { _0325_[3], _0259_[4] };
-  assign _0429_[3:0] = { \cpu.cpu.bufreg.i_en , _0235_[4], \cpu.cpu.branch_op , \cpu.cpu.bufreg.data [0] };
-  assign _0430_[3:0] = { _0259_[4], \cpu.cpu.alu.cmp_r , \cpu.cpu.decode.co_mem_word , \cpu.cpu.bufreg.i_right_shift_op  };
-  assign _0431_[2:0] = { \cpu.cpu.bufreg.i_en , _0280_[1], \cpu.cpu.bufreg.data [0] };
-  assign { _0432_[5], _0432_[2:0] } = { _0368_[5], \cpu.cpu.decode.opcode [0], \cpu.cpu.decode.opcode [2], \cpu.cpu.branch_op  };
-  assign { _0433_[3], _0433_[1:0] } = { _0429_[4], _0235_[4], _0262_[1] };
-  assign { _0434_[4:3], _0434_[1:0] } = { _0429_[4], _0342_[1], _0432_[4], \cpu.cpu.state.o_ctrl_jump  };
-  assign { _0435_[5], _0435_[3:0] } = { _0343_[3], _0235_[4], \cpu.cpu.csr_imm , \cpu.rf_ram_if.rtrig0 , \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [0] };
-  assign _0436_[2:0] = { \cpu.rf_ram_if.rtrig0 , \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [5], \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 [1] };
-  assign _0437_[1] = _0247_[1];
-  assign _0438_[1] = _0245_[3];
-  assign { _0439_[5:4], _0439_[1:0] } = { \cpu.cpu.bufreg.i_en , _0255_[2], \cpu.cpu.bufreg.c_r , \cpu.cpu.decode.opcode [2] };
-  assign _0440_[4:2] = { _0235_[4], _0236_[2], \cpu.cpu.alu.i_en  };
-  assign _0441_[2:0] = { _0236_[2], \cpu.cpu.decode.imm30 , \cpu.cpu.bufreg.data [31] };
-  assign _0442_[3:0] = { _0365_[4], _0340_[0], _0258_[1], \cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb [3] };
-  assign _0443_[1] = \cpu.cpu.immdec.i_wb_en ;
-  assign { _0444_[4:3], _0444_[1:0] } = { _0237_[2], _0252_[5], \cpu.cpu.bufreg2.dhi [0], \cpu.cpu.bufreg2.dhi [1] };
-  assign _0445_[1] = _0237_[2];
-  assign { \cpu.arbiter.i_wb_cpu_dbus_adr [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [12:0] } = { \cpu.cpu.bufreg.data [31:30], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.arbiter.i_wb_cpu_dbus_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
+  assign _029_[0] = \cpu.rf_ram_if.wreg [0];
+  assign _032_[0] = wb_nrst;
+  assign _033_[0] = \cpu.rf_ram_if.rtrig0 ;
+  assign _034_[2:0] = { \cpu.rf_ram_if.rdata1 , \cpu.rf_ram_if.rtrig1 , \rf_ram.rdata [0] };
+  assign _035_[0] = \cpu.rf_ram_if.rtrig0 ;
+  assign BRAM0_DATA_IN = 8'h00;
+  assign BRAM0_RATIO = 2'h2;
+  assign BRAM0_RCLKEN = \ram.BRAM0_RCLKEN ;
+  assign BRAM0_READ_ADDR = { 4'hx, \ram.BRAM0_WRITE_ADDR [4:0] };
+  assign BRAM0_REN = 1'hx;
+  assign BRAM0_WCLKEN = 1'h0;
+  assign BRAM0_WEN = 1'h0;
+  assign BRAM0_WRITE_ADDR = { 4'hx, \ram.BRAM0_WRITE_ADDR [4:0] };
+  assign \cpu.arbiter.i_wb_cpu_dbus_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.arbiter.i_wb_cpu_dbus_sel  = 4'b111x;
+  assign \cpu.arbiter.i_wb_cpu_dbus_stb  = 1'h0;
+  assign \cpu.arbiter.i_wb_cpu_dbus_we  = 1'hx;
   assign \cpu.arbiter.i_wb_cpu_ibus_adr  = { \cpu.cpu.ctrl.o_ibus_adr [31:1], \cpu.cpu.ctrl.pc  };
-  assign \cpu.arbiter.i_wb_mem_ack  = \ram.o_wb_ack ;
-  assign \cpu.arbiter.i_wb_mem_rdt  = \ram.o_wb_rdt ;
-  assign \cpu.arbiter.o_wb_cpu_dbus_rdt  = \ram.o_wb_rdt ;
-  assign \cpu.arbiter.o_wb_cpu_ibus_ack  = \cpu.cpu.immdec.i_wb_en ;
-  assign \cpu.arbiter.o_wb_cpu_ibus_rdt  = \ram.o_wb_rdt ;
-  assign { \cpu.arbiter.o_wb_mem_adr [31:13], \cpu.arbiter.o_wb_mem_adr [9:0] } = { 19'hxxxxx, wb_mem_adr[9:2], 2'hx };
-  assign \cpu.arbiter.o_wb_mem_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
+  assign \cpu.arbiter.i_wb_mem_ack  = 1'hx;
+  assign \cpu.arbiter.o_wb_cpu_dbus_ack  = 1'h0;
+  assign \cpu.arbiter.o_wb_cpu_ibus_ack  = 1'h0;
+  assign \cpu.arbiter.o_wb_mem_adr  = { 25'hxxxxxxx, \cpu.cpu.ctrl.o_ibus_adr [6:2], 2'hx };
+  assign \cpu.arbiter.o_wb_mem_sel  = 4'b111x;
+  assign \cpu.arbiter.o_wb_mem_stb  = \cpu.arbiter.i_wb_cpu_ibus_stb ;
+  assign \cpu.arbiter.o_wb_mem_we  = 1'h0;
+  assign \cpu.cpu.alu.add_b  = 1'h0;
   assign \cpu.cpu.alu.clk  = wb_clk;
-  assign \cpu.cpu.alu.i_bool_op  = { \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.alu.i_rd_sel [2] = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.alu.o_cmp  = \cpu.cpu.state.i_alu_cmp ;
-  assign \cpu.cpu.alu_bool_op  = { \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.alu_cmp  = \cpu.cpu.state.i_alu_cmp ;
-  assign \cpu.cpu.alu_rd_sel  = { \cpu.cpu.bufreg.i_right_shift_op , \cpu.cpu.alu.i_rd_sel [1:0] };
-  assign { \cpu.cpu.bufreg.data [29:13], \cpu.cpu.bufreg.data [1] } = { \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.state.i_ctrl_misalign  };
+  assign \cpu.cpu.alu.i_bool_op  = 2'hx;
+  assign \cpu.cpu.alu.i_buf  = 1'h0;
+  assign \cpu.cpu.alu.i_cmp_eq  = 1'hx;
+  assign \cpu.cpu.alu.i_cmp_sig  = 1'hx;
+  assign \cpu.cpu.alu.i_rd_sel  = 3'hx;
+  assign \cpu.cpu.alu.i_sub  = 1'hx;
+  assign \cpu.cpu.alu.o_rd  = 1'h0;
+  assign \cpu.cpu.alu.op_b_sx  = 1'h0;
+  assign \cpu.cpu.alu.result_bool  = 1'h0;
+  assign \cpu.cpu.alu.rs1_sx  = 1'h0;
+  assign \cpu.cpu.alu_bool_op  = 2'hx;
+  assign \cpu.cpu.alu_cmp_eq  = 1'hx;
+  assign \cpu.cpu.alu_cmp_sig  = 1'hx;
+  assign \cpu.cpu.alu_rd  = 1'h0;
+  assign \cpu.cpu.alu_rd_sel  = 3'hx;
+  assign \cpu.cpu.alu_sub  = 1'hx;
+  assign \cpu.cpu.bne_or_bge  = 1'hx;
+  assign \cpu.cpu.branch_op  = 1'hx;
+  assign \cpu.cpu.bufreg.c  = 1'h0;
+  assign \cpu.cpu.bufreg.c_r  = 1'h0;
+  assign \cpu.cpu.bufreg.clr_lsb  = 1'h0;
+  assign \cpu.cpu.bufreg.data  = 32'hxxxxxxxx;
   assign \cpu.cpu.bufreg.i_clk  = wb_clk;
-  assign \cpu.cpu.bufreg.i_cnt_done  = \cpu.cpu.bufreg2.i_cnt_done ;
+  assign \cpu.cpu.bufreg.i_clr_lsb  = 1'hx;
+  assign \cpu.cpu.bufreg.i_en  = 1'h0;
+  assign \cpu.cpu.bufreg.i_imm_en  = 1'hx;
+  assign \cpu.cpu.bufreg.i_init  = 1'h0;
   assign \cpu.cpu.bufreg.i_mdu_op  = 1'h0;
-  assign \cpu.cpu.bufreg.i_rs1  = \cpu.cpu.alu.i_rs1 ;
-  assign \cpu.cpu.bufreg.i_sh_signed  = \cpu.cpu.decode.imm30 ;
-  assign \cpu.cpu.bufreg.i_shamt  = \cpu.cpu.bufreg2.dhi [2:0];
-  assign \cpu.cpu.bufreg.o_dbus_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.cpu.bufreg.o_ext_rs1  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], \cpu.cpu.state.i_ctrl_misalign , \cpu.cpu.bufreg.data [0] };
-  assign \cpu.cpu.bufreg.o_lsb  = { \cpu.cpu.state.i_ctrl_misalign , \cpu.cpu.bufreg.data [0] };
-  assign \cpu.cpu.bufreg2.cnt_next [6] = \cpu.cpu.bufreg2.dhi [7];
-  assign \cpu.cpu.bufreg2.dat_shamt [6] = \cpu.cpu.bufreg2.dhi [7];
-  assign \cpu.cpu.bufreg2.dlo [0] = \gpio.i_wb_dat ;
+  assign \cpu.cpu.bufreg.i_right_shift_op  = 1'hx;
+  assign \cpu.cpu.bufreg.i_rs1_en  = 1'hx;
+  assign \cpu.cpu.bufreg.i_sh_signed  = 1'hx;
+  assign \cpu.cpu.bufreg.i_shift_op  = 1'hx;
+  assign \cpu.cpu.bufreg.o_dbus_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.cpu.bufreg.o_ext_rs1  = 32'hxxxxxxxx;
+  assign \cpu.cpu.bufreg.o_lsb  = 2'hx;
+  assign \cpu.cpu.bufreg.o_q  = 1'h0;
+  assign \cpu.cpu.bufreg.q  = 1'h0;
+  assign \cpu.cpu.bufreg2.cnt_en  = 1'hx;
   assign \cpu.cpu.bufreg2.i_bytecnt  = \cpu.cpu.state.o_cnt [4:3];
   assign \cpu.cpu.bufreg2.i_clk  = wb_clk;
   assign \cpu.cpu.bufreg2.i_en  = \cpu.cpu.alu.i_en ;
-  assign \cpu.cpu.bufreg2.i_lsb  = { \cpu.cpu.state.i_ctrl_misalign , \cpu.cpu.bufreg.data [0] };
-  assign \cpu.cpu.bufreg2.i_op_b_sel  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.cpu.bufreg2.i_sh_right  = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.bufreg2.o_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.cpu.bufreg2.o_q  = \cpu.cpu.mem_if.i_bufreg2_q ;
-  assign \cpu.cpu.bufreg2.o_sh_done  = \cpu.cpu.bufreg2.dat_shamt [5];
-  assign \cpu.cpu.bufreg2_q  = \cpu.cpu.mem_if.i_bufreg2_q ;
-  assign \cpu.cpu.bufreg_en  = \cpu.cpu.bufreg.i_en ;
-  assign \cpu.cpu.bufreg_sh_signed  = \cpu.cpu.decode.imm30 ;
+  assign \cpu.cpu.bufreg2.i_init  = 1'h0;
+  assign \cpu.cpu.bufreg2.i_load  = 1'h0;
+  assign \cpu.cpu.bufreg2.i_lsb  = 2'hx;
+  assign \cpu.cpu.bufreg2.i_op_b_sel  = 1'hx;
+  assign \cpu.cpu.bufreg2.i_sh_right  = 1'hx;
+  assign \cpu.cpu.bufreg2.i_shift_op  = 1'hx;
+  assign \cpu.cpu.bufreg_clr_lsb  = 1'hx;
+  assign \cpu.cpu.bufreg_en  = 1'h0;
+  assign \cpu.cpu.bufreg_imm_en  = 1'hx;
+  assign \cpu.cpu.bufreg_q  = 1'h0;
+  assign \cpu.cpu.bufreg_rs1_en  = 1'hx;
+  assign \cpu.cpu.bufreg_sh_signed  = 1'hx;
   assign \cpu.cpu.clk  = wb_clk;
-  assign \cpu.cpu.cnt_done  = \cpu.cpu.bufreg2.i_cnt_done ;
   assign \cpu.cpu.cnt_en  = \cpu.cpu.alu.i_en ;
-  assign \cpu.cpu.csr_d_sel  = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.csr_in  = \cpu.cpu.gen_csr.csr.csr_in ;
-  assign \cpu.cpu.csr_source  = { \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
+  assign \cpu.cpu.csr_addr  = 2'hx;
+  assign \cpu.cpu.csr_d_sel  = 1'hx;
+  assign \cpu.cpu.csr_en  = 1'hx;
+  assign \cpu.cpu.csr_imm  = 1'hx;
+  assign \cpu.cpu.csr_imm_en  = 1'hx;
+  assign \cpu.cpu.csr_in  = 1'hx;
+  assign \cpu.cpu.csr_mcause_en  = 1'hx;
+  assign \cpu.cpu.csr_mstatus_en  = 1'hx;
+  assign \cpu.cpu.csr_rd  = 1'h0;
+  assign \cpu.cpu.csr_source  = 2'hx;
   assign \cpu.cpu.ctrl.clk  = wb_clk;
+  assign \cpu.cpu.ctrl.i_buf  = 1'h0;
   assign \cpu.cpu.ctrl.i_iscomp  = 1'h0;
-  assign \cpu.cpu.ctrl.i_jump  = \cpu.cpu.state.o_ctrl_jump ;
-  assign \cpu.cpu.ctrl.i_rst  = wb_rst;
+  assign \cpu.cpu.ctrl.i_jal_or_jalr  = 1'hx;
+  assign \cpu.cpu.ctrl.i_jump  = 1'h0;
+  assign \cpu.cpu.ctrl.i_pc_en  = \cpu.cpu.alu.i_en ;
+  assign \cpu.cpu.ctrl.i_pc_rel  = 1'hx;
+  assign \cpu.cpu.ctrl.i_trap  = 1'h1;
+  assign \cpu.cpu.ctrl.i_utype  = 1'hx;
   assign \cpu.cpu.ctrl.o_ibus_adr [0] = \cpu.cpu.ctrl.pc ;
-  assign \cpu.cpu.ctrl.pc_plus_4_cy_r_w  = \cpu.cpu.ctrl.pc_plus_4_cy_r ;
-  assign \cpu.cpu.ctrl.pc_plus_offset_cy_r_w  = \cpu.cpu.ctrl.pc_plus_offset_cy_r ;
+  assign \cpu.cpu.ctrl.o_rd  = 1'h0;
+  assign \cpu.cpu.ctrl.offset_a  = 1'h0;
+  assign \cpu.cpu.ctrl.offset_b  = 1'h0;
+  assign \cpu.cpu.ctrl.pc_plus_offset  = 1'h0;
+  assign \cpu.cpu.ctrl.pc_plus_offset_cy  = 1'h0;
+  assign \cpu.cpu.ctrl.pc_plus_offset_cy_r  = 1'h0;
+  assign \cpu.cpu.ctrl.pc_plus_offset_cy_r_w  = 1'h0;
+  assign \cpu.cpu.ctrl_pc_en  = \cpu.cpu.alu.i_en ;
+  assign \cpu.cpu.ctrl_rd  = 1'h0;
+  assign \cpu.cpu.dbus_ack  = 1'h0;
+  assign \cpu.cpu.dbus_en  = 1'hx;
   assign \cpu.cpu.decode.clk  = wb_clk;
-  assign \cpu.cpu.decode.co_alu_bool_op  = { \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.decode.co_alu_rd_sel  = { \cpu.cpu.bufreg.i_right_shift_op , \cpu.cpu.alu.i_rd_sel [1:0] };
-  assign \cpu.cpu.decode.co_bne_or_bge  = \cpu.cpu.bne_or_bge ;
-  assign \cpu.cpu.decode.co_branch_op  = \cpu.cpu.branch_op ;
-  assign \cpu.cpu.decode.co_bufreg_sh_signed  = \cpu.cpu.decode.imm30 ;
-  assign \cpu.cpu.decode.co_csr_d_sel  = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.decode.co_csr_source  = { \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.decode.co_ebreak  = \cpu.cpu.decode.op20 ;
-  assign \cpu.cpu.decode.co_ext_funct3  = { \cpu.cpu.bufreg.i_right_shift_op , \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.decode.co_immdec_ctrl [3] = \cpu.cpu.branch_op ;
+  assign \cpu.cpu.decode.co_alu_bool_op  = 2'hx;
+  assign \cpu.cpu.decode.co_alu_cmp_eq  = 1'hx;
+  assign \cpu.cpu.decode.co_alu_cmp_sig  = 1'hx;
+  assign \cpu.cpu.decode.co_alu_rd_sel  = 3'hx;
+  assign \cpu.cpu.decode.co_alu_sub  = 1'hx;
+  assign \cpu.cpu.decode.co_bne_or_bge  = 1'hx;
+  assign \cpu.cpu.decode.co_branch_op  = 1'hx;
+  assign \cpu.cpu.decode.co_bufreg_clr_lsb  = 1'hx;
+  assign \cpu.cpu.decode.co_bufreg_imm_en  = 1'hx;
+  assign \cpu.cpu.decode.co_bufreg_rs1_en  = 1'hx;
+  assign \cpu.cpu.decode.co_bufreg_sh_signed  = 1'hx;
+  assign \cpu.cpu.decode.co_csr_addr  = 2'hx;
+  assign \cpu.cpu.decode.co_csr_d_sel  = 1'hx;
+  assign \cpu.cpu.decode.co_csr_en  = 1'hx;
+  assign \cpu.cpu.decode.co_csr_imm_en  = 1'hx;
+  assign \cpu.cpu.decode.co_csr_mcause_en  = 1'hx;
+  assign \cpu.cpu.decode.co_csr_mstatus_en  = 1'hx;
+  assign \cpu.cpu.decode.co_csr_source  = 2'hx;
+  assign \cpu.cpu.decode.co_ctrl_jal_or_jalr  = 1'hx;
+  assign \cpu.cpu.decode.co_ctrl_mret  = 1'hx;
+  assign \cpu.cpu.decode.co_ctrl_pc_rel  = 1'hx;
+  assign \cpu.cpu.decode.co_ctrl_utype  = 1'hx;
+  assign \cpu.cpu.decode.co_dbus_en  = 1'hx;
+  assign \cpu.cpu.decode.co_e_op  = 1'hx;
+  assign \cpu.cpu.decode.co_ebreak  = 1'hx;
+  assign \cpu.cpu.decode.co_ext_funct3  = 3'hx;
+  assign \cpu.cpu.decode.co_immdec_ctrl  = 4'hx;
+  assign \cpu.cpu.decode.co_immdec_en  = 4'hx;
   assign \cpu.cpu.decode.co_mdu_op  = 1'h0;
-  assign \cpu.cpu.decode.co_mem_cmd  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.cpu.decode.co_mem_half  = \cpu.cpu.bne_or_bge ;
-  assign \cpu.cpu.decode.co_mtval_pc  = \cpu.cpu.branch_op ;
-  assign \cpu.cpu.decode.co_op_b_source  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.cpu.decode.co_sh_right  = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.decode.funct3  = { \cpu.cpu.bufreg.i_right_shift_op , \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.decode.i_wb_en  = \cpu.cpu.immdec.i_wb_en ;
-  assign \cpu.cpu.decode.i_wb_rdt  = \ram.o_wb_rdt [31:2];
-  assign \cpu.cpu.decode.o_alu_bool_op  = { \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.decode.o_alu_rd_sel  = { \cpu.cpu.bufreg.i_right_shift_op , \cpu.cpu.alu.i_rd_sel [1:0] };
-  assign \cpu.cpu.decode.o_bne_or_bge  = \cpu.cpu.bne_or_bge ;
-  assign \cpu.cpu.decode.o_branch_op  = \cpu.cpu.branch_op ;
-  assign \cpu.cpu.decode.o_bufreg_sh_signed  = \cpu.cpu.decode.imm30 ;
-  assign \cpu.cpu.decode.o_csr_d_sel  = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.decode.o_csr_source  = { \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.decode.o_ebreak  = \cpu.cpu.decode.op20 ;
-  assign \cpu.cpu.decode.o_ext_funct3  = { \cpu.cpu.bufreg.i_right_shift_op , \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.decode.o_immdec_ctrl  = { \cpu.cpu.branch_op , \cpu.cpu.decode.co_immdec_ctrl [2:0] };
+  assign \cpu.cpu.decode.co_mem_cmd  = 1'hx;
+  assign \cpu.cpu.decode.co_mem_half  = 1'hx;
+  assign \cpu.cpu.decode.co_mem_signed  = 1'hx;
+  assign \cpu.cpu.decode.co_mem_word  = 1'hx;
+  assign \cpu.cpu.decode.co_mtval_pc  = 1'hx;
+  assign \cpu.cpu.decode.co_op_b_source  = 1'hx;
+  assign \cpu.cpu.decode.co_rd_alu_en  = 1'hx;
+  assign \cpu.cpu.decode.co_rd_csr_en  = 1'hx;
+  assign \cpu.cpu.decode.co_rd_mem_en  = 1'hx;
+  assign \cpu.cpu.decode.co_rd_op  = 1'hx;
+  assign \cpu.cpu.decode.co_sh_right  = 1'hx;
+  assign \cpu.cpu.decode.co_shift_op  = 1'hx;
+  assign \cpu.cpu.decode.co_two_stage_op  = 1'hx;
+  assign \cpu.cpu.decode.csr_op  = 1'hx;
+  assign \cpu.cpu.decode.csr_valid  = 1'hx;
+  assign \cpu.cpu.decode.funct3  = 3'hx;
+  assign \cpu.cpu.decode.i_wb_en  = 1'h0;
+  assign \cpu.cpu.decode.imm30  = 1'hx;
+  assign \cpu.cpu.decode.o_alu_bool_op  = 2'hx;
+  assign \cpu.cpu.decode.o_alu_cmp_eq  = 1'hx;
+  assign \cpu.cpu.decode.o_alu_cmp_sig  = 1'hx;
+  assign \cpu.cpu.decode.o_alu_rd_sel  = 3'hx;
+  assign \cpu.cpu.decode.o_alu_sub  = 1'hx;
+  assign \cpu.cpu.decode.o_bne_or_bge  = 1'hx;
+  assign \cpu.cpu.decode.o_branch_op  = 1'hx;
+  assign \cpu.cpu.decode.o_bufreg_clr_lsb  = 1'hx;
+  assign \cpu.cpu.decode.o_bufreg_imm_en  = 1'hx;
+  assign \cpu.cpu.decode.o_bufreg_rs1_en  = 1'hx;
+  assign \cpu.cpu.decode.o_bufreg_sh_signed  = 1'hx;
+  assign \cpu.cpu.decode.o_csr_addr  = 2'hx;
+  assign \cpu.cpu.decode.o_csr_d_sel  = 1'hx;
+  assign \cpu.cpu.decode.o_csr_en  = 1'hx;
+  assign \cpu.cpu.decode.o_csr_imm_en  = 1'hx;
+  assign \cpu.cpu.decode.o_csr_mcause_en  = 1'hx;
+  assign \cpu.cpu.decode.o_csr_mstatus_en  = 1'hx;
+  assign \cpu.cpu.decode.o_csr_source  = 2'hx;
+  assign \cpu.cpu.decode.o_ctrl_jal_or_jalr  = 1'hx;
+  assign \cpu.cpu.decode.o_ctrl_mret  = 1'hx;
+  assign \cpu.cpu.decode.o_ctrl_pc_rel  = 1'hx;
+  assign \cpu.cpu.decode.o_ctrl_utype  = 1'hx;
+  assign \cpu.cpu.decode.o_dbus_en  = 1'hx;
+  assign \cpu.cpu.decode.o_e_op  = 1'hx;
+  assign \cpu.cpu.decode.o_ebreak  = 1'hx;
+  assign \cpu.cpu.decode.o_ext_funct3  = 3'hx;
+  assign \cpu.cpu.decode.o_immdec_ctrl  = 4'hx;
+  assign \cpu.cpu.decode.o_immdec_en  = 4'hx;
   assign \cpu.cpu.decode.o_mdu_op  = 1'h0;
-  assign \cpu.cpu.decode.o_mem_cmd  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.cpu.decode.o_mem_half  = \cpu.cpu.bne_or_bge ;
-  assign \cpu.cpu.decode.o_mem_word  = \cpu.cpu.decode.co_mem_word ;
-  assign \cpu.cpu.decode.o_mtval_pc  = \cpu.cpu.branch_op ;
-  assign \cpu.cpu.decode.o_op_b_source  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.cpu.decode.o_sh_right  = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.decode.opcode [4:3] = { \cpu.cpu.branch_op , \cpu.arbiter.i_wb_cpu_dbus_we  };
-  assign \cpu.cpu.ebreak  = \cpu.cpu.decode.op20 ;
+  assign \cpu.cpu.decode.o_mem_cmd  = 1'hx;
+  assign \cpu.cpu.decode.o_mem_half  = 1'hx;
+  assign \cpu.cpu.decode.o_mem_signed  = 1'hx;
+  assign \cpu.cpu.decode.o_mem_word  = 1'hx;
+  assign \cpu.cpu.decode.o_mtval_pc  = 1'hx;
+  assign \cpu.cpu.decode.o_op_b_source  = 1'hx;
+  assign \cpu.cpu.decode.o_rd_alu_en  = 1'hx;
+  assign \cpu.cpu.decode.o_rd_csr_en  = 1'hx;
+  assign \cpu.cpu.decode.o_rd_mem_en  = 1'hx;
+  assign \cpu.cpu.decode.o_rd_op  = 1'hx;
+  assign \cpu.cpu.decode.o_sh_right  = 1'hx;
+  assign \cpu.cpu.decode.o_shift_op  = 1'hx;
+  assign \cpu.cpu.decode.o_two_stage_op  = 1'hx;
+  assign \cpu.cpu.decode.op20  = 1'hx;
+  assign \cpu.cpu.decode.op21  = 1'hx;
+  assign \cpu.cpu.decode.op22  = 1'hx;
+  assign \cpu.cpu.decode.op26  = 1'hx;
+  assign \cpu.cpu.decode.opcode  = 5'hxx;
+  assign \cpu.cpu.e_op  = 1'hx;
+  assign \cpu.cpu.ebreak  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.csr_in  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.csr_out  = 1'h0;
   assign \cpu.cpu.gen_csr.csr.i_clk  = wb_clk;
-  assign \cpu.cpu.gen_csr.csr.i_cnt_done  = \cpu.cpu.bufreg2.i_cnt_done ;
-  assign \cpu.cpu.gen_csr.csr.i_csr_d_sel  = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.gen_csr.csr.i_csr_imm  = \cpu.cpu.csr_imm ;
-  assign \cpu.cpu.gen_csr.csr.i_csr_source  = { \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.gen_csr.csr.i_ebreak  = \cpu.cpu.decode.op20 ;
+  assign \cpu.cpu.gen_csr.csr.i_csr_d_sel  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.i_csr_imm  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.i_csr_source  = 2'hx;
+  assign \cpu.cpu.gen_csr.csr.i_e_op  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.i_ebreak  = 1'hx;
   assign \cpu.cpu.gen_csr.csr.i_en  = \cpu.cpu.alu.i_en ;
-  assign \cpu.cpu.gen_csr.csr.i_mem_cmd  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.cpu.gen_csr.csr.i_mtip  = \timer.o_irq ;
-  assign \cpu.cpu.gen_csr.csr.i_rs1  = \cpu.cpu.alu.i_rs1 ;
-  assign \cpu.cpu.gen_csr.csr.i_rst  = wb_rst;
-  assign \cpu.cpu.gen_csr.csr.i_trig_irq  = \cpu.cpu.immdec.i_wb_en ;
-  assign \cpu.cpu.gen_csr.csr.o_csr_in  = \cpu.cpu.gen_csr.csr.csr_in ;
+  assign \cpu.cpu.gen_csr.csr.i_mcause_en  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.i_mem_cmd  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.i_mem_op  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.i_mret  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.i_mstatus_en  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.i_rf_csr_out  = 1'h0;
+  assign \cpu.cpu.gen_csr.csr.i_trap  = 1'h1;
+  assign \cpu.cpu.gen_csr.csr.i_trig_irq  = 1'h0;
+  assign \cpu.cpu.gen_csr.csr.mcause31  = 1'h0;
+  assign \cpu.cpu.gen_csr.csr.mcause3_0  = 4'hx;
+  assign \cpu.cpu.gen_csr.csr.mstatus_mie  = 1'h0;
+  assign \cpu.cpu.gen_csr.csr.o_csr_in  = 1'hx;
+  assign \cpu.cpu.gen_csr.csr.o_new_irq  = 1'h0;
+  assign \cpu.cpu.gen_csr.csr.o_q  = 1'h0;
+  assign \cpu.cpu.gen_csr.csr.timer_irq_r  = 1'hx;
+  assign \cpu.cpu.i_dbus_ack  = 1'h0;
   assign \cpu.cpu.i_ext_rd  = 32'd0;
   assign \cpu.cpu.i_ext_ready  = 1'h0;
-  assign \cpu.cpu.i_ibus_ack  = \cpu.cpu.immdec.i_wb_en ;
-  assign \cpu.cpu.i_ibus_rdt  = \ram.o_wb_rdt ;
-  assign \cpu.cpu.i_rdata0  = \cpu.cpu.alu.i_rs1 ;
-  assign \cpu.cpu.i_rst  = wb_rst;
-  assign \cpu.cpu.i_timer_irq  = \timer.o_irq ;
-  assign \cpu.cpu.i_wb_rdt  = \ram.o_wb_rdt ;
-  assign \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [4] = \cpu.cpu.csr_imm ;
+  assign \cpu.cpu.i_ibus_ack  = 1'h0;
+  assign \cpu.cpu.i_rf_ready  = 1'h0;
+  assign \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7  = 5'hxx;
+  assign \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20  = 9'hxxx;
+  assign \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20  = 5'hxx;
+  assign \cpu.cpu.immdec.gen_immdec_w_eq_1.imm30_25  = 6'hxx;
+  assign \cpu.cpu.immdec.gen_immdec_w_eq_1.imm31  = 1'hx;
+  assign \cpu.cpu.immdec.gen_immdec_w_eq_1.imm7  = 1'hx;
+  assign \cpu.cpu.immdec.gen_immdec_w_eq_1.signbit  = 1'hx;
   assign \cpu.cpu.immdec.i_clk  = wb_clk;
-  assign \cpu.cpu.immdec.i_cnt_done  = \cpu.cpu.bufreg2.i_cnt_done ;
   assign \cpu.cpu.immdec.i_cnt_en  = \cpu.cpu.alu.i_en ;
-  assign \cpu.cpu.immdec.i_ctrl  = { \cpu.cpu.branch_op , \cpu.cpu.decode.co_immdec_ctrl [2:0] };
-  assign \cpu.cpu.immdec.i_wb_rdt  = \ram.o_wb_rdt [31:7];
-  assign \cpu.cpu.immdec.o_csr_imm  = \cpu.cpu.csr_imm ;
-  assign \cpu.cpu.immdec.o_rd_addr  = \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 ;
-  assign \cpu.cpu.immdec.o_rs1_addr  = { \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8:5], \cpu.cpu.csr_imm  };
-  assign \cpu.cpu.immdec.o_rs2_addr  = \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 ;
-  assign \cpu.cpu.immdec_ctrl  = { \cpu.cpu.branch_op , \cpu.cpu.decode.co_immdec_ctrl [2:0] };
+  assign \cpu.cpu.immdec.i_csr_imm_en  = 1'hx;
+  assign \cpu.cpu.immdec.i_ctrl  = 4'hx;
+  assign \cpu.cpu.immdec.i_immdec_en  = 4'hx;
+  assign \cpu.cpu.immdec.i_wb_en  = 1'h0;
+  assign \cpu.cpu.immdec.o_csr_imm  = 1'hx;
+  assign \cpu.cpu.immdec.o_rd_addr  = 5'hxx;
+  assign \cpu.cpu.immdec.o_rs1_addr  = 5'hxx;
+  assign \cpu.cpu.immdec.o_rs2_addr  = 5'hxx;
+  assign \cpu.cpu.immdec_ctrl  = 4'hx;
+  assign \cpu.cpu.immdec_en  = 4'hx;
+  assign \cpu.cpu.init  = 1'h0;
   assign \cpu.cpu.iscomp  = 1'h0;
-  assign \cpu.cpu.jump  = \cpu.cpu.state.o_ctrl_jump ;
-  assign \cpu.cpu.lsb  = { \cpu.cpu.state.i_ctrl_misalign , \cpu.cpu.bufreg.data [0] };
+  assign \cpu.cpu.jal_or_jalr  = 1'hx;
+  assign \cpu.cpu.jump  = 1'h0;
+  assign \cpu.cpu.lsb  = 2'hx;
   assign \cpu.cpu.mdu_op  = 1'h0;
   assign \cpu.cpu.mem_bytecnt  = \cpu.cpu.state.o_cnt [4:3];
-  assign \cpu.cpu.mem_half  = \cpu.cpu.bne_or_bge ;
+  assign \cpu.cpu.mem_half  = 1'hx;
+  assign \cpu.cpu.mem_if.dat_valid  = 1'h1;
   assign \cpu.cpu.mem_if.i_bytecnt  = \cpu.cpu.state.o_cnt [4:3];
   assign \cpu.cpu.mem_if.i_clk  = wb_clk;
-  assign \cpu.cpu.mem_if.i_half  = \cpu.cpu.bne_or_bge ;
-  assign \cpu.cpu.mem_if.i_lsb  = { \cpu.cpu.state.i_ctrl_misalign , \cpu.cpu.bufreg.data [0] };
+  assign \cpu.cpu.mem_if.i_half  = 1'hx;
+  assign \cpu.cpu.mem_if.i_lsb  = 2'hx;
   assign \cpu.cpu.mem_if.i_mdu_op  = 1'h0;
-  assign \cpu.cpu.mem_if.i_word  = \cpu.cpu.decode.co_mem_word ;
-  assign \cpu.cpu.mem_word  = \cpu.cpu.decode.co_mem_word ;
-  assign \cpu.cpu.mtval_pc  = \cpu.cpu.branch_op ;
-  assign \cpu.cpu.new_irq  = \cpu.cpu.gen_csr.csr.o_new_irq ;
-  assign \cpu.cpu.o_dbus_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.cpu.o_dbus_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.cpu.o_dbus_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.cpu.o_ext_funct3  = { \cpu.cpu.bufreg.i_right_shift_op , \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
-  assign \cpu.cpu.o_ext_rs1  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], \cpu.cpu.state.i_ctrl_misalign , \cpu.cpu.bufreg.data [0] };
-  assign \cpu.cpu.o_ext_rs2  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
+  assign \cpu.cpu.mem_if.i_signed  = 1'hx;
+  assign \cpu.cpu.mem_if.i_word  = 1'hx;
+  assign \cpu.cpu.mem_if.o_misalign  = 1'h0;
+  assign \cpu.cpu.mem_if.o_wb_sel  = 4'b111x;
+  assign \cpu.cpu.mem_misalign  = 1'h0;
+  assign \cpu.cpu.mem_signed  = 1'hx;
+  assign \cpu.cpu.mem_word  = 1'hx;
+  assign \cpu.cpu.mret  = 1'hx;
+  assign \cpu.cpu.mtval_pc  = 1'hx;
+  assign \cpu.cpu.new_irq  = 1'h0;
+  assign \cpu.cpu.o_dbus_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.cpu.o_dbus_cyc  = 1'h0;
+  assign \cpu.cpu.o_dbus_sel  = 4'b111x;
+  assign \cpu.cpu.o_dbus_we  = 1'hx;
+  assign \cpu.cpu.o_ext_funct3  = 3'hx;
+  assign \cpu.cpu.o_ext_rs1  = 32'hxxxxxxxx;
   assign \cpu.cpu.o_ibus_adr  = { \cpu.cpu.ctrl.o_ibus_adr [31:1], \cpu.cpu.ctrl.pc  };
+  assign \cpu.cpu.o_ibus_cyc  = \cpu.arbiter.i_wb_cpu_ibus_stb ;
   assign \cpu.cpu.o_mdu_valid  = 1'h0;
-  assign \cpu.cpu.o_rf_rreq  = \cpu.rf_ram_if.i_rreq ;
-  assign \cpu.cpu.o_rreg0  = { 1'h0, \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8:5], \cpu.cpu.csr_imm  };
-  assign \cpu.cpu.o_wdata0  = \cpu.rf_ram_if.i_wdata0 ;
-  assign \cpu.cpu.o_wdata1  = \cpu.rf_ram_if.i_wdata1 ;
-  assign \cpu.cpu.o_wen0  = \cpu.rf_ram_if.i_wen0 ;
-  assign \cpu.cpu.o_wen1  = \cpu.rf_ram_if.i_wen1 ;
-  assign \cpu.cpu.o_wreg0 [1] = 1'hx;
-  assign \cpu.cpu.o_wreg1 [5:1] = 5'b1000x;
-  assign \cpu.cpu.op_b_sel  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.cpu.rd_addr  = \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 ;
+  assign \cpu.cpu.o_rf_rreq  = 1'h0;
+  assign \cpu.cpu.o_rf_wreq  = 1'h0;
+  assign \cpu.cpu.o_rreg0  = 6'b0xxxxx;
+  assign \cpu.cpu.o_rreg1  = 6'h23;
+  assign \cpu.cpu.o_wdata0  = 1'h0;
+  assign \cpu.cpu.o_wdata1  = \cpu.cpu.ctrl.pc ;
+  assign \cpu.cpu.o_wen0  = \cpu.cpu.alu.i_en ;
+  assign \cpu.cpu.o_wen1  = \cpu.cpu.alu.i_en ;
+  assign \cpu.cpu.o_wreg0  = 6'h23;
+  assign \cpu.cpu.o_wreg1  = 6'h22;
+  assign \cpu.cpu.op_b_sel  = 1'hx;
+  assign \cpu.cpu.pc_rel  = 1'hx;
+  assign \cpu.cpu.rd_addr  = 5'hxx;
+  assign \cpu.cpu.rd_alu_en  = 1'hx;
+  assign \cpu.cpu.rd_csr_en  = 1'hx;
+  assign \cpu.cpu.rd_en  = 1'hx;
+  assign \cpu.cpu.rd_mem_en  = 1'hx;
+  assign \cpu.cpu.rd_op  = 1'hx;
+  assign \cpu.cpu.rf_csr_out  = 1'h0;
+  assign \cpu.cpu.rf_if.gen_csr.mtval  = 1'h0;
+  assign \cpu.cpu.rf_if.gen_csr.rd  = 1'h0;
+  assign \cpu.cpu.rf_if.gen_csr.sel_rs2  = 1'h0;
+  assign \cpu.cpu.rf_if.i_alu_rd  = 1'h0;
+  assign \cpu.cpu.rf_if.i_bufreg_q  = 1'h0;
   assign \cpu.cpu.rf_if.i_cnt_en  = \cpu.cpu.alu.i_en ;
-  assign \cpu.cpu.rf_if.i_csr  = \cpu.cpu.gen_csr.csr.csr_in ;
+  assign \cpu.cpu.rf_if.i_csr  = 1'hx;
+  assign \cpu.cpu.rf_if.i_csr_addr  = 2'hx;
+  assign \cpu.cpu.rf_if.i_csr_en  = 1'hx;
+  assign \cpu.cpu.rf_if.i_csr_rd  = 1'h0;
+  assign \cpu.cpu.rf_if.i_ctrl_rd  = 1'h0;
   assign \cpu.cpu.rf_if.i_mepc  = \cpu.cpu.ctrl.pc ;
-  assign \cpu.cpu.rf_if.i_mtval_pc  = \cpu.cpu.branch_op ;
-  assign \cpu.cpu.rf_if.i_rd_waddr  = \cpu.cpu.immdec.gen_immdec_w_eq_1.imm11_7 ;
-  assign \cpu.cpu.rf_if.i_rdata0  = \cpu.cpu.alu.i_rs1 ;
-  assign \cpu.cpu.rf_if.i_rs1_raddr  = { \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8:5], \cpu.cpu.csr_imm  };
-  assign \cpu.cpu.rf_if.i_rs2_raddr  = \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 ;
-  assign \cpu.cpu.rf_if.o_rreg0  = { 1'h0, \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8:5], \cpu.cpu.csr_imm  };
-  assign \cpu.cpu.rf_if.o_rs1  = \cpu.cpu.alu.i_rs1 ;
-  assign \cpu.cpu.rf_if.o_wdata0  = \cpu.rf_ram_if.i_wdata0 ;
-  assign \cpu.cpu.rf_if.o_wdata1  = \cpu.rf_ram_if.i_wdata1 ;
-  assign \cpu.cpu.rf_if.o_wen0  = \cpu.rf_ram_if.i_wen0 ;
-  assign \cpu.cpu.rf_if.o_wen1  = \cpu.rf_ram_if.i_wen1 ;
-  assign \cpu.cpu.rf_if.o_wreg0 [4:0] = { \cpu.cpu.o_wreg0 [4:2], 1'hx, \cpu.cpu.o_wreg0 [0] };
-  assign \cpu.cpu.rf_if.o_wreg1  = { 5'b1000x, \cpu.cpu.o_wreg1 [0] };
-  assign \cpu.cpu.rs1  = \cpu.cpu.alu.i_rs1 ;
-  assign \cpu.cpu.rs1_addr  = { \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8:5], \cpu.cpu.csr_imm  };
-  assign \cpu.cpu.rs2_addr  = \cpu.cpu.immdec.gen_immdec_w_eq_1.imm24_20 ;
-  assign \cpu.cpu.sh_done  = \cpu.cpu.bufreg2.dat_shamt [5];
-  assign \cpu.cpu.sh_right  = \cpu.cpu.bufreg.i_right_shift_op ;
+  assign \cpu.cpu.rf_if.i_mret  = 1'hx;
+  assign \cpu.cpu.rf_if.i_mtval_pc  = 1'hx;
+  assign \cpu.cpu.rf_if.i_rd_alu_en  = 1'hx;
+  assign \cpu.cpu.rf_if.i_rd_csr_en  = 1'hx;
+  assign \cpu.cpu.rf_if.i_rd_mem_en  = 1'hx;
+  assign \cpu.cpu.rf_if.i_rd_waddr  = 5'hxx;
+  assign \cpu.cpu.rf_if.i_rd_wen  = 1'hx;
+  assign \cpu.cpu.rf_if.i_rs1_raddr  = 5'hxx;
+  assign \cpu.cpu.rf_if.i_rs2_raddr  = 5'hxx;
+  assign \cpu.cpu.rf_if.i_trap  = 1'h1;
+  assign \cpu.cpu.rf_if.o_csr  = 1'h0;
+  assign \cpu.cpu.rf_if.o_rreg0  = 6'b0xxxxx;
+  assign \cpu.cpu.rf_if.o_rreg1  = 6'h23;
+  assign \cpu.cpu.rf_if.o_wdata0  = 1'h0;
+  assign \cpu.cpu.rf_if.o_wdata1  = \cpu.cpu.ctrl.pc ;
+  assign \cpu.cpu.rf_if.o_wen0  = \cpu.cpu.alu.i_en ;
+  assign \cpu.cpu.rf_if.o_wen1  = \cpu.cpu.alu.i_en ;
+  assign \cpu.cpu.rf_if.o_wreg0  = 6'h23;
+  assign \cpu.cpu.rf_if.o_wreg1  = 6'h22;
+  assign \cpu.cpu.rf_if.rd_wen  = 1'h0;
+  assign \cpu.cpu.rs1_addr  = 5'hxx;
+  assign \cpu.cpu.rs2_addr  = 5'hxx;
+  assign \cpu.cpu.sh_right  = 1'hx;
+  assign \cpu.cpu.shift_op  = 1'hx;
   assign \cpu.cpu.state.cnt_r  = \cpu.cpu.state.gen_cnt_w_eq_1.cnt_lsb ;
-  assign \cpu.cpu.state.i_alu_rd_sel1  = \cpu.cpu.alu.i_rd_sel [1];
-  assign \cpu.cpu.state.i_bne_or_bge  = \cpu.cpu.bne_or_bge ;
-  assign \cpu.cpu.state.i_branch_op  = \cpu.cpu.branch_op ;
+  assign \cpu.cpu.state.i_alu_rd_sel1  = 1'hx;
+  assign \cpu.cpu.state.i_bne_or_bge  = 1'hx;
+  assign \cpu.cpu.state.i_branch_op  = 1'hx;
   assign \cpu.cpu.state.i_clk  = wb_clk;
-  assign \cpu.cpu.state.i_ibus_ack  = \cpu.cpu.immdec.i_wb_en ;
+  assign \cpu.cpu.state.i_ctrl_misalign  = 1'hx;
+  assign \cpu.cpu.state.i_dbus_ack  = 1'h0;
+  assign \cpu.cpu.state.i_dbus_en  = 1'hx;
+  assign \cpu.cpu.state.i_e_op  = 1'hx;
+  assign \cpu.cpu.state.i_ibus_ack  = 1'h0;
   assign \cpu.cpu.state.i_mdu_op  = 1'h0;
   assign \cpu.cpu.state.i_mdu_ready  = 1'h0;
-  assign \cpu.cpu.state.i_new_irq  = \cpu.cpu.gen_csr.csr.o_new_irq ;
-  assign \cpu.cpu.state.i_rst  = wb_rst;
-  assign \cpu.cpu.state.i_sh_done  = \cpu.cpu.bufreg2.dat_shamt [5];
-  assign \cpu.cpu.state.i_sh_right  = \cpu.cpu.bufreg.i_right_shift_op ;
-  assign \cpu.cpu.state.misalign_trap_sync  = \cpu.cpu.state.gen_csr.misalign_trap_sync_r ;
-  assign \cpu.cpu.state.o_bufreg_en  = \cpu.cpu.bufreg.i_en ;
-  assign \cpu.cpu.state.o_cnt_done  = \cpu.cpu.bufreg2.i_cnt_done ;
+  assign \cpu.cpu.state.i_mem_misalign  = 1'h0;
+  assign \cpu.cpu.state.i_new_irq  = 1'h0;
+  assign \cpu.cpu.state.i_rd_alu_en  = 1'hx;
+  assign \cpu.cpu.state.i_rd_op  = 1'hx;
+  assign \cpu.cpu.state.i_rf_ready  = 1'h0;
+  assign \cpu.cpu.state.i_sh_right  = 1'hx;
+  assign \cpu.cpu.state.i_shift_op  = 1'hx;
+  assign \cpu.cpu.state.i_two_stage_op  = 1'hx;
+  assign \cpu.cpu.state.init_done  = 1'h0;
+  assign \cpu.cpu.state.last_init  = 1'h0;
+  assign \cpu.cpu.state.o_bufreg_en  = 1'h0;
   assign \cpu.cpu.state.o_cnt_en  = \cpu.cpu.alu.i_en ;
+  assign \cpu.cpu.state.o_ctrl_jump  = 1'h0;
+  assign \cpu.cpu.state.o_ctrl_pc_en  = \cpu.cpu.alu.i_en ;
+  assign \cpu.cpu.state.o_ctrl_trap  = 1'h1;
+  assign \cpu.cpu.state.o_dbus_cyc  = 1'h0;
+  assign \cpu.cpu.state.o_ibus_cyc  = \cpu.arbiter.i_wb_cpu_ibus_stb ;
+  assign \cpu.cpu.state.o_init  = 1'h0;
   assign \cpu.cpu.state.o_mdu_valid  = 1'h0;
   assign \cpu.cpu.state.o_mem_bytecnt  = \cpu.cpu.state.o_cnt [4:3];
-  assign \cpu.cpu.state.o_rf_rreq  = \cpu.rf_ram_if.i_rreq ;
-  assign \cpu.cpu.wb_ibus_ack  = \cpu.cpu.immdec.i_wb_en ;
+  assign \cpu.cpu.state.o_rf_rd_en  = 1'hx;
+  assign \cpu.cpu.state.o_rf_rreq  = 1'h0;
+  assign \cpu.cpu.state.o_rf_wreq  = 1'h0;
+  assign \cpu.cpu.state.take_branch  = 1'hx;
+  assign \cpu.cpu.state.trap_pending  = 1'h0;
+  assign \cpu.cpu.trap  = 1'h1;
+  assign \cpu.cpu.two_stage_op  = 1'hx;
+  assign \cpu.cpu.utype  = 1'hx;
+  assign \cpu.cpu.wb_ibus_ack  = 1'h0;
   assign \cpu.cpu.wb_ibus_adr  = { \cpu.cpu.ctrl.o_ibus_adr [31:1], \cpu.cpu.ctrl.pc  };
-  assign \cpu.cpu.wb_ibus_rdt  = \ram.o_wb_rdt ;
+  assign \cpu.cpu.wb_ibus_cyc  = \cpu.arbiter.i_wb_cpu_ibus_stb ;
   assign \cpu.i_clk  = wb_clk;
-  assign \cpu.i_rf_rdata [1] = \cpu.rf_ram_if.i_rdata [1];
-  assign \cpu.i_rst  = wb_rst;
-  assign \cpu.i_timer_irq  = \timer.o_irq ;
-  assign \cpu.i_wb_ext_ack  = \servant_mux.o_wb_cpu_ack ;
-  assign \cpu.i_wb_mem_ack  = \ram.o_wb_ack ;
-  assign \cpu.i_wb_mem_rdt  = \ram.o_wb_rdt ;
-  assign \cpu.mdu_op  = { \cpu.cpu.bufreg.i_right_shift_op , \cpu.cpu.decode.co_mem_word , \cpu.cpu.bne_or_bge  };
+  assign \cpu.i_rf_rdata  = \rf_ram.rdata ;
+  assign \cpu.i_wb_ext_ack  = 1'h0;
+  assign \cpu.i_wb_mem_ack  = 1'hx;
+  assign \cpu.mdu_op  = 3'hx;
   assign \cpu.mdu_rd  = 32'd0;
   assign \cpu.mdu_ready  = 1'h0;
-  assign \cpu.mdu_rs1  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], \cpu.cpu.state.i_ctrl_misalign , \cpu.cpu.bufreg.data [0] };
-  assign \cpu.mdu_rs2  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
+  assign \cpu.mdu_rs1  = 32'hxxxxxxxx;
   assign \cpu.mdu_valid  = 1'h0;
   assign \cpu.mux.halt_en  = 1'h0;
   assign \cpu.mux.i_clk  = wb_clk;
-  assign \cpu.mux.i_rst  = wb_rst;
-  assign \cpu.mux.i_wb_cpu_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.mux.i_wb_cpu_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.mux.i_wb_cpu_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.mux.i_wb_ext_ack  = \servant_mux.o_wb_cpu_ack ;
-  assign \cpu.mux.i_wb_mem_rdt  = \ram.o_wb_rdt ;
-  assign \cpu.mux.o_wb_ext_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.mux.o_wb_ext_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.mux.o_wb_ext_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.mux.o_wb_mem_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.mux.o_wb_mem_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.mux.o_wb_mem_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
+  assign \cpu.mux.i_wb_cpu_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.mux.i_wb_cpu_sel  = 4'b111x;
+  assign \cpu.mux.i_wb_cpu_stb  = 1'h0;
+  assign \cpu.mux.i_wb_cpu_we  = 1'hx;
+  assign \cpu.mux.i_wb_ext_ack  = 1'h0;
+  assign \cpu.mux.i_wb_mem_ack  = 1'h0;
+  assign \cpu.mux.o_wb_cpu_ack  = 1'h0;
+  assign \cpu.mux.o_wb_ext_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.mux.o_wb_ext_sel  = 4'b111x;
+  assign \cpu.mux.o_wb_ext_stb  = 1'h0;
+  assign \cpu.mux.o_wb_ext_we  = 1'hx;
+  assign \cpu.mux.o_wb_mem_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.mux.o_wb_mem_sel  = 4'b111x;
+  assign \cpu.mux.o_wb_mem_stb  = 1'h0;
+  assign \cpu.mux.o_wb_mem_we  = 1'hx;
   assign \cpu.mux.sig_en  = 1'h0;
   assign \cpu.mux.sim_ack  = 1'h0;
-  assign \cpu.o_rf_raddr [5:0] = { \cpu.rf_ram_if.rreg [1:0], \cpu.rf_ram_if.rcnt [4:1] };
-  assign \cpu.o_rf_waddr [5:0] = { \cpu.rf_ram_if.wreg [1:0], \cpu.rf_ram_if.wcnt [4:2], \cpu.rf_ram_if.rcnt [1] };
+  assign \cpu.o_rf_raddr  = { \cpu.rf_ram_if.rtrig0 , 5'h03, \cpu.rf_ram_if.rcnt [4:1] };
+  assign \cpu.o_rf_waddr  = { 5'h11, \cpu.rf_ram_if.wreg [0], \cpu.rf_ram_if.wcnt [4:2], \cpu.rf_ram_if.rcnt [1] };
   assign \cpu.o_rf_wdata  = \rf_ram.i_wdata ;
-  assign \cpu.o_wb_ext_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.o_wb_ext_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.o_wb_ext_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.o_wb_mem_adr  = { 19'hxxxxx, \cpu.arbiter.o_wb_mem_adr [12:10], wb_mem_adr[9:2], 2'hx };
-  assign \cpu.o_wb_mem_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.rdata0  = \cpu.cpu.alu.i_rs1 ;
+  assign \cpu.o_wb_ext_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.o_wb_ext_sel  = 4'b111x;
+  assign \cpu.o_wb_ext_stb  = 1'h0;
+  assign \cpu.o_wb_ext_we  = 1'hx;
+  assign \cpu.o_wb_mem_adr  = { 25'hxxxxxxx, \cpu.cpu.ctrl.o_ibus_adr [6:2], 2'hx };
+  assign \cpu.o_wb_mem_sel  = 4'b111x;
+  assign \cpu.o_wb_mem_stb  = \cpu.arbiter.i_wb_cpu_ibus_stb ;
+  assign \cpu.o_wb_mem_we  = 1'h0;
   assign \cpu.rf_ram_if.i_clk  = wb_clk;
-  assign \cpu.rf_ram_if.i_rdata [0] = \cpu.i_rf_rdata [0];
-  assign \cpu.rf_ram_if.i_rreg0  = { 1'h0, \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8:5], \cpu.cpu.csr_imm  };
-  assign \cpu.rf_ram_if.i_rst  = wb_rst;
-  assign \cpu.rf_ram_if.i_wreg0 [4:0] = { \cpu.cpu.o_wreg0 [4:2], 1'hx, \cpu.cpu.o_wreg0 [0] };
-  assign \cpu.rf_ram_if.i_wreg1  = { 5'b1000x, \cpu.cpu.o_wreg1 [0] };
-  assign \cpu.rf_ram_if.o_raddr  = { \cpu.o_rf_raddr [9:6], \cpu.rf_ram_if.rreg [1:0], \cpu.rf_ram_if.rcnt [4:1] };
-  assign \cpu.rf_ram_if.o_rdata0  = \cpu.cpu.alu.i_rs1 ;
-  assign \cpu.rf_ram_if.o_waddr  = { \cpu.o_rf_waddr [9:6], \cpu.rf_ram_if.wreg [1:0], \cpu.rf_ram_if.wcnt [4:2], \cpu.rf_ram_if.rcnt [1] };
+  assign \cpu.rf_ram_if.i_rdata  = \rf_ram.rdata ;
+  assign \cpu.rf_ram_if.i_rreg0  = 6'b0xxxxx;
+  assign \cpu.rf_ram_if.i_rreg1  = 6'h23;
+  assign \cpu.rf_ram_if.i_rreq  = 1'h0;
+  assign \cpu.rf_ram_if.i_wdata0  = 1'h0;
+  assign \cpu.rf_ram_if.i_wdata1  = \cpu.cpu.ctrl.pc ;
+  assign \cpu.rf_ram_if.i_wen0  = \cpu.cpu.alu.i_en ;
+  assign \cpu.rf_ram_if.i_wen1  = \cpu.cpu.alu.i_en ;
+  assign \cpu.rf_ram_if.i_wreg0  = 6'h23;
+  assign \cpu.rf_ram_if.i_wreg1  = 6'h22;
+  assign \cpu.rf_ram_if.i_wreq  = 1'h0;
+  assign \cpu.rf_ram_if.o_raddr  = { \cpu.rf_ram_if.rtrig0 , 5'h03, \cpu.rf_ram_if.rcnt [4:1] };
+  assign \cpu.rf_ram_if.o_ready  = 1'h0;
+  assign \cpu.rf_ram_if.o_waddr  = { 5'h11, \cpu.rf_ram_if.wreg [0], \cpu.rf_ram_if.wcnt [4:2], \cpu.rf_ram_if.rcnt [1] };
   assign \cpu.rf_ram_if.o_wdata  = \rf_ram.i_wdata ;
+  assign \cpu.rf_ram_if.o_wen  = \cpu.o_rf_wen ;
   assign \cpu.rf_ram_if.rcnt [0] = \cpu.rf_ram_if.rtrig0 ;
-  assign \cpu.rf_ram_if.rdata0 [0] = \cpu.cpu.alu.i_rs1 ;
-  assign \cpu.rf_ram_if.rreg [5:2] = \cpu.o_rf_raddr [9:6];
+  assign \cpu.rf_ram_if.rgnt  = 1'h0;
+  assign \cpu.rf_ram_if.rreg  = { \cpu.rf_ram_if.rtrig0 , 5'h03 };
+  assign \cpu.rf_ram_if.rreq_r  = 1'h0;
   assign \cpu.rf_ram_if.wcnt [1:0] = { \cpu.rf_ram_if.rcnt [1], \cpu.rf_ram_if.rtrig0  };
-  assign \cpu.rf_ram_if.wreg [5:2] = \cpu.o_rf_waddr [9:6];
+  assign \cpu.rf_ram_if.wdata0_r  = 2'h0;
+  assign \cpu.rf_ram_if.wen0_r  = \cpu.rf_ram_if.wen1_r ;
+  assign \cpu.rf_ram_if.wreg [5:1] = 5'h11;
   assign \cpu.rf_ram_if.wtrig0  = \cpu.rf_ram_if.rtrig1 ;
   assign \cpu.rf_ram_if.wtrig1  = \cpu.rf_ram_if.rtrig0 ;
-  assign \cpu.rf_rreq  = \cpu.rf_ram_if.i_rreq ;
-  assign \cpu.rreg0  = { 1'h0, \cpu.cpu.immdec.gen_immdec_w_eq_1.imm19_12_20 [8:5], \cpu.cpu.csr_imm  };
-  assign \cpu.wb_dbus_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.wb_dbus_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.wb_dbus_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.wb_dmem_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \cpu.wb_dmem_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \cpu.wb_dmem_rdt  = \ram.o_wb_rdt ;
-  assign \cpu.wb_dmem_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \cpu.wb_ibus_ack  = \cpu.cpu.immdec.i_wb_en ;
+  assign \cpu.rf_ready  = 1'h0;
+  assign \cpu.rf_rreq  = 1'h0;
+  assign \cpu.rf_wreq  = 1'h0;
+  assign \cpu.rreg0  = 6'b0xxxxx;
+  assign \cpu.rreg1  = 6'h23;
+  assign \cpu.wb_dbus_ack  = 1'h0;
+  assign \cpu.wb_dbus_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.wb_dbus_sel  = 4'b111x;
+  assign \cpu.wb_dbus_stb  = 1'h0;
+  assign \cpu.wb_dbus_we  = 1'hx;
+  assign \cpu.wb_dmem_ack  = 1'h0;
+  assign \cpu.wb_dmem_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \cpu.wb_dmem_sel  = 4'b111x;
+  assign \cpu.wb_dmem_stb  = 1'h0;
+  assign \cpu.wb_dmem_we  = 1'hx;
+  assign \cpu.wb_ibus_ack  = 1'h0;
   assign \cpu.wb_ibus_adr  = { \cpu.cpu.ctrl.o_ibus_adr [31:1], \cpu.cpu.ctrl.pc  };
-  assign \cpu.wb_ibus_rdt  = \ram.o_wb_rdt ;
-  assign \cpu.wdata0  = \cpu.rf_ram_if.i_wdata0 ;
-  assign \cpu.wdata1  = \cpu.rf_ram_if.i_wdata1 ;
-  assign \cpu.wen0  = \cpu.rf_ram_if.i_wen0 ;
-  assign \cpu.wen1  = \cpu.rf_ram_if.i_wen1 ;
-  assign \cpu.wreg0 [4:0] = { \cpu.cpu.o_wreg0 [4:2], 1'hx, \cpu.cpu.o_wreg0 [0] };
-  assign \cpu.wreg1  = { 5'b1000x, \cpu.cpu.o_wreg1 [0] };
+  assign \cpu.wb_ibus_stb  = \cpu.arbiter.i_wb_cpu_ibus_stb ;
+  assign \cpu.wdata0  = 1'h0;
+  assign \cpu.wdata1  = \cpu.cpu.ctrl.pc ;
+  assign \cpu.wen0  = \cpu.cpu.alu.i_en ;
+  assign \cpu.wen1  = \cpu.cpu.alu.i_en ;
+  assign \cpu.wreg0  = 6'h23;
+  assign \cpu.wreg1  = 6'h22;
   assign \gpio.i_wb_clk  = wb_clk;
-  assign \gpio.i_wb_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign q = \gpio.o_gpio ;
+  assign \gpio.i_wb_cyc  = 1'h0;
+  assign \gpio.i_wb_we  = 1'hx;
+  assign \gpio.o_gpio  = 1'hx;
+  assign q = 1'hx;
   assign q_en = 1'h1;
-  assign \ram.addr  = { \cpu.arbiter.o_wb_mem_adr [12:10], wb_mem_adr[9:2] };
-  assign \ram.i_wb_adr  = { \cpu.arbiter.o_wb_mem_adr [12:10], wb_mem_adr[9:2] };
+  assign \ram.BRAM0_DATA_IN  = 8'h00;
+  assign \ram.BRAM0_DATA_OUT  = BRAM0_DATA_OUT;
+  assign \ram.BRAM0_RATIO  = 2'h2;
+  assign \ram.BRAM0_READ_ADDR  = { 4'hx, \ram.BRAM0_WRITE_ADDR [4:0] };
+  assign \ram.BRAM0_REN  = 1'hx;
+  assign \ram.BRAM0_WCLKEN  = 1'h0;
+  assign \ram.BRAM0_WEN  = 1'h0;
+  assign \ram.BRAM0_WRITE_ADDR [8:5] = 4'hx;
+  assign \ram.i_wb_adr  = \cpu.cpu.ctrl.o_ibus_adr [6:2];
   assign \ram.i_wb_clk  = wb_clk;
-  assign \ram.i_wb_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \ram.i_wb_rst  = wb_rst;
-  assign \ram.mem.0.0.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.0.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.0.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.0.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.0.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.1.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.1.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.1.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.1.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.1.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.10.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.10.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.10.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.10.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.10.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.100.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.100.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.100.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.100.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.100.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.101.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.101.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.101.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.101.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.101.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.102.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.102.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.102.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.102.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.102.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.103.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.103.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.103.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.103.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.103.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.104.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.104.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.104.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.104.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.104.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.105.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.105.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.105.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.105.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.105.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.106.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.106.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.106.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.106.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.106.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.107.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.107.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.107.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.107.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.107.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.108.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.108.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.108.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.108.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.108.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.109.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.109.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.109.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.109.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.109.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.11.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.11.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.11.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.11.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.11.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.110.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.110.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.110.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.110.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.110.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.111.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.111.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.111.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.111.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.111.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.112.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.112.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.112.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.112.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.112.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.113.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.113.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.113.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.113.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.113.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.114.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.114.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.114.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.114.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.114.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.115.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.115.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.115.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.115.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.115.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.116.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.116.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.116.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.116.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.116.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.117.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.117.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.117.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.117.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.117.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.118.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.118.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.118.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.118.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.118.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.119.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.119.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.119.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.119.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.119.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.12.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.12.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.12.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.12.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.12.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.120.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.120.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.120.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.120.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.120.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.121.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.121.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.121.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.121.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.121.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.122.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.122.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.122.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.122.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.122.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.123.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.123.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.123.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.123.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.123.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.124.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.124.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.124.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.124.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.124.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.125.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.125.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.125.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.125.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.125.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.126.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.126.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.126.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.126.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.126.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.127.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.127.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.127.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.127.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.127.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.128.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.128.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.128.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.128.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.128.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.129.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.129.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.129.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.129.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.129.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.13.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.13.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.13.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.13.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.13.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.130.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.130.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.130.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.130.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.130.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.131.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.131.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.131.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.131.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.131.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.132.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.132.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.132.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.132.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.132.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.133.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.133.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.133.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.133.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.133.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.134.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.134.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.134.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.134.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.134.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.135.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.135.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.135.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.135.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.135.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.136.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.136.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.136.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.136.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.136.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.137.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.137.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.137.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.137.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.137.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.138.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.138.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.138.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.138.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.138.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.139.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.139.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.139.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.139.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.139.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.14.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.14.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.14.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.14.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.14.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.140.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.140.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.140.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.140.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.140.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.141.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.141.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.141.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.141.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.141.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.142.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.142.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.142.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.142.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.142.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.143.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.143.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.143.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.143.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.143.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.144.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.144.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.144.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.144.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.144.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.145.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.145.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.145.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.145.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.145.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.146.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.146.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.146.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.146.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.146.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.147.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.147.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.147.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.147.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.147.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.148.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.148.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.148.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.148.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.148.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.149.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.149.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.149.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.149.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.149.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.15.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.15.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.15.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.15.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.15.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.150.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.150.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.150.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.150.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.150.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.151.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.151.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.151.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.151.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.151.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.152.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.152.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.152.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.152.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.152.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.153.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.153.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.153.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.153.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.153.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.154.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.154.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.154.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.154.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.154.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.155.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.155.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.155.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.155.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.155.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.156.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.156.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.156.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.156.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.156.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.157.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.157.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.157.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.157.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.157.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.158.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.158.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.158.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.158.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.158.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.159.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.159.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.159.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.159.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.159.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.16.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.16.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.16.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.16.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.16.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.160.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.160.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.160.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.160.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.160.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.161.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.161.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.161.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.161.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.161.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.162.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.162.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.162.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.162.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.162.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.163.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.163.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.163.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.163.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.163.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.164.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.164.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.164.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.164.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.164.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.165.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.165.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.165.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.165.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.165.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.166.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.166.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.166.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.166.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.166.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.167.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.167.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.167.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.167.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.167.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.168.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.168.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.168.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.168.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.168.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.169.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.169.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.169.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.169.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.169.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.17.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.17.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.17.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.17.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.17.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.170.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.170.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.170.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.170.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.170.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.171.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.171.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.171.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.171.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.171.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.172.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.172.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.172.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.172.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.172.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.173.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.173.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.173.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.173.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.173.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.174.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.174.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.174.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.174.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.174.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.175.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.175.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.175.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.175.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.175.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.176.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.176.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.176.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.176.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.176.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.177.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.177.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.177.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.177.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.177.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.178.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.178.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.178.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.178.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.178.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.179.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.179.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.179.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.179.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.179.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.18.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.18.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.18.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.18.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.18.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.180.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.180.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.180.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.180.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.180.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.181.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.181.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.181.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.181.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.181.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.182.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.182.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.182.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.182.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.182.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.183.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.183.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.183.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.183.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.183.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.184.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.184.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.184.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.184.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.184.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.185.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.185.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.185.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.185.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.185.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.186.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.186.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.186.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.186.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.186.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.187.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.187.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.187.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.187.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.187.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.188.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.188.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.188.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.188.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.188.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.189.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.189.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.189.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.189.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.189.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.19.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.19.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.19.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.19.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.19.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.190.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.190.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.190.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.190.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.190.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.191.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.191.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.191.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.191.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.191.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.192.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.192.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.192.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.192.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.192.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.193.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.193.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.193.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.193.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.193.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.194.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.194.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.194.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.194.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.194.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.195.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.195.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.195.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.195.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.195.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.196.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.196.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.196.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.196.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.196.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.197.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.197.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.197.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.197.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.197.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.198.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.198.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.198.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.198.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.198.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.199.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.199.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.199.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.199.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.199.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.2.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.2.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.2.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.2.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.2.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.20.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.20.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.20.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.20.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.20.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.200.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.200.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.200.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.200.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.200.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.201.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.201.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.201.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.201.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.201.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.202.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.202.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.202.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.202.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.202.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.203.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.203.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.203.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.203.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.203.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.204.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.204.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.204.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.204.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.204.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.205.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.205.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.205.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.205.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.205.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.206.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.206.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.206.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.206.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.206.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.207.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.207.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.207.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.207.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.207.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.208.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.208.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.208.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.208.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.208.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.209.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.209.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.209.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.209.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.209.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.21.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.21.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.21.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.21.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.21.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.210.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.210.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.210.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.210.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.210.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.211.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.211.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.211.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.211.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.211.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.212.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.212.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.212.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.212.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.212.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.213.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.213.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.213.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.213.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.213.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.214.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.214.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.214.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.214.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.214.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.215.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.215.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.215.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.215.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.215.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.216.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.216.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.216.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.216.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.216.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.217.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.217.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.217.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.217.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.217.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.218.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.218.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.218.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.218.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.218.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.219.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.219.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.219.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.219.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.219.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.22.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.22.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.22.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.22.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.22.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.220.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.220.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.220.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.220.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.220.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.221.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.221.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.221.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.221.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.221.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.222.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.222.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.222.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.222.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.222.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.223.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.223.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.223.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.223.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.223.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.224.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.224.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.224.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.224.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.224.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.225.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.225.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.225.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.225.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.225.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.226.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.226.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.226.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.226.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.226.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.227.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.227.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.227.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.227.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.227.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.228.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.228.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.228.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.228.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.228.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.229.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.229.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.229.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.229.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.229.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.23.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.23.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.23.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.23.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.23.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.230.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.230.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.230.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.230.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.230.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.231.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.231.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.231.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.231.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.231.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.232.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.232.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.232.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.232.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.232.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.233.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.233.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.233.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.233.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.233.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.234.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.234.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.234.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.234.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.234.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.235.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.235.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.235.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.235.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.235.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.236.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.236.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.236.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.236.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.236.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.237.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.237.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.237.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.237.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.237.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.238.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.238.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.238.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.238.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.238.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.239.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.239.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.239.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.239.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.239.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.24.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.24.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.24.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.24.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.24.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.240.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.240.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.240.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.240.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.240.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.241.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.241.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.241.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.241.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.241.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.242.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.242.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.242.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.242.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.242.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.243.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.243.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.243.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.243.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.243.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.244.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.244.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.244.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.244.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.244.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.245.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.245.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.245.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.245.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.245.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.246.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.246.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.246.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.246.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.246.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.247.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.247.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.247.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.247.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.247.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.248.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.248.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.248.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.248.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.248.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.249.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.249.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.249.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.249.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.249.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.25.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.25.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.25.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.25.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.25.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.250.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.250.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.250.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.250.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.250.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.251.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.251.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.251.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.251.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.251.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.252.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.252.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.252.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.252.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.252.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.253.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.253.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.253.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.253.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.253.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.254.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.254.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.254.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.254.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.254.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.255.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.255.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.255.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.255.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.255.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.26.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.26.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.26.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.26.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.26.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.27.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.27.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.27.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.27.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.27.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.28.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.28.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.28.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.28.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.28.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.29.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.29.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.29.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.29.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.29.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.3.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.3.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.3.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.3.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.3.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.30.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.30.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.30.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.30.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.30.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.31.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.31.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.31.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.31.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.31.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.32.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.32.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.32.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.32.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.32.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.33.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.33.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.33.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.33.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.33.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.34.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.34.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.34.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.34.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.34.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.35.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.35.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.35.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.35.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.35.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.36.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.36.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.36.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.36.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.36.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.37.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.37.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.37.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.37.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.37.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.38.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.38.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.38.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.38.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.38.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.39.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.39.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.39.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.39.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.39.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.4.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.4.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.4.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.4.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.4.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.40.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.40.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.40.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.40.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.40.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.41.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.41.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.41.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.41.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.41.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.42.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.42.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.42.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.42.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.42.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.43.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.43.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.43.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.43.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.43.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.44.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.44.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.44.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.44.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.44.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.45.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.45.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.45.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.45.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.45.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.46.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.46.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.46.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.46.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.46.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.47.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.47.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.47.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.47.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.47.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.48.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.48.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.48.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.48.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.48.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.49.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.49.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.49.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.49.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.49.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.5.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.5.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.5.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.5.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.5.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.50.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.50.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.50.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.50.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.50.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.51.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.51.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.51.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.51.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.51.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.52.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.52.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.52.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.52.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.52.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.53.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.53.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.53.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.53.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.53.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.54.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.54.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.54.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.54.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.54.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.55.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.55.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.55.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.55.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.55.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.56.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.56.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.56.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.56.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.56.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.57.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.57.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.57.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.57.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.57.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.58.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.58.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.58.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.58.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.58.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.59.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.59.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.59.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.59.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.59.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.6.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.6.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.6.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.6.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.6.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.60.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.60.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.60.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.60.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.60.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.61.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.61.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.61.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.61.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.61.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.62.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.62.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.62.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.62.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.62.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.63.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.63.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.63.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.63.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.63.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.64.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.64.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.64.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.64.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.64.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.65.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.65.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.65.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.65.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.65.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.66.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.66.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.66.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.66.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.66.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.67.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.67.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.67.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.67.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.67.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.68.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.68.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.68.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.68.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.68.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.69.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.69.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.69.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.69.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.69.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.7.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.7.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.7.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.7.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.7.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.70.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.70.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.70.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.70.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.70.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.71.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.71.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.71.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.71.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.71.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.72.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.72.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.72.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.72.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.72.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.73.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.73.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.73.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.73.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.73.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.74.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.74.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.74.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.74.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.74.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.75.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.75.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.75.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.75.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.75.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.76.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.76.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.76.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.76.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.76.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.77.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.77.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.77.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.77.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.77.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.78.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.78.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.78.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.78.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.78.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.79.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.79.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.79.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.79.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.79.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.8.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.8.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.8.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.8.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.8.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.80.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.80.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.80.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.80.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.80.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.81.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.81.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.81.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.81.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.81.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.82.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.82.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.82.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.82.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.82.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.83.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.83.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.83.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.83.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.83.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.84.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.84.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.84.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.84.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.84.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.85.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.85.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.85.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.85.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.85.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.86.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.86.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.86.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.86.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.86.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.87.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.87.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.87.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.87.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.87.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.88.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.88.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.88.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.88.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.88.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.89.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.89.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.89.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.89.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.89.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.9.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.9.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.9.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.9.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.9.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.90.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.90.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.90.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.90.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.90.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.91.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.91.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.91.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.91.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.91.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.92.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.92.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.92.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.92.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.92.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.93.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.93.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.93.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.93.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.93.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.94.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.94.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.94.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.94.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.94.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.95.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.95.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.95.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.95.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.95.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.96.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.96.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.96.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.96.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.96.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.97.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.97.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.97.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.97.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.97.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.98.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.98.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.98.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.98.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.98.PORT_RW_WR_EN  = 1'hx;
-  assign \ram.mem.0.99.PORT_RW_ADDR  = 8'hxx;
-  assign \ram.mem.0.99.PORT_RW_CLK  = 1'hx;
-  assign \ram.mem.0.99.PORT_RW_RD_DATA  = 1'hx;
-  assign \ram.mem.0.99.PORT_RW_WR_DATA  = 1'hx;
-  assign \ram.mem.0.99.PORT_RW_WR_EN  = 1'hx;
-  assign rf_raddr = { \cpu.o_rf_raddr [9:6], \cpu.rf_ram_if.rreg [1:0], \cpu.rf_ram_if.rcnt [4:1] };
+  assign \ram.i_wb_cyc  = \cpu.arbiter.i_wb_cpu_ibus_stb ;
+  assign \ram.i_wb_sel  = 4'b111x;
+  assign \ram.i_wb_we  = 1'h0;
+  assign \ram.o_wb_ack  = 1'hx;
+  assign rf_raddr = { \cpu.rf_ram_if.rtrig0 , 5'h03, \cpu.rf_ram_if.rcnt [4:1] };
   assign \rf_ram.i_clk  = wb_clk;
-  assign \rf_ram.i_raddr  = { \cpu.o_rf_raddr [9:6], \cpu.rf_ram_if.rreg [1:0], \cpu.rf_ram_if.rcnt [4:1] };
-  assign \rf_ram.i_waddr  = { \cpu.o_rf_waddr [9:6], \cpu.rf_ram_if.wreg [1:0], \cpu.rf_ram_if.wcnt [4:2], \cpu.rf_ram_if.rcnt [1] };
+  assign \rf_ram.i_raddr  = { \cpu.rf_ram_if.rtrig0 , 5'h03, \cpu.rf_ram_if.rcnt [4:1] };
+  assign \rf_ram.i_waddr  = { 5'h11, \cpu.rf_ram_if.wreg [0], \cpu.rf_ram_if.wcnt [4:2], \cpu.rf_ram_if.rcnt [1] };
+  assign \rf_ram.i_wen  = \cpu.o_rf_wen ;
   assign \rf_ram.memory.0.0.PORT_R_ADDR  = 6'hxx;
   assign \rf_ram.memory.0.0.PORT_R_RD_DATA  = 3'hx;
   assign \rf_ram.memory.0.0.PORT_W_ADDR  = 6'hxx;
@@ -18543,42 +3674,36 @@ module servant(wb_clk, wb_clk_en, wb_rst, q, q_en);
   assign \rf_ram.memory.0.8.genblk1.genblk1.ram64m_sdp.DOC  = 1'hx;
   assign \rf_ram.memory.0.8.genblk1.genblk1.ram64m_sdp.WCLK  = 1'hx;
   assign \rf_ram.memory.0.8.genblk1.genblk1.ram64m_sdp.WE  = 1'hx;
-  assign \rf_ram.o_rdata  = { \cpu.rf_ram_if.i_rdata [1], \cpu.i_rf_rdata [0] };
-  assign rf_rdata = { \cpu.rf_ram_if.i_rdata [1], \cpu.i_rf_rdata [0] };
-  assign rf_waddr = { \cpu.o_rf_waddr [9:6], \cpu.rf_ram_if.wreg [1:0], \cpu.rf_ram_if.wcnt [4:2], \cpu.rf_ram_if.rcnt [1] };
+  assign \rf_ram.o_rdata  = \rf_ram.rdata ;
+  assign \rf_ram.regzero  = 1'h0;
+  assign rf_rdata = \rf_ram.rdata ;
+  assign rf_waddr = { 5'h11, \cpu.rf_ram_if.wreg [0], \cpu.rf_ram_if.wcnt [4:2], \cpu.rf_ram_if.rcnt [1] };
   assign rf_wdata = \rf_ram.i_wdata ;
+  assign rf_wen = \cpu.o_rf_wen ;
   assign \servant_mux.i_clk  = wb_clk;
-  assign \servant_mux.i_rst  = wb_rst;
-  assign \servant_mux.i_wb_cpu_adr  = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign \servant_mux.i_wb_cpu_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \servant_mux.i_wb_cpu_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \servant_mux.i_wb_gpio_rdt  = \gpio.o_wb_rdt ;
-  assign \servant_mux.i_wb_timer_rdt  = \timer.mtime ;
-  assign \servant_mux.o_wb_gpio_dat  = \gpio.i_wb_dat ;
-  assign \servant_mux.o_wb_gpio_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \servant_mux.o_wb_timer_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \servant_mux.o_wb_timer_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \servant_mux.s  = \cpu.cpu.bufreg.data [31:30];
+  assign \servant_mux.i_wb_cpu_adr  = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign \servant_mux.i_wb_cpu_cyc  = 1'h0;
+  assign \servant_mux.i_wb_cpu_sel  = 4'b111x;
+  assign \servant_mux.i_wb_cpu_we  = 1'hx;
+  assign \servant_mux.o_wb_cpu_ack  = 1'h0;
+  assign \servant_mux.o_wb_gpio_cyc  = 1'h0;
+  assign \servant_mux.o_wb_gpio_we  = 1'hx;
+  assign \servant_mux.o_wb_timer_we  = 1'hx;
+  assign \servant_mux.s  = 2'hx;
   assign \timer.i_clk  = wb_clk;
-  assign \timer.i_rst  = wb_rst;
-  assign \timer.i_wb_dat  = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign \timer.i_wb_we  = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign \timer.mtimeslice  = \timer.mtime ;
-  assign \timer.o_wb_dat  = \timer.mtime ;
-  assign timer_irq = \timer.o_irq ;
+  assign \timer.i_wb_we  = 1'hx;
   assign wb_clk_en = 1'h1;
-  assign wb_ext_ack = \servant_mux.o_wb_cpu_ack ;
-  assign wb_ext_adr = { \cpu.cpu.bufreg.data [31:30], \cpu.arbiter.i_wb_cpu_dbus_adr [29:13], \cpu.cpu.bufreg.data [12:2], 2'h0 };
-  assign wb_ext_dat = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign wb_ext_we = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign wb_gpio_dat = \gpio.i_wb_dat ;
-  assign wb_gpio_rdt = \gpio.o_wb_rdt ;
-  assign wb_gpio_we = \cpu.arbiter.i_wb_cpu_dbus_we ;
-  assign wb_mem_ack = \ram.o_wb_ack ;
-  assign { wb_mem_adr[12:10], wb_mem_adr[1:0] } = { \cpu.arbiter.o_wb_mem_adr [12:10], 2'hx };
-  assign wb_mem_dat = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign wb_mem_rdt = \ram.o_wb_rdt ;
-  assign wb_timer_dat = { \cpu.cpu.bufreg2.dhi , \cpu.cpu.bufreg2.dlo [23:1], \gpio.i_wb_dat  };
-  assign wb_timer_rdt = \timer.mtime ;
-  assign wb_timer_we = \cpu.arbiter.i_wb_cpu_dbus_we ;
+  assign wb_ext_ack = 1'h0;
+  assign wb_ext_adr = 32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00;
+  assign wb_ext_sel = 4'b111x;
+  assign wb_ext_stb = 1'h0;
+  assign wb_ext_we = 1'hx;
+  assign wb_gpio_stb = 1'h0;
+  assign wb_gpio_we = 1'hx;
+  assign wb_mem_ack = 1'hx;
+  assign wb_mem_adr = { \cpu.cpu.ctrl.o_ibus_adr [6:2], 2'hx };
+  assign wb_mem_sel = 4'b111x;
+  assign wb_mem_stb = \cpu.arbiter.i_wb_cpu_ibus_stb ;
+  assign wb_mem_we = 1'h0;
+  assign wb_timer_we = 1'hx;
 endmodule

@@ -1,4 +1,4 @@
-LOG STARTS The current time is Mon Nov 24 19:00:43 2025
+LOG STARTS The current time is Sun Nov 30 12:52:19 2025
 TA took 0 seconds.
 Set ARRAYINFO: 32x32
 ARRAYINFO: locs_per_tile=[32,32] pos_interval=[10,10] boundary_penalty=[20,10] l_shift_x0,xmult,yvalue=<1,3,0> max_iob_width=4 is_x2=0 clock=<max-num=2,max-inv=1,inv-noninv-as-one=false,ram-independent=false>
@@ -52,7 +52,7 @@ Setup 40 LM mapping.
 Layer[ZIOB] has 0/0 sites, total_cap=0
 Clock-relation-property=0
 TA took 0 seconds.
-LOG ENDS The current time is Mon Nov 24 19:00:43 2025
+LOG ENDS The current time is Sun Nov 30 12:52:19 2025
 
 
 
